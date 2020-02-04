@@ -1,0 +1,59 @@
+﻿@model IEnumerable<EnergyStarCorporation>
+@{
+    ViewData["title"] = "能源之星_能源標章產品資訊";
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding: 0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/media/Detail_Sub">宣傳資源</a></li>
+        @*<li class="breadcrumb-item "><a href="~/act/Detail_Sub">因應作為</a></li>*@
+        @*<li class="breadcrumb-item "><a href="~/act/Index/溫室氣體盤查申報">溫室氣體盤查申報</a></li>*@
+        <li class="breadcrumb-item "><a href="~/Energystar/index">能源之星</a></li>
+        <li class="breadcrumb-item ">能源標章產品資訊</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 mx-sm-auto col-lg-9 pt-3  ccis_Detail" id="content">
+            <h2 class="h2">標章廠商</h2>
+            <h3>依產品類別搜尋廠商</h3>
+            <div class="my-2">
+                @{
+
+                    foreach (EnergyStarCriteria item in ViewBag.Contact)
+                    {
+                        <a asp-action="Corporation" asp-route-id="@item.IdCrt" class="btn btn-outline-primary">@item.VrCrtName</a>
+                    }
+                }
+            </div>
+            @{
+                if (ViewBag.ContactName != null)
+                {
+                    <div class="alert alert-info">只顯示產品類別為【@ViewBag.ContactName】的廠商</div>
+                }
+            }
+
+            <table class="table table-bordered table-striped table-hover">
+                <tr>
+                    @{
+                        int cnt = 0;
+                        foreach (EnergyStarCorporation item in Model)
+                        {
+                            if (cnt++ % 3 == 0)
+                            {
+                            @:</tr><tr>
+                            }
+                            @:<td>
+                                <a asp-action="CorporationDetail" asp-route-id="@item.IdCop">@item.VrCopName</a>
+                            @:</td>
+                        }
+                    @:</tr>
+                    }
+                </table>
+            </main>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>

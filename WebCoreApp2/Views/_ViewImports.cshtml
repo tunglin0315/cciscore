@@ -1,0 +1,9 @@
+﻿@using CCISWebCore.Models
+@using CCISWebCore.Models.ViewModels
+@using CCISWebCore.Models.EF
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Authorization
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper CCISWebCore.Infrastructure.*, CCISWebCore
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager

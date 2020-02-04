@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["title"] = "國家氣候變遷調適行動方案";
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Detail_Sub">因應作為</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Index/溫室氣體減緩策略">氣候變遷調適策略</a></li>
+        <li class="breadcrumb-item ">國家氣候變遷調適行動方案</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 mx-sm-auto col-lg-9 pt-3  ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2 class="h2">@ViewBag.Title</h2>
+            </div>
+            @Html.Raw(ViewBag.Html)
+            @*<h3 style="visibility:hidden"></h3>
+            <p>
+                依溫室氣體減量及管理法第十三條規定，各中央目的事業主管機關需進行氣候變遷調適策略之研擬與推動。因此，環保署於107年與國家發展委員會等16個部會以國家因應氣候變遷行動綱領為依據，參酌國家氣候變遷調適行動計畫（102-106年）執行成果，共同研擬「國家氣候變遷調適行動方案（107-111年）」，已奉行政院108年9月9日院臺環字第1080027749號函核定在案。
+            </p>
+            <p>
+                本方案延續102-106年調適工作之領域分工，分由8個調適領域，再加上能力建構賡續推動，研提目標及策略，並分別指派彙整機關如次：能力建構－環保署；災害－科技部；維生基礎設施－交通部；水資源－經濟部；土地使用－內政部；海洋及海岸－內政部；能源供給及產業－經濟部；農業生產及生物多樣性－農委會；健康－衛福部，每年協助綜整各機關所提交之成果報告，撰擬領域成果後，提報主管機關彙整，期藉由部會協作落實國家氣候變遷調適工作，輔以滾動修正原則，推動我國社會、經濟及環境之永續發展。
+            </p>
+            <div class="text-center my-2">
+                <img src="~/_x/img/Act/nationalplan_1.jpg" alt="國家氣候變遷調適行動方案組織分工" title="國家氣候變遷調適行動方案組織分工" />
+            </div>
+            <div class="text-center my-1">
+                <button class="btn btn-info m-2" onclick="img1()" title="圖片詳細說明">圖片詳細說明</button>
+                <div id="img1" style="display:none">
+                    本方案延續102-106年調適工作之領域分工，分由8個調適領域，再加上能力建構賡續推動，研提目標及策略，並分別指派彙整機關如次：能力建構－環保署；災害－科技部；維生基礎設施－交通部；水資源－經濟部；土地使用－內政部；海洋及海岸－內政部；能源供給及產業－經濟部；農業生產及生物多樣性－農委會；健康－衛福部，每年協助綜整各機關所提交之成果報告，撰擬領域成果後，提報主管機關彙整，期藉由部會協作落實國家氣候變遷調適工作，輔以滾動修正原則，推動我國社會、經濟及環境之永續發展。
+                </div>
+            </div>
+
+            <h3>國家氣候變遷各領域調適策略</h3>
+            <p>
+                國家氣候變遷調適工作遵循溫管法相關規範，並以行動綱領為政策依據，制定因應氣候變遷策略，提高調適能力、加強回復力並降低氣候變遷衝擊所帶來的脆弱度，確保國家永續發展。並依據調適八大領域不同主軸，分別提出對應策略，持續精進我國氣候變遷調適能力，連結災害防救策略，扣接永續發展目標，以降低脆弱度並強化韌性。
+            </p>
+            <div class="text-center my-2">
+                <img src="~/_x/img/Act/nationalplan_2.jpg" alt="國家氣候變遷各領域調適策略" title="國家氣候變遷各領域調適策略" />
+            </div>
+            <div class="text-center my-1">
+                <button class="btn btn-info m-2" onclick="img2()" title="圖片詳細說明">圖片詳細說明</button>
+                <div id="img2" style="display:none">
+                    國家氣候變遷調適工作遵循溫管法相關規範，並以行動綱領為政策依據，制定因應氣候變遷策略，提高調適能力、加強回復力並降低氣候變遷衝擊所帶來的脆弱度，確保國家永續發展。並依據調適八大領域不同主軸，分別提出對應策略，持續精進我國氣候變遷調適能力，連結災害防救策略，扣接永續發展目標，以降低脆弱度並強化韌性。
+                </div>
+            </div>
+            <p>
+                更多「國家氣候變遷調適行動方案（107-111年）」具體資訊請參閱氣候變遷調適資訊與成果網<a href="/act/nationalplan#infolink1" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>1</sup></a>。
+            </p>
+            <ul>
+                資料來源：
+                <li>[1] <a id="infolink1" href="https://adapt.epa.gov.tw/TCCIP-1-D/TCCIP-1-D-7/TCCIP-1-D-7-2" target="_blank" title="另開視窗(氣候變遷調適資訊與成果網)">氣候變遷調適資訊與成果網</a></li>
+            </ul>*@
+
+            <div class=" text-right my-3">
+                @*判斷是否已經登入*@
+                @if (User.Identity.IsAuthenticated)
+                {
+                    //判斷登入角色,符合角色則顯示按鈕進入後台
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a class="btn btn-danger text-center" href="~/info/Edit/@ViewBag.id">編輯</a>
+                    }
+                }
+            </div>
+        </main>
+        <div class="col-lg-1">    </div>
+    </div>
+</div>
+<script>
+    function img1() {
+        $("#img1").slideToggle();
+
+    };
+      function img2() {
+        $("#img2").slideToggle();
+
+    };
+</script>

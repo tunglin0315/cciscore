@@ -1,0 +1,132 @@
+﻿@*@{
+        string name = "氣候變遷知識>氣候變遷介紹>溫室效應與全球暖化";
+        @await Html.PartialAsync("_Nav1", name);
+    }*@
+@model CCISWebCore.Models.EF.Infos
+@*@model IEnumerable<CCISWebCore.Models.EF.Infos>*@
+@{
+
+    ViewData["title"] = @ViewBag.Title;
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style=" font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub">氣候變遷知識</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub_Sub">氣候變遷介紹</a></li>
+        <li class="breadcrumb-item"> @ViewBag.Title</li>
+
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row navFixed">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 mx-sm-auto  col-lg-9 pt-3 ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2 class="h2"> @Html.Raw(@ViewBag.Title)</h2>
+            </div>
+            @* 後台主要資料顯示區*@
+            @Html.Raw(@ViewBag.html)
+
+            @*<div class="pb-2 mb-3 " id="content">
+                    <h2>溫室效應與全球暖化</h2>
+                </div>
+
+                <h3>什麼是溫室效應？</h3>
+                <p>溫室效應是地球大氣層中的溫室氣體吸收太陽的熱量的過程，該過程使地球比沒有大氣層時更加溫暖，溫室效應是讓地球成為舒適居住環境的重要因素之一。</p>
+                <h3>為什麼需要溫室效應？</h3>
+                <p>美國國家航空暨太空總署（National Aeronautics and Space Administration， NASA）指出<a href="/know/detail#infolink1" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>1</sup></a>，溫室就像是一棟玻璃牆壁和屋頂的建築，常用於種植如番茄和熱帶花卉。白天陽光照進溫室，溫暖了室內的植物和空氣。當夜晚降溫時，玻璃牆可阻止溫室內部的熱量逸散（白天也會阻止熱量逸散），從而保持室內溫暖，即使在寒冷的冬天，溫室亦保持溫暖。</p>
+                <h3>地球的溫室效應</h3>
+                <p>地球的溫室效應也大致相同，聯合國政府間氣候變化專門委員會(Intergovernmental Panel on Climate Change, IPCC)認為<a href="/know/detail#infolink2" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>2</sup></a>，太陽以短波形式輻射能量，為地球的氣候提供動力，以短波形式輻射能量，主要是可見光或近可見光（如紫外線）。因為地球比太陽的溫度要低得多，故地球輻射的波長也較長，主要為紅外光。到達地球大氣層頂的太陽輻射中，大約有三分之一被直接反射回太空，剩下的三分之二主要被地球表面吸收，只有一部分被大氣吸收。為平衡被吸收的入射能量，地球也必須向太空輻射出等量的能量。因為地球比太陽的溫度要低得多，故地球輻射的波長也較長，主要為紅外光。陸地和海洋釋放的熱輻射中被大氣（包括雲）吸收，然後又被輻射回地球，這就是溫室效應，是地球大氣層的一種物理特性。</p>
+
+                <div class="text-center">
+                    <img src="~/_x/img/know/k1.jpg" alt="溫室效應發生原理" title="太陽以短波形式輻射能量，為地球的氣候提供動力，以短波形式輻射能量，主要是可見光或近可見光（如紫外線）。因為地球比太陽的溫度要低得多，故地球輻射的波長也較長，主要為紅外光。到達地球大氣層頂的太陽輻射中，大約有三分之一被直接反射回太空，剩下的三分之二主要被地球表面吸收，只有一部分被大氣吸收。為平衡被吸收的入射能量，地球也必須向太空輻射出等量的能量。因為地球比太陽的溫度要低得多，故地球輻射的波長也較長，主要為紅外光。陸地和海洋釋放的熱輻射中被大氣（包括雲）吸收，然後又被輻射回地球，這就是溫室效應，是地球大氣層的一種物理特性。" />
+                    <p>圖一、溫室效應發生原理</p>
+                </div>
+                <div class="text-center my-1">
+                    <button class="btn btn-info" onclick="img1()" title="圖片詳細說明">圖片詳細說明</button>
+                    <div id="img1">太陽以短波形式輻射能量，為地球的氣候提供動力，以短波形式輻射能量，主要是可見光或近可見光（如紫外線）。因為地球比太陽的溫度要低得多，故地球輻射的波長也較長，主要為紅外光。到達地球大氣層頂的太陽輻射中，大約有三分之一被直接反射回太空，剩下的三分之二主要被地球表面吸收，只有一部分被大氣吸收。為平衡被吸收的入射能量，地球也必須向太空輻射出等量的能量。因為地球比太陽的溫度要低得多，故地球輻射的波長也較長，主要為紅外光。陸地和海洋釋放的熱輻射中被大氣（包括雲）吸收，然後又被輻射回地球，這就是溫室效應，是地球大氣層的一種物理特性。</div>
+                </div>
+                <h3>溫室效應如何影響地球？</h3>
+                <p>IPCC同時指出<a href="/know/detail#infolink2" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>3</sup></a>，如果沒有自然的溫室效應，地球表面的平均溫度會降到水的冰點以下。沒有地球的自然溫室效應，便不會有現在的生活。但燃燒化石燃料和濫砍濫伐等人類的活動，大大地加強了自然溫室效應，引起全球暖化。</p>
+                <h3>地球的溫室氣體</h3>
+                <p>地球大氣99%以上由氮氣（N<sub>2</sub>）和氧氣（O<sub>2</sub>）組成，含量最高的氣體是氮氣（乾燥大氣中的含量為78%）和氧氣（21%），但是它們幾乎不產生溫室效應。相反的，溫室效應主要來自於那些複雜且含量較低的分子。其中水氣是最重要的溫室氣體，其次是二氧化碳（CO<sub>2</sub>）。大氣中存在少量的甲烷、氧化亞氮、臭氧和其他氣體也會導致溫室效應。大氣中溫室氣體的濃度會受到海洋和生物的影響，其中最重要的一個部分是植物吸收大氣中的CO<sub>2</sub>，然後通過光合作用將其（和水）轉化成碳水化合物儲存起來。另一方面，若人類活動排放更多的二氧化碳（CO<sub>2</sub>）就會增強溫室效應，從而引起全球暖化。</p>
+                <h3>溫室效應反饋機制</h3>
+                <p>IPCC也說明<a href="/know/detail#infolink2" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>4</sup></a>，暖化程度取決於各種反饋機制，例如溫室氣體濃度增加，大氣變暖而大氣中的水氣含量也隨之增加，進而又增強溫室效應。溫室效應的增強又引起進一步的變暖，而水氣含量再接著增加，這是一種不斷自我強化的循環。水氣引起的溫室效應非常強，是同樣單位CO<sub>2</sub>引起溫室效應增強量的兩倍。</p>
+                <p>在潮濕的赤道地區，空氣中的水氣含量高，以致於有很強的溫室效應，在此區域增加少量CO<sub>2</sub>或水氣只有很小的直接影響，但是寒冷乾燥的極地地區，增加極少量的CO<sub>2</sub>或水氣就會產生很大的效應。同樣的，在寒冷乾燥的大氣上層增加少量水氣所產生的影響，比近地面增加同量水氣的影響要大得多。</p>
+                <p>其它重要的反饋機制還有雲。雲能有效地吸收紅外輻射，產生較大的溫室效應，進而使地球增溫。同時雲也能有效地反射太陽輻射使地球降溫。雲的類型、位置、水含量、高度、微粒大小形狀、存續時間等改變均會影響地球的增溫或降溫。</p>
+                <h3>人類如何影響地球溫室效應？ </h3>
+                <p>IPCC認為<a href="/know/detail#infolink2" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>5</sup></a>，在過去的一個世紀裡，汽車、飛機、發電廠、工廠中燃燒大量的煤和石油，排放大量的CO<sub>2</sub>，增強了溫室效應，如果我們繼續按現在程度排放，未來將會變得更加溫暖。大氣中某些氣體可讓短波輻射以可見光形式照射地表，並且吸收來自地表反射的長波輻射，這些可以保留能量的氣體，稱為溫室效應氣體。溫室氣體通過保存一些反射的熱能，使地球適合人類居住。太少的溫室氣體會使地球太冷，同樣太多的溫室氣體會使地球過於溫暖。</p>
+                <p>二氧化碳（CO<sub>2</sub>）、甲烷（CH<sub>4</sub>）、臭氧（O<sub>3</sub>）、氧化亞氮（N<sub>2</sub>O）、氟氯碳化物（CFCs）、氟氯烴（HCFCs）、氫氟碳化物（HFCs）等，若大氣中這些氣體含量增加，則溫室效應即會增強，保存的能量也隨著增加，因而造成全球溫度上升。溫室氣體中，水氣是非常重要的，和天氣系統有密切關係，它隨時間、空間變化很大，受人為影響較小，且平均壽命只有10天左右，以全球及較長尺度來看變化不大。</p>
+                <p>但二氧化碳、甲烷、氧化亞氮、氟氯碳化物（CFCs）、氟氯烴（HCFCs）、氫氟碳化物（HFCs）等生命期長達數10年以上且穩定，自從人類工業革命以來，因經濟活動、產業建設以及化石燃料的使用，已使大氣中溫室氣體的濃度明顯的增加，其中最重要且影響最大的就是二氧化碳濃度的急速增加。</p>
+
+                <h3>是什麼減少了溫室效應對地球的影響？</h3>
+                <p>NASA指出<a href="/know/detail#infolink1" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>6</sup></a>，地球就像一個玻璃溫室，充滿了植物！植物可以幫助地球平衡溫室效應。從陸地上的樹木到海洋中的微小浮游植物的所有植物都能吸收二氧化碳並釋放氧氣。</p>
+                <p>另外，海洋儲存地球上大部分的碳，同時還協助吸收空氣中過量的二氧化碳。但是，海洋吸收大氣中過量二氧化碳，會使海水酸化，可能危害的海洋生物，例如某些貝類更難以生存。此外，溫暖的海水是珊瑚白化死亡的主要原因。</p>
+
+
+                <ul>
+                    資料來源：
+                    <li>[1] [6] <a id="infolink1" href="https://climatekids.nasa.gov/greenhouse-effect/" target="_blank" title="另開視窗(NASA-Greenhouse effect)">NASA-Greenhouse effect</a></li>
+                    <li>[2] [3] [4] [5] <a id="infolink2" href="https://wg1.ipcc.ch/publications/wg1-ar4/faq/wg1_faq-1.3.html" target="_blank" title="另開視窗(IPCC-What is the Greenhouse Effect)">IPCC-What is the Greenhouse Effect</a></li>
+                </ul>*@
+
+            <div class=" text-right my-3">
+                @*判斷是否已經登入*@
+                @if (User.Identity.IsAuthenticated)
+                {
+                    // 判斷登入角色,符合角色則顯示按鈕進入後台
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a class="btn btn-danger text-center" href="~/info/Edit/@ViewBag.id">編輯</a>
+                    }
+
+                }
+            </div>
+        </main>
+        <div class="col-lg-1"></div>
+    </div>
+</div>
+
+<style>
+
+    @@media screen and (min-width:767px) {
+        .col-md-10 {
+             padding-left: 123px;
+        }
+    }
+
+    @@media screen and (max-width:768px) {
+      .col-md-10 {
+                  padding-left: 10px !important;
+        }
+    }
+</style>
+<script>
+    // function showdiv(e) {
+
+    //    $(".imgdetail").hide();
+
+    //     $(e).slideToggle();
+    //}
+
+
+    //$(document).ready(function img1(e) {
+
+    //    $('.text-center button+div').hide();
+    //   $(e).slideToggle(500);
+    //})
+
+    function img1() {
+
+        $("#img1").slideToggle();
+
+    };
+    function img2() {
+
+        $("#img2").slideToggle();
+
+    };
+
+</script>

@@ -1,0 +1,61 @@
+﻿@{
+
+    ViewData["title"] = "總體調適計畫";
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Detail_Sub">因應作為</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Index/溫室氣體減緩策略">氣候變遷調適策略</a></li>
+        <li class="breadcrumb-item ">總體調適計畫</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2 class="h2">@ViewBag.Title</h2>
+            </div>
+            @Html.Raw(ViewBag.Html)
+            @*<div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2>總體調適計畫</h2>
+            </div>
+            <h3 style="visibility:hidden"></h3>
+            <p>
+                依據國發會於103年研擬之「國家氣候變遷調適行動計畫102-106年」，規劃總體調適計畫，包括「建構氣候變遷調適優質基礎制度」、「評估氣候變遷風險與調適規劃」及「推動高風險地區之調適計畫」（如下圖），以此作為政府各部門推動氣候變遷調適工作的核心行動項目。
+            </p>
+            <div class="text-center">
+                <img src="~/_x/img/act/act03_3.jpg" alt="我國總體調適計畫" title="依據「國家氣候變遷調適行動計畫102-106年」規劃總體調適計畫，包括「建構氣候變遷調適優質基礎制度」、「評估氣候變遷風險與調適規劃」及「推動高風險地區之調適計畫」，以此作為政府各部門推動氣候變遷調適工作的核心行動項目。" />
+            </div>
+            <div class="text-center my-1">
+                <button class="btn btn-info m-2" onclick="img1()" title="圖片詳細說明">圖片詳細說明</button>
+                <div id="img1" style="display:none">
+                    依據「國家氣候變遷調適行動計畫102-106年」規劃總體調適計畫，包括「建構氣候變遷調適優質基礎制度」、「評估氣候變遷風險與調適規劃」及「推動高風險地區之調適計畫」，以此作為政府各部門推動氣候變遷調適工作的核心行動項目。
+                </div>
+            </div>*@
+            <div class=" text-right my-3">
+                @*判斷是否已經登入*@
+                @if (User.Identity.IsAuthenticated)
+                {
+                    //判斷登入角色,符合角色則顯示按鈕進入後台
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a class="btn btn-danger text-center" href="~/info/Edit/@ViewBag.id">編輯</a>
+                    }
+                }
+            </div>
+        </main>
+        <div class="col-lg-2">    </div>
+    </div>
+</div>
+
+<script>
+    function img1() {
+        $("#img1").slideToggle();
+
+    };
+
+</script>

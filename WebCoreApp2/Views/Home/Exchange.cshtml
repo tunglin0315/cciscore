@@ -1,0 +1,65 @@
+﻿@*@{
+    string name = "抵換專案";
+    @await Html.PartialAsync("_Nav1", name);
+}
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-8 pt-3 px-4">
+
+            <h2 class="h2">抵換專案</h2>
+
+              <div class="text-center">
+                <img class="mb-3 " style="width:100%; max-width:800px; border-radius:8px;" src="~/_x/img/抵換專案演變歷程-01.png" alt="抵換專案演變歷程" title="抵換專案演變歷程" />
+            </div>
+
+            <h5>溫室氣體減量及管理法</h5>
+
+            <p>
+                「溫室氣體減量及管理法」（以下簡稱溫管法）於民國104年7月1日公布施行，溫管法第三條第十五項明確定抵換專案「溫室氣體排放額度抵換專案（以下簡稱抵換專案）：指為取得抵換用途之排放額度，依中央主管機關認可之減量方法提出計畫書，其計畫書經中央主管機關核准及查驗機構確證，且所有設備、材料、項目及行動均直接與減少排放量或增加碳匯量有關的專案。」；此外，環保署依據溫管法第二十二條第三項規定，於民國104年12月31日訂定發布「溫室氣體抵換專案管理辦法」，以作為推動抵換專案之法源依據。
+            </p>
+            <h6>
+                抵換專案類型：
+            </h6>
+            <p>
+                抵換專案依照申請者資格分為計畫型及方案型，計畫型抵換專案申請資格為專案實際執行者或投資者，而方案型抵換專案申請資格為整合管理專案及分配減量額度之單一權責機關（構）。
+            </p>
+
+            <h6>
+                抵換專案實務作法：
+            </h6>
+            <p>
+                執行抵換專案排放源後所產生的溫室氣體排放量（專案情境），與在照常營運的狀態所產生之溫室氣體排放量（基線情境）相比造成了溫室氣體減量，而此減量績效可向環保署申請認可取得減量額度。欲申請抵換專案減量額度之申請者，應依環保署認可之減量方法提出專案計畫書與查驗機構確證後再向環保署申請註冊，經註冊通過且執行專案後之減量實績經查驗機構查證及環保署審查通過後，可取得減量額度。
+            </p>
+
+        </main>
+        <div  class="col-lg-2">    </div>
+    </div>
+</div>
+@section styles {
+    <style>
+        h5 {
+            font-weight: bold;
+        }
+
+
+        p {
+            text-indent: 2em;
+            font-size: 19px;
+        }
+        h6 {
+            font-size: 19px;
+            font-weight: bold;
+        }
+        /*.ccis_Detail img {
+            width: 70%;
+            max-width: 945px;
+        }*/
+    </style>
+}*@

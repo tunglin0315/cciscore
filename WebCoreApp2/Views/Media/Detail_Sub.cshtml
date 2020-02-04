@@ -1,0 +1,43 @@
+﻿@{
+
+    ViewData["title"] = "宣傳資源";
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item ">宣傳資源</li>
+
+    </ol>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-8 col-lg-8 pt-2" id="content">
+
+            <h2 class="h2 p-md-4" style="border-bottom-style:dashed" >宣傳資源</h2>
+
+            <div class=" list-group list-group-flush py-4" style="width:100%">
+                <a href="~/Media/CarbonTool" class="list-group-item item_odd">碳足跡計算器</a>
+                <a href="~/energystar/index" class="list-group-item item_dou">能源之星</a>
+                <a href="~/Media/DownLoad" class="list-group-item item_odd">檔案下載</a>
+                <a href="~/Media/Movie" class="list-group-item item_dou">相關影音</a>
+                <a href="~/Media/Poster" class="list-group-item item_odd">相關海報</a>
+                <a href="~/Media/Cartoon" class="list-group-item item_dou">氣候變遷漫畫</a>
+
+                <div class="text-center mt-4">
+                    <a href="javascript:history.back();" class="btn btn-outline-info">&equiv;	回上頁</a>
+                </div>
+
+            </div>
+
+        </main>
+
+        <div class="col-lg-2">
+
+        </div>
+
+    </div>
+</div>

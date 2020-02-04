@@ -1,0 +1,306 @@
+﻿<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Detail_Sub">因應作為</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Detail_Sub_Sub">氣候變遷全民行動</a></li>
+        <li class="breadcrumb-item ">低碳永續家園</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 mx-sm-auto col-lg-9 pt-3  ccis_Detail">
+           @* <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">*@
+                <div class="pb-2 mb-3 border-bottom" id="content">
+                    <h2 class="h2">低碳永續家園</h2>
+                </div>
+                <h4>為什麼要發展低碳社區？</h4>
+                <p>在全球積極推動節能減碳的同時，國外的經驗告訴我們，除了個人積極地減碳行動外，若能藉由社區的力量共同推動低碳行為，會有事半功倍的效果。</p>
+                <p>通過研究國際低碳社區訂定的長期減碳計畫，依各環境及發展方向，採用各種單項或全面性低碳措施，包括發展再生能源、實施低碳運輸計畫（提倡步行代替搭車、使用自行車、健全大眾運輸系統、推動電動車等）、推廣低碳建築、加強資源循環等，並改變居民日常生活的行為模式，降低能源的消耗並減少二氧化碳的排放。</p>
+                <p>呼應全球資源永續利用及節能減碳潮流，行政院於民國98年的「第3次全國能源會議」中，提出建構「低碳家園」的具體期程。期望以「低碳示範社區」建構為基礎，並結合民間資源及力量，逐步發展「低碳城市」及「低碳生活圈」，加速達到低碳家園與永續社會之願景。</p>
+                <h4>我國低碳永續家園</h4>
+                @*<p>我國環保署持續補助地方政府，推動低碳永續家園建構工作，至今已有3,983個村里響應參與，其中807個村里積極實踐6大運作機能的低碳行動及調適措施，取得環保署銅、銀級認證肯定。銅、銀級村里中已有半數( 413處)在公共區域採取推動綠屋頂、牆面植生或綠籬等區域降溫措施，透過綠色植物提供遮陽效果、植物層結合空氣產生風障隔熱效果、水分蒸散產生的降溫效果及帶動空氣循環驅逐熱浪，可使牆面降溫5℃~8℃、室內降溫3℃~5℃，節省夏季空調用電10%~25%。依據七面向(環境綠化、低碳建築、節約能源、綠色運輸、資源循環、再生能源及低碳生活)的減碳作法，提供民眾檢視社區環境及建構低碳社區的正確知識，打造「低碳社區」。</p>*@
+
+
+                <div class="row">
+
+                    <div class="col-xs-1 col-md-1"></div>
+
+                    <div class=" col-xs-5 col-md-5">
+
+                        <svg id="TaiwanMap" width="100%" viewBox="0 0 599 790">
+                            <image id="Taiwan2" style="overflow:visible;" width="599" height="790" xlink:href="@Url.Content("/_x/img/act/map/taiwan22.png")"></image>
+                            <g>
+                                <a id="tp_1" xlink:href="javascript:showdiv('tp_1');" xlink:title="台北市">
+                                    <rect x="464" y="8" width="16" height="92" style=""></rect>
+                                </a>
+                            </g>
+                            <g>
+                                <a id="kl_1" xlink:href="javascript:showdiv('kl_1');" xlink:title="基隆市">
+                                    <rect x="487" y="78" width="40" height="35"></rect>
+                                </a>
+                            </g>
+                            <g>
+                                <a id="ty_1" xlink:href="javascript:showdiv('ty_1');" xlink:title="桃園市">
+                                    <rect x="339" y="95" width="80" height="38"></rect>
+                                </a>
+                            </g>
+                            <g>
+                                <a id="ntp_1" xlink:href="javascript:showdiv('ntp_1');" xlink:title="新北市">
+                                    <rect x="434" y="105" width="50" height="55"></rect>
+                                </a>
+                            </g>
+                            <g>
+                                <a id="lj_1" xlink:href="javascript:showdiv('lj_1');" xlink:title="連江縣">
+                                    <rect x="108" y="117" width="53" height="50"></rect>
+                                </a>
+                            </g>
+                            <g>
+                                <a id="hc_1" xlink:href="javascript:showdiv('hc_1');" xlink:title="新竹市">
+                                    <rect x="290" y="135" width="52" height="37"></rect>
+                                </a>
+                            </g>
+                            <g>
+                                <a id="hc_2" xlink:href="javascript:showdiv('hc_2');" xlink:title="新竹縣">
+                                    <rect x="354" y="138" width="61" height="60"></rect>
+                                </a>
+                            </g>
+                            <g>
+                                <a id="km_1" xlink:href="javascript:showdiv('km_1');" xlink:title="金門縣">
+                                    <rect x="27" y="166" width="35" height="48"></rect>
+                                </a>
+                            </g>
+                            <g>
+                                <a id="ml_1" xlink:href="javascript:showdiv('ml_1');" xlink:title="苗栗縣">
+                                    <rect x="281" y="208" width="79" height="38"></rect>
+                                </a>
+                            </g>
+                            <g>
+                                <a id="yl_1" xlink:href="javascript:showdiv('yl_1');" xlink:title="宜蘭縣">
+                                    <rect x="447" y="200" width="65" height="38"></rect>
+                                </a>
+                            </g>
+                            <g>
+                                <a id="tc_1" xlink:href="javascript:showdiv('tc_1');" xlink:title="台中市">
+                                    <rect x="254" y="277" width="85" height="40"></rect>
+                                </a>
+                            </g>
+                            <g>
+                                <a id="ch_1" xlink:href="javascript:showdiv('ch_1');" xlink:title="彰化縣">
+                                    <rect x="212" y="314" width="35" height="50"></rect>
+                                </a>
+                            </g>
+                            <g>
+                                <a id="nt_1" xlink:href="javascript:showdiv('nt_1');" xlink:title="南投縣">
+                                    <rect x="287" y="325" width="109" height="80"></rect>
+                                </a>
+                            </g>
+                            <g>
+                                <a id="hl_1" xlink:href="javascript:showdiv('hl_1');" xlink:title="花蓮縣">
+                                    <rect x="407" y="330" width="70" height="62"></rect>
+                                </a>
+                            </g>
+
+                            <g>
+                                <a id="yli_1" xlink:href="javascript:showdiv('yli_1');" xlink:title="雲林縣">
+                                    <rect x="170" y="385" width="90" height="31"></rect>
+                                </a>
+                            </g>
+                            <g>
+                                <a id="ph_1" xlink:href="javascript:showdiv('ph_1');" xlink:title="澎湖縣">
+                                    <rect x="69" y="431" width="76" height="52"></rect>
+                                </a>
+                            </g>
+                            <g>
+                                <a id="jl_1" xlink:href="javascript:showdiv('jl_1');" xlink:title="嘉義市">
+                                    <rect x="197" y="425" width="52" height="40"></rect>
+                                </a>
+                            </g>
+                            <g>
+                                <a id="jl_2" xlink:href="javascript:showdiv('jl_2');" xlink:title="嘉義縣">
+                                    <rect x="254" y="447" width="57" height="42"></rect>
+                                </a>
+                            </g>
+                            <g>
+                                <a id="tn_1" xlink:href="javascript:showdiv('tn_1');" xlink:title="台南市">
+                                    <rect x="147" y="500" width="85" height="45"></rect>
+                                </a>
+                            </g>
+                            <g>
+                                <a id="ks_1" xlink:href="javascript:showdiv('ks_1');" xlink:title="高雄市">
+                                    <rect x="243" y="518" width="54" height="63"></rect>
+                                </a>
+                            </g>
+
+                            <g>
+                                <a id="tt_1" xlink:href="javascript:showdiv('tt_1');" xlink:title="台東縣">
+                                    <rect x="336" y="540" width="63" height="71"></rect>
+                                </a>
+                            </g>
+
+                            <g>
+                                <a id="pt_1" xlink:href="javascript:showdiv('pt_1');" xlink:title="屏東縣">
+                                    <rect x="292" y="696" width="18" height="94"></rect>
+                                </a>
+                            </g>
+
+                        </svg>
+
+                        @*<img id="Taiwan2" src="~/_x/img/act/map/taiwan22_1.png" style="width:100% " usemap="#mymap" alt="Taiwan" />
+                        <map name="mymap" id="mymap">
+                            <area id="tp_1" tabindex="1" class="area_style" shape="rect" coords="447,8,463,100" alt="台北市" title="台北市" href="javascript:showdiv('tp_1'); " />
+                            <area id="ntp_1" class="area_style" shape="rect" coords="417,105,465,161" alt="新北市" title="新北市" href="javascript:showdiv('ntp_1');" />
+                            <area id="kl_1" class="area_style" shape="rect" coords="470,78,510,117" alt="基隆市" title="基隆市" href="javascript:showdiv('kl_1');" />
+                            <area id="yl_1" class="area_style" shape="rect" coords="430,206,500,241" alt="宜蘭縣" title="宜蘭縣" href="javascript:showdiv('yl_1');" />
+                            <area id="km_1" class="area_style" shape="rect" coords="8,172,37,220" alt="金門縣" title="金門縣" href="javascript:showdiv('km_1');" />
+                            <area id="nt_1" class="area_style" shape="rect" coords="275,330,378,415" alt="南投縣" title="南投縣" href="javascript:showdiv('nt_1');" />
+                            <area id="pt_1" class="area_style" shape="rect" coords="275,696,292,790" alt="屏東縣" title="屏東縣" href="javascript:showdiv('pt_1');" />
+                            <area id="ml_1" class="area_style" shape="rect" coords="264,213,343,251" alt="苗栗縣" title="苗栗縣" href="javascript:showdiv('ml_1');" />
+                            <area id="ty_1" class="area_style" shape="rect" coords="319,95,397,132" alt="桃園市" title="桃園市" href="javascript:showdiv('ty_1');" />
+                            <area id="ks_1" class="area_style" shape="rect" coords="226,522,280,585" alt="高雄市" title="高雄市" href="javascript:showdiv('ks_1');" />
+                            <area id="hl_1" class="area_style" shape="rect" coords="390,333,460,395" alt="花蓮縣" title="花蓮縣" href="javascript:showdiv('hl_1');" />
+                            <area id="lj_1" class="area_style" shape="rect" coords="88,120,137,170" alt="連江縣" title="連江縣" href="javascript:showdiv('lj_1');" />
+                            <area id="yli_1" class="area_style" shape="rect" coords="153,391,240,422" alt="雲林縣" title="雲林縣" href="javascript:showdiv('yli_1');" />
+                            <area id="hc_1" class="area_style" shape="rect" coords="273,135,325,173" alt="新竹市" title="新竹市" href="javascript:showdiv('hc_1');" />
+                            <area id="hc_2" class="area_style" shape="rect" coords="337,143,398,203" alt="新竹縣" title="新竹縣" href="javascript:showdiv('hc_2');" />
+                            <area id="jl_1" class="area_style" shape="rect" coords="180,432,232,472" alt="嘉義市" title="嘉義市" href="javascript:showdiv('jl_1');" />
+                            <area id="jl_2" class="area_style" shape="rect" coords="237,451,290,493" alt="嘉義縣" title="嘉義縣" href="javascript:showdiv('jl_2');" />
+                            <area id="ch_1" class="area_style" shape="rect" coords="195,319,230,370" alt="彰化縣" title="彰化縣" href="javascript:showdiv('ch_1');" />
+                            <area id="tc_1" class="area_style" shape="rect" coords="230,280,315,320" alt="台中市" title="台中市" href="javascript:showdiv('tc_1');" />
+                            <area id="tt_1" class="area_style" shape="rect" coords="319,545,382,616" alt="台東縣" title="台東縣" href="javascript:showdiv('tt_1');" />
+                            <area id="tn_1" class="area_style" shape="rect" coords="130,512,215,557" alt="台南市" title="台南市" href="javascript:showdiv('tn_1');" />
+                            <area id="ph_1" class="area_style" shape="rect" coords="42,435,118,487" alt="澎湖縣" title="澎湖縣" href="javascript:showdiv('ph_1');" />
+
+                        </map>*@
+                    </div>
+
+                    <div id="22Page" class=" col-xs-6 col-md-6 " style="display:flex;align-items:center;justify-content:center; ">
+                        <div class="taiwan">
+                            <img src="~/_x/img/Act/taiwan_2.png" alt="Taiwan" style="width:100%" />
+                            <div class="text-right"><a href="https://lcss.epa.gov.tw/default.aspx" class="btn btn-primary">看更多</a></div>
+                        </div>
+                        @*<div id="tp_1" class="taiwan" style="display:none; width:100%"><img src="~/_x/img/Act/tp_1.png" /> <div class="text-right"><a href="https://lcss.epa.gov.tw/default.aspx" class="btn btn-primary">看更多</a></div> </div>
+                        <div id="newTapipei" class="taiwan" style="display:none; width:100%"><img src="~/_x/img/Act/ntp_1.png" /><div class="text-right"><a href="https://lcss.epa.gov.tw/default.aspx" class="btn btn-primary">看更多</a></div> </div>
+                        <div id="Keelung" class="taiwan" style="display:none; width:100%"><img src="~/_x/img/Act/kl_1.png" /> <div class="text-right"><a href="https://lcss.epa.gov.tw/default.aspx" class="btn btn-primary">看更多</a></div> </div>
+                        <div id="Yilan" class="taiwan" style="display:none; width:100%"><img src="~/_x/img/Act/yl_1.png" /><div class="text-right"><a href="https://lcss.epa.gov.tw/default.aspx" class="btn btn-primary">看更多</a></div> </div>
+                        <div id="Jinmen" class="taiwan" style="display:none; width:100%"><img src="~/_x/img/Act/km_1.png" /> <div class="text-right"><a href="https://lcss.epa.gov.tw/default.aspx" class="btn btn-primary">看更多</a></div> </div>
+                        <div id="Nantou" class="taiwan" style="display:none; width:100%"><img src="~/_x/img/Act/nt_1.png" /> <div class="text-right"><a href="https://lcss.epa.gov.tw/default.aspx" class="btn btn-primary">看更多</a></div> </div>
+                        <div id="Pingtung" class="taiwan" style="display:none; width:100%"><img src="~/_x/img/Act/pt_1.png" /><div class="text-right"><a href="https://lcss.epa.gov.tw/default.aspx" class="btn btn-primary">看更多</a></div> </div>
+                        <div id="Miaoli" class="taiwan" style="display:none; width:100%"><img src="~/_x/img/Act/ml_1.png" /> <div class="text-right"><a href="https://lcss.epa.gov.tw/default.aspx" class="btn btn-primary">看更多</a></div> </div>
+                        <div id="Taoyuan" class="taiwan" style="display:none; width:100%"><img src="~/_x/img/Act/ty_1.png" /><div class="text-right"><a href="https://lcss.epa.gov.tw/default.aspx" class="btn btn-primary">看更多</a></div> </div>
+                        <div id="Kaohsiung" class="taiwan" style="display:none; width:100%"><img src="~/_x/img/Act/ks_1.png" /><div class="text-right"><a href="https://lcss.epa.gov.tw/default.aspx" class="btn btn-primary">看更多</a></div> </div>
+                        <div id="Hualien" class="taiwan" style="display:none; width:100%"><img src="~/_x/img/Act/hl_1.png" />  <div class="text-right"><a href="https://lcss.epa.gov.tw/default.aspx" class="btn btn-primary">看更多</a></div> </div>
+                        <div id="Lianjiang" class="taiwan" style="display:none; width:100%"><img src="~/_x/img/Act/lj_1.png" /> <div class="text-right"><a href="https://lcss.epa.gov.tw/default.aspx" class="btn btn-primary">看更多</a></div> </div>
+                        <div id="Yunlin" class="taiwan" style="display:none; width:100%"><img src="~/_x/img/Act/yli_1.png" /> <div class="text-right"><a href="https://lcss.epa.gov.tw/default.aspx" class="btn btn-primary">看更多</a></div> </div>
+                        <div id="Hsinchu" class="taiwan" style="display:none; width:100%"><img src="~/_x/img/Act/hc_1.png" /> <div class="text-right"><a href="https://lcss.epa.gov.tw/default.aspx" class="btn btn-primary">看更多</a></div> </div>
+                        <div id="Hsinchu_1" class="taiwan" style="display:none; width:100%"><img src="~/_x/img/Act/hc_2.png" /> <div class="text-right"><a href="https://lcss.epa.gov.tw/default.aspx" class="btn btn-primary">看更多</a></div> </div>
+                        <div id="Chiayi" class="taiwan" style="display:none; width:100%"><img src="~/_x/img/Act/jl_1.png" /> <div class="text-right"><a href="https://lcss.epa.gov.tw/default.aspx" class="btn btn-primary">看更多</a></div> </div>
+                        <div id="Chiayi_1" class="taiwan" style="display:none; width:100%"><img src="~/_x/img/Act/jl_2.png" /> <div class="text-right"><a href="https://lcss.epa.gov.tw/default.aspx" class="btn btn-primary">看更多</a></div> </div>
+                        <div id="Changhua" class="taiwan" style="display:none; width:100%"><img src="~/_x/img/Act/ch_1.png" /> <div class="text-right"><a href="https://lcss.epa.gov.tw/default.aspx" class="btn btn-primary">看更多</a></div> </div>
+                        <div id="Taichung" class="taiwan" style="display:none; width:100%"><img src="~/_x/img/Act/tc_1.png" /> <div class="text-right"><a href="https://lcss.epa.gov.tw/default.aspx" class="btn btn-primary">看更多</a></div> </div>
+                        <div id="Taitung" class="taiwan" style="display:none; width:100%"><img src="~/_x/img/Act/tt_1.png" />  <div class="text-right"><a href="https://lcss.epa.gov.tw/default.aspx" class="btn btn-primary">看更多</a></div> </div>
+                        <div id="Tainan" class="taiwan" style="display:none; width:100%"><img src="~/_x/img/Act/tn_1.png" /> <div class="text-right"><a href="https://lcss.epa.gov.tw/default.aspx" class="btn btn-primary">看更多</a></div> </div>
+                        <div id="Penghu" class="taiwan" style="display:none; width:100%"><img src="~/_x/img/Act/ph_1.png" /> <div class="text-right"><a href="https://lcss.epa.gov.tw/default.aspx" class="btn btn-primary">看更多</a></div> </div>*@
+
+                    </div>
+
+                </div>
+
+
+                <p>我國環保署持續補助地方政府，推動低碳永續家園建構工作，至今已有4,245個村里響應參與，其中879個村里積極實踐6大運作機能的低碳行動及調適措施，取得環保署銅、銀級認證肯定。銅、銀級村里中已有半數( 413處)在公共區域採取推動綠屋頂、牆面植生或綠籬等區域降溫措施，透過綠色植物提供遮陽效果、植物層結合空氣產生風障隔熱效果、水分蒸散產生的降溫效果及帶動空氣循環驅逐熱浪，可使牆面降溫5℃~8℃、室內降溫3℃~5℃，節省夏季空調用電10%~25%。依據七面向(環境綠化、低碳建築、節約能源、綠色運輸、資源循環、再生能源及低碳生活)的減碳作法，提供民眾檢視社區環境及建構低碳社區的正確知識，打造「低碳社區」。</p>
+                <h4>低碳做法</h4>
+                <p>從養成良好生活習慣開始，先節流、再開源，最終的目標是創造更舒適、健康且有利環境的低碳家園，主要有三個步驟：</p>
+                <ol>
+                    <li>培養低碳生活習慣，落實節能管理。</li>
+                    <li>提升能源使用效率，改善硬體設備。</li>
+                    <li>利用再生能源發電，取代傳統燃料。</li>
+                </ol>
+
+                <p>更多資訊請參閱<a href="https://lcss.epa.gov.tw/default.aspx">低碳永續家園</a></p>
+            </main>
+            <div class="col-lg-1"></div>
+    </div>
+</div>
+@section styles {
+
+    <style>
+
+
+        h4 {
+            font-weight: bold;
+            color: #129696
+        }
+
+            h4 ~ p {
+                margin-left: 45px;
+            }
+
+        p + ol {
+            font-size: 19px;
+            margin-left: 85px;
+        }
+
+
+        #TaiwanMap rect {
+            fill: #1ea5b0;
+        }
+
+        #TaiwanMap rect {
+            opacity: 0;
+        }
+
+
+        #TaiwanMap a:focus, #TaiwanMap a:hover {
+            cursor: pointer;
+        }
+        /*.ccis_Detail img {
+            width: 85%;
+            max-width: 700px;
+            border-radius: 5px;
+        }*/
+
+        /*area {
+            outline: none;
+        }*/
+    </style>
+}
+@section scripts {
+    @*<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.js"></script>*@
+    <script>
+
+
+        $("g a").hover(function () {
+
+            var id = $(this).attr("id")
+            var d = "/_x/img/act/map/";
+            var h = $("#Taiwan2").attr("xlink:href", d + id + ".png");
+
+        })
+
+        $("g a").focus(function () {
+            var id = $(this).attr("id")
+            $("#Taiwan2").attr("xlink:href", "/_x/img/act/map/" + id + ".png");
+
+        })
+
+        function showdiv(e) {
+
+            $("#Taiwan2").attr("src", "/_x/img/act/map/" + e + ".png");
+            $("#22Page img").attr("src", "/_x/img/act/" + e + ".png");
+        }
+
+                                        //function showdiv(e) {
+                                        //    var n = $('#22Page div').$(this).attr('id');
+                                        //    alert(n);
+                                        //    var changeimg = $('#Taiwan').attr('src','/_x/img/act/taiwan_taipei.png')
+
+                                        //    $(".taiwan").hide();
+
+                                        //    //$(e).fadeToggle("slow");
+
+                                        //    $(e).fadeToggle("slow");
+                                        //}
+    </script>
+}

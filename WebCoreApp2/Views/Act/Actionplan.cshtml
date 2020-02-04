@@ -1,0 +1,144 @@
+﻿<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png"  alt=""  title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Detail_Sub">因應作為</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Index/溫室氣體減緩策略">溫室氣體減緩策略</a></li>
+        <li class="breadcrumb-item ">六大部門溫管行動方案</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2>六大部門溫管行動方案</h2>
+             </div>
+            
+                    <h5>
+                        擬訂國家減碳政策，六大部門共同承擔
+                    </h5>
+                    <p>
+                        溫室氣體減量工作需要長期投入且為跨部會共同推動工作，其中政府推動能源轉型至為關鍵，以新節電運動抑制能源需求亦不可或缺，為落實減碳目標，政府同步端出減量配套方案及具體措施。107年10月3日核定經濟部、交通部、內政部、行政院農業委員會及本署等陳報能源、製造、運輸、住商、農業及環境等六大部門「溫室氣體排放管制行動方案」（以下簡稱行動方案），將由六大部門共同承擔減碳責任，持續整合跨部會量能，滾動檢討以逐步精進溫室氣體排放減量工作。
+
+                    </p>
+                    <div id="ghg_info" alt="六大部門溫管行動方案">
+                        <div id="ghg_info7">
+                            六大部門溫管行動方案
+                        </div>
+                        <div id="ghg_info1"><a href="https://www.epa.gov.tw/ghgact/68CD0D4FE9D57F49" title="另開新視窗" target="_blank">能源部門</a></div>
+                        <div id="ghg_info2"><a href="https://www.epa.gov.tw/ghgact/619988F38347E91E" title="另開新視窗" target="_blank">製造部門</a></div>
+                        <div id="ghg_info3"><a href="https://www.epa.gov.tw/ghgact/BF698695CF8C04FE" title="另開新視窗" target="_blank">運輸部門</a></div>
+                        <div id="ghg_info4"><a href="https://www.epa.gov.tw/ghgact/4E3259F94887F9E1" title="另開新視窗" target="_blank">住商部門</a></div>
+                        <div id="ghg_info5"><a href="https://www.epa.gov.tw/ghgact/43890392EE8095BC" title="另開新視窗" target="_blank">環境部門</a></div>
+                        <div id="ghg_info6"><a href="https://www.epa.gov.tw/ghgact/2575AED135A13DB2" title="另開新視窗" target="_blank">農業部門</a></div>
+                    </div>
+
+
+</main>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+@section styles {
+    <style>
+        h5 {
+            font-weight: bold;
+        }
+
+
+        p {
+            text-indent: 2em;
+            font-size: 19px;
+        }
+
+
+        @@media (max-width: 1199px) {
+            #ghg_info > div {
+                color: #856404;
+                background-color: #fff3cd;
+                border-color: #ffeeba;
+                padding: .75rem 1.25rem;
+                border: 1px solid #8080801a;
+                border-radius: .25rem;
+                margin: 1rem;
+            }
+
+            #ghg_info > #ghg_info7 {
+                font-size: 22px;
+                color: #1f76c8;
+            }
+        }
+
+
+
+
+        @@media (min-width: 1200px) {
+            #ghg_info {
+                background-image: url(@Url.Content("~/_x/img/ghg/ghg_bg6.jpg"));
+                background-repeat: no-repeat;
+                position: relative;
+                background-size: 100%;
+                width: 1000px;
+                /*height: 717px;*/
+                height: 600px;
+                border-radius: 15px;
+
+            }
+
+                #ghg_info > div {
+                    position: absolute;
+                    text-align: center;
+                }
+
+            #ghg_info1 {
+                left: 240px;
+                top: 220px;
+                font-size: 22px;
+            }
+
+            #ghg_info2 {
+                left: 466px;
+                top: 220px;
+                font-size: 22px;
+            }
+
+            #ghg_info3 {
+                left: 688px;
+                top: 220px;
+                font-size: 22px;
+            }
+
+            #ghg_info4 {
+                left: 188px;
+                top: 345px;
+                width: 190px;
+                font-size: 22px;
+            }
+
+            #ghg_info5 {
+                left: 410px;
+                top: 345px;
+                width: 200px;
+                font-size: 22px;
+            }
+
+            #ghg_info6 {
+                left: 636px;
+                top: 345px;
+                width: 200px;
+                font-size: 22px;
+            }
+
+            #ghg_info7 {
+                left: 290px;
+                top: 100px;
+                width: 450px;
+                font-size: 32px;
+                color: #1f76c8;
+            }
+        }
+
+    </style>
+}

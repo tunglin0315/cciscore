@@ -1,0 +1,128 @@
+﻿@{
+    string name = ViewData["name"].ToString();
+    @*@await Html.PartialAsync("_Nav1", "溫室氣體排放>" + ViewData["name"]);*@
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/ghg/Index/溫室氣體排放清冊">溫室氣體排放</a></li>
+        <li class="breadcrumb-item ">@ViewBag.Title</li>
+
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu", ViewData["name"])
+        }
+        <main role="main" class="col-md-10 mx-sm-auto col-lg-9 pt-3  ccis_Detail">
+            @*  <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">*@
+            @*@if (name.Equals("溫室氣體排放") || name.Equals("溫室氣體排放統計"))
+                {
+                    @await Html.PartialAsync("_D1");
+                }*@
+
+            @if (name.Equals("溫室氣體排放清冊"))
+            {
+                @await Html.PartialAsync("_D1");
+            }
+
+        </main>
+        <div class="col-lg-1"></div>
+    </div>
+</div>
+
+@section styles {
+    <style>
+        @@media (max-width: 1199px) {
+            #ghg_info > div {
+                color: #856404;
+                background-color: #fff3cd;
+                border-color: #ffeeba;
+                padding: .75rem 1.25rem;
+                border: 1px solid #8080801a;
+                border-radius: .25rem;
+                margin: 1rem;
+            }
+        }
+
+
+        @@media (min-width: 1200px) {
+            #ghg_info {
+                background-image: url('../../_x/img/ghg/ghg_bg5.jpg');
+                background-repeat: no-repeat;
+                position: relative;
+                background-size: 100%;
+                width: 1000px;
+                height: 600px;
+            }
+
+                #ghg_info > div {
+                    position: absolute;
+                    text-align: center;
+                }
+
+            #ghg_info1 {
+                left: 240px;
+                top: 220px
+            }
+
+            #ghg_info2 {
+                left: 470px;
+                top: 220px
+            }
+
+            #ghg_info3 {
+                left: 685px;
+                top: 220px
+            }
+
+            #ghg_info4 {
+                left: 300px;
+                top: 350px;
+                width: 190px;
+                font-size: 16px;
+            }
+
+            #ghg_info5 {
+                left: 520px;
+                top: 350px;
+                width: 200px;
+                font-size: 16px;
+            }
+
+            #ghg_info6 {
+                left: 290px;
+                top: 100px;
+                width: 450px;
+                font-size: 32px;
+                color: #1f76c8;
+            }
+        }
+
+        /*h5 {
+            font-weight: bold;
+        }
+
+        h4 {
+            font-weight: bold;
+            color: #129696;
+        }
+        h4~p{
+            margin-left:45px;
+        }*/
+        /*.ccis_Detail a img{
+            width:80%;
+        }*/
+
+        /*.ccis_Detail img {
+            min-width: 545px;
+        }*/
+        /*p {
+            text-indent: 2em;
+            font-size: 19px;
+        }*/
+    </style>
+}
+
+

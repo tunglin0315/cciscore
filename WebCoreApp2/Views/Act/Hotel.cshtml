@@ -1,0 +1,217 @@
+﻿<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png"  alt=""  title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Detail_Sub">因應作為</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Detail_Sub_Sub">氣候變遷全民行動</a></li>
+        <li class="breadcrumb-item ">環保旅店</li>
+
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class=" mr-auto col-lg-9 col-lg-9 pt-3 ">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+                <div class="col-8" id="content">
+                    <h2 class="h2">環保旅店</h2>
+                </div>
+                <div class="col-4" id="display_desktop_select">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            請選擇
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right rounded">
+                            <a class="dropdown-item" href="~/act/Ten">減碳十大撇步</a>
+                            <a class="dropdown-item" href="~/act/Hotel">環保旅店</a>
+                            <a class="dropdown-item" href="~/act/GreenShop">綠色採購</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+         
+            <div class="container-fluid">
+
+                <div class="row hotelg1">
+                    <div class="col-lg-3  mb-3">
+                        <div id="hotel3">
+                           
+                                <button class="btn hotel_tit" aria-label = "點擊後可以顯示或隱藏該按鈕的詳細內容" style="font-size:18px; font-family:'Microsoft JhengHei UI';"><strong>1.什麼是環保旅店？</strong></button>
+                                @*<a href="#"><img alt="1.什麼是環保旅店？" src="~/_x/img/hotel/title01.png" /></a>*@
+                       
+                            <div class="infoarea" style="display:none">
+                                以環境保護為基本前提，可再回收、再利用、節約資源的永續發展為經營主軸，提供遊客一個舒適、自然、健康、安全的住宿服務措施。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5  mb-3">
+                        <div id="hotel4">
+                            
+                                <button class="btn Ten_tit hotel_tit" style="font-size:18px; font-family:'Microsoft JhengHei UI';"><strong>2.環保旅店的目的？</strong></button>
+                                @*<a href="#"><img alt="2.環保旅店的目的？" src="~/_x/img/hotel/title02.png" /></a>*@
+                        
+                            <div class="infoarea" style="display:none">
+                                藉由有效進行環境管理，可使經營者自身可達到節省成本、減少資源浪費的益處，更可降低旅館業對環境所帶來的衝擊。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  mb-3">
+                        <div id="hotel5">
+                         
+                                <button class="btn hotel_tit" aria-label = "點擊後內容為:旅館業者上網登記申請，由環保署依照「旅館業環保標章規格標準」審查，通過的業者將可取得環保標章使用權，成為我國「環保旅店」，(Green Hotel)" style="font-size:18px; font-family:'Microsoft JhengHei UI';"><strong>3.如何辨別環保旅店？</strong></button>
+                                @*<a href="#"><img alt="3.如何辨別環保旅店？" src="~/_x/img/hotel/title03.png" /></a>*@
+                         
+                            <div class="infoarea" style="display:none">
+                                旅館業者上網登記申請，由環保署依照「旅館業環保標章規格標準」審查，通過的業者將可取得環保標章使用權，成為我國「環保旅店」，(Green Hotel)。
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row hotelg2">
+                  
+
+
+                    <div class="col-lg-6  mb-3">
+                        <div id="hotel1">
+                           
+                                <button class="btn hotel_tit" style="font-size:18px; font-family:'Microsoft JhengHei UI';"><strong>4.環保旅店哪裡環保？</strong></button>
+                                @*<a href="#"><img alt="4.環保旅店哪裡環保？" src="~/_x/img/hotel/title04.png" /></a>*@
+                          
+                            <div class="infoarea" style="display:none">
+                                環保署初步對環保旅店的定義以顯而易見的廢棄物減量為主，包括飯店是否推動減少床單、減少毛巾更換頻率、少提供牙膏、牙刷等拋棄式盥洗用具、做資源回收等。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6  mb-3">
+                        <div id="hotel2">
+                            
+                                <button class="btn hotel_tit" style="font-size:18px; font-family:'Microsoft JhengHei UI';"><strong>5.想知道更多？</strong></button>
+                                @*<a href="#"><img alt="5.想知道更多？" src="~/_x/img/hotel/title05.png" /></a>*@
+                          
+                            <div class="infoarea" style="display:none">
+                                如果想知道更多關於環保旅店的知識和訊息，歡迎拜訪：
+                                <div><a href='https://greenliving.epa.gov.tw/Public' target="_blank" title="另開視窗">環境保護署綠色生活資訊網</a></div>
+                                <a href='http://www.greenhotels.com/' target="_blank" title="另開視窗">美國環保旅店(Green Hotels)</a>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+           </div>
+       
+        </main>
+    </div>
+</div>
+@section styles {
+    <style>
+        .hotelg1 div, .hotelg2 div {
+            /*background-color: aqua;*/
+        }
+
+        #hotel1, #hotel2 {
+            height: 317px;
+          
+            padding: 15px;
+        }
+
+        #hotel3, #hotel4, #hotel5 {
+            height: 353px;
+           
+            padding: 15px;
+        }
+
+        #hotel1 {
+            background-image: url('../_x/img/hotel/hotelBG1.jpg');
+            /*background-size: auto 100%;
+            background-position: left center;*/
+            width: 100%;
+            height: 0;
+            padding-bottom: 55.4%;
+            background-size:auto 100%;
+            
+        }
+
+        #hotel2 {
+            background-image: url('../_x/img/hotel/hotelBG2.jpg');
+            /*background-size: auto 100%;
+            background-position: left bottom;*/
+            width: 100%;
+            height: 0;
+            padding-bottom: 55.4%;
+            background-size: auto 100%;
+        }
+
+        #hotel3 {
+            background-image: url('../_x/img/hotel/hotelBG3.jpg');
+            /*background-size: auto 100%;
+            background-position: left bottom;*/
+            width: 100%;
+            height: 0;
+            padding-bottom: 100.4%;
+            background-size: auto 100%;
+        }
+
+        #hotel4 {
+            background-image: url('../_x/img/hotel/hotelBG4.jpg');
+            /*background-size: auto 100%;
+            background-position: right bottom*/;
+            width: 100%;
+            height: 0;
+            padding-bottom: 58.4%;
+            background-size: auto 100%;
+        }
+
+        #hotel5 {
+            background-image: url('../_x/img/hotel/hotelBG5.jpg');
+            /*background-size: auto 100%;
+            background-position: left center;*/
+            /*min-height: 180px;*/
+            width: 100%;
+            height: 0;
+            padding-bottom: 73.4%;
+            background-size: auto 100%;
+        }
+
+        .hotel_tit:hover {
+            cursor:pointer;              
+        }
+
+        .infoarea {
+            margin: 1px;
+            padding: 3px;
+            background-color: rgba(255, 255, 255, 0.7);
+             border-radius: 10px;
+        }
+        .btn-secondary, .hotel_tit {
+            margin-top: 2px;
+            margin-left: 2px;
+            font-size: 20px;
+            font-family: 'Microsoft JhengHei UI';
+            color: #fff;
+            background-color: #2a947e;
+            border-color: #2a947e;
+        }
+        @@media only screen and (min-width: 1200px) {
+
+            #display_desktop_select {
+                display: none;
+            }
+   
+        }
+
+    </style>
+}
+
+@section scripts {
+    <script type="text/javascript">
+        $(function () {
+            $(".hotel_tit").click(function () {
+                var _e = $(this).next();
+                $(_e).toggle("slow");
+            });
+        });
+    </script>
+}

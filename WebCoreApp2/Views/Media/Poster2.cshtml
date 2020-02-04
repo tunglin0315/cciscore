@@ -1,0 +1,327 @@
+﻿@model IEnumerable<Poster>
+@{
+
+    ViewData["title"] = "相關海報_低碳生活";
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/media/Detail_Sub">宣傳資源</a></li>
+        <li class="breadcrumb-item "><a href="~/media/Poster">相關海報</a></li>
+        <li class="breadcrumb-item ">低碳生活</li>
+
+    </ol>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        @await Html.PartialAsync("_Menu")
+        <main role="main" class="col-md-10 mx-sm-auto col-lg-9 pt-3  ">
+        @*    <main role="main" class="col-md-10 ml-sm-auto col-lg-10 pt-3 px-4">*@
+                <div class="pb-2 mb-3 border-bottom" id="content">
+                    <h2 class="h2">氣候變遷相關海報</h2>
+                </div>
+                <div class="row">
+                    @*<div class="col-lg-10 ">*@
+                    <div class="row poster">
+
+                        @foreach (Poster item in Model)
+                        {
+                            @if (item.IsLow)
+                            {
+                                <div class="col-lg-3 col-md-4 mb-5">
+                                    <div>
+                                        <a href="@Url.Content(@item.Href)" title="另開新視窗" target="_blank"> <img src="@Url.Content(item.ImgPath)" alt="@item.Alt" title="@item.Title" /></a>
+                                        <h3 class="text-center">
+                                            @item.Alt
+                                        </h3>
+                                        <div class="text-center">
+                                            @if (item.IsLow)
+                                            {
+                                                <a href="~/media/Poster2" class="badge badge-pill badge-primary low">
+                                                    低碳生活
+                                                </a>}
+                                            @if (item.IsLiving)
+                                            {
+                                                <a href="~/media/Poster3" class="badge badge-pill badge-primary">
+                                                    住商部門
+                                                </a>}
+                                            @if (item.IsOffice)
+                                            {
+                                                <a href="~/media/Poster4" class="badge badge-pill badge-primary office">
+                                                    辦公相關
+                                                </a>}
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                        @*<div class="col-lg-3 col-md-4 mb-5">
+                             <div>
+                                 <a href="~/OtherFile/1.住宅部門溫室氣體排放計量手冊.pdf" title="另開新視窗"  target="_blank"><img src="~/_x/img/poster/p101.png" alt="住宅部門溫室氣體排放計量手冊" title="住宅部門溫室氣體排放計量手冊" /></a>
+                                 <h5 class="text-center">
+                                     住宅部門溫室氣體排放計量手冊
+                                 </h5>
+                                 <div class="text-center">
+                                     <a href="~/media/Poster2" class="badge badge-pill badge-primary low">
+                                         低碳生活
+                                     </a>
+                                     <a href="~/media/Poster3" class="badge badge-pill badge-primary">
+                                         住商部門
+                                     </a>
+                                 </div>
+                             </div>
+                         </div>
+
+                         <div class="col-lg-3 col-md-4 mb-5">
+                             <div>
+                                 <a href="~/OtherFile/2.節電新生活運動.jpg" title="另開新視窗"  target="_blank"> <img src="~/_x/img/poster/p102.png" alt="節能新生活運動" title="節能新生活運動" /></a>
+                                 <h5 class="text-center">
+                                     節能新生活運動
+                                 </h5>
+                                 <div class="text-center">
+                                     <a href="~/media/Poster2" class="badge badge-pill badge-primary low">
+                                         低碳生活
+                                     </a>
+                                     <a href="~/media/Poster3" class="badge badge-pill badge-primary">
+                                         住商部門
+                                     </a>
+                                     <a href="~/media/Poster4" class="badge badge-pill badge-primary office">
+                                         辦公相關
+                                     </a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-3 col-md-4 mb-5">
+                             <div>
+                                 <a href="~/OtherFile/3.家庭節約能源寶典.pdf" title="另開新視窗"  target="_blank"><img src="~/_x/img/poster/p103.png" alt="家庭節約能源寶典" title="家庭節約能源寶典" /></a>
+                                 <h5 class="text-center">家庭節約能源寶典</h5>
+                                 <div class="text-center">
+                                     <a href="~/media/Poster2" class="badge badge-pill badge-primary low">
+                                         低碳生活
+                                     </a>
+                                     <a href="~/media/Poster3" class="badge badge-pill badge-primary">
+                                         住商部門
+                                     </a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-3 col-md-4 mb-5">
+                             <div>
+                                 <a href="~/OtherFile/4.節能減碳生活小撇步.pdf" title="另開新視窗"  target="_blank"><img src="~/_x/img/poster/p104.png" alt="節能減碳生活小撇步" title="節能減碳生活小撇步" /></a>
+                                 <h5 class="text-center">節能減碳生活小撇步</h5>
+                                 <div class="text-center">
+                                     <a href="~/media/Poster2" class="badge badge-pill badge-primary low">
+                                         低碳生活
+                                     </a>
+                                 </div>
+                             </div>
+                         </div>
+
+                         <div class="col-lg-3 col-md-4 mb-5">
+                             <div>
+                                 <a href="~/OtherFile/5.家庭節約能源手冊.pdf" title="另開新視窗"  target="_blank"><img src="~/_x/img/poster/p105.png" alt="家庭節約能源手冊" title="家庭節約能源手冊" /></a>
+                                 <h5 class="text-center">家庭節約能源手冊</h5>
+                                 <div class="text-center">
+                                     <a href="~/media/Poster2" class="badge badge-pill badge-primary low">
+                                         低碳生活
+                                     </a>
+                                     <a href="~/media/Poster3" class="badge badge-pill badge-primary">
+                                         住商部門
+                                     </a>
+                                 </div>
+                             </div>
+                         </div>
+
+                         <div class="col-lg-3 col-md-4 mb-5">
+                             <div>
+                                 <a href="~/OtherFile/6.從1開始 全民節電行動.JPG" title="另開新視窗"  target="_blank"><img src="~/_x/img/poster/p106.png" alt="從1開始全民節電行動" title="從1開始全民節電行動" /></a>
+                                 <h5 class="text-center">從1開始全民節電行動</h5>
+                                 <div class="text-center">
+                                     <a href="~/media/Poster2" class="badge badge-pill badge-primary low">
+                                         低碳生活
+                                     </a>
+                                     <a href="~/media/Poster3" class="badge badge-pill badge-primary">
+                                         住商部門
+                                     </a>
+                                     <a href="~/media/Poster4" class="badge badge-pill badge-primary office">
+                                         辦公相關
+                                     </a>
+                                 </div>
+                             </div>
+                         </div>
+
+                         <div class="col-lg-3 col-md-4 mb-5">
+                             <div>
+                                 <a href="~/OtherFile/7.低碳生活資訊手冊.pdf" title="另開新視窗"  target="_blank"><img src="~/_x/img/poster/p107.png" alt="低碳生活資訊" title="低碳生活資訊" /></a>
+                                 <h5 class="text-center">低碳生活資訊</h5>
+                                 <div class="text-center">
+                                     <a href="~/media/Poster2" class="badge badge-pill badge-primary low">
+                                         低碳生活
+                                     </a>
+                                 </div>
+                             </div>
+                         </div>
+
+                        <div class="col-lg-3 col-md-4 mb-5">
+                             <div>
+                                 <a href="~/OtherFile/9.6R綠生活.jpg" title="另開新視窗"  target="_blank"><img src="~/_x/img/poster/p109.png" alt="6R綠生活" title="6R綠生活" /></a>
+                                 <h5 class="text-center">6R綠生活</h5>
+                                 <div class="text-center">
+                                     <a href="~/media/Poster2" class="badge badge-pill badge-primary low">
+                                         低碳生活
+                                     </a>
+                                 </div>
+                             </div>
+                         </div>
+
+                         <div class="col-lg-3 col-md-4 mb-5">
+                             <div>
+                                 <a href="~/OtherFile/10.校園節能123減碳大家一起來.jpg" title="另開新視窗"  target="_blank"><img src="~/_x/img/poster/p110.png" alt="校園節能123" title="校園節能123" /></a>
+                                 <h5 class="text-center">校園節能123</h5>
+                                 <div class="text-center">
+                                     <a href="~/media/Poster2" class="badge badge-pill badge-primary low">
+                                         低碳生活
+                                     </a>
+                                     <a href="~/media/Poster3" class="badge badge-pill badge-primary">
+                                         住商部門
+                                     </a>
+                                     <a href="~/media/Poster4" class="badge badge-pill badge-primary office">
+                                         辦公相關
+                                     </a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-3 col-md-4 mb-5">
+                             <div>
+                                 <a href="~/OtherFile/11.愛地球關我們的事(北極熊搬家篇).jpg" title="另開新視窗"  target="_blank"><img src="~/_x/img/poster/p111.png" alt="愛地球關我們的事" title="愛地球關我們的事" /></a>
+                                 <h5 class="text-center">愛地球關我們的事</h5>
+                                 <div class="text-center">
+                                     <a href="~/media/Poster2" class="badge badge-pill badge-primary low">
+                                         低碳生活
+                                     </a>
+                                     <a href="~/media/Poster3" class="badge badge-pill badge-primary">
+                                         住商部門
+                                     </a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-3 col-md-4 mb-5">
+                             <div>
+                                 <a href="~/OtherFile/12.尖峰時刻 聰明用電.pdf" title="另開新視窗"  target="_blank"><img src="~/_x/img/poster/p112.png" alt="尖峰時刻聰明用電" title="尖峰時刻聰明用電" /></a>
+                                 <h5 class="text-center">尖峰時刻聰明用電</h5>
+                                 <div class="text-center">
+                                     <a href="~/media/Poster2" class="badge badge-pill badge-primary low">
+                                         低碳生活
+                                     </a>
+                                     <a href="~/media/Poster3" class="badge badge-pill badge-primary">
+                                         住商部門
+                                     </a>
+                                     <a href="~/media/Poster4" class="badge badge-pill badge-primary office">
+                                         辦公相關
+                                     </a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-3 col-md-4 mb-5">
+                             <div>
+                                 <a href="~/OtherFile/13.生活節能減碳小撇步(隨手關燈).pdf" title="另開新視窗"  target="_blank"><img src="~/_x/img/poster/p113.png" alt="生活節能小撇步" title="生活節能小撇步" /></a>
+                                 <h5 class="text-center">生活節能小撇步</h5>
+                                 <div class="text-center">
+                                     <a href="~/media/Poster2" class="badge badge-pill badge-primary low">
+                                         低碳生活
+                                     </a>
+                                     <a href="~/media/Poster3" class="badge badge-pill badge-primary">
+                                         住商部門
+                                     </a>
+                                     <a href="~/media/Poster4" class="badge badge-pill badge-primary office">
+                                         辦公相關
+                                     </a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-3 col-md-4 mb-5">
+                             <div>
+                                 <a href="~/OtherFile/14.節電汰舊換新.jpg" title="另開新視窗"  target="_blank"><img src="~/_x/img/poster/p114.png" alt="家電汰舊換新" title="家電汰舊換新" /></a>
+                                 <h5 class="text-center">家電汰舊換新</h5>
+                                 <div class="text-center">
+                                     <a href="~/media/Poster2" class="badge badge-pill badge-primary low">
+                                         低碳生活
+                                     </a>
+                                     <a href="~/media/Poster3" class="badge badge-pill badge-primary">
+                                         住商部門
+                                     </a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-3 col-md-4 mb-5">
+                             <div>
+                                 <a href="~/OtherFile/15.讓室內維持永遠的春天.pdf" title="另開新視窗"  target="_blank"><img src="~/_x/img/poster/p115.png" alt="讓室內維持永遠的春天" title="讓室內維持永遠的春天" /></a>
+                                 <h5 class="text-center">讓室內維持永遠的春天</h5>
+                                 <div class="text-center">
+                                     <a href="~/media/Poster2" class="badge badge-pill badge-primary low">
+                                         低碳生活
+                                     </a>
+                                     <a href="~/media/Poster3" class="badge badge-pill badge-primary">
+                                         住商部門
+                                     </a>
+                                     <a href="~/media/Poster4" class="badge badge-pill badge-primary office">
+                                         辦公相關
+                                     </a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-3 col-md-4 mb-5">
+                             <div>
+                                 <a href="~/OtherFile/16.共同來節水 轉動水資源.jpg" title="另開新視窗"  target="_blank"><img src="~/_x/img/poster/p116.png" alt="共同來節水，轉動水資源" title="共同來節水，轉動水資源" /></a>
+                                 <h5 class="text-center">共同來節水，轉動水資源</h5>
+                                 <div class="text-center">
+                                     <a href="~/media/Poster2" class="badge badge-pill badge-primary low">
+                                         低碳生活
+                                     </a>
+                                     <a href="~/media/Poster3" class="badge badge-pill badge-primary">
+                                         住商部門
+                                     </a>
+                                     <a href="~/media/Poster4" class="badge badge-pill badge-primary office">
+                                         辦公相關
+                                     </a>
+                                 </div>
+                             </div>
+                         </div>*@
+
+
+
+                        @*</div>*@
+                    </div>
+                </div>
+
+            </main>
+            <div class="col-lg-1"></div>
+    </div>
+</div>
+@section styles {
+    <style>
+        .poster img {
+            width: 100% !important;
+            border-radius: 5px;
+        }
+
+        .text-center a {
+            font-size: 100% !important;
+        }
+
+    .poster h3 {
+            margin: 5px auto;
+            font-size: 1.5rem;
+        }
+
+
+        .low {
+            background-color: lightpink;
+        }
+
+        .office {
+            background-color: yellowgreen
+        }
+    </style>
+}

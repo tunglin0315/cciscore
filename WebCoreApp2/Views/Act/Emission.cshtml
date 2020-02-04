@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["title"] = "排放量申報暨盤查管理";
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Index/溫室氣體減緩策略">因應作為</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Index/溫室氣體盤查申報">溫室氣體盤查申報</a></li>
+        <li class="breadcrumb-item ">排放量申報暨盤查管理</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2 class="h2">@ViewBag.Title</h2>
+            </div>
+            @Html.Raw(ViewBag.Html)
+
+            @*<div class="pb-2 mb-3 border-bottom" id="content">
+                <h2>排放量申報暨盤查管理</h2>
+            </div>
+            <h3 style="visibility:hidden"></h3>
+            <p>
+                我國推動產業溫室氣體盤查作業，主要係參考國際間ISO/CNS 14064-1及GHG Protocol溫室氣體盤查議定書規範，計算範疇一及範疇二之溫室氣體排放，僅需鑑別範疇三之排放源：
+            </p>
+            <ul>
+                <li>範疇一，係指直接溫室氣體排放，針對直接來自於組織所擁有或控制的排放源；</li>
+                <li>範疇二，為能源間接排放源，係指來自於輸入電力、熱或蒸汽而造成間接之溫室氣體排放；</li>
+                <li>範疇三，為其他間接排放源，由組織活動產生之溫室氣體排放，非屬能源間接溫室氣體排放，而係來自其他組織所擁有或控制的溫室氣體排放來源。</li>
+            </ul>
+            <p>
+                一、溫室氣體排放量盤查登錄作業指引：為使產業執行盤查登錄作業時，有一套標準規範以資依循，本署已於民國105年完成編撰「溫室氣體排放量盤查登錄作業指引」，該指引可至國家溫室氣體登錄平台<a href="/act/Emission#infolink1" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>1</sup></a>下載。
+            </p>
+            <p>
+                二、溫室氣體盤查登錄表單：已建立我國產業溫室氣體盤查登錄表單，並置於國家溫室氣體登錄平台網站上供各界查詢及下載 。除此之外，也將盤查所需之工具表單，如排放係數管理表，亦放置於國家登錄平台上供產業自行下載運用。
+            </p>
+            <div class="text-center">
+                <img class="mb-3 " src="~/_x/img/act/Eission.png" alt="排放量申報暨盤查管理" title="溫室氣體盤查作業及登錄可通過國家溫室氣體登錄平台網站申報。" />
+            </div>
+            <div class="text-center my-1">
+                <button class="btn btn-info m-2" onclick="img1()" title="圖片詳細說明">圖片詳細說明</button>
+                <div id="img1">
+                    溫室氣體盤查作業及登錄可通過國家溫室氣體登錄平台網站申報。
+                </div>
+            </div>
+            <ul>
+                資料來源：
+                <li>[1] <a id="infolink1" href="https://ghgregistry.epa.gov.tw" target="_blank" title="另開視窗(國家溫室氣體登錄平台)">國家溫室氣體登錄平台</a></li>
+            </ul>*@
+            <div class=" text-right my-3">
+                @*判斷是否已經登入*@
+                @if (User.Identity.IsAuthenticated)
+                {
+                    //判斷登入角色,符合角色則顯示按鈕進入後台
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a class="btn btn-danger text-center" href="~/info/Edit/@ViewBag.id">編輯</a>
+                    }
+                }
+            </div>
+        </main>
+        <div class="col-lg-2">    </div>
+    </div>
+</div>
+
+<script>
+
+    function img1() {
+        $("#img1").slideToggle();
+
+    };
+</script>

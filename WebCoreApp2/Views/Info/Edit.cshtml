@@ -1,0 +1,112 @@
+﻿@model InfoEditViewModel
+@{
+    string titname =
+        Model.ID == 0 ? "新增" : "編輯";
+    string submitname = Model.ID == 0 ? "確認新增" : "確認編輯";
+}
+
+<div class="container-fluid mt-2">
+
+    <div class="bg-primary text-white">
+        <h4 class="pl-2">@titname</h4>
+    </div>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <form asp-action="Edit" method="post">
+        <input type="hidden" name="ID" value="@Model.ID" />
+        <div class="form-group">
+            <label asp-for="Title"></label>
+            <input asp-for="Title" class="form-control" />
+            <div><span asp-validation-for="Title" class="text-danger"></span></div>
+        </div>
+        <div class="form-group">
+            <label asp-for="HtmlUrl"></label>
+            @if (Model.ID == 0)
+            {
+                <input asp-for="HtmlUrl" class="form-control" />
+            }
+            else
+            {
+                <input asp-for="HtmlUrl" readonly="readonly" class="form-control" />
+            }
+            <div><span asp-validation-for="HtmlUrl" class="text-danger"></span></div>
+        </div>
+        <div class="form-group">
+            <label asp-for="PublishDate"></label>
+            <input asp-for="PublishDate" id="datepicker1" class="form-control Jdatepicker" />
+        </div>
+        <div class="form-group">
+            <label asp-for="OffDateTime"></label>
+            <input asp-for="OffDateTime" id="datepicker2" class="form-control Jdatepicker" />
+        </div>
+        <div class="form-group">
+            <label asp-for="HtmlContent"></label>
+            <textarea asp-for="HtmlContent" id="Body"></textarea>
+            <div><span asp-validation-for="HtmlContent" class="text-danger"></span></div>
+        </div>
+        @*<div class="form-group">
+            <label asp-for="InfoTag"></label>
+            <div class="col-md-offset-2 col-md-10">
+                <table>
+                    <tr>
+                        @{
+                            int cnt = 0;
+                            List<SelectListViewModel> _tags = ViewBag.Tags;
+
+                            foreach (var _tag in _tags)
+                            {
+                                if (cnt++ % 3 == 0)
+                                {
+                                @:</tr><tr>
+                                }
+                                @:<td>
+                                    <input type="checkbox"
+                                           name="selectedTags"
+                                           value="@_tag.Id"
+                                           @(Html.Raw(_tag.Assigned ? "checked=\"checked\"" : "")) />@_tag.Name
+                                    @:</td>
+                                }
+                            @:</tr>
+                        }
+                    </table>
+                </div>
+            </div>*@
+        <button type="submit" asp-action="Edit" class="btn btn-primary">@submitname</button>
+        <a asp-action="List" class="btn btn-secondary">取消</a>
+
+    </form>
+</div>
+
+@section scripts {
+    @*使用jquery datepicker
+    <script src="~/lib/jquery-datetimepicker/jquery.datetimepicker.full.min.js"></script>
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+    <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="jqueryui/style.css">*@
+     @*引用cdn html編輯器*@
+    @*<script src="~/lib/ckeditor/ckeditor.js"></script>*@
+    <script src="https://cdn.ckeditor.com/4.12.1/full/ckeditor.js"></script>
+    <script type="text/javascript">
+
+        //$(function () {
+        //    $(".Jdatepicker").datepicker({
+        //        defaultDate: "+1w",
+        //        numberOfMonths: 2
+        //    });
+        //});
+
+
+        //CKEDITOR.replace('Body');
+        CKEDITOR.replace('Body', {
+            removeDialogTabs: 'image:advanced;image:Link;link:advanced;link:upload',
+            removeButtons: "Scayt,Flash,Smiley,PageBreak,Save,Print,Form,Checkbox,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,Language,Iframe,About,Templates,NewPage", // 不要的按鈕
+            height: 450,
+            filebrowserImageUploadUrl: '/Upload/UploadImage/',
+            filebrowserWindowWidth: '640',
+            filebrowserWindowHeight: '400',
+            allowedContent: true,
+            contentsCss:'../_x/css/theme.css'
+        });
+
+    </script>
+}

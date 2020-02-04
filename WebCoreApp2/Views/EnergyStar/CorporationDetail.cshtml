@@ -1,0 +1,69 @@
+﻿@model EnergyStarCorporation
+@*@{
+        string name = "因應作為 > 氣候變遷全民行動 > 能源之星 > 能源標章產品資訊 > 標章廠商";
+        @await Html.PartialAsync("_Nav1", name);
+    }*@
+@{
+    ViewData["title"] = "能源標章產品資訊";
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/media/Detail_Sub">宣傳資源</a></li>
+        @*<li class="breadcrumb-item "><a href="~/act/Detail_Sub">因應作為</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Index/溫室氣體盤查申報">溫室氣體盤查申報</a></li>*@
+        <li class="breadcrumb-item "><a href="~/Energystar/index">能源之星</a></li>
+        <li class="breadcrumb-item ">能源標章產品資訊</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 mx-sm-auto col-lg-9 pt-3  ccis_Detail" id="content">
+            <h2 class="h2" ㄋ>標章廠商-@Model.VrCopName</h2>
+            <table class="table table-bordered table-striped">
+                <tr>
+                    <th>負責人</th>
+                    <td>@Model.VrCopPrincipal</td>
+                </tr>
+                <tr>
+                    <th>負責人電話</th>
+                    <td>@Model.VrCopPrincipalPhone</td>
+                </tr>
+                <tr>
+                    <th>負責人E-Mail</th>
+                    <td>@Model.VrCopPrincipalEmail</td>
+                </tr>
+                <tr>
+                    <th>負責人傳真</th>
+                    <td>@Model.VrCopPrincipalFax</td>
+                </tr>
+                <tr>
+                    <th>網址</th>
+                    <td>@Model.VrCopUrl</td>
+                </tr>
+            </table>
+            <h3>產品</h3>
+            <table class="table table-bordered table-striped table-hover">
+                <tr>
+                    @{
+                        int cnt = 0;
+                        foreach (EnergyStarProduct item in Model.EnergyStarProduct)
+                        {
+                            if (cnt++ % 3 == 0)
+                            {
+                            @:</tr><tr>
+                            }
+                            @:<td>
+                                <a asp-action="ProductDetail" asp-route-id="@item.IdPdt" class="">@item.VrPdtName</a>
+                            @:</td>
+                        }
+                    @:</tr>
+                    }
+                </table>
+            </main>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>

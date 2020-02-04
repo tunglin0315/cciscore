@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="./" title="【氣候變遷】生活網" description="Welcome Page">
+    <siteMapNode url="~/Index" title="首頁" description="首頁"/>
+    <siteMapNode url="~/Know/Detail2"  title="(氣候變遷知識_氣候變遷介紹)氣候變遷衝擊影響" description="(氣候變遷知識_氣候變遷介紹)氣候變遷衝擊影響"/>
+    <siteMapNode url="~/Know/Detail"   title="(氣候變遷知識_氣候變遷介紹)溫室效應與全球暖化" description="(氣候變遷知識_氣候變遷介紹)溫室效應與全球暖化"/>
+    <siteMapNode url="~/Know//Detail3" title="(氣候變遷知識_氣候變遷介紹)氣候變遷減緩" description="(氣候變遷知識_氣候變遷介紹)氣候變遷減緩"/>
+    <siteMapNode url="~/Know/Detail4"  title="(氣候變遷知識_氣候變遷介紹)氣候變遷調適" description="(氣候變遷知識_氣候變遷介紹)氣候變遷調適"/>
+    <siteMapNode url="~/Know/pact"     title="(氣候變遷知識_氣候公約介紹)聯合國氣候變化綱要公約" description="(氣候變遷知識_氣候公約介紹)聯合國氣候變化綱要公約"/>
+    <siteMapNode url="~/Know/pact1"    title="(氣候變遷知識_氣候公約介紹)京都議定書" description="(氣候變遷知識_氣候公約介紹)京都議定書"/>
+    <siteMapNode url="~/Know/pact2"    title="(氣候變遷知識_氣候公約介紹)巴黎協定"  description="(氣候變遷知識_氣候公約介紹)巴黎協定"/>
+    <siteMapNode url="~/Know/Poster"   title="(氣候變遷知識_氣候變遷相關海報)" description="(氣候變遷知識_氣候變遷相關海報)"/>
+    <siteMapNode url="~/Know/Poster2"  title="(氣候變遷知識_氣候變遷相關海報)低碳生活" description="(氣候變遷知識_氣候變遷相關海報)低碳生活"/>
+    <siteMapNode url="~/Know/Poster3"  title="(氣候變遷知識_氣候變遷相關海報)住商部門" description="(氣候變遷知識_氣候變遷相關海報)住商部門"/>
+    <siteMapNode url="~/Know/Poster4"  title="(氣候變遷知識_氣候變遷相關海報)辦公相關" description="(氣候變遷知識_氣候變遷相關海報)辦公相關"/>
+  
+
+  <siteMapNode url="~/ghg/Index/溫室氣體排放清冊" title="(溫室氣體排放)溫室氣體排放清冊" description="(溫室氣體排放)溫室氣體排放清冊">
+  </siteMapNode>
+       
+    <siteMapNode url="~/act/Index/溫室氣體減緩策略" title="(因應作為)溫室氣體減緩策略" description="(因應作為)溫室氣體減緩策略">
+      <siteMapNode url="~/Act/Policy" title="(因應作為_溫室氣體減緩策略)減碳政策" description="(因應作為_溫室氣體減緩策略)減碳政策"/>
+      <siteMapNode url="~/Act/Actionplan" title="(因應作為_溫室氣體減緩策略)六大部門溫管行動方案" description="(因應作為_溫室氣體減緩策略)六大部門溫管行動方案"/>
+    </siteMapNode>
+
+    <siteMapNode url="~/act/Index/氣候變遷調適策略" title="(因應作為_氣候變遷調適策略)" description="(因應作為_氣候變遷調適策略)">
+      <siteMapNode url="~/Act/Architecture" title="(因應作為_氣候變遷調適策略)調適領域與工作架構" description="(因應作為_氣候變遷調適策略)調適領域與工作架構"/>
+      <siteMapNode url="~/Act/Promote" title="(因應作為_氣候變遷調適策略)推動機制與行動方案" description="(因應作為_氣候變遷調適策略)推動機制與行動方案"/>
+      <siteMapNode url="~/Act/Overall" title="(因應作為_氣候變遷調適策略)總體調適計畫" description="(因應作為_氣候變遷調適策略)總體調適計畫"/>
+    </siteMapNode>
+  
+    <siteMapNode url="~/act/Index/溫室氣體盤查申報" title="(因應作為_溫室氣體盤查申報)" description="(因應作為_溫室氣體盤查申報)">
+      <siteMapNode url="~/Act/GreenhouseGas" title="(因應作為_溫室氣體盤查申報)企業推動溫室氣體管理" description="(因應作為_溫室氣體盤查申報)企業推動溫室氣體管理"/>
+      <siteMapNode url="~/Act/Emission" title="(因應作為_溫室氣體盤查申報)排放量申報暨盤查管理" description="(因應作為_溫室氣體盤查申報)排放量申報暨盤查管理"/>
+      <siteMapNode url="~/Act/Exchange" title="(因應作為_溫室氣體盤查申報)抵換專案" description="(因應作為_溫室氣體盤查申報)抵換專案"/>
+      <siteMapNode url="~/Act/Energystar/Index" title="(因應作為_溫室氣體盤查申報)能源之星" description="(因應作為_溫室氣體盤查申報)能源之星"/>
+      <siteMapNode url="~/Act/Energystar/plan" title="能源之星標章計畫" description="能源之星標章計畫"/>
+      <siteMapNode url="~/Act/Energystar/apply" title="能源之星標章申請" description="能源之星標章申請"/>
+      <siteMapNode url="~/Act/Energystar/Corporation" title="(能源標章產品資訊)標章廠商" description="(能源標章產品資訊)標章廠商"/>
+      <siteMapNode url="~/Act/Energystar/Search" title="(能源標章產品資訊)產品搜尋" description="(能源標章產品資訊)產品搜尋"/>
+      <siteMapNode url="~/Act/EnergyStar/ProductDetail" title="(能源標章產品資訊)標章產品" description="(能源標章產品資訊)標章產品"/>
+      <siteMapNode url="~/Act/Energystar/question" title="常見問答" description="常見問答"/>
+    </siteMapNode>
+  
+    <siteMapNode url="~/act/Ten" title="(氣候變遷全民行動_減碳十大撇步)"  description="(節能減碳全民行動_十大無悔措施)">
+      <siteMapNode url="~/act/Hotel" title="(氣候變遷全民行動_環保旅店)" description="(節能減碳全民行動_環保旅店)"/>
+      <siteMapNode url="~/act/GreenShop" title="(氣候變遷全民行動_綠色採購)?" description="(節能減碳全民行動_綠色採購)"/>
+   </siteMapNode>
+   <siteMapNode url="~/media/CarbonTool" title="(宣傳資源_碳足跡計算器)"  description="(宣傳資源_碳足跡計算器)"  >
+      <siteMapNode url="~/media/DownLoad" title="(宣傳資源_檔案下載)桌布下載" description="(宣傳資源_檔案下載)桌布下載"/>
+      <siteMapNode url="~/media/Second" title="(宣傳資源_檔案下載)秒懂圖" description="(宣傳資源_檔案下載)秒懂圖"/>
+      <siteMapNode url="~/media/Movie" title="(宣傳資源_相關影音)" description="(宣傳資源_相關影音)"/>
+      <siteMapNode url="~/media/Cartoon" title="(宣傳資源_氣候變遷漫畫)" description="(宣傳資源_氣候變遷漫畫)"/>
+   </siteMapNode>
+   <siteMapNode url="~/news/Index/會議活動" title="會議活動" description="news/Index/會議活動">
+      <siteMapNode url="~/LcssOldData/Default.aspx" title="101年度行動項目內容" description="101年度行動項目內容"/>
+   </siteMapNode>
+   <siteMapNode url="~/link/Index/國內連結" title="(相關連結_國內連結)" description="(相關連結_國內連結)">
+      <siteMapNode url="~/link/Index/國外連結" title="(相關連結_國外連結)" description="(相關連結_國外連結)"/>
+      </siteMapNode>
+   <siteMapNode url="~/home/Contact" title="(線上服務)聯絡我們" description="(線上服務)聯絡我們">
+   </siteMapNode>
+
+  </siteMapNode>
+</siteMap>

@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["title"] = "能源之星標章計畫";
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/media/Detail_Sub">宣傳資源</a></li>
+        @*<li class="breadcrumb-item "><a href="~/act/Detail_Sub">因應作為</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Index/溫室氣體盤查申報">溫室氣體盤查申報</a></li>*@
+        <li class="breadcrumb-item "><a href="~/Energystar/index">能源之星</a></li>
+        <li class="breadcrumb-item ">能源之星標章計畫</li>
+
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+
+        <main role="main" class="col-md-10 mx-sm-auto col-lg-9 pt-3  ccis_Detail" id="content">
+
+            <h2 class="h2">能源之星標章計畫</h2>
+
+            <p>
+                國際能源之星標章計畫，係因應全球溫暖化可能危及並導致地球氣候異常、自然生態環境惡化等衝擊，而由美國環保署與能源部結合製造商、零售業及企業等，於1992年開始推動的一項產業自發性合作計畫。期望透過此能源之星標章制度，推廣省能產品，改變大眾消費型態，進而推動節約能源及降低發電所產生之溫室氣體排放。我國環保署於1999年7月與美國環保署簽署「台美環境保護技術合作協定第四號執行辦法」，獲美國環保署授權使用並管理台灣地區能源之星相關事宜。
+            </p>
+            <p>
+                能源之星標章計畫目標主要包括:1.引進美國「能源之星」標章制度，以建構我國「能源之星」標章運作機制，2.推廣宣導「能源之星」標章，協助企業參與本方案並建立民眾對「能源之星」標章與相關產品之認同，以及3.進行我國推動「能源之星」計畫之節約能源與抑制溫室效應氣體排放等效益評估，及我國未來推動「能源之星」相關方案之可行性與效益評估。
+            </p>
+            <p>
+                本項計畫除了引進美國推動「能源之星」方案之相關經驗外，亦將建構我國「能源之星」標章機制，使我國廠商之產品能在國內即可申請取得能源之星標章，此舉將有助於我國產品符合國際節能要求，彰顯我國產業能源效益，進而降低我國溫室效應氣體之排放，達成國家整體利益之目標，並提昇我國國際形象。
+            </p>
+
+            <p>
+                美國能源之星標章在結合政府、企業、社群及民間力量的共同推廣逾15年有成後，美國環保署（EPA）與能源部（DOE）認為有必要強化長期採用的「能源之星」自我宣告方式，以進一步落實能源之星能效要求之產品控管，並追求更大程度的溫室效應減緩等宗旨，因此於2011年1月1日起改為第三者驗證制度，申請產品必須經過美國能源之星標章認可之測試實驗室及驗證單位進行產品測試及驗證後，才可申請能源之星標章。
+            </p>
+            <p>最後更新日期: @ViewBag.date</p>
+
+        </main>
+        <div class="col-lg-1">    </div>
+    </div>
+</div>
+@section styles {
+    <style>
+
+        /*h2 a {
+            min-width: 16px;
+        }*/
+
+        /*.ccis_Detail   h2 ~ p {
+            margin-left: 45px;
+        }*/
+
+        /*.ccis_Detail img {
+            width: 70%;
+            max-width: 945px;
+        }*/
+    </style>
+}

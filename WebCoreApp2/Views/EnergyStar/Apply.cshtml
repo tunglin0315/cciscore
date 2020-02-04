@@ -1,0 +1,108 @@
+﻿@{
+    ViewData["title"] = "能源之星標章申請";
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/media/Detail_Sub">宣傳資源</a></li>
+        @*<li class="breadcrumb-item "><a href="~/act/Detail_Sub">因應作為</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Index/溫室氣體盤查申報">溫室氣體盤查申報</a></li>*@
+        <li class="breadcrumb-item "><a href="~/Energystar/index">能源之星</a></li>
+        <li class="breadcrumb-item ">能源之星標章申請</li>
+      
+    </ol>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+
+        <main role="main" class="col-md-10 mx-sm-auto col-lg-9 pt-3  ccis_Detail" id="content">
+
+            <h2 class="h2">能源之星標章申請</h2>
+
+            <h3>一. 確定申請類型 :</h3>
+            <p>
+                首先需要決定適用營業範圍之能源之星產品類別。目前我國與美國能源之星簽訂之計畫涵蓋產品領域主要為辦公設備，包含:電腦、電話（VOIP網路電話、大型網路設備、企業伺服器、不斷電系統、螢幕、成像設備（影印機、掃描儀、傳真機…等）、資料儲存設備及小型網路設備。現行能源之星係採用第三者驗證制度，而我國當地尚未有美方認可之驗證機構（Certification Body, CB），故為確保驗證文件之真實性，相關產品需先於美國能源之星網站資料庫進行登錄後，方由本網站進行宣傳，尚無法協助公布未登錄之產品。
+            </p>
+            <h3>二.下載能源之星夥伴協議申請書：</h3>
+            <p>
+                所有產品領域廠商，請自美國能源之星<a href="../energystar/apply#infolink1" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>1</sup></a>網頁下載製造商合作夥伴協議申請書。在填寫此項申請書前，請先檢查是否已經具備所有必要文件，然後才開始填寫申請書。填寫申請書時請注意下列項目:
+            </p>
+            <ul>
+                <li>（1）.在第三頁與第五頁請填寫廠商之組織資訊</li>
+                <li>（2）.在第七頁請填寫廠商之的聯絡資訊</li>
+                <li>（3）.在第五頁請勾選授權（authorization）欄位</li>
+                <li>（4）.在第六頁請請勾選適用計畫領域</li>
+                <li>（5）.在第六頁請填寫申請日期</li>
+
+            </ul>
+            <h3>三. 填寫完成合作夥伴協議申請書：</h3>
+            <p>
+                請將填妥申請書傳送到下述電子郵件。如果已是能源之星合作夥伴，希望擴大參與項目時，請聯繫<a href="mailto:join@energystar.gov" title="能源之星Email">join@energystar.gov</a>。填寫完成後傳送至：<a href="mailto:join@energystar.gov" title="能源之星Email">join@energystar.gov</a>
+            </p>
+            @*<p>
+                ENERGY STAR c/o ICF International
+                1725 Eye Street, NW, Suite 1000
+                Washington, DC 20006
+            </p>*@
+            <p>
+                如果對於申請成為夥伴過程、夥伴關係現況，或了解申請文件處理進度時，請以電子郵電方式洽詢<a href="mailto:join@energystar.gov" title="能源之星Email">join@energystar.gov</a>。
+                
+            </p>
+            <p>若您有氣候變遷資訊整合網操作問題，請見以下連絡方式：</p>
+            <ul>
+                <li>（1）.聯絡人 : 張先生</li>
+                <li>（2）.聯絡信箱 : <a href="mailto:tony19950617@eri.com.tw" title="客服人員Email">tony19950617@eri.com.tw</a></li>
+                <li>（3）.聯絡電話：02-6630-8000 轉237 （ 服務時間週一至周五 08：30~17：00 ）</li>
+                <li>PS.若於假日時段有資訊需求，可來信至聯絡信箱，將會儘速回覆。</li>
+            </ul>
+
+            <ul>
+                資料來源：
+                <li>[1] <a id="infolink1" href="https://www.energystar.gov/partner_resources/join-energy-star/manufacturers-retailers/manufacturers-join" target="_blank" title="另開新視窗(美國能源之星)">美國能源之星</a></li>
+                @*<li>[2] <a id="infolink2" href="~/know/Detail2" target="_blank" title="另開視窗(氣候變遷生活網_氣候變遷衝擊)">氣候變遷生活網_氣候變遷衝擊</a></li>
+                <li>[3] <a id="infolink3" href="https://unfccc.int/process-and-meetings/the-kyoto-protocol/mechanisms-under-the-kyoto-protocol/the-clean-development-mechanism" target="_blank" title="另開視窗(The Clean Development Mechanism_CDM)">The Clean Development Mechanism_CDM</a></li>
+                <li>[4] <a id="infolink4" href="~/act/Exchange" target="_blank" title="另開視窗(氣候變遷生活網_抵換專案)">氣候變遷生活網_抵換專案</a></li>*@
+            </ul>
+
+
+            <p>最後更新日期: @ViewBag.date</p>
+
+        </main>
+        <div class="col-lg-1">    </div>
+    </div>
+</div>
+@section styles {
+    <style>
+        /*h5 {
+            font-weight: bold;
+            margin-left: 45px;
+        }*/
+
+        /*h4 {
+            font-weight: bold;
+            color: #129696
+        }
+
+            h4 ~ p {
+                margin-left: 45px;
+            }
+
+
+        p+ul {
+            list-style: none;
+               font-size: 19px;
+        }*/
+
+        /*.ulstr {
+            font-size: 19px;
+        }*/
+        /*.ccis_Detail img {
+            width: 70%;
+            max-width: 945px;
+        }*/
+    </style>
+}

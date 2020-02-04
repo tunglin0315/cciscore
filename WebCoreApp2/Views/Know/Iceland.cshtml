@@ -1,0 +1,159 @@
+﻿
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style=" font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png"  alt="首頁圖示"  title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub">氣候變遷知識</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/EachCountry">各國氣候變遷調適</a></li>
+        <li class="breadcrumb-item ">冰島</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom">
+                <h2 class="h2">
+                    @*@Html.Raw(@ViewBag.Title)*@
+                    冰島氣候變遷調適策略
+                </h2>
+            </div>
+            @*@Html.Raw(@ViewBag.html)*@
+            <h4>冰島氣候變遷調適背景</h4>
+            <p>
+                冰島政府於2018年9月宣布新氣候行動計畫，旨在減少淨排放量，以實現巴黎協定2030年的目標，並在2040年前實現冰島碳中和的目標。與大多數其他國家和地區一樣，氣候變遷對冰島和冰島水域產生重大影響，幾乎所有冰川都在退縮。目前冰島約11%的面積被冰川覆蓋，但科學家警告，若不阻止氣候暖化，冰川在未來100–200年內將大規模消失。冰島特別關切的是海洋酸化，因為這會對海洋生態系統產生深遠影響。冰島的部份水域正在快速酸化，改變雙殼類動物和許多其他生物的棲息地和生存能力。
+            </p>
+            <h4>調適行動策略</h4>
+            <p>在溫室氣體排放和減緩氣候變遷方面，冰島在許多方面都是已發展國家最特殊的案例。冰島幾乎所有電力和供暖都由可再生能源、水力和地熱提供。在許多國家，生產固定能源是主要碳排來源；但在冰島，這種排放可以忽略不計。冰島在1930年左右開始利用地熱水為房屋供暖，取代進口煤炭和石油。在政府推動下，這樣的改造工作經歷了數十年，為的是向主要地熱區以外的地區提供潔淨的供暖服務。電力主要由水力能源產生，也可利用地熱蒸汽產生。現在冰島享有幾乎無碳排的電力和供暖系統；化石燃料用於運輸和漁業。當前目標是迅速將這些部分脫碳，並為這項工作分配更多政府資源。冰島溫室氣體排放的主要來源（不包括土地使用）是汽車和船舶的化石燃料、工業過程和農業。公路運輸約占20%，漁業占11%，重工業加工和化學品占42%，農業13%，廢棄物管理5%。</p>
+            <div class="text-center" >
+                <img src="~/_x/img/know/Iceland.png" alt="地熱能" title="地熱能" />
+            </div>
+            
+            <h4>調適項目策略</h4>
+            <table class="table table-striped" style="font-size:19px;">
+                <thead>
+                    <tr>
+                        <th class="text-center">項 目</th>
+                        <th class="text-center">策 略 重 點</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="align-middle text-center">能源</td>
+                        <td>
+                            <ul>
+                                <li>渡輪使用潔淨能源</li>
+                                <li>增加船舶可再生能源的份額</li>
+                                <li>港口的電氣基礎設施</li>
+                                <li>國內燃料由生質物和廢物生產</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">運輸</td>
+                        <td>
+                            <ul>
+                                <li>潔淨汽車和燃料的稅收優惠</li>
+                                <li>支援電動汽車和其他潔淨車輛的基礎設施</li>
+                                <li>建築和空間規劃規則—支援電動汽車</li>
+                                <li>應加碳稅</li>
+                                <li>2030年後禁止新登記柴油和汽油車</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">土地利用</td>
+                        <td>
+                            <ul>
+                                <li>重新造林或植樹造林以吸收碳</li>
+                                <li>與養羊戶就氣候變遷調適措施展開合作</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">林業</td>
+                        <td>
+                            <ul>
+                                <li>重新建構植被以吸收碳</li>
+                                <li>加強溼地保育</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">教育</td>
+                        <td>
+                            <ul>
+                                <li>加強校園氣候教育</li>
+                                <li>加強氣候變遷的公共教育</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">廢棄物</td>
+                        <td>
+                            <ul>
+                                <li>徵稅和最終禁止填埋有機廢物</li>
+                                <li>逐步淘汰氫氟碳化合物</li>
+                                <li>打擊食物浪費的行動</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">健康衛生</td>
+                        <td>
+                            <ul>
+                                <li>解決糞便排放問題</li>
+                                <li>減少化肥的使用</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">經濟相關</td>
+                        <td>
+                            <ul>
+                                <li>氣候基金—支持清潔創新和公共教育</li>
+                                <li>綠色會計</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+     </main>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+@section styles {
+    <style>
+        h4 {
+            font-weight: bold;
+            color: #129696
+        }
+
+        h4~p{
+            margin-left:45px;
+        }
+        /*h5 {
+            font-weight: bold;
+        }*/
+
+        .ccis_Detail img {
+            width: 70%;
+            border-radius: 5px;
+            max-width: 945px;
+            
+        }
+
+        .ulstr {
+            list-style-type: none;
+            font-size: 19px;
+        }
+
+        table tr td ul {
+            margin-bottom: 0;
+        }
+          /*p {
+            padding-left: 3rem;
+        }*/
+    </style>
+}

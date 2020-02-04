@@ -1,0 +1,215 @@
+﻿
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style=" font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png"  alt=""  title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub">氣候變遷知識</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/EachCountry">各國氣候變遷調適</a></li>
+        <li class="breadcrumb-item ">丹麥</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2>
+                    @*@Html.Raw(@ViewBag.Title)*@
+                    丹麥氣候變遷調適策略
+                </h2>
+            </div>
+            @*@Html.Raw(@ViewBag.html)*@
+            <h4>丹麥氣候變遷調適背景</h4>
+            <p>
+                丹麥在2008年3月通過了國家調適策略（<a href="https://en.klimatilpasning.dk/media/5322/klimatilpasningsstrategi_uk_web.pdf" target="_blank" title="另開視窗">National Adaptation Strategy</a>, NAS），並於2012年通過了丹麥第一個國家調適計畫「丹麥抵禦氣候行動計畫（<a href="https://en.klimatilpasning.dk/media/590075/action_plan.pdf" target="_blank" title="另開視窗">Action Plan for a Climate-Proof Denmark</a>）」，並於同年12月啟動。其中最主要的精神是：氣候政策必須負責地為長期氣候變遷而努力，同時確保現在就採取必要行動適應不斷改變的氣候，且社會各部門都需為氣候調適做出努力。國家行動計畫在五個領域提出了64項新措施，例如：改進氣候調適框架、增加諮詢頻率、建立知識庫、加強合作與協調、和國際氣候調適等。並針對如運輸、道路、和沿岸保護等項目，制定對應的調適計畫。
+            </p>
+            <p>丹麥的調適策略尚未在國家次級單位實施，但所有城市都根據國家調適計畫，訂定了地方性調適行動計畫。丹麥政府承諾會持續研發技術和增加知識基礎，使丹麥在氣候變遷調適處於領先地位。</p>
+            <h4>氣候變遷調適策略實施</h4>
+            <p>
+                丹麥政府於2012年正式同意丹麥自治市協會的協議：所有自治市應在2013年底前制定調適行動計畫。每個計畫都包含了洪水風險潛勢圖，並確定了當地氣候調適措施的優先事項。
+            </p>
+            <p>2011年，哥本哈根執行氣候調適計畫（<a href="https://en.klimatilpasning.dk/media/568851/copenhagen_adaption_plan.pdf" target="_blank" title="另開視窗">Copenhagen Climate Adaptation Plan</a>），因應所面臨的氣候變遷的極端後果。同年7月的強降雨，促使哥本哈根在2012年制定了Cloudburst管理計畫（<a href="https://oppla.eu/casestudy/18017" target="_blank" title="另開視窗">Cloudburst Management Plan</a>），該計畫開展了300個具體項目，並批准了自2015年起實施20年的管理計畫。</p>
+            
+            <h4>氣候變遷調適策略知識與進度評估</h4>
+            
+            <p>它由丹麥環保局與其他政府機構合作管理的<a href="https://www.klimatilpasning.dk/" target="_blank" title="另開視窗">氣候變遷網站</a>在2008年建立，包括氣候變遷新聞、氣候調適措施、案例和互動工具。並提供不同的地理資訊系統應用在不同情境下的城市、企業、公民。這些工具可用於評估海平面上升和氣候防護建築物的風險，另外也包括以下項目：</p>
+           
+            <div>
+                <ul>
+                    <li>溫度、降水、海洋、和地下水的數據和地圖</li>
+                    <li>受氣候變遷影響之部門與領域的文章和指南</li>
+                    <li>如何讓氣候變遷作為重要決策的案例</li>
+                    <li>公眾和決策者進行的分析和評估</li>
+                    <li>調適計畫資金援助資訊</li>
+                    <li>城市氣候行動計畫概述等</li>
+                </ul>
+            </div>
+
+            <p>丹麥環保署每四年發布一次丹麥環境報告，其中一章關於氣候變遷。該報告將於2019年更新，報導氣候變遷對降水、溫度、海平面上升、和乾旱的影響。</p>
+
+            <h4>調適策略項目</h4>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th class="text-center">項 目</th>
+                        <th class="text-center">策 略 重 點</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="align-middle text-center">沿岸管理</td>
+                        <td>
+                            <ul>
+                                <li>持續監測沿岸變化，評估未來氣候情境氣候變遷對沿岸的影響</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">營造與建築</td>
+                        <td>
+                            <ul>
+                                <li>調整新建築條例，以保護新建築免受氣候變遷的影響</li>
+                                <li>現有建築方面，由屋主負責定期將氣候變遷調適與節能措施納入翻修工作</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">水資源</td>
+                        <td>
+                            <ul>
+                                <li>制定廢水管理條例，以減少洪水可能帶來的影響</li>
+                                <li>改變集水區以因應乾旱期，保護水井</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">能源</td>
+                        <td>
+                            <ul>
+                                <li>限制冷卻系統的能源消耗</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">農業</td>
+                        <td>
+                            <ul>
+                                <li>調整農藥使用條例，因氣溫升高可能助長植物病蟲害。</li>
+                                <li>調整農業肥料使用的規定，因應極端降水可能造成營養物質的流失</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">森林</td>
+                        <td>
+                            <ul>
+                                <li>種植適合當地環境的樹種，確保森林能自行再生</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="align-middle text-center">漁業</td>
+                        <td>
+                            <ul>
+                                <li>為調適和發展漁業管理系統提供必要的科學基礎</li>
+                                <li>改善知識基礎，質化與量化氣候變遷對海洋食物鏈、生態系統、魚類種群及其永續利用的影響</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">空間規劃</td>
+                        <td>
+                            <ul>
+                                <li>立法將氣候納入地區發展計畫</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">健康</td>
+                        <td>
+                            <ul>
+                                <li>向市政府、醫療人員、和個人提供風險諮詢</li>
+                                <li>丹麥衛生和藥品管理局提供氣候變遷產生的負面</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">緊急準備</td>
+                        <td>
+                            <ul>
+                                <li>消防和救援部門做好應急準備，因應颶風/風暴、強降水、沙塵暴、風暴潮等極端天氣造成的威脅</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">自然環境</td>
+                        <td>
+                            <ul>
+                                <li>頒佈《水框架指令》以保護水生環境</li>
+                                <li>修訂自然保護法、環境目標法、和規劃法等法規</li>
+                                <li>向自然管理人，如土地擁有者、市政府、和各州一級單位宣導調適相關新知識</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">保險</td>
+                        <td>
+                            <ul>
+                                <li>保險業主動與市政府交換資料，透過調整保險範圍及保費來因應氣候變遷</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">運輸</td>
+                        <td>
+                            <ul>
+                                <li>分析與公路有關的事故，建立預警系統，將氣候變遷調適納入新鐵路設施的規劃</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+
+
+                </tbody>
+            </table>
+
+        </main>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+@section styles {
+    <style>
+        /*h4 {
+            font-weight: bold;
+            color: #129696
+        }
+        h4~p{
+            margin-left:45px;
+        }*/
+
+        /*h5 {
+            font-weight: bold;
+        }*/
+
+        /*.ccis_Detail img {
+            width: 70%;
+            max-width: 945px;
+        }
+
+        .ulstr_square {
+            list-style-type:square;
+            font-size: 19px;
+        }
+
+        table tr td ul {
+            margin-bottom: 0;
+        }*/
+
+        /*p {
+            padding-left: 3rem;
+        }*/
+    </style>
+}

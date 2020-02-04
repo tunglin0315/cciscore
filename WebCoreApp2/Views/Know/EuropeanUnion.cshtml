@@ -1,0 +1,129 @@
+﻿<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style=" font-size:19px; padding: 0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png"  alt=""  title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub">氣候變遷知識</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/EachCountry">各國氣候變遷調適</a></li>
+        <li class="breadcrumb-item ">歐盟</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom">
+                <h2 class="h2">
+                    @*@Html.Raw(@ViewBag.Title)*@
+                    歐盟氣候變遷調適策略
+                </h2>
+            </div>
+            <div class="row text-center mb-2 ">
+                <div class="col-xs-1 col-md-1"></div>
+                <div class="col-xs-6 col-sm-6 col-md-2 my-1"><a class="btn btn-outline-warning Area_eu" href="~/know/English" title="英國"><img src="~/_x/img/know/england.png" title="英國" /><br />英國</a></div>
+                <div class="col-xs-6 col-sm-6 col-md-2 my-1"><a class="btn btn-outline-warning Area_eu" href="~/know/Germany" title="德國"><img src="~/_x/img/know/Germany.png" title="德國" /><br />德國</a></div>
+                <div class="col-xs-6 col-sm-6 col-md-2 my-1"><a class="btn btn-outline-warning Area_eu" href="~/Know/France" title="法國"><img src="~/_x/img/know/France.png" title="法國" /><br />法國</a></div>
+                <div class="col-xs-6 col-sm-6 col-md-2 my-1"><a class="btn btn-outline-warning Area_eu" href="~/know/Netherlands" title="荷蘭"><img src="~/_x/img/know/Netherlands.png" title="荷蘭" /><br />荷蘭</a></div>
+                <div class="col-xs-6 col-sm-6 col-md-2 my-1"><a class="btn btn-outline-warning Area_eu" href="~/know/DenMark" title="丹麥"><img src="~/_x/img/know/DenMark.png" title="丹麥" /><br />丹麥</a></div>
+                <div class="col-xs-1 col-md-1 "></div>
+            </div>
+            @*@Html.Raw(@ViewBag.html)*@
+            <h4>歐盟氣候變遷調適目標</h4>
+            <ul>
+                <li>促進會員國的行動: 提供資金協助建立其調適能力並採取行動。</li>
+                <li>凝聚政策促進農業、漁業等脆弱部門調適，確保基礎設施的安全性，並改善對自然災害和人為災害的保險。</li>
+                <li>完善歐洲氣候適應平台（<a href="https://climate-adapt.eea.europa.eu/" target="_blank" title="另開視窗">Climate-ADAPT</a>），解決調適知識方面的差距，並做出明智的決策。</li>
+            </ul>                          
+            <p class="text-right"><a href="https://ec.europa.eu/clima/policies/adaptation/what_en" target="_blank" title="另開視窗">更詳盡的政策請點我</a></p>
+            <h4>歐盟氣候變遷調適策略</h4>
+            <p><a href="https://climate-adapt.eea.europa.eu/metadata/publications/eu-strategy-on-adaptation-to-climate-change" target="_blank" title="另開視窗">歐盟氣候變遷調適策略</a>中為使歐洲更具氣候適應能力，通過執行委員協調合作及資訊共享，確保相關政策和資助計畫，有效推動以科學為基礎的歐盟氣候變遷調適政策。該<a href="https://climate-adapt.eea.europa.eu/metadata/publications/eu-strategy-on-adaptation-to-climate-change" target="_blank" title="另開視窗">策略</a>提出三個優先事項和八個具體行動（如圖一所示）</p>
+            @* <p>
+             <a href="https://climate-adapt.eea.europa.eu/metadata/publications/eu-strategy-on-adaptation-to-climate-change" target="_blank" title="另開視窗">歐盟氣候變遷調適策略</a>目的在於讓歐洲更具氣候適應能力。
+             通過補充成員國的活動採取協調一致的方法，它通過促進更大的協調和信息共享以及確保在所有相關的歐盟政策和資助計畫中解決適應性考慮來支持行動。
+         </p>
+        <p>
+             該<a href="https://climate-adapt.eea.europa.eu/metadata/publications/eu-strategy-on-adaptation-to-climate-change" target="_blank" title="另開視窗">策略</a>總結了三個優先事項和八個具體行動（見圖），並附
+             有<a href="https://ec.europa.eu/clima/policies/adaptation/what_en" target="_blank" title="另開視窗">更詳細的政策文件</a>：
+         </p>
+              <ol>
+                 <li>指導和支援會員國和其他利害關係方制定調適策略或將調適因素納入歐洲F籌資和投資方案。</li>
+                 <li>評估關鍵部門和地區（海岸和海洋、健康、基礎設施、農村發展等）的氣候變遷衝擊和調適架構。</li>
+                 <li>自然和人為災害保險的綠皮書，指出因更高的極端事件發生率歐洲保險狀況的適宜性。 </li>
+                 <li>專案經理的無紙化指南：讓脆弱的投資具有一定的氣候適應能力。</li>
+             </ol>
+
+         <h4>評估歐盟調適策略</h4>
+         <p>
+             歐盟委員會<a href="https://climate-adapt.eea.europa.eu/metadata/publications/evaluation-of-the-eu-strategy-on-adaptation-to-climate-change/" target="_blank" title="另開視窗">對歐盟調適</a>策略的
+             <a href="https://climate-adapt.eea.europa.eu/metadata/publications/evaluation-of-the-eu-strategy-on-adaptation-to-climate-change/" target="_blank" title="另開視窗">評估</a>發現，該策略促進成員國採取行動，
+             在歐洲採取“氣候保護”行動，並支持更明智的決策。八項個人行動中的每一項都取得了進展，包括開發在線平台Climate-ADAPT。儘管如此，該評估也概述歐洲仍然容易受到境內外氣候變遷的影響，並提出了需要做更多工作來準備脆弱地區和部門的領域。
+         </p>
+         <h4>評估的主要發現：</h4>
+         <p>目前的策略仍然具有現實意義，委員會仍將以其為目標。在評估過程中學到了重要的經驗，該策略一直是歐盟各個遭遇氣候影響領域的重要準備依據。</p>
+         <p>
+             由歐盟資助基礎設施項目可以抵禦海平面上升，洪水或高溫。在未來，必須努力確保大多數歐盟城市執行的適應計畫，以保護公民免受極端氣候危害。另外必須鼓勵私部門提高社會抵禦能力，委員會將繼續通過其「永續增長融資行動計畫 」以及2018年通過的立法提案進行。
+             <a href="https://ec.europa.eu/clima/news/europe-ready-climate-impacts-commission-evaluates-its-strategy_en" target="_blank" title="另開視窗">評估結果</a>於2018年11月<a href="https://ec.europa.eu/clima/news/europe-ready-climate-impacts-commission-evaluates-its-strategy_en" target="_blank" title="另開視窗">公佈</a>。
+         </p>*@
+            <div class="text-center">
+                <img src="~/_x/img/know/EU.png" alt="EU" title="EU" />
+                <p>圖一、歐盟氣候變遷調適策略概述</p>
+            </div>
+            <ul>
+                <li><strong>氣候變遷影響最深的是基礎建設：</strong>預防與調整策略來適應氣候變遷。</li>
+                <li><strong>創新：</strong>新科技的開發應用與改善現有科技效率。</li>
+                <li><strong>國際合作：</strong>促進國家共同參與對抗氣候變遷，對各國經濟及科技水準採取差別責任。</li>
+            </ul>
+            <h4>為什麼歐盟調適策略受到會員國歡迎？</h4>
+            <p>由於歐盟各地區人口、經濟情況以及受氣候變遷影響的程度不同，大多數調適行動仍僅僅在區域或地區中。當氣候變遷影響各地區的影響差異很大，尤其在國家的邊界時（如河流流域），這時候歐盟有助於加強會員國的團結，確保弱勢地區和受氣候變遷影響最嚴重的地區能夠採取必要調適措施。</p>
+            <p>調適意味著採取適當行動防止或者減少可能造成的損害，完善的早期調適行動規劃可以拯救無數的生命和節省預算，因此地方、區域、國家甚至歐盟和國際等各級行政單位都需要調適策略。</p>
+            <p>委員會於2013年4月通過了歐盟適應策略，受到成員國的歡迎。通過促進會員國之間協調和資訊共享，確保在歐盟所有政策中採取一致的必要調適措施，以應對氣候變遷的影響。</p>
+            <p>委員會也定期評估該策略，經四個月的<a href="https://ec.europa.eu/clima/consultations/evaluation-eus-strategy-adaptation-climate-change_en" target="_blank" title="另開視窗">公眾諮詢及反饋</a>後，於2018年11月發佈對歐盟氣候變遷調適策略的評估<a href="https://ec.europa.eu/clima/policies/adaptation/what_en" target="_blank" title="另開視窗">報告</a>。評估結果表明調適策略已經在八個具體行動中顯現成效，不過報告也同時指出，歐洲仍然容易受到境內外氣候變遷的影響，需要和夥伴國家協同在脆弱的地區及部門做更多的工作，避免未來的損害。<a href="https://ec.europa.eu/clima/policies/adaptation/what_en" target="_blank" title="另開視窗">各會員國調適評估報告請點我</a></p>
+            <p>主要調適措施包括：更有效地利用有限的水資源; 使建築規範適應未來的氣候條件和極端天氣事件; 建立防洪和提高堤防; 開發耐旱作物; 選擇不易受風暴和火災影響的林業; 並建置陸地走廊以幫助物種遷移。</p>
+        </main>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+@section styles {
+    <style>
+        h4 {
+            font-weight: bold;
+            color: #129696
+        }
+
+            h4 ~ p {
+                margin-left: 45px;
+            }
+
+            h4 ~ ul {
+                margin-left: 45px;
+                font-size: 19px;
+            }
+
+        h5 {
+            font-weight: bold;
+        }
+
+        .ccis_Detail img {
+            width: 70%;
+            border-radius: 5px;
+            max-width: 945px;
+        }
+
+        /*.ulstr {
+            list-style-type: none;
+            font-size: 19px;
+        }*/
+
+        table tr td ul {
+            margin-bottom: 0;
+        }
+
+        .Area_eu {
+            font-size: 28px;
+        }
+
+        p + ol {
+            margin-left: 45px;
+        }
+    </style>
+}

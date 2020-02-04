@@ -1,0 +1,192 @@
+﻿<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub">氣候變遷知識</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub_Sub">氣候變遷介紹</a></li>
+        <li class="breadcrumb-item"> @ViewBag.Title</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10  mx-sm-auto  col-lg-9 pt-3 ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2 class="h2">@ViewBag.Title</h2>
+            </div>
+
+            @Html.Raw(@ViewBag.Html)
+
+            @*<div class=" pb-2 mb-3 border-bottom" id="content">
+                    <h2>氣候變遷減緩</h2>
+                </div>*@
+
+            @*<div class="text-center mb-3">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col col-xs-6 col-md-3">
+                        <a class="btn btn-lg btn-outline-success" href="/know/detail3#we"><strong>我們可以做什麼</strong></a>
+                    </div>
+                    <div class="col col-xs-6 col-md-3">
+                        <a class="btn btn-lg btn-outline-success" href="/know/detail3#comu"><strong>社區可以做什麼</strong></a>
+                    </div>
+                    <div class="col col-xs-6 col-md-3">
+                        <a class="btn btn-lg btn-outline-success" href="/know/detail3#enterprise"><strong>企業可以做什麼</strong></a>
+                    </div>
+
+                    <div class="col-md-2"></div>
+
+                </div>
+
+            </div>
+            <h3>什麼是氣候變遷減緩？</h3>
+
+            <p>
+                政府間氣候變化專門委員會（The Intergovernmental Panel on Climate Change, IPCC） 於2014年發布AR5 Climate Change 2014<a href="/know/detail3#infolink1" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>1</sup></a> Mitigation of Climate Change詞彙中定義，「減緩（Mitigation）」是為減少溫室氣體的排放源或提升大氣中移除二氧化碳的能力。減少溫室氣體排放的人為干預，可直接或間接地抑制氣候變遷（例如控制一氧化碳、氮氧化物、揮發性有機化合物及其他污染物的措施，這類污染物能改變對流層的臭氧濃度，對氣候有間接影響）。
+            </p>
+            <p>
+                我國「溫室氣體減量及管理法」說明「減緩」是以人為方式，減少溫室氣體排放或增加溫室氣體碳匯。總體而言，「減緩」是指透過減少溫室氣體的排放或將已排放的溫室氣體透過吸收貯存的方式，來降低大氣中溫室氣體的含量，以降低溫室氣體排放對大氣的影響。
+            </p>
+
+            <h3>為什麼要減少排放溫室氣體?</h3>
+            <p>根據IPCC AR5<a href="/know/detail3#infolink2" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>2</sup></a>推估，在暖化程度中等的排放情境（RCP4.5）下，2100年大氣中二氧化碳的濃度將達到538 ppm，全球均溫將上升1.8度，全球海平面可能上升0.47公尺！</p>
+            <p>如果我們不減少溫室氣體排放，未來全球平均溫度將會更高，造成冰川融解加速、海平面上升，威脅沿海地區等！ </p>
+
+            <div class="text-center">
+                <img src="~/_x/img/know/k3_1.jpg" alt="生活中之氣候變遷減緩作為" title="氣候變遷減緩包括保護林木及生態、節約用水、使用再生能源、循環經濟、廢棄物資源化及保護海岸海洋生態等。" />
+                <p>圖一、生活中之氣候變遷減緩作為</p>
+            </div>
+            <div class="text-center my-1">
+                <button class="btn btn-info" onclick="img1()" title="圖片詳細說明">圖片詳細說明</button>
+                <div id="img1">
+                    氣候變遷減緩包括保護林木及生態、節約用水、使用再生能源、循環經濟、廢棄物資源化及保護海岸海洋生態等。
+                </div>
+            </div>
+
+            <h3 id="we">我們可以做什麼?</h3>
+            <p>減碳其實可以很簡單！每個人都可以從食、衣、住、行、育、樂等生活面減少溫室氣體排放喔！</p>
+            <div>
+                <h4>食：</h4>
+                <p>
+                    「食在地、食當季！」吃在地生產的食物，能有效減少運送食物所耗費的能源及運輸產生的溫室氣體，同時也避免過度包裝、冷藏的能源。
+                </p>
+                <h4>衣：</h4>
+                <p>
+                    回收、回收、再回收！」每一個回收的動作，對於減少溫室氣體排放及降低環境衝擊的影響，都超過我們想像。新衣物的製成代表能源和資源的消耗，大部份是由石油化學纖維製成，原料生產過程耗能又污染，回收衣服不但可以減少對石化原料的消費，還能再製人造纖維。
+                </p>
+                <h4>住：</h4>
+                <p>
+                    「親近自然，少開冷氣。」住宅消耗的能源，是溫室氣體排放中不可忽視的環節。避免陽光直射，在窗戶上增設窗簾或是用隔熱紙。多利用自然風降低室內溫度。如果必須開冷氣，確保門窗緊閉，避免冷氣外漏，並調高冷氣的溫度。根據經濟部能源局家庭節約能源寶典<a href="/know/detail3#infolink3" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>3</sup></a>指出空調舒適度研究分析<a href="/know/detail3#infolink4" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>4</sup></a>中發現國人最佳空調設定為26-28℃，冷氣溫度每調高1℃，就能節省6％用電。
+                </p>
+                <p>
+                    「選節能標章家電 省電省錢愛地球！」日常生活中使用電器用品，常會消耗能源並排放二氧化碳。若使用具節能標章或環保標章之產品、調高冷氣溫度、隨手關燈、拔插頭減少待機、多利用天然採光及通風等，將有效減少個人碳排放量。
+                </p>
+                <h4>行：</h4>
+                <p>
+                    「搭公車，少開車」根據美國環保署資料<a href="/know/detail3#infolink5" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>5</sup></a>及IPCC 2014年發布的AR5 Climate Change 2014<a href="/know/detail3#infolink1" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>6</sup></a>Mitigation of Climate Change顯示，交通運輸佔地球溫室氣體排放14％，最有效的減量方式，就是多騎腳踏車、利用大眾運輸系統、搭公車及捷運。騎乘自行車，不但運動健身，亦能節能減碳；大眾運輸系統每人碳排放量遠低於駕駛小客車。
+                </p>
+
+                <h4>育：</h4>
+                <p>
+                    參與並推動社區節能減碳活動，將節能減碳的觀念透過教育宣導深植每個人心中，以改善溫室氣體之排放。如果每人都種一棵樹，一年約能吸收兩噸的二氧化碳；透過跳蚤市場舊物品的交換買賣，珍惜物資，減少資源浪費及產出垃圾廢棄物。
+                </p>
+                <h4>樂：</h4>
+                <p>
+                    出遊與在地休閒活動建議搭乘大眾運輸，減少燃料消耗，若出國旅行，多選擇直飛的班機以降低二氧化碳排放量。此外，地球公民們一起來計算自己的碳足跡吧~從衣食住行的計算中還可以進一步了解自己的二氧化碳排放狀況喔！
+                </p>
+            </div>
+            <div class="text-center">
+                <img src="~/_x/img/media/Second03.jpg" alt="日常生活中減少二氧化碳排放，我能吃多少點多少、自備環保餐具、隨手關燈、搭乘大眾運輸交通工具等。?" title=" 日常生活中減少二氧化碳排放，我能吃多少點多少、自備環保餐具、隨手關燈、搭乘大眾運輸交通工具等。" />
+            </div>
+            <div class="text-center my-1">
+                <button class="btn btn-info" onclick="img2()" title="圖片詳細說明">圖片詳細說明</button>
+                <div id="img2">
+                    日常生活中減少二氧化碳排放，我能吃多少點多少、自備環保餐具、隨手關燈、搭乘大眾運輸交通工具等。
+                </div>
+            </div>
+            <h3 id="comu">社區能做什麼？</h3>
+            <p>「社區」是民眾生活的日常所在，社區參與反映地方的認知，參與的過程與行動也決定社區及地方發展。社區可以通過綠化改善環境衛生並維持生態系統的平衡與效益，如種植防護林、路旁樹木、農作物及住宅區和公園內的植物等，主要有屋頂綠化（ Roof greening ）、室內綠化（ House greening ）、綠牆（ Green wall ）及綠籬（ Green hedge ）的設置並全面落實綠生活（ Green living ），只需跟著做就能降低居家溫度，節省夏季空調電費100元以上，打造節能減碳的宜居家園。</p>
+            <p>環保署推廣低碳永續家園邁入十年，至今已有3,983個村里響應低碳永續家園的參與工作，其中807個村里取得銅、銀級認證肯定。這些村里中已有半數（ 413處）在公共區域採取綠屋頂、牆面植生或綠籬等區域降溫措施，透過綠色植物提供遮陽效果、植物層結合空氣產生風障隔熱效果、水分蒸散產生的降溫效果及帶動空氣循環驅逐熱浪，使牆面降溫5℃~8℃、室內降溫3℃~5℃，節省夏季空調用電10%~25%。</p>
+
+            <h3 id="enterprise">企業可以做什麼？</h3>
+            <p>根據國際能源署（International Energy Agency， IEA ）評估<a href="/know/detail3#infolink7" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>7</sup></a>，若有效實行具效益之能源效率改善措施，全球中小企業可節約10-30%的能源消費量。工業技術研究院產業科技國際策略發展所指出<a href="/know/detail3#infolink8" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>8</sup></a>，面對全球低碳永續與能源轉型趨勢，企業受國際法規指令要求與客戶永續供應鏈管理壓力將更趨顯著。台灣中小企業數量超過140萬家，數量約占整體企業97.7%，用能約占全國企業3成，能源耗用成本平均約占其營運成本的8.7%；其中將近115萬家的中小型服務業，用能占整體服務業部門將近8成。可見降低中小企業能源耗用，有助企業競爭力提升與節能減碳目標達成。中小企業因能效改善，不僅僅是降低能源成本，生產力價值與經營效益與純粹的節省能源成本相比，高達2.5倍。</p>
+            <p>
+                此外，抵換專案是企業依聯合國清潔發展機制（The Clean Development Mechanism， CDM<a href="/know/detail3#infolink9" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>9</sup></a>）及環保署認可之減量方法，進行溫室氣體減量之專案，申請者須依環保署格式提出專案計畫書，經審議、確證、註冊等程序後，依計畫書執行減量活動，其執行減量成效經查驗機構查證與環保署審查通過後，可得環保署核發減量額度。 核發之減量額度，作為環評減量承諾或自願減量之抵換之用，具鼓勵企業自願性減量之效。
+            </p>
+            <p>
+                同時為鼓勵運輸及住商部門皆可參與，環保署已增列微型規模抵換專案類別（再生能源總裝置容量小於5,000瓩、節電量小於2,000萬度/年或溫室氣體年排放量總減量小於2萬公噸CO<sub>2</sub>），申請者僅需論證減量非屬法規應遵循事項即可提出，透過簡化申請作業程序，鼓勵更多企業參與減量工作，以促進各類型減量技術發展。
+            </p>
+
+
+            <ul>
+                資料來源：
+                <li>[1] [6] <a id="infolink1" href="https://www.ipcc.ch/report/ar5/wg3/" target="_blank" title="另開視窗(IPCC-AR5 Climate Change 2014: Mitigation of Climate Change)">IPCC-AR5 Climate Change 2014: Mitigation of Climate Change</a></li>
+                <li>[2] <a id="infolink2" href="https://www.ipcc.ch/assessment-report/ar5/" target="_blank" title="另開視窗(IPCC 2013 AR5)">IPCC 2013 AR5</a></li>
+                <li>[3] <a id="infolink3" href="https://www.moeaboe.gov.tw/ECW/populace/content/SubMenu.aspx?menu_id=83 " target="_blank" title="另開視窗(經濟部能源局-節約能源)">經濟部能源局-節約能源</a></li>
+                <li>[4] <a id="infolink4" href="https://www.energypark.org.tw/save-energy-resource/books/publication/-/2.html#page/11" target="_blank" title="另開視窗(經濟部能源局-家庭節約能源寶典)">經濟部能源局-家庭節約能源寶典</a></li>
+                <li>[5] <a id="infolink5" href="https://www.epa.gov/ghgemissions/global-greenhouse-gas-emissions-data" target="_blank" title="另開視窗(美國國家環境保護署-Global Greenhouse Gas Emissions Data)">美國國家環境保護署-Global Greenhouse Gas Emissions Data</a></li>
+                <li>[7] <a id="infolink6" href="http://fundacionbariloche.org.ar/wp-content/uploads/2015/11/C2E2_REPORT_LAC.pdf" target="_blank" title="另開視窗(IEA-ACCELERATING ENERGY EFFICIENCY: INITIATIVES AND OPPORTUNITIES-LATIN AMERICAN AND CARIBBEAN_PDF檔案)">IEA-ACCELERATING ENERGY EFFICIENCY: INITIATIVES AND OPPORTUNITIES-LATIN AMERICAN AND CARIBBEAN</a></li>
+                <li>[8] <a id="infolink8" href="http://ieknet.iek.org.tw/iekrpt/rpt_more.aspx?actiontype=rpt&indu_idno=0&domain=9&rpt_idno=224733856" target="_blank" title="另開視窗(工業技術研究院-全球積極發展節能減碳中小企業首要提升能源管理認知)">工業技術研究院-全球積極發展節能減碳_中小企業首要提升能源管理認知</a></li>
+                <li>[9] <a id="infolink9" href="https://unfccc.int/process-and-meetings/the-kyoto-protocol/mechanisms-under-the-kyoto-protocol/the-clean-development-mechanism" target="_blank" title="另開視窗(UNFCCC-聯合國清潔發展機制 CDM)">UNFCCC-聯合國清潔發展機制 CDM</a></li>
+            </ul>*@
+
+
+            <div class=" text-right my-3">
+                @*判斷是否已經登入*@
+                @if (User.Identity.IsAuthenticated)
+                {
+                    //判斷登入角色,符合角色則顯示按鈕進入後台
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a class="btn btn-danger text-center" href="~/info/Edit/@ViewBag.id">編輯</a>
+                    }
+
+                }
+            </div>
+        </main>
+        <div class="col-lg-1">    </div>
+    </div>
+
+
+</div>
+
+<script>
+    //function we() {
+    //    if (document.body.clientWidth < 1240) {
+    //        $('html,body').animate({ scrollTop: $('#we').offset().top - 10 }, 500);
+    //    }
+    //    else {
+
+    //        $('html,body').animate({ scrollTop: $('#we').offset().top - 30 }, 500);
+    //    }
+    //}
+    //function comu() {
+    //    if (document.body.clientWidth < 1240) {
+
+    //        $('html,body').animate({ scrollTop: $('#comu').offset().top - 10 }, 600);
+    //    }
+    //    else {
+    //        $('html,body').animate({ scrollTop: $('#comu').offset().top - 30 }, 600);
+    //    }
+    //}
+    //function enterprise() {
+    //    if (document.body.clientWidth < 1240) {
+    //        $('html,body').animate({ scrollTop: $('#enterprise').offset().top - 10 }, 700);
+    //    } else {
+
+    //    $('html,body').animate({ scrollTop: $('#enterprise').offset().top - 30}, 700);
+    //    }
+    //}
+    function img1() {
+        $("#img1").slideToggle();
+
+    };
+    function img2() {
+        $("#img2").slideToggle();
+
+    };
+
+</script>
+
+

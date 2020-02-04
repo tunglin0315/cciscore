@@ -1,0 +1,244 @@
+﻿
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style=" font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png"  alt="首頁圖示"  title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub">氣候變遷知識</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/EachCountry">各國氣候變遷調適</a></li>
+        <li class="breadcrumb-item ">新加坡</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom">
+                <h2 class="h2">
+                    @*@Html.Raw(@ViewBag.Title)*@
+                    新加坡氣候變遷調適策略
+                </h2>
+            </div>
+            @*@Html.Raw(@ViewBag.html)*@
+            <h4>新加坡氣候變遷調適背景</h4>
+            <p>2015年，新加坡氣候研究中心（Centre for Climate Research Singapore, <a href="http://ccrs.weather.gov.sg/" target="_blank" title="另開視窗">CCRS</a>）和英國氣象局哈德利中心完成第二次全國氣候變遷研究的第一階段。該研究分析新加坡到2100年的氣候，預測新加坡可能變得更溫暖、經歷更頻繁和嚴重的風暴，並面臨海平面上升的危險。</p>
+            <p>氣候預測顯示：本世紀末(2070–2099)相較於1980–2009，新加坡的均溫將上升1.4–4.6°C。海平面將上升 0.25–0.76公尺。21世紀的新加坡。溫暖天數將增加；東北季風盛行的季節，風力也將加強，未來新加坡的乾濕季將變得更明顯，且乾濕季降雨會變得更頻繁且強勁。氣候影響可能對新加坡構成更嚴重的風險，例如洪水導致傷亡、財產損失和交通中斷、病媒傳染病的風險增加、森林火災等。</p>
+            <h4>調適行動重點</h4>
+            <p>新加坡的公部門為保護新加坡制定一系列適應氣候變遷的措施。這些措施旨在減少氣候變遷對社區、經濟和人民日常生活的不利影響。新加坡面臨的氣候邊遷風險主要有六個方面：保護海岸、水管理、生物多樣性、公共衛生和食品供應的復原力、維持基本服務正常運行、保持建築和基礎設施的安全。</p>
+            <h4>調適策略</h4>
+            <div class="row">
+                <div class="col-md-4 mb-3 text-center">
+                    <img src="~/_x/img/know/Singapore01.jpg" alt="沿岸防護" title="沿岸防護" />
+                </div>
+                <div class="col-md-8 col_Center">
+                    <div>
+                        <h4>沿岸防護</h4>
+                        <div class="pl-5">
+                            <h5>主要風險</h5>
+                            <ul>
+                                <li>海平面上升可能影響新加坡沿岸社區與土地</li>
+                            </ul>
+                            <h5>已執行工作</h5>
+                            <ul>
+                                <li>提高最低開墾高度</li>
+                                <li>提高部分沿海公路的高度</li>
+                            </ul>
+                            <h5>進行中工作</h5>
+                            <ul>
+                                <li>進行海岸調適研究，以確定長期保護海岸的選擇</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 mb-3 text-center">
+                    <img src="~/_x/img/know/Singapore02.jpg" alt="水資源與排水" title="水資源與排水" />
+                </div>
+                <div class="col-md-8 col_Center ">
+                    <div>
+                        <h4>水資源與排水</h4>
+                        <div class="pl-5">
+
+                            <h5>主要風險</h5>
+                            <ul>
+                                <li>供水可能受更頻繁及嚴重的乾旱影響</li>
+                                <li>強降雨和海平面上升可能增加洪水風險</li>
+                            </ul>
+                            <h5>已執行工作</h5>
+                            <ul>
+                                <li>供水多樣化：<a data-toggle="collapse" role="button" href="#singapo" title="點我看詳細">四個國家水龍頭</a></li>
+                                <li class="collapse border border-warning rounded p-2" id="singapo">
+                                    新加坡的用水來自「國家的四個水龍頭」，包含：
+                                    <ul>
+                                        <li>在地水源（local catchment water）</li>
+                                        <li>高度淨化回收水（highly-purified reclaimed water, 又稱NEWater）</li>
+                                        <li>淡化水（desalinated water）</li>
+                                        <li>輸入水（imported water）</li>
+                                    </ul>
+                                </li>
+                                <li>制定節水方案</li>
+                                <li>雨水管理系統（來源-路徑-受體方法）</li>
+                            </ul>
+                            <h5>進行中工作</h5>
+                            <ul>
+                                <li>建造第五座高度淨化回收水NEWater廠和兩座新海水淡化廠</li>
+                                <li>研究創新地下排水和水庫系統的可行性</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3 text-center">
+                    <img src="~/_x/img/know/Singapore03.jpg" alt="生物多樣性和綠色植物" title="生物多樣性和綠色植物護" />
+                </div>
+                <div class="col-md-8 col_Center">
+                    <div>
+                        <h4>生物多樣性和綠色植物</h4>
+                        <div class="pl-5">
+                            <h5>主要風險</h5>
+                            <ul>
+                                <li>樹木可能因為強風而受損或連根拔起</li>
+                                <li>生物多樣性可能受溫度和降雨量變化影響</li>
+                            </ul>
+                            <h5>已執行工作</h5>
+                            <ul>
+                                <li>建立海洋保護區</li>
+                                <li>恢復和保護紅樹林</li>
+                                <li>加強火災熱點巡邏</li>
+                                <li>增加和加強樹木檢查</li>
+                            </ul>
+                            <h5>進行中工作</h5>
+                            <ul>
+                                <li>制定火災概率指數</li>
+                                <li>改善棲息地管理和恢復棲息地</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4  mb-3 text-center">
+                    <img src="~/_x/img/know/Singapore04.jpg" alt="公共衛生和糧食安全" title="公共衛生和糧食安全" />
+                </div>
+                <div class="col-md-8 col_Center">
+                    <div>
+                        <h4>公共衛生和糧食安全</h4>
+                        <div class="pl-5">
+                            <h5>主要風險</h5>
+                            <ul>
+                                <li>高溫將影響人類健康和醫療保健運作</li>
+                                <li>由於氣溫升高和降雨量增加，病媒/蟲害數量可能增加，導致登革熱等疾病的發病率增加</li>
+                                <li>若生產受到極端天氣影響，進口食品供應將面臨中斷和價格飆升</li>
+                            </ul>
+                            <h5>已執行工作</h5>
+                            <ul>
+                                <li>制定全國性計畫抑制發病率</li>
+                                <li>提示工作場所安全和健康指南</li>
+                                <li>實施食品多樣化策略</li>
+                                <li>提高當地農民的生產力和能力，增加當地糧食生產</li>
+                            </ul>
+                            <h5>進行中工作</h5>
+                            <ul>
+                                <li>為公眾制定熱指數並提供諮詢服務</li>
+                                <li>審查現行病媒控制制度</li>
+                                <li>持續支持當地農民</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4  mb-3 text-center">
+                    <img src="~/_x/img/know/Singapore05.jpg" alt="基礎設施網絡" title="基礎設施網絡" />
+                </div>
+                <div class="col-md-8 col_Center">
+                    <div>
+                        <h4>基礎設施網絡</h4>
+                        <div class="pl-5">
+                            <h5>主要風險</h5>
+                            <ul>
+                                <li>強降雨，海平面上升和溫度變化可能影響電信、電力和交通基礎設施的營運</li>
+                            </ul>
+                            <h5>已執行工作</h5>
+                            <ul>
+                                <li>在低窪地區的地下捷運站安裝防洪措施</li>
+                                <li>升級機場排水系統</li>
+                            </ul>
+                            <h5>進行中工作</h5>
+                            <ul>
+                                <li>檢查發電站、運輸和電信等基礎設施對洪水和溫度變化的韌性</li>
+                                <li>將樟宜機場航站高於平均海平面55.5米</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3 text-center">
+                    <img src="~/_x/img/know/Singapore06.jpg" alt="建築、結構、與基礎設施" title="建築、結構、與基礎設施" />
+                </div>
+                <div class="col-md-8 col_Center">
+                    <div>
+                        <h4>建築、結構、與基礎設施</h4>
+                        <div class="pl-5">
+                            <h5>主要風險</h5>
+                            <ul>
+                                <li>基礎設施的安全性和可靠性受強風和高溫影響</li>
+                                <li>降雨量增加將導致坡面不穩定</li>
+                            </ul>
+                            <h5>已執行工作</h5>
+                            <ul>
+                                <li>實施定期結構檢查，以確保結構穩定</li>
+                            </ul>
+                            <h5>進行中工作</h5>
+                            <ul>
+                                <li>研究氣候變遷對建築物和結構的影響</li>
+                                <li>研究氣候變遷對邊坡穩定性和完整性的影響</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+@section styles {
+    <style>
+        h4 {
+            font-weight: bold;
+            color: #129696
+        }
+
+            h4 ~ p {
+                margin-left: 45px;
+            }
+
+        h5 {
+            font-weight: bold;
+        }
+
+            h5 + ul {
+                font-size: 19px;
+            }
+
+        .ccis_Detail img {
+            width: 95%;
+            border-radius: 5px;
+            max-width: 945px;
+        }
+
+        /*.ulstr {
+            list-style-type: none;
+            font-size: 19px;
+        }*/
+        .col_Center {
+            display: flex;
+            align-items: center;
+        }
+
+        table tr td ul {
+            margin-bottom: 0;
+        }
+    </style>
+}

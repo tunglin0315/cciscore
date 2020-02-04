@@ -1,0 +1,57 @@
+﻿{
+   "ContextClassName": "dbCCISCoreContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "DoNotCombineNamespace": false,
+   "IdReplace": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models\/EF",
+   "ProjectRootNamespace": "CCISWebCore",
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[EnergyStar_Contact]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[EnergyStar_Corporation]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[EnergyStar_Criteria]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[EnergyStar_Product]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[EnergyStar_Product_Spec]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Infos]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[InfoTag]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Knowledged]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Tag]"
+      }
+   ],
+   "UseDatabaseNames": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false
+}

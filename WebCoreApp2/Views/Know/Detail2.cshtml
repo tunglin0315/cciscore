@@ -1,0 +1,370 @@
+﻿<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub">氣候變遷知識</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub_Sub">氣候變遷介紹</a></li>
+        <li class="breadcrumb-item"> @ViewBag.Title</li>
+
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+
+        @*<main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">*@
+        <main role="main" class="col-md-10 mx-sm-auto col-lg-9 pt-3  ccis_Detail">
+
+            <div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2 class="h2">@Html.Raw(@ViewBag.Title)</h2>
+            </div>
+            @Html.Raw(@ViewBag.html)
+
+            @*<div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2>氣候變遷衝擊</h2>
+            </div>
+            <h3>天氣與氣候</h3>
+            <div class="text-center mb-3">
+                <img src="~/_x/img/know/weather0626.jpg" alt="天氣VS氣候" title=" 「天氣（Weather）」指在一定空間和時間範圍內的大氣狀態及其變化。「氣候(Climate)」是指一個地區在一段長時間天氣的平均狀態。" />
+            </div>
+            <div class="text-center my-1">
+                <button class="btn btn-info" onclick="img1()" title="圖片詳細說明">圖片詳細說明</button>
+                <div id="img1" style="display: none">
+                    「天氣（Weather）」指在一定空間和時間範圍內的大氣狀態及其變化。
+                    「氣候(Climate)」是指一個地區在一段長時間天氣的平均狀態。
+                </div>
+            </div>
+            <p>
+                「天氣（Weather）」指在一定空間和時間範圍內的大氣狀態及其變化，為目前正在發生或不久的未來可能發生的現象，如大氣的溫度、雲量、降水、風的狀態等，也就是我們日常看到的晴、雨、溼、暖等的大氣現象。
+            </p>
+            <p>
+                「氣候(Climate)」是指一個地區在一段長時間天氣的平均狀態，也包括極端現象的變化在內。狹義上來說，指含溫度、降水、高空與地表所有大氣特性的長期統計特徵（此處的長期統計依世界氣象組織定義為30年平均值）。廣義上則包括由大氣圈、水圈、冰雪圈、岩石圈及生物圈等組成的系統，在月、季、年或10年以上之平均狀態。（資料來源：NASA<a href="/know/detail2#infolink1" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>1</sup></a>）
+            </p>
+
+            <h3>什麼是氣候變遷？</h3>
+            <p>
+                氣候變遷是指氣候平均狀態的顯著改變或持續較長一段時間（典型的為10年或更長）的氣候改變。氣候變遷的原因可能是地球的自然過程、外部力量，或者人為對大氣組成和土地利用的持續性改變。
+            </p>
+            <p>「聯合國氣候變化綱要公約（UNFCCC）」將氣候變遷定義為「在一段可比較的時距內，所觀測的自然氣候變化以外的氣候特徵，且直接或間接歸因於人類活動所導致的大氣成分改變，而引起之氣候變化」。在此所指氣候變遷專指受人類活動影響的部分，與受自然因素影響的氣候變遷作出了明確的區分。</p>
+
+            <h3>氣候變遷與全球暖化</h3>
+            <p>NASA定義<a href="/know/detail2#infolink1" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>2</sup></a>，全球暖化是過去一個世紀地表平均氣溫異常迅速增加的現象；而IPCC 2018年出版的1.5 ºC特別報告中解釋<a href="/know/detail2#infolink2" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>3</sup></a>，由大氣觀測資料可知，全球暖化指全球地表平均氣溫在30年期間快速增加。總體而言，全球暖化是地球氣候系統的長期發熱，通常被測量為地球表面氣溫的平均增加。根據聯合國政府間氣候變化專門委員會(Intergovernmental Panel on Climate Change, IPCC)於2013年發布的第5次評估報告（Fifth Assessment Report,AR5）指出<a href="/know/detail2#infolink3" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>4</sup></a>，自1880到2012年，全球平均氣溫上升0.85℃，且正以數十年到數千年前所未有的速度發展，此全球暖化的現象極有可能（超過95％的可能性）是自工業革命以來，人類活動（主要是化石燃料燃燒）增加地球大氣中的溫室氣體導致的。而根據「臺灣氣候變遷科學報告2017<a href="/know/detail2#infolink4" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>5</sup></a>」指出臺灣全年氣溫在1900-2012年上升約1.3℃，且近50年、近10年增溫有加速趨勢。</p>
+
+            <h3>為什麼會發生全球暖化？</h3>
+            <p>
+                發生氣候變遷的因素有很多，聯合國政府間氣候變化專門委員會（Intergovernmental Panel on Climate Change, IPCC）於2013年發布的第5次評估報告（Fifth Assessment Report,AR5<a href="/know/detail2#infolink5" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>6</sup></a>）指出自工業革命起，人為溫室氣體的排放不斷上升，當前已達到最高水平，主要是因經濟和人口增長所造成。值得注意的是，1750年至2011年間約一半的人為CO<sub>2</sub>排放是在最後40年間產生，造成大氣二氧化碳（CO<sub>2</sub>）、甲烷（CH<sub>4</sub>）和氧化亞氮（N<sub>2</sub>O）的濃度增加到過去80萬年以來最高點。CO<sub>2</sub>排放約40%留存在大氣中；剩餘的CO<sub>2</sub>從大氣中移除，儲存在陸地（植物和土壤）和海洋中。海洋大約吸收約30%的人為排放CO<sub>2</sub>，和水反應產生碳酸導致海洋酸化。整個氣候系統受到各種人為排放溫室氣體的影響，都可能為氣候變遷的主要原因之一。
+            </p>
+            <h3>全球暖化後還會有寒冷的冬天嗎？</h3>
+
+            <p>不，並非如此，在地球逐漸變暖的趨勢中，也會出現極度寒冷的天氣。2016年臺灣出現帝王級寒流，中央研究院許晃雄解釋<a href="/know/detail2#infolink4" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>7</sup></a>，主要因為北極振盪位於負相位（氣象局北極振盪介紹<a href="/know/detail2#infolink6" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>8</sup></a>），劇烈的大氣擾動是造成急凍事件的主因。</p>
+            <p>NASA說明<a href="/know/detail2#infolink7" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>9</sup></a>，所謂的北極振盪（Arctic Oscillation， AO）指北半球北緯20 度以北地區，北極地區到美國中部的空氣移動，是大氣最顯著的現象之一。有時南方的氣壓較高，所以溫暖的空氣向北推進，並將真正寒冷的空氣留在北極，這被稱為「正相」。其他時候北極的氣壓較高，因此冷空氣向南移動，這被稱為「負相」。</p>
+            <p>在最近的研究中發現<a href="/know/detail2#infolink8" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>10</sup></a>，在全球暖化趨勢下，熱帶海洋溫度上升與極區海冰融化，均可能使大氣擾動更劇烈，將更多的暖空氣與水氣往高緯度地區傳送，同時也導引更多的冷空氣往低緯度地區移動，導致極區變暖、中緯度變冷、中緯度地區急凍的發生機率變高，讓天氣現象變得更劇烈。</p>
+            <p>寒冷的天氣是短時間的，但全球暖化是一個長時間溫度統計的趨勢，人類排放過多溫室氣體造成的全球暖化持續發生中，並不會因為幾次區域性寒冬事件而停滯，但氣候持續暖化導致的結果，某些區域雖然寒冬發生的機會減少，但是還是無法避免極端寒冷事件的再次發生。</p>*@
+
+            <div class="accordion " id="accordionExample">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <button class="btn text-left" id="heading1" title="全球均溫上升（點擊看內文）" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                <img src="~/_x/img/know/clock_011.png" alt="全球均溫上升" />全球均溫上升
+                            </button>
+                            <div id="collapse1" class="collapse " aria-labelledby="heading1" data-parent="#accordionExample">
+                                <div class="card-body ulstr">
+                                    <h4>全球均溫上升</h4>
+                                    <ul>
+                                        <li>
+                                            溫室氣體吸收大氣中的熱能，使全球氣溫逐漸升高，自1880到2012年，全球平均氣溫上升0.85℃（IPCC AR5<a href="/know/detail2#infolink9" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>11</sup></a>），臺灣約增加1.3℃（臺灣氣候變遷科學報告2017<a href="/know/detail2#infolink10" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>12</sup></a>），且近年增溫速度有增加趨勢，日最低溫的增溫尤為顯著。
+                                        </li>
+                                        <li>
+                                            根據「臺灣氣候變遷科學報告2017」推估，臺灣在最嚴重情況下，本世紀末平均氣溫將可能增溫超過3℃、未來的極端高溫每年可能超過100天、乾旱事件強度比現在嚴重至少12%、未來的雨季會有更多雨，且極端降雨事件的雨量增加20%、颱風的降雨強度也增強超過20%。
+                                        </li>
+                                        <li>
+                                            世界衛生組織WHO認為<a href="/know/detail2#infolink9" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>13</sup></a>，高溫意味著熱浪的發生會更加頻繁，且持續時間也越長。嚴重的熱浪會導致疾病的發生，如熱痙攣、中暑、甚至死亡。
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <button class="btn text-left" id="heading3" title="極端氣候現象（點擊看內文）" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                <img src="~/_x/img/know/clock_022.png" alt="極端氣候現象" />極端氣候現象
+
+                            </button>
+                            <div id="collapse3" class="collapse " aria-labelledby="heading3" data-parent="#accordionExample">
+                                <div class="card-body ulstr">
+                                    <h4>極端天氣事件</h4>
+                                    <ul>
+                                        <li>
+                                            根據IPCC AR5<a href="/know/detail2#infolink9" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>23</sup></a>定義，極端天氣事件形容歷史中極罕見的天氣現象，尤其是嚴重或反常氣候的類型。如颱風等熱帶性氣旋，可以從溫暖的海水中獲得更多的能量。因此當海水溫度越高，颱風及熱帶氣旋的威力也越大，將挾帶更豐沛的雨量。由於溫度越高所產生的蒸發現象越旺盛，因此氣候變遷所造成的颱風威力也隨之增強。
+                                        </li>
+                                        <li>
+                                            近年來常發生極端低溫或極端高溫等現象，而熱浪是比高溫更極端的現象，世界氣象組織（World Meteorological Organization ，WMO）定義熱浪標準為每日最高溫超過30年的氣候平均攝氏5度，且持續超過5日。
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <button class="btn text-left" id="heading5" title="海平面上升（點擊看內文）" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                <img src="~/_x/img/know/clock_044.png" alt="海平面上升" />海平面上升
+                            </button>
+                            <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+                                <div class="card-body ulstr">
+                                    <h4>海平面上升</h4>
+                                    <ul>
+                                        <li>
+                                            當海水溫度上升，海水的體積將會增加。如果每一滴水都增加一點體積，便會擴張整個海洋的深度，使海平面上升。而極地山區冰川和冰蓋的冰量數量正在減少，冰川融化流入海洋促使了海平面加速上升，同時擴大了海洋變暖的範圍。
+                                        </li>
+                                        <li>
+                                            根據2019年IPCC發布的海洋及冰凍圈特別報告指出<a href="/know/detail2#infolink15" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>17</sup></a>，全球平均海平面自1902到2015年上升了0.16公尺（約在0.12-0.21公尺範圍），而在2006-2015這十年間，每年平均上升3.6公釐（約3.1-4.1公釐每年），這個上升速率是前所未見的，大約是1901-1990的平均上升速率的2.5倍（約1.4公釐每年）。並且表示海平面將在未來幾個世紀持續上升，即使溫室氣體排放驟減且將全球升溫限制在遠低於 2°C，到2100年仍可能上升 30-60公分，但如果溫室氣體排放持續強勁增長，則可能達到 60-110公分。
+                                        </li>
+                                        <li>
+                                            特別報告同時指出，海平面上升將增加漲潮和風暴等期間產生的極端海平面上升事件的頻率。有跡象顯示，不論額外升溫幾度，到本世紀中期，許多地區過去百年一遇的事件都將每年發生一次，許多低窪沿海城市和小島嶼將面臨風險，將威脅海岸線及週遭的城市與建築。海平面上升會影響成千上萬居住於海岸附近低窪地區的民眾，也將削弱海灘以及破壞沿海濕地。
+                                        </li>
+                                        <li>
+                                            根據「臺灣氣候變遷科學報告2017<a href="/know/detail2#infolink10" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>18</sup></a>」，全球與臺灣平均海平面在過去數十年皆有上升的趨勢，全球平均海平面高度在過去一百多年上升了0.19公尺，而臺灣周遭海域的海平面近20年期間上升速度為每年3.4公釐。
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <button class="btn text-left" id="heading7" title="海洋酸化（點擊看內文）" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                                <img src="~/_x/img/know/clock_055.png" alt="海洋酸化" />海洋酸化
+                            </button>
+                            <div id="collapse7" class="collapse " aria-labelledby="heading7" data-parent="#accordionExample">
+                                <div class="card-body ulstr">
+                                    <h4>海洋酸化</h4>
+                                    <ul>
+                                        <li>
+                                            據2019年IPCC發布的海洋及冰凍圈特別報告說明<a href="/know/detail2#infolink15" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>24</sup></a>人類活動會排放至大氣中的二氧化碳，其中有將近15%至40%的二氧化碳排放量會存留在大氣中超過千年之久，另有約25%是由海洋吸收，NASA數據指出<a href="/know/detail2#infolink17" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>25</sup></a>每年表層海水吸收約二十億噸二氧化碳，同時吸收了大氣中90%熱量。隨著大氣中二氧化碳的累積，導致越來越多的二氧化碳溶於海水形成碳酸，造成海水酸鹼值降低（即酸化）；工業革命以來，全球海洋表水pH平均值下降約0.1（數值越低代表酸性越高），估計在21世紀末，海洋表水pH將達到2,000萬年來的最低值。
+                                        </li>
+                                        <li>
+                                            海水酸化的加速威脅整個海洋生態，尤其是會降低海洋生物形成碳酸鈣殼體或骨架的能力。造成海水酸化的因素還包括近岸海水優養化，或是自然釋放、人為排放入海洋的化學物質，例如海底火山活動的增加、大氣的酸性物沉降通量增加等。雖然研究模擬結果顯示暖化對海水pH的影響很微小，但估計2100年海水平均pH將由工業革命前的8.2下降到7.8。
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <button class="btn text-left" id="heading9" title="生態系統轉變（點擊看內文）" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="true" aria-controls="collapse9">
+                                <img src="~/_x/img/know/clock_088.png" alt="生態系統轉變" />生態系統轉變
+                            </button>
+                            <div id="collapse9" class="collapse " aria-labelledby="heading9" data-parent="#accordionExample">
+                                <div class="card-body ulstr">
+                                    <h4>生態系統轉變</h4>
+                                    <ul>
+                                        <li>
+                                            根據「臺灣氣候變遷科學報告2017<a href="/know/detail2#infolink10" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>22</sup></a>」指出，大多數動、植物僅在特定的氣候條件下成長，例如溫度和降雨模式，即使輕微的氣候改變都可能會對該區域的動、植物、甚至是整個生態系統造成影響。由於全球暖化，某些物種已經被迫遷移到較寒冷的區域，例如北美的動、植物正逐漸往北方或高海拔地區遷徙。氣候變遷也會影響動、植物的生命週期，例如：隨著氣溫回暖，某些植物提早在春天開始生長並開花，且存活到秋季；某些動物提早從冬眠中甦醒或是改變遷徙的時間。
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <button class="btn text-left" id="heading11" title="熱浪來臨時（點擊看內文）" type="button" data-toggle="collapse" data-target="#collapse11" aria-expanded="true" aria-controls="collapse11">
+                                <img src="~/_x/img/know/clock_177.png" alt="熱浪來臨時" />熱浪來臨時
+                            </button>
+                            <div id="collapse11" class="collapse " aria-labelledby="heading9" data-parent="#accordionExample">
+                                <div class="card-body ulstr">
+                                    <h4>熱浪來臨時</h4>
+                                    <ul>
+                                        <li> <strong>一、保持涼爽：</strong>          </li>
+                                                <li>穿著輕便、淺色、寬鬆、透氣的衣服。</li>
+                                                <li>不論時間長短，絕不可將幼童單獨留在密閉、停泊的汽車內。</li>
+                                                <li>儘可能待在室內涼爽、通風或有空調的地方；若家中沒有空調建議於高溫時至有空調設備的公共場所避暑。</li>
+                                                <li>室內加裝遮光窗簾，避免陽光的直接照射，並關掉非必要的燈和電器設備，以避免產生更多的熱量。</li>
+                                                <li>雇主應加強通風設施或採用空氣調節器，以隔離工作場所的高溫設施及提供散熱裝置，減少熱能散發到工作間。</li>
+
+                                         
+                                        <li><strong>二、補充水分：</strong></li>
+                                        
+                                                <li>不論活動程度如何，都應該隨時補充水分，不可等到口渴才補。</li>
+                                                <li>補充水分，且養成每天至少 2,000 ㏄白開水的好習慣；但若醫囑限制少量者，應詢問醫師天氣酷熱時，應喝多少量為宜。</li>
+                                                <li>戶外工作者或運動者建議每小時補充 2 至 4 杯（1 杯為 240c.c.）白開水，並避免菸酒。</li>
+                                                <li>可多吃蔬果，因蔬果含有較多水分、豐富的維生素、礦物質及膳食纖維，可促進身體健康。</li>
+                                                <li>不可補充含酒精及大量糖分的飲料，以避免身體流失更多水分。</li>
+                                                <li>避免喝太過冰冷的水，以避免胃不舒服。</li>
+                                          
+                                        <li><strong>三、提高警覺：</strong></li>
+                                        
+                                                <li>（一）戶外工作者、運動員或密閉空間工作者，應隨時留意自己及身邊同事的身體狀況，適當休息並補充水分。</li>
+                                                <li>（二）嬰幼童及長者應避免於上午 10 點至下午 2 點外出，如果必須外出，建議行走於陰涼處，並塗抹防曬霜、戴寬邊帽以及太陽眼鏡。</li>
+                                                <li>（三）於室內擺放溫度計，隨時了解室內溫度，避免室內溫度過高造成身體不適，並隨時注意氣象局發布的天氣預報，選擇氣溫較低的日期安排戶外活動。</li>
+                                                <li>（四）檢查居家及工作場所空調相關設備，是否正常運作。</li>
+                                                <li>（五）為預防員工熱傷害，雇主應提供適宜的工作環境及相關防護措施及宣導預防熱傷害、調整作業時間、安排相關課程，使員工認識熱傷害的症狀，以強化預防熱傷害的行動。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <button class="btn text-left" id="heading2" title="水產漁獲量減少（點擊看內文）" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                <img src="~/_x/img/know/clock_099.png" alt="水產漁獲量減少" />水產漁獲量減少
+                            </button>
+                            <div id="collapse2" class="collapse " aria-labelledby="heading2" data-parent="#accordionExample">
+                                <div class="card-body ulstr">
+                                    <h4>水產漁獲量減少</h4>
+                                    <ul>
+                                        <li>
+                                            臺灣位於利於漁業發展的地理位置，加上氣候與水文的優越條件，使臺灣周邊海域成為許多洄游性魚類必經之道，漁業除是臺灣重要產業外，更是供給國人所需之動物性蛋白質與Omg3的重要來源，對於我國糧食供應與糧食安全有舉足輕重的影響。
+                                        </li>
+                                        <li>
+                                            氣候變遷造成的環境變動將直接或間接影響漁業生產的質與量，並使得漁產供應的不確定性與風險增加，進而衝擊我國糧食供應鏈。根據IPCC與聯合國糧食及農業組織（Food and Agriculture Organization of the United Nations, FAO）描述<a href="/know/detail2#infolink18" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>26</sup></a>氣候的緩變（海水暖化、海洋酸化等）與驟變（水溫異常、降雨型態與頻度改變、颶風等）將改變海洋混合層、營養物質循環及基礎生產力，進而影響水產資源的成長、死亡、資源量及其生態結構。
+                                        </li>
+                                        <li>
+                                            尤其是對臺灣沿海漁業的衝擊，部分定棲性與洄游性種群的消失與季節來游性改變或遠離現象，造成漁產量減少、漁獲物種組成改變、生態系統失衡、漁場分佈改變、漁撈作業困難度增加等。劇烈降雨造成土石流破壞養殖水質、降雨量減少養殖用水短缺、海平面上升養殖面積減少等都造成養殖漁業的困難。
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <button class="btn text-left" id="heading4" title="水資源匱乏（點擊看內文）" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                <img src="~/_x/img/know/clock_122.png" alt="水資源匱乏" />水資源匱乏
+                            </button>
+                            <div id="collapse4" class="collapse " aria-labelledby="heading4" data-parent="#accordionExample">
+                                <div class="card-body ulstr">
+                                    <h4>水資源匱乏</h4>
+                                    <ul>
+                                        <li>
+                                            氣候變遷正在影響水資源的使用情形，將導致部分缺水地區的情況更加嚴重，而氣溫上升、降水模式改變及乾旱增加將會影響湖泊、河流、及地下水的水量。
+                                        </li>
+                                        <li>
+                                            「臺灣氣候變遷科學報告2017<a href="/know/detail2#infolink10" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>19</sup></a>」指出，氣候變遷導致水溫上升的現象也影響到水環境，增加水質惡化之潛勢，進而影響水資源的取得、安全與品質，造成地區性水資源短缺、飲用水缺乏或品質不佳。另一方面由於地下水之減少，而導致農地鹽化，間接影響農作物收成、漁獲供應及公眾健康。
+                                        </li>
+                                        <li>
+                                            洪水及乾旱的發生除影響供水系統外，暴雨沖刷也會影響到下游的水環境系統。水溫的提高及水滯留時間的增加將導致藻類大量繁殖影響水體，也增加水中微生物數量及有機物濃度，衍生消毒副產物濃度大幅上升之問題，直接影響供水安全。
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <button class="btn  text-left" id="heading6" title="能源供給不足（點擊看內文）" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                                <img src="~/_x/img/know/clock_133.png" alt="能源供給不足" />能源供給不足
+                            </button>
+                            <div id="collapse6" class="collapse " aria-labelledby="heading6" data-parent="#accordionExample">
+                                <div class="card-body ulstr">
+                                    <h4>能源供給不足</h4>
+                                    <ul>
+                                        <li>
+                                            2014年IPCC發佈的AR5 Climate Change 2014<a href="/know/detail2#infolink16" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>20</sup></a>Mitigation of Climate Change第七章指出，全球氣候變遷將直接影響我們日常生活耗用能源的情形，包括能源使用量和使用時機。隨著氣溫升高，人們將更頻繁地使用空調以維持涼爽的溫度，而消耗更多電力。
+                                        </li>
+                                        <li>
+                                            另一方面，全球暖化使寒帶地區的氣溫較為舒適，進而減少居民的暖氣使用量。氣候變遷對能源供給的衝擊主要在供給設施在安全性的區位，溫度持續升高將影響建築、煉油及發電設施等設施的耐受性，而愈趨頻繁的極端事件將影響能源設施的安全性。
+                                        </li>
+                                        <li>
+                                            「臺灣氣候變遷科學報告2017<a href="/know/detail2#infolink10" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>21</sup></a>」指出，氣候變遷對能源的影響並非單一方向，由氣候條件與地理位置而定，尤其對於貧窮地區而言，能源使用增加造成經濟損失衝擊較為巨大。此外，能源需求提高可能加劇溫室氣體排放，形成惡性循環的現象。
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <button class="btn  text-left" id="heading8" title="作物歉收糧食短缺（點擊看內文）" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+                                <img src="~/_x/img/know/clock_144.png" alt="作物歉收糧食短缺" />作物歉收糧食短缺
+                            </button>
+                            <div id="collapse8" class="collapse " aria-labelledby="heading8" data-parent="#accordionExample">
+                                <div class="card-body ulstr">
+                                    <h4>作物歉收糧食短缺</h4>
+                                    <ul>
+                                        <li>
+                                            聯合國糧食及農業組織FAO指出<a href="/know/detail2#infolink19" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>27</sup></a>，晚上氣溫上升1攝氏度，稻米收成會減少一成。我們所種植的實用農作物需要在適宜的溫度和足夠的水才能茁壯成長。不斷變化的氣候對作物的影響有好有壞，例如，北部地區通常有涼爽的溫度，所以天氣回暖可能有助於某些作物生長；南部地區的溫度較為炎熱，更多的熱量可能會損害作物的生長。
+                                        </li>
+                                        <li>
+                                            2014年IPCC發布的AR5 Climate Change 2014<a href="/know/detail2#infolink16" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>28</sup></a>Mitigation of Climate Change第十一章指出，氣候變遷會對糧食作物生產和食品供應的影響，除升溫對於作物適栽區產生北移，及縮短作物生育日期間接導致產量減少外，氣候變遷導致氣候不確定性提高，極端氣候發生頻率增加，如豪雨、乾旱、極端高溫、極端低溫，將使作物瞬間受損，不僅是國內糧食生產量減少的問題，其他糧食輸出國也會面臨相同威脅，將使全球糧食供應鏈更加脆弱，這些因素都將影響未來糧食安全。
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <button class="btn  text-left" id="heading10" title="人體健康影響（點擊看內文）" type="button" data-toggle="collapse" data-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
+                                <img src="~/_x/img/know/clock_155.png" alt="人體健康影響" />人體健康影響
+                            </button>
+                            <div id="collapse10" class="collapse " aria-labelledby="heading10" data-parent="#accordionExample">
+                                <div class="card-body ulstr">
+                                    <h4>人體健康影響</h4>
+                                    <ul>
+                                        <li>
+                                            世界衛生組織（World Health Organization，WHO<a href="/know/detail2#infolink12" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>14</sup></a>）和美國疾病管制中心CDC都指出<a href="/know/detail2#infolink13" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>15</sup></a>，氣候能透過不同機制，直接或間接造成人類死亡，如經由空氣污染等途徑導致心血管、肺部、腦部損害與癌症，或是透過暖化、水與社會經濟的變化影響傳染性疾病散布與營養失調。
+                                        </li>
+                                        <li>
+                                            人們的健康正遭受熱浪、強烈颱風、空氣污染和氣候相關疾病的威脅，全球暖化將加劇威脅程度，尤其是某些族群如嬰幼兒、老人、殘疾以及居住在沿海地區的民眾。氣候變遷造成溫度與雨量的改變，影響動植物生態系統，改變生物群落、傳播疾病的囓齒類動物及病媒昆蟲分布區域和密度，並影響病媒生態及生命週期，如病媒繁衍速度增加及分布區域擴增，進而影響全球疾病分布狀況。
+                                        </li>
+                                        <li>
+                                            同時，溫度上升將可能使相關傳染病發生風險增加導致病媒傳染病快速傳播，我國衛生福利部「因應氣候變遷之健康衝擊政策白皮書2018<a href="/know/detail2#infolink14" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>16</sup></a>」說明，氣候變遷造成溫度與雨量的改變，使病媒傳染病快速傳播，例如登革熱在過去50年發生率增加30倍，是目前傳播最快速的病媒傳染病，影響臺灣民眾甚鉅。
+                                        </li>
+                                        <li>
+                                            大氣條件變化導致各類災害不僅撼動人類之居住環境，如熱浪、乾旱、洪氾與野火等極端氣候事件頻率增加，導致生態系統改變、國家基礎設施和居住環境破壞，增加人們流離失所的風險，使民眾賴以為生的糧食和水源供應中斷，直接或間接地造成民眾生命安全與健康損害，長期而言甚至可能衝擊心理健康。
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul>
+                資料來源：
+                <li>[1] [2] <a id="infolink1" href="https://www.nasa.gov/mission_pages/noaa-n/climate/climate_weather.html" target="_blank" title="另開視窗( NASA-What's the Difference Between Weather and Climate)"> NASA-What's the Difference Between Weather and Climate</a></li>
+                <li>[3] <a id="infolink2" href="https://www.ipcc.ch/sr15/chapter/glossary/" target="_blank" title="另開視窗(IPCC SPECIAL REPORT: GLOBAL WARMING OF 1.5ºC 2018)">IPCC SPECIAL REPORT: GLOBAL WARMING OF 1.5 ºC 2018</a></li>
+                <li>[4] <a id="infolink3" href="https://www.un.org/zh/sections/issues-depth/climate-change/index.html" target="_blank" title="另開視窗(IPCC2013_AR5)">IPCC2013 AR5</a></li>
+                <li>[5] [7] <a id="infolink4" href="https://tccip.ncdr.nat.gov.tw/index.aspx?aspxerrorpath=/v2/publish_book.aspx" target="_blank" title="另開視窗(臺灣氣候變遷科學報告2017)">臺灣氣候變遷科學報告2017</a></li>
+                <li>[6] <a id="infolink5" href="https://www.ipcc.ch/assessment-report/ar5/" target="_blank" title="另開視窗(IPCC2013_AR5)">IPCC2013 AR5</a></li>
+                <li>[8] <a id="infolink6" href="https://www.youtube.com/watch?v=p1UjgXRj7L8" target="_blank" title="另開視窗(氣象局北極振盪介紹)">氣象局北極振盪介紹</a></li>
+                <li>[9] <a id="infolink7" href="https://climatekids.nasa.gov/harsh-winter/" target="_blank" title="另開視窗(NASA-It's Cold! Is Global Warming Over)">NASA-It's Cold! Is Global Warming Over</a></li>
+                <li>[10] <a id="infolink8" href="https://www.ipcc.ch/site/assets/uploads/2018/02/WGIIAR5-Chap30_FINAL.pdf" target="_blank" title="另開視窗(IPCC AR5-The Ocean_PDF檔案)">IPCC AR5-The Ocean</a></li>
+                <li>[11] [23] <a id="infolink9" href="https://www.ipcc.ch/assessment-report/ar5/" target="_blank" title="另開視窗(IPCC2013 AR5)">IPCC2013 AR5</a></li>
+                <li>[12] [18] [19] [21] [22] <a id="infolink10" href="https://tccip.ncdr.nat.gov.tw/index.aspx?aspxerrorpath=/v2/publish_book.aspx" target="_blank" title="另開視窗(臺灣氣候變遷科學報告2017)">臺灣氣候變遷科學報告2017</a></li>
+                <li>[13] <a id="infolink11" href="https://www.who.int/globalchange/publications/heat-and-health/en/" target="_blank" title="另開視窗(WHO-Climate change and human health)">WHO-Climate change and human health</a></li>
+                <li>[14] <a id="infolink12" href="https://www.who.int/air-pollution/news-and-events/how-air-pollution-is-destroying-our-health" target="_blank" title="另開視窗(WHO-How air pollution is destroying our health)">WHO-How air pollution is destroying our health</a></li>
+                <li>[15] <a id="infolink13" href="https://www.cdc.gov/climateandhealth/effects/default.htm" target="_blank" title="另開視窗(美國疾病管制中心CDC-Climate Effects on Health)">美國疾病管制中心CDC-Climate Effects on Health</a></li>
+                <li>[16] <a id="infolink14" href="https://www.mohw.gov.tw/dl-46095-2873d012-c2a1-4607-a127-afca00401129.html" target="_blank" title="另開視窗(衛生福利部-因應氣候變遷之健康衝擊政策白皮書2018_PDF檔案)">衛生福利部-因應氣候變遷之健康衝擊政策白皮書2018</a></li>
+                <li>[17] [24] <a id="infolink15" href="https://www.ipcc.ch/srocc/download-report/" target="_blank" title="另開視窗(IPCC2019-海洋及冰凍圈特別報告)">IPCC2019-海洋及冰凍圈特別報告</a></li>
+                <li>[20] [28] <a id="infolink16" href="https://www.ipcc.ch/report/ar5/wg3/" target="_blank" title="另開視窗(IPCC-AR5 Climate Change 2014: Mitigation of Climate Change)">IPCC-AR5 Climate Change 2014: Mitigation of Climate Change</a></li>
+                <li>[25] <a id="infolink17" href="https://climate.nasa.gov/evidence/" target="_blank" title="另開視窗(NASA-Climate Change: How Do We Know)">NASA-Climate Change: How Do We Know</a></li>
+                <li>[26] <a id="infolink18" href=" http://www.fao.org/fishery/climatechange/en" target="_blank" title="另開視窗(FAO-Fisheries and Aquaculture and Climate Change)">FAO-Fisheries and Aquaculture and Climate Change</a></li>
+                <li>[27] <a id="infolink19" href="http://www.fao.org/news/story/en/item/44618/icode/en/" target="_blank" title="另開視窗(FAO-Hotter nights threaten food security-rice at risk)">FAO-Hotter nights threaten food security-rice at risk</a></li>
+            </ul>
+
+            <div class=" text-right my-3">
+                @*判斷是否已經登入*@
+                @if (User.Identity.IsAuthenticated)
+                {
+                    //判斷登入角色,符合角色則顯示按鈕進入後台
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a class="btn btn-danger text-center" href="~/info/Edit/@ViewBag.id">編輯</a>
+                    }
+
+                }
+            </div>
+        </main>
+        <div class="col-lg-1"></div>
+    </div>
+</div>
+
+<script>
+    //function showdiv(e) {
+
+    //    $(".infoarea").hide();
+
+    //    $(e).fadeToggle("slow");
+    //}
+
+    function img1() {
+        $("#img1").slideToggle();
+
+    };
+
+</script>

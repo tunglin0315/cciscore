@@ -1,0 +1,1099 @@
+﻿@{
+
+    ViewData["title"] = "碳足跡計算器";
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/media/Detail_Sub">宣傳資源</a></li>
+        <li class="breadcrumb-item ">碳足跡計算器</li>
+
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class=" col-md-10 ml-sm-auto col-lg-10 pt-3 px-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom" id="content">
+                <h2 class="h2">碳足跡計算器</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <picture id="step0">
+                        <source media="(min-width: 1300px)" srcset="../_x/img/carbontool/carbontoolindex.gif">
+                        <source media="(min-width: 768px)" srcset="../_x/img/carbontool/carbontoolindex_pad.png">
+                        <source media="(min-width: 320px)" srcset="../_x/img/carbontool/carbontoolindex_phone.png">
+                        <img src="../_x/img/carbontool/carbontoolindex.png" alt="動動手指頭，碳足跡計算go!" title="動動手指頭，碳足跡計算go!" style="width:auto;">
+                       <div>
+                           <a id="carbontoolbtn" href="javascript:nextStep(0)">
+                               <img  src="~/_x/img/carbontool/carbonBTNstarta.png" alt="" title="開始計算"><strong style="display: none;">開始計算</strong>
+                           </a>
+                           </div> 
+                        @*<div><a href="javascript:nextStep(0)"><img id="carbontoolbtn" src="~/_x/img/carbontool/carbonBTNstarta.png" alt="開始計算" title="開始計算" /></a> </div>*@
+                        @*<source media="(min-width:769px)" srcset="../_x/img/carbontool/carbontoolindex.gif" />
+        <source media="(min-width:400px)" srcset="../_x/img/carbontool/carbontoolindex_1.png" />*@
+                    </picture>
+                    @*<div id="step0"  alt="動動手指頭，碳足跡計算go!"  title="動動手指頭，碳足跡計算go!" style=" height:660px; width:1200px; background-image:url(/_x/img/carbontool/carbontoolindex_1.png)">*@
+
+                    @*<div><a  href="javascript:nextStep(0)"><img id="carbontoolbtn" src="~/_x/img/carbontool/carbonBTNstarta.png" alt="開始計算" title="開始計算" /></a> </div>*@
+                    @*<a href="javascript:nextStep(0)">
+                            <img alt="動動手指頭，碳足跡計算go!" style="width:100%; position:absolute" src="~/_x/img/carbontool/carbontoolindex.gif"  />
+                        </a>*@
+                    @*</div>*@
+                    <div id="step1">
+                        <div>
+                            <img alt="結算結果進度-基本訊息-已完成0%" style="width:100%" src="~/_x/img/carbontool/carbontoolbar01.gif" />
+                        </div>
+                        <h3>Step1</h3>
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label for="people">
+                                    請問您家中共有幾位成員?
+                                </label>
+                                <input id="people" class="form-control" type="number" min="0">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="inputPassword4">
+                                    請問您的居住地?
+                                </label>
+                                <select id="inputPassword4" class="form-control">
+                                    <option value="63000">臺北市</option>
+                                    <option value="10001">新北市</option>
+                                    <option value="10019">臺中市</option>
+                                    <option value="10021">臺南市</option>
+                                    <option value="64000">高雄市</option>
+                                    <option value="10002">宜蘭縣</option>
+                                    <option value="10003">桃園市</option>
+                                    <option value="10004">新竹縣</option>
+                                    <option value="10005">苗栗縣</option>
+                                    <option value="10007">彰化縣</option>
+                                    <option value="10008">南投縣</option>
+                                    <option value="10009">雲林縣</option>
+                                    <option value="10010">嘉義縣</option>
+                                    <option value="10013">屏東縣</option>
+                                    <option value="10014">臺東縣</option>
+                                    <option value="10015">花蓮縣</option>
+                                    <option value="10016">澎湖縣</option>
+                                    <option value="10017">基隆市</option>
+                                    <option value="10018">新竹市</option>
+                                    <option value="10020">嘉義市</option>
+                                    <option value="09020">金門縣</option>
+                                    <option value="09007">連江縣</option>
+                                </select>
+                            </div>
+                        </div>
+                        <a href="javascript:preStep(1)" class="btn btn-primary">回碳足跡計算器首頁</a>
+                        <a href="javascript:nextStep(1)" class="btn btn-primary">下一步</a>
+                    </div>
+                    <div id="step2">
+                        <div>
+                            <img alt="結算結果進度-食-已完成20%" style="width:100%" src="~/_x/img/carbontool/carbontoolbar02.gif" />
+                        </div>
+                        <h3>Step2</h3>
+                        <div class="form-group">
+                            <label for="beef">請問您(含家庭成員)上個月共食用：</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="beef">牛肉</label>
+                            <input id="beef" modulus="27" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue" placeholder="1碗牛肉麵,牛肉約0.25公斤">
+                            <label>公斤=<span class="text-primary ml-sm-2 mr-sm-2 inResult"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="pork">豬肉</label>
+                            <input id="pork" modulus="12.1" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue" placeholder="1碗爌肉飯,爌肉約0.2公斤">
+                            <label>公斤=<span class="text-primary ml-sm-2 mr-sm-2 inResult"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="Chicken">雞肉</label>
+                            <input id="Chicken" modulus="6.9" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue" placeholder="1份雞排,雞肉約0.2公斤">
+                            <label>公斤=<span class="text-primary ml-sm-2 mr-sm-2 inResult"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="fish">魚肉</label>
+                            <input id="fish" modulus="11.9" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue" placeholder="1條魚,約0.2公斤">
+                            <label>公斤=<span class="text-primary ml-sm-2 mr-sm-2 inResult"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="tofu">豆腐</label>
+                            <input id="tofu" modulus="2" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue" placeholder="1盒嫩豆腐,約0.3公斤">
+                            <label>公斤=<span class="text-primary ml-sm-2 mr-sm-2 inResult"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="egg">雞蛋</label>
+                            <input id="egg" modulus="4.8" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue" placeholder="1顆約0.06公斤">
+                            <label>公斤=<span class="text-primary ml-sm-2 mr-sm-2 inResult"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="rise">米飯</label>
+                            <input id="rise" modulus="2.7" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue" placeholder="1碗約0.072公斤">
+                            <label>公斤=<span class="text-primary ml-sm-2 mr-sm-2 inResult"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="milk">牛奶</label>
+                            <input id="milk" modulus="1.9" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue" placeholder="1杯牛奶,約0.24公升">
+                            <label>公斤=<span class="text-primary ml-sm-2 mr-sm-2 inResult"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="tomato">蕃茄</label>
+                            <input id="tomato" modulus="1.1" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue" placeholder="1顆約0.15公斤">
+                            <label>公斤=<span class="text-primary ml-sm-2 mr-sm-2 inResult"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <a href="javascript:preStep(2)" class="btn btn-primary">上一步</a>
+                        <a href="javascript:nextStep(2)" class="btn btn-primary">下一步</a>
+                        <div class="form-inline mb-2">
+                            <a id="font_s1" title="另開新視窗(EWG-Meat Eater's Guide.pdf檔案)" target="_blank" href="http://static.ewg.org/reports/2011/meateaters/pdf/methodology_ewg_meat_eaters_guide_to_health_and_climate_2011.pdf">
+                                參考來源： EWG-Meat Eater's Guide
+                            </a>
+                        </div>
+                    </div>
+                    <div id="step3">
+                        <div>
+                            <img alt="結算結果進度-衣-已完成40%" style="width:100%" src="~/_x/img/carbontool/carbontoolbar03.gif" />
+                        </div>
+                        <h3>Step3</h3>
+                        <div class="form-group">
+                            <label for="coat">請問您(含家庭成員)上個月新添購新衣裳：</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="coat">上衣</label>
+                            <input id="coat" modulus="6.5" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue" placeholder="">
+                            <label>件=<span class="text-primary ml-sm-2 mr-sm-2 inResult"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="undies">內衣(褲)</label>
+                            <input id="undies" modulus="1.9" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue" placeholder="">
+                            <label>件=<span class="text-primary ml-sm-2 mr-sm-2 inResult"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="lower">下身</label>
+                            <input id="lower" modulus="8.7" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue" placeholder="">
+                            <label>件=<span class="text-primary ml-sm-2 mr-sm-2 inResult"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="jacket">外套</label>
+                            <input id="jacket" modulus="13.3" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue" placeholder="">
+                            <label>件=<span class="text-primary ml-sm-2 mr-sm-2 inResult"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="skirt">裙子</label>
+                            <input id="skirt" modulus="14.8" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue" placeholder="">
+                            <label>件=<span class="text-primary ml-sm-2 mr-sm-2 inResult"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="Suit">套裝</label>
+                            <input id="Suit" modulus="16.8" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue" placeholder="">
+                            <label>套=<span class="text-primary ml-sm-2 mr-sm-2 inResult"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="glove">手套</label>
+                            <input id="glove" modulus="1.1" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue" placeholder="">
+                            <label>只=<span class="text-primary ml-sm-2 mr-sm-2 inResult"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="sport">運動衣(褲)</label>
+                            <input id="sport" modulus="6.1" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue" placeholder="">
+                            <label>件=<span class="text-primary ml-sm-2 mr-sm-2 inResult"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="Swim">泳衣(褲)</label>
+                            <input id="Swim" modulus="1.8" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue" placeholder="">
+                            <label>件=<span class="text-primary ml-sm-2 mr-sm-2 inResult"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="scarf">圍(披)巾</label>
+                            <input id="scarf" modulus="1.8" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue" placeholder="">
+                            <label>條=<span class="text-primary ml-sm-2 mr-sm-2 inResult"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="tie">領帶</label>
+                            <input id="tie" modulus="1.8" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue" placeholder="">
+                            <label>條=<span class="text-primary ml-sm-2 mr-sm-2 inResult"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+
+                        <a href="javascript:preStep(3)" class="btn btn-primary">上一步</a>
+                        <a href="javascript:nextStep(3)" class="btn btn-primary">下一步</a>
+                        <div class="form-inline mb-2">
+                            <a id="font_s2" title="另開新視窗(WRAP-A Carbon Footprint for UK Clothing and Opportunities for Savings.pdf檔案)" target="_blank" href="http://www.wrap.org.uk/sites/files/wrap/Appendix%20IV%20-%20Carbon%20footprint%20report.pdf">
+                                參考來源：WRAP-A Carbon Footprint for UK Clothing and Opportunities for Savings
+                            </a>
+                        </div>
+
+                    </div>
+                    <div id="step4">
+                        <div>
+                            <img alt="結算結果進度-住-已完成60%" style="width:100%" src="~/_x/img/carbontool/carbontoolbar04.gif" />
+                        </div>
+                        <h3>Step4</h3>
+                        <div class="form-group">
+                            <label for="power">
+                                請問您(含家庭成員)上個月的使用量為：(每月)請將電、水費單 [使用度數]÷2 填入
+                                <a href="~/media/exp" title="另開新視窗" target="_blank">點我看說明</a>
+                            </label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="power">
+                                用電度數
+                            </label>
+                            <input id="power" modulus="0.554" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue" placeholder="">
+                            <label>=<span class="text-primary ml-sm-2 mr-sm-2 inResult"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="water">用水度數</label>
+                            <input id="water" modulus="0.162" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue" placeholder="">
+                            <label>=<span class="text-primary ml-sm-2 mr-sm-2 inResult"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="gas">瓦斯度數</label>
+                            <input id="gas" modulus="1.879" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue" placeholder="">
+                            <label>=<span class="text-primary ml-sm-2 mr-sm-2 inResult"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+
+                        <a href="javascript:preStep(4)" class="btn btn-primary">上一步</a>
+                        <a href="javascript:nextStep(4)" class="btn btn-primary">下一步</a>
+                        <div class="form-inline mb-2">
+                            <a id="font_s3" title="另開新視窗(能源局-碳排放係數)" target="_blank" href="https://www.moeaboe.gov.tw/ECW/populace/news/News.aspx?kind=1&menu_id=41&news_id=15085">
+                               參考來源：能源局-碳排放係數 、
+                            </a>
+                            <a id="font_s4" title="另開新視窗(台灣自來水公司碳排放係數)" href="https://www.water.gov.tw/ct.aspx?xItem=1958&ctNode=813&mp=1" target="_blank">台灣自來水公司碳排放係數、</a>
+                            <a id="font_s5" title="另開新視窗(產業節能減碳資訊網)" href="https://ghg.tgpf.org.tw/Reduction/inventory_tools" target="_blank">產業節能減碳資訊網</a>
+                        </div>
+                    </div>
+                    <div id="step5">
+                        <div>
+                            <img alt="結算結果進度-行-已完成80%" style="width:100%" src="~/_x/img/carbontool/carbontoolbar05.gif" />
+                        </div>
+                        <h3>Step5</h3>
+                        <div class="form-group">
+                            <label for="car">
+                                請問您(含家庭成員)上個月的通勤交通情形：
+                            </label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="car">
+                                駕駛汽車
+                            </label>
+                            <input id="car" modulus="2.263" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue5_1_1" placeholder="">
+                            <label for="carkm">
+                                公里
+                                平均油耗
+                            </label>
+                            <input id="carkm" modulus="2.263" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue5_1_2" placeholder="">
+                            <label>公里/公升=<span class="text-primary ml-sm-2 mr-sm-2 inResult5_1"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="truck">駕駛貨車</label>
+                            <input id="truck" modulus="2.606" type="number" min="0" class="form-control ml-sm-2 mr-sm-2  inputValue5_2_1" placeholder="">
+                            <label for="truckkm">
+                                公里
+                                平均油耗
+                            </label>
+                            <input id="truckkm" modulus="2.606" type="number" min="0" class="form-control ml-sm-2 mr-sm-2  inputValue5_2_2" placeholder="">
+                            <label>公里/公升=<span class="text-primary ml-sm-2 mr-sm-2 inResult5_2"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="moto">騎乘機車</label>
+                            <input id="moto" modulus="1.879" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue5_3_1" placeholder="">
+                            <label for="motokm">
+                                公里
+                                平均油耗
+                            </label>
+                            <input id="motokm" modulus="1.879" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue5_3_2" placeholder="">
+                            <label>公里/公升=<span class="text-primary ml-sm-2 mr-sm-2 inResult5_3"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="bicy">騎腳踏車</label>
+                            <input id="bicy" type="number" min="0" class="form-control ml-sm-2 mr-sm-2" placeholder="">
+                            <label>公里=<span class="text-primary ml-sm-2 mr-sm-2">0</span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <div class="form-inline mb-2">
+                            <label for="bus">搭乘公車</label>
+                            <input id="bus" modulus="0.0483" type="number" min="0" class="form-control ml-sm-2 mr-sm-2 inputValue5_4" placeholder="">
+                            <label>公里=<span class="text-primary ml-sm-2 mr-sm-2 inResult5_4"></span>kgCO<sub>2</sub>e</label>
+                        </div>
+                        <a href="javascript:preStep(5)" class="btn btn-primary">上一步</a>
+                        <a href="javascript:nextStep(5)" class="btn btn-primary">完成</a>
+                        <div class="form-inline mb-2">
+                            <a id="font_s6" title="另開新視窗(國家溫室氣體排放平台)" href="https://ghgregistry.epa.gov.tw/Tool/tools.aspx?Type=1" target="_blank">參考來源：國家溫室氣體排放平台、</a>
+                            <a id="font_s7" title="另開新視窗(台北市政府交通局臺北市聯營公共汽車行車效率)" href="https://www.dot.gov.taipei/News.aspx?n=DDAA56CD6211EC51&sms=E128E766B8C52623" target="_blank">台北市政府交通局臺北市聯營公共汽車行車效率、</a>
+                            <a id="font_s8" title="另開新視窗(油耗量查詢可參閱經濟部能源局汽機車能源耗用量)" href="https://www.moeaboe.gov.tw/ecw/populace/Law/Content.aspx?menu_id=1059" target="_blank">油耗量查詢可參閱經濟部能源局汽機車能源耗用量「附表」</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="step6">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <img alt="結算結果進度-結果呈現-已完成100%" style="width:100%" src="~/_x/img/carbontool/carbontoolbar06.gif" />
+                    </div>
+                </div>
+                <div id="CarbonTool_Web">
+                    <div id="CarbonTool">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div id="res_img_1" class="res">
+                                            <div id="res1" class="res-txt1"></div>
+                                            <div class="res-txt2">kgCO<sub>2</sub>e</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div id="res_img_2" class="res">
+                                            <div id="res2" class="res-txt1"></div>
+                                            <div class="res-txt2">kgCO<sub>2</sub>e</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div id="res_img_3" class="res">
+                                            <div id="res3" class="res-txt1"></div>
+                                            <div class="res-txt2">kgCO<sub>2</sub>e</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div id="res_img_4" class="res">
+                                            <div id="res4" class="res-txt1"></div>
+                                            <div class="res-txt2">kgCO<sub>2</sub>e</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6" id="CarbonTool-right">
+                                <div id="CarbonTool-right-txt1">完成計算!</div>
+                                <div id="CarbonTool-right-txt2">排放總量(kgCO<sub>2</sub>e)</div>
+                                <div id="CarbonTool-right-txt3"></div>
+                                <div id="CarbonTool-right-txt4">相當於</div>
+                                <div id="CarbonTool-right-txt5"></div>
+                                <div id="CarbonTool-right-txt6">
+                                    棵樹
+                                    <img id="res_img6" alt="樹木" src="~/_x/img/carbontool/tree.png" />
+                                    一年二氧化碳固定量
+                                </div>
+                                <div id="CarbonTool-right-but1">
+                                    <a title="另開新視窗" target="_blank" href="https://cfp.epa.gov.tw/carbon/ezCFM/Function/PlatformInfo/FLActivity/CarbonTips.aspx">省碳秘訣請按我</a>
+                                </div>
+                                <div id="CarbonTool-right-but2">
+                                    <a href="~/media/CarbonTool" class="btn btn-success">再測一次</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-2 ml-3 pull-right" id="CarbonTool-right-3">
+                        註:平均單株樹木二氧化碳固定量:5~10公斤/年(數據來源農委會林務局)
+                    </div>
+                </div>
+                @*--------------手機板 (width <1310)--------------------*@
+
+                <div id="CarbonTool_Moble">
+                    <div class="row">
+
+                        <div>
+                            <div id="res_img_1m" class="resm">
+                                <div id="res1m" class="res-txt1m">0</div>
+                                <div class="res-txt2m">kgCO<sub>2</sub>e</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="res_img_2m" class="resm">
+                                <div id="res2m" class="res-txt1m">0</div>
+                                <div class="res-txt2m">kgCO<sub>2</sub>e</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="res_img_3m" class="resm">
+                                <div id="res3m" class="res-txt1m">0</div>
+                                <div class="res-txt2m">kgCO<sub>2</sub>e</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="res_img_4m" class="resm">
+                                <div id="res4m" class="res-txt1m">0</div>
+                                <div class="res-txt2m">kgCO<sub>2</sub>e</div>
+                            </div>
+                        </div>
+
+                        <div id="CarbonTool-rightm">
+                            <div id="CarbonTool-right-txt1m"></div>
+                            <div id="CarbonTool-right-txt2m">排放總量</div>
+                            <div id="CarbonTool-right-txt3m">0</div>
+                            <div id="CarbonTool-right-txt3m1">(kgCO<sub>2</sub>e)</div>
+                            <div id="CarbonTool-right-txt4m">相當於</div>
+                            <div id="CarbonTool-right-txt5m">0</div>
+                            <div id="CarbonTool-right-txt6m">                               棵樹                                                      </div>
+                            <img id="CarbonTool-right-txt6m_img" alt="樹木" src="~/_x/img/carbontool/tree.png" />
+                            <div id="CarbonTool-right-txt6m_1">( 一年二氧化碳固定量 )</div>
+                            <div id="CarbonTool-right-but1m">
+                                <a title="另開新視窗" target="_blank" href="https://cfp.epa.gov.tw/carbon/ezCFM/Function/PlatformInfo/FLActivity/CarbonTips.aspx">省碳秘訣請按我</a>
+                            </div>
+                            <div id="CarbonTool-right-but2m">
+                                <a href="~/media/CarbonTool" class="btn btn-success">再測一次</a>
+                            </div>
+                            <div class="mt-2 ml-3" id="CarbonTool-right-3m">
+                                註:平均單株樹木二氧化碳固定量:5~10公斤/年(數據來源農委會林務局)
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+        </main>
+    </div>
+</div>
+@section styles {
+    <style>
+
+   @@media screen and (min-width: 1301px) and (max-width: 1920px){
+     #carbontoolbtn{
+     position:absolute;
+     top:525px;
+     left:180px ;
+    }
+  }
+
+  @@media screen and (min-width: 768px) and (max-width: 1300px){
+     #carbontoolbtn{
+     position:absolute;
+     top:260px;
+     left:95px ;
+    width: 150px;
+    }
+  }
+  @@media screen and (min-width: 320px) and (max-width: 767px){
+     #carbontoolbtn{
+     position:absolute;
+     top:171px;
+     left:56px ;
+     width: 110px;
+    }
+  }
+
+    @*----moble--*@
+    @@media (max-width: 1326px)
+
+        {
+             #res_img_1m
+        {
+            background-image:url(@Url.Content("~/_x/img/carbontool/carbonboxFood_s.png"))
+
+        }
+      #res_img_2m
+        {
+         background-image:url(@Url.Content("~/_x/img/carbontool/carbonboxClothing_s.png"))
+        }
+      #res_img_3m
+        {
+        background-image:url(@Url.Content("~/_x/img/carbontool/carbonboxHousing_s.png"))
+        }
+       #res_img_4m
+        {
+        background-image:url(@Url.Content("~/_x/img/carbontool/carbonboxTransportation_s.png"))
+         }
+
+    #CarbonTool_Moble {
+            height: 630px;
+            width: 550px;
+            border: 4px solid transparent;
+            padding: 1px 42px;
+            border-radius: 2rem;
+            border-color: #cbefeb;
+        }
+         .resm {
+            position: relative;
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+            height: 88px;
+            width: 485px;
+        }
+
+        .res-txt1m {
+            position: absolute;
+            left: 128px;
+            top: 25px;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            width: 250px;
+        }
+
+        .res-txt2m {
+            position: absolute;
+            left: 405px;
+            top: 48px;
+            color: #495057;car
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+     #res1m {
+            color: #69a2b0;
+        }
+
+        #res2m {
+            color: #7bc7a1;
+        }
+
+        #res3m {
+            color: #cb7a65;
+        }
+
+        #res4m {
+            color: #69a2b0;
+        }
+
+
+        #CarbonTool-right-txt1m {
+            background-image:url(@Url.Content("~/_x/img/carbontool/carbontoolresult01_s.gif"));
+            position: absolute;
+            top: 97px;
+            left: -507px;
+            color: #d58357;
+            width: 166px;
+            height: 165px;
+
+        }
+        /*排放總量(kgCO2e)*/
+        #CarbonTool-right-txt2m {
+            position: absolute;
+            top: 134px;
+            left: -333px;
+            color: #7bc7a1;
+            font-size: 15px;
+            font-weight: bold;
+            width: 65px;
+        }
+
+        #CarbonTool-right-txt3m {
+            position: absolute;
+            top: 105px;
+            left: -270px;
+            color: #106e97;
+            font-size: 42px;
+            font-weight: bold;
+            text-align: center;
+            width: 170px;
+        }
+
+        #CarbonTool-right-txt3m1 {
+            position: absolute;
+            top: 133px;
+            left: -158px;
+            color: #106e97;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+            width: 200px;
+        }
+
+        /*相當於*/
+        #CarbonTool-right-txt4m {
+            position: absolute;
+            top: 197px;
+            left: -333px;
+            color: #7bc7a1;
+            font-size: 15px;
+            font-weight: bold;
+            width: 45px;
+        }
+        /*n*/
+        #CarbonTool-right-txt5m {
+            position: absolute;
+            top: 168px;
+            left: -285px;
+            width: 190px;
+            color: #106e97;
+            font-size: 42px;
+            font-weight: bold;
+            text-align: center;
+        }
+        /*棵樹*/
+        #CarbonTool-right-txt6m {
+            position: absolute;
+            top: 195px;
+            left: -105px;
+            color: #106e97;
+            font-size: 15px;
+            font-weight: bold;
+            width:77px;
+        }
+
+    #CarbonTool-right-txt6m_img{
+
+            position: absolute;
+            top: 165px;
+            left: -77px;
+            width: 50px;
+        }
+       #CarbonTool-right-txt6m_1{
+           position: absolute;
+            top: 231px;
+            left: -186px;
+               color: #7bc7a1;
+            font-size: 15px;
+            font-weight: bold;
+            width:277px;
+
+         }
+
+            #CarbonTool-right-txt6m img {
+                width: 45px;
+            }
+        /*樹數*/
+        #TreeCount {
+            color: #106e97;
+            font-size: 73px;
+            font-weight: bold;
+        }
+
+       #CarbonTool-right-but1m {
+            position: absolute;
+            top: 330px;
+            left: -240px;
+            width: 113px;
+        }
+
+        #CarbonTool-right-but2m {
+            position: absolute;
+            top: 310px;
+            left: -120px;
+        width: 100px
+        }
+
+
+        #CarbonTool-right-3m {
+            position: absolute;
+            width: 475px;
+            top: 275px;
+            left: -510px;
+           font-size: 15px;
+        }
+         #CarbonTool-rightm {
+
+            position: relative;
+           background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+        }
+
+        }
+
+    @*-----------------------desktop------------------------*@
+
+    @@media(min-width:1327px){
+        #res_img_1
+        {
+            background-image:url(@Url.Content("~/_x/img/carbontool/carbonboxFood.png"))
+        }
+      #res_img_2
+        {
+         background-image:url(@Url.Content("~/_x/img/carbontool/carbonboxClothing.png"))
+        }
+      #res_img_3
+        {
+        background-image:url(@Url.Content("~/_x/img/carbontool/carbonboxHousing.png"))
+        }
+       #res_img_4
+        {
+        background-image:url(@Url.Content("~/_x/img/carbontool/carbonboxTransportation.png"))
+         }
+        #CarbonTool {
+            height: 520px;
+            width: 1055px;
+            border: 4px solid transparent;
+            padding: 25px 25px;
+            border-radius: 2rem;
+            border-color: #cbefeb;
+        }
+          #CarbonTool-right {
+            background-image:url(@Url.Content("~/_x/img/carbontool/carbontoolresult01.gif"));
+            position: relative;
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+        }
+
+        #CarbonTool-right-txt1 {
+            position: absolute;
+            top: 58px;
+            left: 183px;
+            color: #d58357;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        /*排放總量(kgCO2e)*/
+        #CarbonTool-right-txt2 {
+            position: absolute;
+            top: 96px;
+            left: 167px;
+            color: #495057;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        #CarbonTool-right-txt3 {
+            position: absolute;
+            top: 104px;
+            left: 52px;
+            color: #106e97;
+            font-size: 68px;
+            font-weight: bold;
+            text-align: center;
+            width: 408px;
+        }
+        .res {
+            position: relative;
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+            height: 238px;
+            /*width: 225px;*/
+        }
+        /*相當於*/
+        #CarbonTool-right-txt4 {
+            position: absolute;
+            top: 188px;
+            left: 224px;
+            color: #495057;
+            font-size: 21px;
+            font-weight: bold;
+        }
+        /*n*/
+        #CarbonTool-right-txt5 {
+            position: absolute;
+            top: 200px;
+            left: 83px;
+            width: 349px;
+            color: #106e97;
+            font-size: 62px;
+            font-weight: bold;
+            text-align: center;
+        }
+        /*棵樹*/
+        #CarbonTool-right-txt6 {
+            position: absolute;
+            top: 270px;
+            left: 143px;
+            color: #495057;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+            #CarbonTool-right-txt6 img {
+                width: 45px;
+            }
+        /*樹數*/
+        #TreeCount {
+            color: #106e97;
+            font-size: 73px;
+            font-weight: bold;
+        }
+
+        #CarbonTool-right-but1 {
+            position: absolute;
+            top: 395px;
+            left: 386px;
+        }
+
+        #CarbonTool-right-but2 {
+            position: absolute;
+            top: 425px;
+            left: 386px;
+        }
+
+       .res-txt1 {
+            position: absolute;
+            left: -62px;
+            top: 88px;
+            font-size: 51px;
+            font-weight: bold;
+            text-align: center;
+            width: 350px;
+        }
+
+        .res-txt2 {
+            position: absolute;
+            left: 130px;
+            top: 164px;
+            color: #495057;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        .step2 input {
+            width: 220px !important;
+        }
+
+        .step5 input {
+            width: 100px !important;
+        }
+
+    #res1 {
+            color: #69a2b0;
+        }
+
+        #res2 {
+            color: #7bc7a1;
+        }
+
+        #res3 {
+            color: #cb7a65;
+        }
+
+        #res4 {
+            color: #69a2b0;
+        }
+
+        }
+
+        #font_s1, #font_s2, #font_s3, #font_s4, #font_s5, #font_s6, #font_s7, #font_s8 {
+            font-size: 14px !important;
+            color: #69a2b0 !important;
+        }
+
+
+
+    </style>
+}
+
+@section scripts{
+    <script type="text/javascript">
+
+        function windowSize() {
+            if ($(window).width() < 1309) {
+                $("#CarbonTool_Web").hide();
+                $("#CarbonTool_Moble").show();
+
+            } else {
+                $("#CarbonTool_Web").show();
+                $("#CarbonTool_Moble").hide();
+
+            }
+        };
+        $(window).resize(function () {
+            windowSize();
+        });
+        windowSize();
+
+
+
+        //食
+        var Step2Value = { value: 0 };
+        //衣
+        var Step3Value = { value: 0 };
+        //住
+        var Step4Value = { value: 0 };
+        //行
+        var Step5Value = { value: 0 };
+
+        //浮點數相加
+        function FloatAdd(arg1, arg2) {
+            var r1, r2, m;
+            try { r1 = arg1.toString().split(".")[1].length; } catch (e) { r1 = 0; }
+            try { r2 = arg2.toString().split(".")[1].length; } catch (e) { r2 = 0; }
+            m = Math.pow(10, Math.max(r1, r2));
+            return (FloatMul(arg1, m) + FloatMul(arg2, m)) / m;
+        }
+        //浮點數相乘
+        function FloatMul(arg1, arg2) {
+            var m = 0, s1 = arg1.toString(), s2 = arg2.toString();
+            try { m += s1.split(".")[1].length; } catch (e) { }
+            try { m += s2.split(".")[1].length; } catch (e) { }
+            return Number(s1.replace(".", "")) * Number(s2.replace(".", "")) / Math.pow(10, m);
+        }
+        //浮點數相除
+        function FloatDiv(arg1, arg2) {
+            var t1 = 0, t2 = 0, r1, r2;
+            try { t1 = arg1.toString().split(".")[1].length } catch (e) { }
+            try { t2 = arg2.toString().split(".")[1].length } catch (e) { }
+            with (Math) {
+                r1 = Number(arg1.toString().replace(".", ""))
+                r2 = Number(arg2.toString().replace(".", ""))
+                return (r1 / r2) * pow(10, t2 - t1);
+            }
+        }
+
+        function inItValue() {
+            $('.inputValue').next().children('span').html(0);
+            $('.inResult5_1,.inResult5_2,.inResult5_3,.inResult5_4').html(0);
+        }
+
+        function inItStep() {
+            $('#step1,#step2,#step3,#step4,#step5,#step6').hide();
+            $('#step0').show();
+        }
+
+        function nextStep(n) {
+            var _nextNum = n + 1;
+            var _stepNow = '#step' + n;
+            var _steNext = '#step' + _nextNum;
+            $(_stepNow).hide();
+            $(_steNext).show();
+
+            if (n == 5) {
+                //alert('計算');
+                //食
+                $('#res1').html(Math.round(Step2Value.value * 100) / 100);
+                //衣
+                $('#res2').html(Math.round(Step3Value.value * 100) / 100);
+                //住
+                $('#res3').html(Math.round(Step4Value.value * 100) / 100);
+                //行
+                $('#res4').html(Math.round(Step5Value.value * 100) / 100);
+                //排放總量
+                $('#CarbonTool-right-txt3').html(Math.round(AllTotal() * 100) / 100);
+
+                //相當於n樹
+                var _t = FloatDiv(new Number(AllTotal()), new Number(7.5));
+                $('#CarbonTool-right-txt5').html(Math.round(_t * 100) / 100);
+
+                //手機板
+                //alert('計算');
+                //食
+                $('#res1m').html(Math.round(Step2Value.value * 100) / 100);
+                //衣
+                $('#res2m').html(Math.round(Step3Value.value * 100) / 100);
+                //住
+                $('#res3m').html(Math.round(Step4Value.value * 100) / 100);
+                //行
+                $('#res4m').html(Math.round(Step5Value.value * 100) / 100);
+                //排放總量
+                $('#CarbonTool-right-txt3m').html(Math.round(AllTotal() * 100) / 100);
+
+                //相當於n樹
+                var _t = FloatDiv(new Number(AllTotal()), new Number(7.5));
+                $('#CarbonTool-right-txt5m').html(Math.round(_t * 100) / 100);
+
+            }
+        }
+
+        function preStep(n) {
+            var _preNum = n - 1;
+            var _stepNow = '#step' + n;
+            var _stePre = '#step' + _preNum;
+            $(_stepNow).hide();
+            $(_stePre).show();
+        }
+
+        function stepAdd(stepNum) {
+            var _step = '#step' + stepNum;
+            var _num = 0;
+            $(_step + ' .inResult').each(
+                function () {
+                    _num = FloatAdd(new Number(_num), new Number($(this).html()));
+                }
+            )
+            return _num;
+        }
+
+        function step5Add() {
+            var r5_1 = new Number($('.inResult5_1').html());
+            var r5_2 = new Number($('.inResult5_2').html());
+            var r5_3 = new Number($('.inResult5_3').html());
+            var r5_4 = new Number($('.inResult5_4').html());
+            var r1 = FloatAdd(r5_1, r5_2);
+            var r2 = FloatAdd(r5_3, r5_4);
+            return FloatAdd(r1, r2);
+        }
+
+        function SetChange(_stepnum, _stepValue) {
+            var _step = '#step' + _stepnum;
+            //該step 所有輸入框change事件
+            $(_step + ' .inputValue').on('change', function () {
+                var _iv = $(this).val();
+                var _modulus = $(this).attr('modulus');
+                var _result = FloatMul(new Number(_iv), new Number(_modulus));
+                $(this).next().children('.inResult').html(_result);
+                //該step結果總合
+                _stepValue.value = stepAdd(_stepnum);
+                //食衣住行總合
+                AllTotal();
+                console.log('.on(change) = ' + _iv + ',modulus=' + _modulus
+                    + ',_result=' + _result + ', _stepValue.value = ' + _stepValue.value
+                    + ',AllTotal =' + AllTotal()
+                );
+            });
+        }
+
+        function SetChange5() {
+            //step5 所有輸入框change事件
+            //駕駛汽車
+            $('#step5 .inputValue5_1_1,#step5 .inputValue5_1_2').on('change', function () {
+                var _v5_1_1 = new Number($('#step5 .inputValue5_1_1').val());
+                var _v5_1_2 = new Number($('#step5 .inputValue5_1_2').val());
+                var _modulus = new Number($(this).attr('modulus'));
+                var isZero = false;
+                if (_v5_1_1 == 0 || _v5_1_2 == 0) { isZero = true; }
+                //若有輸入值為0，則輸出0
+                var _result = isZero ? 0 : FloatMul(FloatDiv(_v5_1_1, _v5_1_2), new Number(_modulus));
+                $('.inResult5_1').html(_result);
+                Step5Value.value = step5Add();
+                console.log('_result=' + _result + ', Step5Value.value = ' + Step5Value.value
+                    + ',AllTotal =' + AllTotal()
+                );
+            });
+            //駕駛貨車
+            $('#step5 .inputValue5_2_1,#step5 .inputValue5_2_2').on('change', function () {
+                var _v5_2_1 = $('#step5 .inputValue5_2_1').val();
+                var _v5_2_2 = $('#step5 .inputValue5_2_2').val();
+                var _modulus = $(this).attr('modulus');
+                var _result = FloatMul(FloatDiv(new Number(_v5_2_1), new Number(_v5_2_2)), new Number(_modulus));
+                $('.inResult5_2').html(_result);
+                Step5Value.value = step5Add();
+                console.log('_result=' + _result + ', Step5Value.value = ' + Step5Value.value
+                    + ',AllTotal =' + AllTotal()
+                );
+            });
+            //騎乘機車
+            $('#step5 .inputValue5_3_1,#step5 .inputValue5_3_2').on('change', function () {
+                var _v5_3_1 = $('#step5 .inputValue5_3_1').val();
+                var _v5_3_2 = $('#step5 .inputValue5_3_2').val();
+                var _modulus = $(this).attr('modulus');
+                var _result = FloatMul(FloatDiv(new Number(_v5_3_1), new Number(_v5_3_2)), new Number(_modulus));
+                $('.inResult5_3').html(_result);
+                Step5Value.value = step5Add();
+                console.log('_result=' + _result + ', Step5Value.value = ' + Step5Value.value
+                    + ',AllTotal =' + AllTotal()
+                );
+            });
+            //搭乘公車
+            $('#step5 .inputValue5_4').on('change', function () {
+                var _v5_4 = $('#step5 .inputValue5_4').val();
+                var _modulus = $(this).attr('modulus');
+                var _result = FloatMul(new Number(_v5_4), new Number(_modulus));
+                $('.inResult5_4').html(_result);
+                Step5Value.value = step5Add();
+                console.log('_result=' + _result + ', Step5Value.value = ' + Step5Value.value
+                    + ',AllTotal =' + AllTotal()
+                );
+            });
+        }
+
+        //食衣住行總合
+        function AllTotal() {
+            var _add1 = FloatAdd(new Number(Step2Value.value), new Number(Step3Value.value));
+            var _add2 = FloatAdd(new Number(Step4Value.value), new Number(Step5Value.value));
+            return FloatAdd(new Number(_add1), new Number(_add2));
+        }
+
+        $(function () {
+            inItStep();
+            inItValue();
+            SetChange(2, Step2Value);
+            SetChange(3, Step3Value);
+            SetChange(4, Step4Value);
+            SetChange5();
+        });
+
+
+    </script>
+}

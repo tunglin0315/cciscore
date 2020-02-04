@@ -1,0 +1,111 @@
+﻿<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub">氣候變遷知識</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub_Sub2">氣候公約介紹</a></li>
+        <li class="breadcrumb-item"> @ViewBag.Title</li>
+
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 mx-sm-auto col-lg-9 pt-3  ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2 class="h2">@ViewBag.Title</h2>
+            </div>
+            @Html.Raw(@ViewBag.Html)
+
+            @*<div class=" pb-2 mb-3 border-bottom" id="content">
+            <h2>巴黎協定（The Paris Agreement）</h2>
+        </div>
+
+        <h3>
+            對抗氣候變化的重要里程碑&mdash;2015巴黎協定
+        </h3>
+        <p>
+            2015年12月在法國巴黎召開的UNFCCC第21屆締約方大會（COP21）中，各締約方協議未來將一起努力讓地球氣溫的上升幅度，控制在與前工業時代相比最多攝氏2度內的範圍，且努力追求前述升溫幅度標準減至攝氏1.5度內的更艱難目標，這項具有重要意義的氣候協議就是「巴黎協定」 （Paris Agreement）。
+        </p>
+        <p>
+            與京都議定書不同的是，巴黎協定將減排義務擴及至中國大陸與印度等開發中國家，另外要求已開發國家需提供氣候變遷資金，來幫助開發中國家減少溫室氣體排放，並有能力面對全球氣候變遷所帶來的後果；它也讓各國提出其「國家自定預期貢獻」（Intended Nationally Determined Contr ibution, INDC）致力承擔UNFCCC第三條共同但差異的減量責任，且將努力實踐INDC來參與落實UNFCCC第二條所揭示的目標；亦即將大氣中溫室氣體的含量，維持在防止氣候系統受到危險人為干擾的水準。
+        </p>
+        <h3>
+            2016年11月4日&mdash;巴黎協定正式生效
+        </h3>
+        <p>
+            2016年10月5日，全球批准巴黎協定<a href="/know/pact2#infolink1" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>1</sup></a>的締約方達到雙55的生效標準（55個締約方簽署批准，且締約方之碳排放總量達全球碳排放量之55％以上），簽約期自2016年4月22日開始，中國等溫室氣體排放大國亦於同年9月的G20前夕簽署，至10月4日，歐盟批准《巴黎協定》後，確定突破生效門檻 ，這一份代表各國共同遏阻全球暖化趨勢意志的巴黎協定，在2016年11月4日正式生效。
+
+        </p>
+        <h3>
+            巴黎協定重要內容
+        </h3>
+        <ol>
+            <li>全球目標升溫小於攝氏2度，並致力於限制在1.5度以內。</li>
+            <li>所有國家均以國家自定貢獻Nationally Determined Contributions（NDCs）做為減量目標之機制進行減排或限排，工業化國家必須有絕對減量目標值。</li>
+            <li>由已開發國家提供綠色氣候基金，協助開發中國家執行氣候變遷減緩與調適。</li>
+            <li>具有法律拘束的申報制度，國家預期自定貢獻Intended Nationally Determined Contribution（INDC）於簽署後正式成為 NDCs 並每五年或十年提交報告及檢討，將於 2023 年首次全球盤點、透明公開的呈現。</li>
+        </ol>
+
+        <h3>巴黎協定對於產業的影響</h3>
+        <ol>
+            <li>高碳排放國家中國批准巴黎協定，減少來自鋼鐵、水泥、造紙和發電等主要工業排放。</li>
+            <li>德國未來不再販售燃油車，期望達到車輛全面零排放，法國巴黎也於2030年禁用汽柴油機車。</li>
+            <li>英國將在2025年後關閉煤電廠，德國預計於2038年終結燃煤化石燃料火力發電廠。</li>
+            <li>國際航班通過碳抵銷、修改飛機設計提升燃油效率、航路規劃、發展生質燃料等。</li>
+            <li>全球知名品牌對其供應鏈的要求：</li>
+            <li>
+                沃爾瑪Project Gigaton計劃<a href="/know/pact2#infolink2" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>2</sup></a> 2030 年前能減少 10 億噸碳排，
+                Apple<a href="/know/pact2#infolink3" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>3</sup></a>承諾於2020供應鏈有4GW的清潔能源，
+                Google<a href="/know/pact2#infolink4" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>4</sup></a>也承諾在2017年全部辦公室使用再生能源。
+            </li>
+        </ol>
+        <p>
+            巴黎協定（Paris Agreement）涵蓋氣候變遷因應整體面向，包括減緩（Mitigation）、調適（Adaptation）、資金（Finance）、能力建構（Capacity-Building）、技術發展移轉（Technology Development And Transfer）等方面（如圖一所示），並增列損失與損害（Loss And Damage），開啟對受到氣候變遷衝擊影響國家進行損害賠償相關研究與討論，2020年後由已開發國家投入每年1,000億美金綠色氣候基金承諾不變，也要求各國應履行其「國家自定貢獻」（Nationally Determined Contributions, NDCs），並規劃每5年對全球氣候行動總體進展進行盤點，提交報告及檢討，以提升減量企圖心，提升氣候行動的透明度（Transparency Action And Support）。
+        </p>
+
+        <div class="text-center">
+            <img src="~/_x/img/know/巴黎協定.png" alt="巴黎協定涵蓋面向" title="巴黎協定涵蓋氣候變遷因應整體面向，包括減緩、調適、資金、能力建構、技術發展移轉及並增列損失與損害。" />
+            <p>圖一、巴黎協定涵蓋面向</p>
+        </div>
+        <div class="text-center my-1">
+            <button class="btn btn-info m-2" onclick="img1()" title="圖片詳細說明">圖片詳細說明</button>
+            <div id="img1">
+                巴黎協定涵蓋氣候變遷因應整體面向，包括減緩、調適、資金、能力建構、技術發展移轉及並增列損失與損害。
+            </div>
+        </div>
+        <ul>
+            資料來源：
+            <li>[1] <a id="infolink1" href="https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement" target="_blank" title="另開視窗(巴黎協定)">巴黎協定</a></li>
+            <li>[2] <a id="infolink2" href="https://www.walmartsustainabilityhub.com/project-gigaton" target="_blank" title="另開視窗(沃爾瑪Project Gigaton計劃)">沃爾瑪Project Gigaton計劃</a></li>
+            <li>[3] <a id="infolink3" href="https://www.apple.com/environment/pdf/Apple_Environmental_Responsibility_Report_2019.pdf" target="_blank" title="另開視窗(Apple EnvironmentalResponsibility Report_PDf檔案)">Apple_EnvironmentalResponsibility Report</a></li>
+            <li>[4] <a id="infolink4" href="https://sustainability.google/projects/announcement-100/" target="_blank" title="另開視窗(Google_Environment Projects)">Google_Environment Projects</a></li>
+        </ul>*@
+
+
+            <div class=" text-right my-3">
+                @*判斷是否已經登入*@
+                @if (User.Identity.IsAuthenticated)
+                {
+                    //判斷登入角色,符合角色則顯示按鈕進入後台
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a class="btn btn-danger text-center" href="~/info/Edit/@ViewBag.id">編輯</a>
+                    }
+
+                }
+            </div>
+        </main>
+        <div class="col-lg-1">    </div>
+    </div>
+</div>
+
+
+<script>
+
+    function img1() {
+        $("#img1").slideToggle();
+
+    };
+</script>

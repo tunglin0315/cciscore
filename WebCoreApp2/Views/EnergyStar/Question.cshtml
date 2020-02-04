@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["title"] = "能源之星_常見問答";
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/media/Detail_Sub">宣傳資源</a></li>
+        @*<li class="breadcrumb-item "><a href="~/act/Detail_Sub">因應作為</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Index/溫室氣體盤查申報">溫室氣體盤查申報</a></li>*@
+        <li class="breadcrumb-item "><a href="~/Energystar/index">能源之星</a></li>
+        <li class="breadcrumb-item ">常見問答</li>
+
+    </ol>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+
+
+        <main role="main" class="col-md-10 mx-sm-auto col-lg-9 pt-3  ccis_Detail" id="content">
+            <h2>常見問答</h2>
+            <div class="d-flex">
+                <div class=" flex-grow-1">Q：能源之星標章計畫要求第三方驗證何時開始生效？</div>
+                <div>國內標章申請</div>
+            </div>
+            <div>A：能源之星標章計畫之第三方驗證已於2011年1月1日起生效。</div>
+
+            <div class="d-flex">
+                <div class="flex-grow-1">Q：何處可查詢美國能源之星標章認可的測試實驗室及驗證單位名單？</div>
+                <div>國外標章申請</div>
+            </div>
+            <div>A：欲查詢美國能源之星標章認可之測試實驗室及驗證單位可至美國能源之星標章網站中第三方認證的頁面中查詢。</div>
+
+            <div class="d-flex">
+                <div class=" flex-grow-1">Q：能源之星標章是否為我國機關優先採購環境保護產品辦法之第三類產品?</div>
+                <div>綠色消費</div>
+            </div>
+            <div>A：不是，能源之星標章非屬我國機關優先採購環境保護產品辦法之第三類產品。</div>
+
+            <div class="d-flex">
+                <div class=" flex-grow-1">Q：面板廠的筆記型電腦LCD面板模組，是否適用能源之星顯示器第5.0版的規範?</div>
+                <div>國內標章申請</div>
+            </div>
+            <div>A：能源之星標章是針對最終產品進行規範，LCD面板模組並不適用。</div>
+
+            <div class="d-flex">
+                <div class=" flex-grow-1">Q：LED燈是否可以申請能源之星標章？</div>
+                <div>國內標章申請</div>
+            </div>
+            <div>A：LED燈可以申請能源之星標章，但無法在台灣進行申請，請至美國能源之星標章申請，美國能源之星標章申請採取網路申請，申請公司必須先加入成為能源之星標章夥伴，才能進行產品申請的作業。</div>
+
+            <div class="d-flex">
+                <div class=" flex-grow-1">Q：外接式電源供應器是否可申請能源之星標章？</div>
+                <div>國內標章申請</div>
+            </div>
+            <div>A：因為已成功推動外接式電源供應器市場朝向更高、更永續化的能源效率。在2010年12月31日後外接式電源供應器將不再符合申請能源之星標章的資格。</div>
+
+
+
+            <div>最後更新日期: @ViewBag.date</div>
+
+        </main>
+        <div class="col-lg-1">    </div>
+    </div>
+</div>
+@section styles {
+    <style>
+
+        /*.ccis_Detail h2 div {
+            font-size: 19px;
+            padding: 7px;
+        }
+
+        .ccis_Detail h2 .d-flex {
+            background-color: #e2d7d7
+        }
+
+            .ccis_Detail h2 .d-flex + div {
+                padding: 14px;
+            }*/
+    </style>
+}

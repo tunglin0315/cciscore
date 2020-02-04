@@ -1,0 +1,108 @@
+﻿/*頁次控制項*/
+#page{border:1px solid #ddd;height:30px;line-height:30px;}
+.vc{font-size:12px;padding:2px 0px; }
+.vc a{color:#333}
+.vc a:hover{border:1px solid #333;color:#f60;text-decoration:none;}
+.vc a,.vc b{float:left;width:24px;height:24px;line-height:24px;text-align:center;text-decoration:none;border:1px solid #ccc;font-family:Fixedsys;font-weight:normal;background:#e9eaf0;margin-right:5px;}
+.vc b{float:left;background:#3399cc;color:#fff;}
+.vc p{float:right; margin-top:7px }
+.vc .pre,.vc .next,.vc .fst,.vc .lst{font-size: 12px; font-weight: bold;text-decoration: none; margin:0 5px 0 0;display:block;width:24px;height:24px;}
+
+.vc .pre:hover,.vc .pre,.vc .next:hover,.vc .next,.vc .prefalse,.vc .prefalse:hover,.vc .nextfalse,.vc .nextfalse:hover{background:url(../images/num.gif) no-repeat;}
+
+.vc .fst,.vc .lst,.vc .fstfalse,.vc .fstfalse:hover,.vc .lstfalse,.vc .lstfalse:hover{background:url(../images/last_first.gif) no-repeat}
+
+.vc .pre,.vc .pre:hover{background-position:0 0;}
+.vc .next:hover,.vc .next{background-position: 0 bottom;}
+
+.vc .fst{background-position:0 0;}
+.vc .lst{background-position:0 bottom;}
+.vc .prefalse,.vc .prefalse:hover,.vc .fstfalse,.vc .fstfalse:hover{background-position:right 0;border:1px solid #ccc;}
+.vc .nextfalse,.vc .nextfalse:hover,.vc .lstfalse,.vc .lstfalse:hover{background-position:right -22px;border:1px solid #ccc;}
+
+.vc .div1 {float:left; margin:4px 0px 4px 0px;}
+
+/*ListViewPage*/
+.ListPager
+{
+    float: left;
+    font-size: 13px;
+}
+.ListPager a, .ListPager span.Label,.ListPager span span
+{
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    height: 30px;
+    line-height: 30px;
+    padding: 3px 8px;
+    text-decoration: none;
+}
+.ListPager a
+{
+    color: Black;
+    background-color: #eeeeee;
+}
+.ListPager a:hover
+{
+    border: 1px solid Black;
+    color: #f60;
+}
+.ListPager span.Label,.ListPager span.Label:hover,.ListPager span span
+{
+    border: 1px solid #ddd;
+    background-color: #3399cc;
+    color: White;
+}
+/*最前頁、最後頁無作用*/
+.ListPager a.aspNetDisabled, .ListPager a.aspNetDisabled:hover
+{
+    border: 1px solid #ddd;
+    color: #CECECE;
+    background-color: #eeeeee;
+}
+
+/*GridView Page*/
+.GridViewPage > tr:last-child td,.GridViewPage table td
+{
+    border-width: 0px;   
+}
+
+.GridViewPage table
+{
+    margin: auto;
+    font-size: 13px;
+    border-width: 0px;
+}
+
+.GridViewPage table a,.GridViewPage table span
+{
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    height: 30px;
+    line-height: 30px;
+    padding: 3px 8px;
+    text-decoration: none;
+    margin-left:3px;
+}
+
+.GridViewPage table a
+{
+    background-color: #eeeeee;
+    color: Black;
+}
+
+.GridViewPage table span
+{
+    background-color: #3399cc;
+    color: White;
+}
+
+.GridViewPage table a:hover
+{
+    border: 1px solid Black;
+    color: #f60;
+}

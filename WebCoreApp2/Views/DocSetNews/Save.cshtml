@@ -1,0 +1,55 @@
+﻿@model News
+@{
+    bool IsAdd = Model.Guid == null;
+    string CtrlName = IsAdd ? "新增" : "編輯";
+}
+<div class="container-fluid mt-2">
+    <div class="bg-primary text-white">
+        <h4>@CtrlName 會議活動</h4>
+    </div>
+    <form asp-action="Save" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="Guid" value="@Model.Guid" />
+        <div>
+            <img src="@Url.Content(Model.ImgPath)" height="100" />
+        </div>
+        <div>
+            <label asp-for="File"></label>
+            <input type="file" name="File" accept="image/gif,image/png,image/jpg,image/jpeg" />
+            <div><span asp-validation-for="File" class="text-danger"></span></div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Title"></label>
+            <input asp-for="Title" class="form-control" />
+            <div><span asp-validation-for="Title" class="text-danger"></span></div>
+        </div>
+        <div class="form-group">
+            <label asp-for="NewsDate"></label>
+            <input asp-for="NewsDate" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="NewsState"></label>
+            <input asp-for="NewsState" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="NewsOrgan"></label>
+            <input asp-for="NewsOrgan" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="DirOrgan"></label>
+            <input asp-for="DirOrgan" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Href"></label>
+            <input asp-for="Href" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Sort"></label>
+            <input asp-for="Sort" class="form-control" />
+            <div><span asp-validation-for="Sort" class="text-danger"></span></div>
+        </div>
+        <div class="form-group">
+            <input class="btn btn-primary" type="submit" value="@CtrlName" />
+        </div>
+    </form>
+    <a asp-action="NewsList" class="btn btn-secondary">回會議活動列表</a>
+</div>

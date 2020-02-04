@@ -1,0 +1,100 @@
+﻿<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub">氣候變遷知識</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub_Sub2">氣候公約介紹</a></li>
+        <li class="breadcrumb-item"> @ViewBag.Title</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 mx-sm-auto col-lg-9 pt-3  ccis_Detail">
+
+            <div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2 class="h2">@ViewBag.Title</h2>
+            </div>
+            @Html.Raw(@ViewBag.Html)
+
+            @*<div class=" pb-2 mb-3 border-bottom" id="content">
+            <h2>京都議定書（Kyoto Protocol）</h2>
+        </div>
+
+        <h3>京都議定書</h3>
+        <p>根據1996年聯合國政府間氣候變化專門委員會（Intergovernmental Panel on Climate Change, IPCC<a href="/know/pact#infolink1" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>1</sup></a>）之預估，認為若要在21世紀末將二氧化碳濃度限制在工業革命前的兩倍（550 ppm），目前全球排放量必須減少一半。</p>
+        <p>但在1992年簽訂「氣候變化綱要公約」後，全球二氧化碳濃度仍在不斷上升，原公約減量目標普遍認為並未被締約方認真執行，而在國際上引起極大爭議，於是形成制定具有法律力的議定書共識。於1997年12月11日日本京都的「第三次締約國大會」（COP3）中簽署「京都議定書」，規範38個締約方及歐盟，以個別或共同的方式控制人為排放之溫室氣體數量以期減少溫室效應對全球環境所造成的影響。</p>
+        <p>38個締約方及歐盟必須在第一個承諾期間（2008-2012年）將該國溫室氣體排放量降至1990年水準平均再減5.2%。根據京都議定書第25條規定，議定書必須獲55個以上締約方批准和其合計二氧化碳排放量至少占附件一締約方1990年二氧化碳排放總量的55%，議定書才能正式生效。 其中「55個締約方」在2002年5月23日冰島通過後首先滿足條件。2004年12月18日，俄羅斯通過了該條約後達到「至少55%」的條件，條約於90天後的2005年2月16日開始強制生效。</p>
+        <p>根據「京都議定書」，各締約方必須主要通過國家措施實現其目標。但是，議定書還為它們提供了另外一種通過三種基於市場機制實現其目標的跨國彈性減量手段。如圖一所示。</p>
+
+        <ol>
+            <li>
+                <p><strong>共同減量（Joint Implementation,JI）</strong><a href="/know/pact1#infolink2" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>2</sup></a></p>
+                <p>容許所有附件一所列締約方以推動共同排放減量計畫的方式，向其他附件一締約方交換或取得所謂「排放減量單位（Emission Reduction Units, ERU）。</p>
+
+            </li>
+            <li>
+                <p><strong>清潔發展機制（Clean Development Mechanism,CDM）</strong><a href="/know/pact1#infolink3" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>3</sup></a></p>
+                <p>符合公平正義與成本有效性原則，容許所有附件一所列締約方可以在非附件一所列之開發中國家，推動相關排放減量計畫，以協助開發中國家進行溫室氣體減量，而附件一締約方則可以取得所謂「經驗證減量額度（Certified Emission Reduction, CER）」。</p>
+            </li>
+
+            <li>
+                <p><strong>排放交易（Emissions Trading,ET）</strong><a href="/know/pact1#infolink4" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>4</sup></a></p>
+
+                <p>容許所有附件一所列締約方以交易方式，向排放量尚未達到容許排放配額的其他附件一所列締約方，取得尚未使用或剩餘之排放配額（Unused Or Surplus Emission Units）額度。</p>
+            </li>
+        </ol>
+        <div class="text-center">
+            <img src="~/_x/img/know/Kyoto.jpg" alt="京都議定書減量機制" title="  共同減量（Joint Implementation,JI）是附件一締約方以推動共同排放減量計畫的方式，向其他附件一締約方交換或取得所謂「排放減量單位（Emission Reduction Units, ERU）。
+                清潔發展機制（Clean Development Mechanism,CDM）是附件一締約方可以在非附件一所列之開發中國家，推動相關排放減量計畫，以協助開發中國家進行溫室氣體減量，而附件一締約方則可以取得所謂「經驗證減量額度（Certified Emission Reduction, CER）」。
+                排放交易（Emissions Trading,ET）是附件一所列締約方以交易方式，向排放量尚未達到容許排放配額的其他附件一所列締約方，取得尚未使用或剩餘之排放配額（Unused Or Surplus Emission Units）額度。" />
+            <p>圖一、京都議定書減量機制</p>
+        </div>
+        <div class="text-center my-1">
+            <button class="btn btn-info" onclick="img1()" title="圖片詳細說明">圖片詳細說明</button>
+            <div id="img1">
+                共同減量（Joint Implementation,JI）是附件一締約方以推動共同排放減量計畫的方式，向其他附件一締約方交換或取得所謂「排放減量單位（Emission Reduction Units, ERU）。
+                清潔發展機制（Clean Development Mechanism,CDM）是附件一締約方可以在非附件一所列之開發中國家，推動相關排放減量計畫，以協助開發中國家進行溫室氣體減量，而附件一締約方則可以取得所謂「經驗證減量額度（Certified Emission Reduction, CER）」。
+                排放交易（Emissions Trading,ET）是附件一所列締約方以交易方式，向排放量尚未達到容許排放配額的其他附件一所列締約方，取得尚未使用或剩餘之排放配額（Unused Or Surplus Emission Units）額度。
+            </div>
+        </div>
+
+
+        <p>更多京都議定書<a href="/know/pact1#infolink5" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>5</sup></a></p>
+        <h3>《京都議定書》的後續</h3>
+        <p> 雖然《京都議定書》於2005年生效，但在2009年的第15次締約方會議（COP15）中，各國未能達成共識，無法如期以《哥本哈根議定書》來取代《京都議定書》，後來僅能將《京都議定書》期限延長至2020年，不過在2015年第21次締約方會議（COP21）中，來自全球的195個國家代表於巴黎達成協議，訂定《巴黎協定》，締約方同意力抗全球暖化，將地球溫度控制在不超過前工業時代（1750年）攝氏2度，且力求將升溫控制在1.5度內。</p>
+
+        <ul>
+            資料來源：
+            <li id="infolink1">[1] <a href="https://www.ipcc.ch" target="_blank" title="另開視窗(IPCC)">IPCC</a></li>
+            <li id="infolink2">[2] <a href="https://unfccc.int/process/the-kyoto-protocol/mechanisms/joint-implementation" target="_blank" title="另開視窗(共同減量_Joint Implementation,JI)">共同減量_Joint Implementation,JI</a></li>
+            <li id="infolink3">[3] <a href="https://unfccc.int/process-and-meetings/the-kyoto-protocol/mechanisms-under-the-kyoto-protocol/the-clean-development-mechanism" target="_blank" title="另開視窗(清潔發展機制_Clean Development Mechanism,CDM)">清潔發展機制_Clean Development Mechanism,CDM</a></li>
+            <li id="infolink4">[4] <a href="https://unfccc.int/process/the-kyoto-protocol/mechanisms/emissions-trading" target="_blank" title="另開視窗(排放交易_Emissions Trading,ET)">排放交易_Emissions Trading,ET</a></li>
+            <li id="infolink5">[5] <a href="https://unfccc.int/process-and-meetings/the-kyoto-protocol/what-is-the-kyoto-protocol/what-is-the-kyoto-protocol" target="_blank" title="另開視窗(京都議定書)">京都議定書</a></li>
+        </ul>*@
+
+            <div class=" text-right my-3">
+                @*判斷是否已經登入*@
+                @if (User.Identity.IsAuthenticated)
+                {
+                    //判斷登入角色,符合角色則顯示按鈕進入後台
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a class="btn btn-danger text-center" href="~/info/Edit/@ViewBag.id">編輯</a>
+                    }
+
+                }
+            </div>
+        </main>
+        <div class="col-lg-1"></div>
+    </div>
+</div>
+
+<script>
+
+    function img1() {
+        $("#img1").slideToggle();
+
+    };
+</script>

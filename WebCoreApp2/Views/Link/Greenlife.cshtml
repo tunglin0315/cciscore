@@ -1,0 +1,61 @@
+﻿<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png"  alt="首頁圖示"  title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/link/Detail_Sub">相關連結</a></li>
+        <li class="breadcrumb-item "><a href="~/link/Index/國內連結">國內連結</a></li>
+        <li class="breadcrumb-item ">綠色生活資訊</li>
+
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail" id="content">
+
+            <h2 class="h2">綠色生活資訊</h2>
+            <div class="text-center">
+                <img class="mb-3" src="~/_x/img/綠色採購-01.jpg" alt="綠色採購" title="綠色採購" />
+            </div>
+            <div class="text-center my-1">
+                <button class="btn btn-info" onclick="img1()" title="圖片詳細說明">圖片詳細說明</button>
+                <div id="img1">
+                    行政院自民國81年正式公告實施環保標章制度，並開始綠色採購推廣。87年綠色採購納入法規，成為世界首個將綠色採購納入法令的國家。初期，行政院環境保護署建置「環保標章資訊站」，提供國人環保標章計畫執行現狀、推廣環保標章計畫與理念、線上相關業務等服務；91年配合「機關綠色採購推動方案」，進行網站改版，提供更詳細的環保產品資訊，改善使用介面。 同時，開設機關綠色採購專區，讓機關、企業採購人員與消費者均可利用此網站取得有關環保產品的相關說明與採購管道，方便民眾及企業團體購買，並鼓勵綠色產品的生產及使用。
+                </div>
+            </div>
+            <p>
+                行政院自民國81年正式公告實施環保標章制度，並開始綠色採購推廣。87年綠色採購納入法規，成為<span style="color:red">世界首個將綠色採購納入法令的國家</span>。初期，行政院環境保護署建置「環保標章資訊站」，提供國人環保標章計畫執行現狀、推廣環保標章計畫與理念、線上相關業務等服務；91年配合「機關綠色採購推動方案」，進行網站改版，提供更詳細的環保產品資訊，改善使用介面。
+
+                同時，開設機關綠色採購專區，讓機關、企業採購人員與消費者均可利用此網站取得有關環保產品的相關說明與採購管道，方便民眾及企業團體購買，並鼓勵綠色產品的生產及使用；隔年整合網站資訊，提升網頁內容整體的一致性，新增使用者專區的功能性及與環保產品線上採購網的連結，進行全面性的整合並建置「綠色生活資訊網」。接著逐年維護既有系統並新增相關功能，進行資料加值，期能讓一般民眾、製造廠商、銷售商到政府機關與管理層面，確實透過此網站，獲得明確的知識及資訊。從資訊架構建設，綠色消費與推廣主要為強化管考功能，並推動環保標章與綠色採購資訊數位化。
+
+            </p>
+            <p class="text-right"><a href="https://greenliving.epa.gov.tw/Public" target="_blank" title="另開新視窗(綠色生活資訊網)">綠色生活資訊網</a></p>
+        </main>
+        <div class="col-lg-2">   </div>
+    </div>
+</div>
+@section styles {
+    <style>
+        h5 {
+            font-weight: bold;
+        }
+
+
+        p {
+            text-indent: 2em;
+            font-size: 19px;
+        }
+        /*.ccis_Detail img {
+            width: 70%;
+            max-width: 945px;
+        }*/
+    </style>
+}
+<script>
+    function img1() {
+      $("#img1").slideToggle();
+    }
+
+</script>

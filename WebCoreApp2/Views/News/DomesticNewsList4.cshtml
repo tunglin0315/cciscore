@@ -1,0 +1,75 @@
+﻿@*@{
+        ViewData["Title"] = "DomesticNewsList4";
+        Layout = "~/Views/Shared/_Layout2.cshtml";
+    }
+
+    <h2>DomesticNewsList4</h2>*@
+
+
+@{
+    ViewData["Title"] = "DomesticNewsList4";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+@{
+    @await Html.PartialAsync("_Nav1", "新聞活動>新聞中心>國內新聞");
+}
+
+@*<script>
+    var urlstr = window.location.href;
+    var hkey_root, hkey_path, hkey_key
+    hkey_root = "HKEY_CURRENT_USER"
+    hkey_path = "//Software//Microsoft//Internet Explorer//PageSetup//"
+    function pagesetup_null() {
+        try {
+            var RegWsh = new ActiveXObject("WScript.Shell")
+            hkey_key = "header"
+            RegWsh.RegWrite(hkey_root + hkey_path + hkey_key, "")
+            hkey_key = "footer"
+            RegWsh.RegWrite(hkey_root + hkey_path + hkey_key, "")
+        } catch (e) { }
+</script>*@
+
+
+<div class="container-fluid">
+    <div class="row" style="width:95%"  >
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 ">
+            @*<a target="_blank" href="http://facebook.com/share.php?u=" +urlstr><img style="min-width: 16px;" src="~/_x/img/iconfb-.png" /></a>
+            <a target="_blank" href="http://line.me/R/msg/text/?"><img style="min-width: 16px;" src="~/_x/img/iconline-.png" /></a>
+            <a href="#" onclick="pagesetup_null(); self.print();"><img style="min-width: 16px;" src="~/_x/img/iconpr-.png" /></a>
+            <a target="_blank" href="http://www.twitter.com/home/?status=" +urlstr><img style="min-width: 16px;" src="~/_x/img/icontt-.png" /></a>*@
+
+            <h2 class="h2">史無前例！北台灣首次大規模珊瑚白化</h2>
+            <div>
+                <img src="~/_x/img/t_new4.png" />
+
+                <p style="font-size:16px; color:#808080">北台灣珊瑚群聚發生大規模白化，顯示海水升溫的影響不僅限於低緯度的熱帶</p>
+                <p class="pt-0" style="font-size:16px; color:#808080">珊瑚礁，開始往較高緯度擴散。（轉載自由時報）2018-09-17 22:33</p>
+            </div>
+
+            <p>極端氣候使各地自5月以來異常高溫、屢屢破紀錄，海洋也連帶增溫。日前北台灣珊瑚群聚發生大規模白化，顯示海水升溫的影響不僅限於低緯度的熱帶珊瑚礁，開始往較高緯度擴散。綜合媒體報導，中研院生物多樣性研究中心研究員陳昭倫表示，自今年5月開始，西太平洋的熱浪集中在東亞大陸邊緣，其中包含日本、韓國、中國東南沿海、台灣周邊等，接下來連月高溫創下台灣紀錄，也使美國海洋與大氣總署全球珊瑚白化監測對台灣北部、墾丁與東沙環礁發布一級珊瑚白化預警。</p>
+            <p>陳說明，台灣北部或是東北角處於較高緯度（北緯25度以上），屬「非礁型」的邊緣群聚，與墾丁、東沙、綠島、蘭嶼、小琉球等「典型珊瑚礁」等地低於北緯25度不同之處，在於因北部和東北角水溫較低，較不易白化，過去的珊瑚白化事件也都集中在低緯度海域。</p>
+            <p>陳表示，這是首次記錄到北台灣大規模的珊瑚白化，其中以鹿角珊瑚科的細枝鹿角珊瑚和萼柱珊瑚群體逾50%的白化比例最高、程度也最嚴重。陳呼籲大眾，極端氣候的衝擊已不限於低緯度熱帶珊瑚礁，應減少溫室氣體排放以減緩珊瑚白化，也希望入秋後海水溫度下降，可以減輕此現象。</p>
+            
+
+        </main>
+    </div>
+</div>
+@section styles {
+    <style>
+        h5 {
+            font-weight: bold;
+        }
+
+        p {
+            margin: 5px;
+        }
+
+        h2 > .row > .col-md-4 {
+            margin: 5px;
+            padding-right: 5px;
+        }
+    </style>
+}

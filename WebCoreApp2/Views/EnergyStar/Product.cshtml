@@ -1,0 +1,40 @@
+﻿@{
+    string name = "能源之星 > 標章廠商";
+    @await Html.PartialAsync("_Nav1", name);
+}
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-8 pt-3 px-4" id="content">
+
+            <h2 class="h2">標章廠商</h2>
+            <div id="lit_Content"></div>
+
+   
+         </main>
+      <div class="col-lg-2">  </div>
+   </div>
+</div>
+@section styles {
+    <style>
+        h5 {
+            font-weight: bold;
+        }
+
+
+        p {
+            text-indent: 2em;
+            font-size: 19px;
+        }
+        /*.ccis_Detail img {
+            width: 70%;
+            max-width: 945px;
+        }*/
+    </style>
+}

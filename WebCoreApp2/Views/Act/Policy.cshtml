@@ -1,0 +1,81 @@
+﻿<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Detail_Sub">因應作為</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Index/溫室氣體減緩策略">溫室氣體減緩策略</a></li>
+        <li class="breadcrumb-item ">溫室氣體減量與管理法</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2>溫室氣體減量與管理法</h2>
+            </div>
+            <h3 style="visibility:hidden"></h3>
+            @*<div class="text-center">
+                    <img class="mb-3 " style=" width:100%;max-width:745px ;border-radius:8px;" src="~/_x/img/act/分層推動溫減管理-01.jpg" alt="分層推動溫減管理" title="分層推動溫減管理" />
+                </div>*@
+            <p>
+                「溫室氣體減量及管理法」（以下簡稱溫管法）於104年7月1日由總統令公布施行。溫管法立法原則係依據聯合國氣候變化綱要公約(United Nations Framework Convention on Climate Change, UNFCCC)精神，承擔共同但差異的責任，落實環境正義，善盡共同保護地球環境之責任，確保國家永續發展。
+            </p>
+            <h3>立法目的</h3>
+            <p>
+                因應全球氣候變遷，制定氣候變遷調適策略，降低與管理溫室氣體排放，落實環境正義，善盡共同保護地球環境之責任，並確保國家永續發展，特制定本法。 （溫管法第1條）
+            </p>
+            <h3>主管機關</h3>
+            <p>
+                溫管法第2條規範主管機關在中央為行政院環境保護署；在直轄市為直轄市政府；在縣（市）為縣（市）政府。
+            </p>
+            <h3>明訂長期減量目標</h3>
+            <p>國家溫室氣體長期減量目標為139年（西元2050年）溫室氣體排放量降為94年（西元2005年）溫室氣體排放量50%以下，並具有相關調整機制，我國也是少數將減量目標入法的國家。（溫管法第4條）</p>
+            <p>溫管法規範我國長期減量目標、政府機關權責、溫室氣體減量對策及教育宣導，作為國內整合決策機制及未來參與國際合作之橋樑，共分6章，計34條，第一章總則計7條、第二章政府機關權責計8條、第三章減量對策計8條、第四章教育宣導與獎勵計4條、第五章罰則計5條及第六章附則計2條。</p>
+            <p class="text-right"><a href="https://ghgrule.epa.gov.tw/greenhouse/greenhouse_page/23" target="_blank" title="新開視窗">詳請請點我</a></p>
+            @*<h5>
+                    教育宣導與獎勵
+                </h5>
+                <div class="text-center">
+                    <img class="mb-3 " style="width:100%; max-width:745px ;border-radius:8px;" src="~/_x/img/act/教育宣導與獎勵-01.jpg" alt="教育宣導與獎勵" title="教育宣導與獎勵" />
+                </div>
+                <p>
+                    溫管法規範與溫室氣體減量相關之教育宣導與獎勵，規定各級政府機關必須推動對於國民、學校及產業對全球氣候變遷之認知與減少溫室氣體排放進行宣導工作，並積極協助民間團體推展有關活動，除了各級政府機關之外，公立學校、公營事業機構及能源供應者也應共同宣導、推廣節約能源及使用低耗能高能源效率產品或服務，以減少溫室氣體的排放。
+                </p>*@
+            @*<h5>
+                    （三） 階段性減量管制
+                </h5>
+                <div class="text-center">
+                    <img class="mb-3 " style=" width:100%;max-width:745px ;border-radius:8px;" src="~/_x/img/act/階段性減量管制-01.jpg" alt="階段性減量管制" title="階段性減量管制" />
+                </div>
+                <p>
+                    階段管制目標依<a href="https://ghgrule.epa.gov.tw/action/action_page/51"title="另開新視窗" target="_blank">國家溫室氣體減量推動方案</a>對一定期間內的二氧化碳排放總當量所為之管制總量。
+
+                    環保署已會商中央目的事業主管機關訂定我國第一期溫室氣體階段管制目標，並於107年1月23日奉行政院核定，將逐期檢視排放量達成情形並進行滾動式調整。
+
+                </p>         *@
+
+
+        </main>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+@section styles {
+    <style>
+        h3 {
+            font-weight: bold;
+            color: #129696
+        }
+
+            h3 ~ p {
+                margin-left: 45px;
+            }
+
+        p {
+            text-indent: 2em;
+            font-size: 19px;
+        }
+    </style>
+}

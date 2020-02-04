@@ -1,0 +1,29 @@
+﻿@*@{
+    string name = ViewData["name"].ToString();
+   }*@
+
+@*<h3 style="visibility:hidden"></h3>
+<p>
+    我國推動產業溫室氣體盤查作業，主要係參考國際間ISO/CNS 14064-1及GHG Protocol溫室氣體盤查議定書<a href="/act/index/溫室氣體盤查申報#infolink1" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>1</sup></a>規範，計算範疇一及範疇二之溫室氣體排放，僅需鑑別範疇三之排放源，但亦可接受範疇三量化數值；其中所謂之溫室氣體則包括二氧化碳（CO<sub>2</sub>）、甲烷（CH<sub>4</sub>）、氧化亞氮（N<sub>2</sub>O）、氫氟碳化物（HFCs）、全氟碳化物（PFCs）及六氟化硫（SF<sub>6</sub>）、三氟化氮（NF<sub>3</sub>）等溫室氣體；至於排放源範圍則非常廣泛，舉凡燃燒煤及油等燃料之鍋爐、使用液化天然氣之瓦斯爐等固定/能源排放，製程過程中排放，如乾蝕刻製程（PFCs）及燒結製程（石料）等，燃料使用之車、船及飛機等移動源排放，以及逸散排放源，如化糞池、冷氣冷媒逸散等皆涵蓋其中。
+</p>
+
+<ul>
+
+    資料來源：
+    <li>[1] <a id="infolink1" href="https://www.epa.gov.tw/ghgact/F08D196239A1021D/b5525761-cd9f-4987-8307-153cbe63424a" target="_blank" title="另開視窗(溫室氣體盤查管理)">溫室氣體盤查管理</a></li>
+</ul>*@
+
+    <div class=" text-right my-3">
+        @*判斷是否已經登入*@
+        @if (User.Identity.IsAuthenticated)
+        {
+            //判斷登入角色,符合角色則顯示按鈕進入後台
+            @if (User.IsInRole("Admin"))
+            {
+                <a class="btn btn-danger text-center" href="~/info/Edit/@ViewBag.id">編輯</a>
+            }
+
+        }
+    </div>
+
+

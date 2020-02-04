@@ -1,0 +1,53 @@
+﻿@model RoleEditModel
+<div class="container">
+    <div class="row">
+        <div class="col col-md-12">
+            <div class="bg-primary text-center text-white p-2 "> <h4>角色設定</h4></div>
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <form asp-action="Edit" method="post">
+                <input type="hidden" name="roleName" value="@Model.Role.Name" />
+                <input type="hidden" name="roleId" value="@Model.Role.Id" />
+                <h6 class="bg-info p-1 text-white">選取使用者,設定 @Model.Role.Name 角色</h6>
+                <table class="table table-bordered table-sm">
+                    @if (Model.NonMembers.Count() == 0)
+                    {
+                        <tr><td colspan="2">All Users Are Members</td></tr>
+                    }
+                    else
+                    {@foreach (AppUser user in Model.NonMembers)
+                        {
+                            <tr>
+                                <td>@user.UserName</td>
+                                <td>
+                                    <input type="checkbox" name="IdsToAdd" value="@user.Id">
+                                </td>
+                            </tr>
+}}
+                </table>
+                <h6 class="bg-info p-1 text-white">選取使用者, 移除 @Model.Role.Name 角色</h6>
+                <table class="table table-bordered table-sm">
+                    @if (Model.Members.Count() == 0)
+                    {
+                        <tr><td colspan="2">目前 @Model.Role.Name 角色,沒有使用者</td></tr>
+}
+                    else
+                    {
+                        @foreach (AppUser user in Model.Members)
+                        {
+                            <tr>
+                                <td>
+                                    @user.UserName
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="IdsToDelete" value="@user.Id">
+                                </td>
+                            </tr>
+                        }
+                    }
+                </table>
+                <button type="submit" class="btn btn-primary">儲存</button>
+                <a asp-action="Index" class="btn btn-secondary">取消</a>
+            </form>
+        </div>
+    </div>
+</div>

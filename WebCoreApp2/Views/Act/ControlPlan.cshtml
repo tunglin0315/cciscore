@@ -1,0 +1,62 @@
+﻿<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png"  alt=""  title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Detail_Sub">因應作為</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Index/溫室氣體減緩策略">溫室氣體減緩策略</a></li>
+        <li class="breadcrumb-item ">部門溫室氣體排放管制行動方案</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+
+            <div class="pb-2 mb-3 border-bottom" id="content"> 
+                <h2>部門溫室氣體排放管制行動方案</h2>
+            </div>
+            <h4 style="visibility:hidden"></h4>
+            <p>
+                我國能源、製造、運輸、住商、農業及環境等六大部門的「溫室氣體排放管制行動方案」（以下簡稱行動方案），於107年10月3日奉行政院正式核定施行。依「溫室氣體減量及管理法」（以下簡稱溫管法），第9條第3項規定，訂定107年至109年六大部門減碳具體行動，搭配我國109年（西元2020年）溫室氣體排放量較基準年94年（西元2005年）減量2%的第一期溫室氣體階段管制目標，共同勾勒出國家整體減碳策略藍圖。
+            </p>
+
+            <h4>每年提出執行成果報告</h4>
+            <p>
+                六大部門行動方案核定後，中央目的事業主管機關依據溫管法第10條規定，應每年撰寫執行排放管制成果報告，並依據溫管法施行細則第7條，於每年9月30日前彙整陳報行政院，未能達成所屬部門溫室氣體排放管制目標者須提出改善計畫。行動方案依推動方案之修訂、產業調整及能源供需情形，每5年滾動檢討強化，以逐期達成減碳目標。
+            </p>
+            @*<h5>
+                    提出具有地方特色的執行方案
+                </h5>
+                <p>
+                    環保署將持續邀集地方政府就「溫室氣體管制執行方案」（以下簡稱執行方案）進行溝通討論，鼓勵地方政府依循國家整體政策，提出因地制宜且具有地方特色的執行方案，已有10餘個縣市政府表示預計107年底前可完成草案。此外，環保署與相關部會已達成114年（西元2025年）的第二期階段管制目標設定在較基準年減少10%的共識，後續將就部門減碳責任分配進行廣泛討論與諮商，以加大減碳力道，並深化能力建構工作。
+                </p>*@
+            <div class="text-center">
+                <img src="~/_x/img/Act/act01_4.jpg" alt="部門別溫室氣體排放管制行動方案" title="部門別溫室氣體排放管制行動方案" />
+            </div>
+            <p class="text-right"><a href="https://ghgrule.epa.gov.tw/action/action_page/52" target="_blank" title="新開視窗">詳情請點我</a></p>
+        </main>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+@section styles {
+    <style>
+        h4 {
+            font-weight: bold;
+            color: #129696
+        }
+
+        h4~p{
+            margin-left:45px;
+        }
+        p {
+            text-indent: 2em;
+            font-size: 19px;
+        }
+
+        .ccis_Detail img {
+            border-radius: 8px;
+            width: 70%;
+        }
+    </style>
+}

@@ -1,0 +1,65 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "provider": "cdnjs",
+      "library": "twitter-bootstrap@4.2.1",
+      "destination": "wwwroot/lib/twitter-bootstrap/",
+      "files": [
+        "js/bootstrap.min.js",
+        "js/bootstrap.bundle.min.js",
+        "css/bootstrap.min.css",
+        "css/bootstrap.css"
+      ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "jquery@3.4.1",
+      "destination": "wwwroot/lib/jquery/",
+      "files": [
+        "jquery.min.js"
+      ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "popper.js@1.14.6",
+      "destination": "wwwroot/lib/popper/",
+      "files": [
+        "popper.min.js"
+      ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "holder@2.9.6",
+      "destination": "wwwroot/lib/holder/",
+      "files": [
+        "holder.min.js"
+      ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "jquery.countdown@2.2.0",
+      "destination": "wwwroot/lib/jquery.countdown/",
+      "files": [
+        "jquery.countdown.min.js"
+      ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "waypoints@4.0.1",
+      "destination": "wwwroot/lib/waypoints/",
+      "files": [
+        "jquery.waypoints.min.js"
+      ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "jquery-datetimepicker@2.5.20",
+      "destination": "wwwroot/lib/jquery-datetimepicker/",
+      "files": [
+        "jquery.datetimepicker.full.min.js"
+      ]
+    }
+  ]
+}

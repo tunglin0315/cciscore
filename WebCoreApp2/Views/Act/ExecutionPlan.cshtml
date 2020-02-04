@@ -1,0 +1,80 @@
+﻿<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png"  alt=""  title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Detail_Sub">因應作為</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Index/溫室氣體減緩策略">溫室氣體減緩策略</a></li>
+        <li class="breadcrumb-item ">溫室氣體管制執行方案</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2>溫室氣體管制執行方案</h2>
+            </div>
+            <h4 style="visibility:hidden"></h4>
+            <p>
+                溫管法第15條規定，直轄市、縣（市）主管機關應依推動方案及部門行動方案，訂修溫室氣體管制執行方案，報請中央主管機關會商中央目的事業主管機關後核定。因此，環保署彙整各部門行動方案下之中央與地方協力合作事項，並提供溫室氣體管制執行方案撰擬參考資料，以作為直轄市、縣（市）主管機關研訂執行方案之參考。
+            </p>
+                <h4>撰擬項目</h4>
+                <p>
+                    依據溫管法施行細則第14條第2項規定，執行方案內容包括下列項目：現況分析、方案目標、推動期程、推動策略（包括主協辦機關及經費編列）、預期效益及管考機制等。
+                </p>
+                <h4>撰擬原則</h4>
+                <ol>
+                    <li>依據地方特色，發展因地制宜策略：考量各地區環境及發展差異，建議配合直轄市、縣（市）在地特色及排放結構，提出因地制宜之低碳策略。</li>
+                    <li>以民生議題為主，優先推動住商運輸部門行動：以地方治理面向切入，建議優先規劃貼近民眾生活之住商與運輸部門減量具體行動，並強化公眾宣導溝通，以切合民眾需求。</li>
+                    <li>優先提出可執行、可量化、具成本有效性之策略：地方以執行面為推動重點，提出可量化並能實際達成節能減碳、減少用電等之工作項目；並考量資源有效分配及成本有效性，就策略預期投入成本及可能產生之節能、節電或減碳成效評估策略執行順位。</li>
+                    <li>促進民間參與，擴展公私夥伴合作：建議強化公眾參與及廣納多元意見，借重民間量能及建立互信合作機制，由公部門率先執行，並帶動私部門廣泛參與；並適時徵詢在地公民團體或專家學者。  </li>
+                    <li>中央與地方協力合作，透過地方治理落實執行：參考六大部門行動方案下中央與地方協力合作事項，結合中央與地方政府之行政工具及資源，從地方法規盤點、制度面改革著眼，將溫室氣體減量納入地方政府推動政策並落實執行。  </li>
+                    <li>跨局處整合推動，組織明確分工：減碳工作涉及中央各部門及地方各局處執掌，為促進各局處橫向溝通，建議籌組推動溫室氣體減量之專責單位，透過跨局處組織整合推動，並建立地方管考機制，逐步強化能力建構。</li>
+                </ol>
+            <div class="text-center">
+                <img src="~/_x/img/Act/act01_5.jpg" alt="溫室氣體管制執行方案" title="溫室氣體管制執行方案"/>
+
+            </div>
+
+                @*<p class="text-right">
+                    <a href="https://ghgrule.epa.gov.tw/action/action_page/53" target="_blank" title="另開視窗">詳情請點我</a>
+                </p>*@
+
+
+        </main>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+@section styles {
+    <style>
+      
+         h4 {
+            font-weight: bold;
+            color: #129696
+        }
+
+        h4~p{
+            margin-left:45px;
+        }
+
+        p {
+            text-indent: 2em;
+            font-size: 19px;
+        }
+        h4+ol{
+            margin-left:45px;
+            font-size:19px;
+        }
+       /*.ulstr {
+            font-size: 19px;
+        }*/
+       .ccis_Detail img {
+
+         border-radius:8px;
+         width:70%;
+        }
+     
+     
+    </style>
+}

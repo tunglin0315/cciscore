@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewData["Title"] = "NationalNews";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+@{
+    @await Html.PartialAsync("_Nav1",  "新聞活動>新聞中心>國際新聞");
+}
+
+@*<script>
+    var urlstr = window.location.href;
+    var hkey_root, hkey_path, hkey_key
+    hkey_root = "HKEY_CURRENT_USER"
+    hkey_path = "//Software//Microsoft//Internet Explorer//PageSetup//"
+    function pagesetup_null() {
+        try {
+            var RegWsh = new ActiveXObject("WScript.Shell")
+            hkey_key = "header"
+            RegWsh.RegWrite(hkey_root + hkey_path + hkey_key, "")
+            hkey_key = "footer"
+            RegWsh.RegWrite(hkey_root + hkey_path + hkey_key, "")
+        } catch (e) { }
+</script>*@
+
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class=" col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 ">
+            @*<a target="_blank" href="http://facebook.com/share.php?u=" +urlstr><img style="min-width: 16px;" src="~/_x/img/iconfb-.png" /></a>
+            <a target="_blank" href="http://line.me/R/msg/text/?"><img style="min-width: 16px;" src="~/_x/img/iconline-.png" /></a>
+            <a href="#" onclick="pagesetup_null(); self.print();"><img style="min-width: 16px;" src="~/_x/img/iconpr-.png" /></a>
+            <a target="_blank" href="http://www.twitter.com/home/?status=" +urlstr><img style="min-width: 16px;" src="~/_x/img/icontt-.png" /></a>*@
+
+
+            <h2 class="h2">
+                時間不多了！力抗暖化 英國數千學生為未來罷課上街
+            </h2>
+
+            <div class="row">
+
+
+                <img src="~/_x/img/nationalnew.png" />
+
+
+
+            </div>
+
+            <p style="font-size:16px; color:#808080">英國60個城市、鄉鎮的數千名學生在當地時間今日上午11時（台灣時間下午7時）發起罷課，要求政府積極面對氣候變遷。（美聯社）</p>
+
+            <p>〔即時新聞／綜合報導〕勞工有罷工的權利，學生同樣也有權選擇罷工。今日有數千名英國學生，為了氣候變遷的議題而罷課，希望用小小的力量，改變自己長大後的世界。綜合英媒報導，英國60個城市、鄉鎮的數千名學生在當地時間今日上午11時（台灣時間下午7時）發起罷課，除了要求政府積極面對氣候變遷之外，也希望政府能加強宣導氣候變遷的重要性，並修改課綱，將全球氣候變遷列為優先教學的課程。學生也主張，社會的未來是與年輕人最相關的，年輕人應有權參與政策制定，呼籲政府將投票年齡下修至16歲。</p>
+
+            <p>這場罷課活動受到16歲瑞典少女桑柏格（Greta Thunberg）影響，桑柏格從去年8月起，每週五都會罷課到瑞典國會旁抗議，要求政府官員對氣候變遷採取積極作為。桑柏格的行動受到國際關注後，包含美國、德國、比利時、日本等國家的學生都逐漸響應，在國內舉行大規模罷課活動，今日英國學生也發起罷課響應。</p>
+            <p>但對於學生的罷課，英國教師工會表示，「學生只應該在特殊情況罷課」，教師雖然鼓勵學生表達自己的意見，但學生應該完成上學的本分。發起罷課的學生之一安娜‧泰勒（Anna Taylor）則認為，「我們已經沒有多少時間可以改變了，這也是世界各國有這麼多學生開始罷課的原因」，在今天的罷課結束後，3月15日英國學生還會舉行1次罷課。</p>
+
+        </main>
+    </div>
+</div>
+@section styles {
+    <style>
+        h5 {
+            font-weight: bold;
+        }
+
+        p {
+            margin: 5px;
+        }
+
+        h2 > .row > .col-md-4 {
+            margin: 5px;
+            padding-right: 5px;
+        }
+    </style>
+}
+
+
+
+
+
+
+
+
+
+

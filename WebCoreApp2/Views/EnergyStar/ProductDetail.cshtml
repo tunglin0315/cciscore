@@ -1,0 +1,58 @@
+﻿@model EnergyStarProduct
+@{
+    ViewData["title"] = "能源標章產品資訊";
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/media/Detail_Sub">宣傳資源</a></li>
+        @*<li class="breadcrumb-item "><a href="~/act/Detail_Sub">因應作為</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Index/溫室氣體盤查申報">溫室氣體盤查申報</a></li>*@
+        <li class="breadcrumb-item "><a href="~/Energystar/index">能源之星</a></li>
+        <li class="breadcrumb-item ">能源標章產品資訊</li>
+
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 mx-sm-auto col-lg-9 pt-3  ccis_Detail" id="content">
+            @*<main role="main" class="col-md-8 ml-sm-auto col-lg-8 pt-3 px-4" id="content">*@
+                <h2 class="h2">標章產品-@Model.VrPdtName</h2>
+                @*<img src="@Model.VrPdtSmallpicUrl" alt="@Model.VrPdtName" style="height:110px;width:150px;" />*@
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <th>產品標章</th>
+                        <td>@Model.IPdtCriteria?.VrCrtName</td>
+                    </tr>
+                    <tr>
+                        <th>產品規格</th>
+                        <td>
+                            @Model.EnergyStarProductSpec.FirstOrDefault()?.VrPdsDesc
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>產品廠商</th>
+                        <td>
+                            <a asp-action="CorporationDetail" asp-route-id="@Model.IPdtCorporation.IdCop" class="">@Model.IPdtCorporation?.VrCopName</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>聯絡人</th>
+                        <td>@Model.IdContactsNavigation?.VrContacts</td>
+                    </tr>
+                    <tr>
+                        <th>聯絡人電話</th>
+                        <td>@Model.IdContactsNavigation?.VrContactsPhone</td>
+                    </tr>
+                    <tr>
+                        <th>聯絡人E-Mail</th>
+                        <td>@Model.IdContactsNavigation?.VrContactsEmail</td>
+                    </tr>
+                </table>
+            </main>
+            <div class="col-lg-1"></div>
+    </div>
+</div>

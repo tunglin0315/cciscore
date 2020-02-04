@@ -1,0 +1,227 @@
+﻿@*選單移動時 改變背景色*@
+<style>
+    .dropdown-item:hover, .dropdown-item:focus {
+        background-color: lightblue;
+    }
+</style>
+
+<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <li class="nav-item dropdown">
+            <a class="nav-item nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                管理
+            </a>
+            <div class="dropdown-menu mr-4" aria-labelledby="dropdownMenuButton">
+              @if (User.IsInRole("Admin"))
+              {
+                <a class="dropdown-item" href="~/admin/Index">帳號列表</a>
+                <a class="dropdown-item" href="~/admin/Create">帳號建立</a>
+                <a class="dropdown-item" href="~/RoleAdmin/Index">角色列表</a>
+                <a class="dropdown-item" href="~/RoleAdmin/Create">角色建立</a>
+              }
+                <a class="dropdown-item" href="~/docset/Bannerlist">首頁Banner列表</a>
+                <a class="dropdown-item" href="~/docsetnews/newslist">會議活動列表</a>
+                <a class="dropdown-item" href="~/docsetmovie/movielist">相關影音列表</a>
+                <a class="dropdown-item" href="~/docsetposter/PosterList">相關海報列表</a>
+                <a class="dropdown-item" href="~/docsetcartoon/Cartoonlist">變遷漫畫列表</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-item nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                溫管法委辦計畫知識管理系統
+            </a>
+            <div class="dropdown-menu mr-4" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="~/Knowledge/Index">溫管法委辦計畫知識管理</a>
+            </div>
+        </li>
+    }
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
+            氣候變遷知識
+        </a>
+        <ul class="dropdown-menu">
+
+            <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="know/Detail_Sub_Sub">氣候變遷介紹</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="~/know/detail">溫室效應與全球暖化</a></li>
+                    <li><a class="dropdown-item" href="~/know/detail2">氣候變遷衝擊</a></li>
+                    <li><a class="dropdown-item" href="~/know/detail3">氣候變遷減緩</a></li>
+                    <li><a class="dropdown-item" href="~/know/detail4">氣候變遷調適</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="know/Detail_Sub_Sub">氣候公約介紹</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="~/know/pact">聯合國氣候變化綱要公約</a></li>
+                    <li><a class="dropdown-item" href="~/know/pact1">&emsp;京都議定書</a></li>
+                    <li><a class="dropdown-item" href="~/know/pact2">&emsp;巴黎協定</a></li>
+
+                </ul>
+            </li>
+
+            @*<li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="know/Detail_Sub_Sub">各國氣候變遷調適</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="~/know/EachCountry">各國氣候變遷調適</a></li>
+                        <li><a class="dropdown-item" href="~/know/Singapore">新加坡</a></li>
+                        <li><a class="dropdown-item" href="~/know/Japan">日本</a></li>
+                        <li><a class="dropdown-item" href="~/know/Korea">南韓</a></li>
+                        <li><a class="dropdown-item" href="~/know/EuropeanUnion">歐盟</a></li>
+                        <li><a class="dropdown-item" href="~/know/English">英國</a></li>
+                        <li><a class="dropdown-item" href="~/know/France">法國</a></li>
+                        <li><a class="dropdown-item" href="~/know/Germany">德國</a></li>
+                        <li><a class="dropdown-item" href="~/know/Netherlands">荷蘭</a></li>
+                        <li><a class="dropdown-item" href="~/know/DenMark">丹麥</a></li>
+                        <li><a class="dropdown-item" href="~/know/Iceland">冰島</a></li>
+                        <li><a class="dropdown-item" href="~/know/Australia">澳洲</a></li>
+                        <li><a class="dropdown-item" href="~/know/Canada">加拿大</a></li>
+                        <li><a class="dropdown-item" href="~/know/America">美國</a></li>
+                    </ul>
+                </li>*@
+        </ul>
+    </li>
+
+
+
+
+
+
+    <li class="nav-item dropdown">
+        <a class="nav-item nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+            溫室氣體排放
+        </a>
+        <div class="dropdown-menu mr-4" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="~/ghg/Index/溫室氣體排放清冊">溫室氣體排放清冊</a>
+        </div>
+    </li>
+
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+            因應作為
+        </a>
+        <ul class="dropdown-menu">
+
+            <li class="dropdown-submenu">
+                <a class="dropdown-item" href="~/act/index/溫室氣體減緩策略">溫室氣體減緩策略</a>
+                @*<ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="~/act/Index/溫室氣體減緩策略">溫室氣體減緩策略</a></li>
+                        <li><a class="dropdown-item" href="~/act/Policy">溫室氣體減量與管理法</a></li>
+                        <li><a class="dropdown-item" href="~/act/NationalOutline">國家因應氣候變遷行動綱領</a></li>
+                        <li><a class="dropdown-item" href="~/act/PromotionPlan">溫室氣體減量推動方案</a></li>
+                        <li><a class="dropdown-item" href="~/act/ControlPlan">部門溫室氣體排放管制行動方案</a></li>
+                        <li><a class="dropdown-item" href="~/act/ExecutionPlan">溫室氣體管制執行方案</a></li>
+                    </ul>*@
+            </li>
+            <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="~/act/index/氣候變遷調適策略">氣候變遷調適策略</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="~/act/index/氣候變遷調適策略">氣候變遷調適策略</a></li>
+                    @*<li><a class="dropdown-item" href="~/act/architecture">&emsp;調適領域與工作架構</a></li>
+                    <li><a class="dropdown-item" href="~/act/promote">&emsp;推動機制與行動方案</a></li>
+                    <li><a class="dropdown-item" href="~/act/overall">&emsp;總體調適計畫</a></li>*@
+                    <li><a class="dropdown-item" href="~/act/nationalplan">&emsp;國家氣候變遷調適行動方案</a></li>
+
+                </ul>
+            </li>
+
+            <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="~/act/index/溫室氣體盤查申報">溫室氣體盤查申報</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="~/act/index/溫室氣體盤查申報">溫室氣體盤查申報</a></li>
+                    <li><a class="dropdown-item" href="~/act/greenhousegas">&emsp;溫室氣體查驗與盤查</a></li>
+                   @* <li><a class="dropdown-item" href="~/act/greenhousegas">&emsp;企業推動溫室氣體管理</a></li>*@
+                    @*  <li><a class="dropdown-item" href="~/act/emission">&emsp;排放量申報暨盤查管理</a></li>*@
+                    <li><a class="dropdown-item" href="~/act/exchange">&emsp;抵換專案</a></li>
+                 @*   <li><a class="dropdown-item" href="~/energystar/index">&emsp;能源之星</a></li>*@
+                </ul>
+            </li>
+            <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="/act/Detail_Sub_Sub">氣候變遷全民行動</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="~/act/ten">減碳十大撇步</a></li>
+                    @*<li><a class="dropdown-item" href="~/act/diet">低碳飲食</a></li>
+                    <li><a class="dropdown-item" href="~/act/heatwave">熱浪來臨時</a></li>*@
+                    <li><a class="dropdown-item" href="~/act/lowcarbon">低碳永續家園</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+            宣傳資源
+        </a>
+        <ul class="dropdown-menu">
+
+            <li class="dropdown-submenu">
+                <a class="dropdown-item " href="~/media/carbonTool">碳足跡計算器</a>
+            </li>
+            <li class="dropdown-submenu">
+                <a class="dropdown-item " href="~/energystar/index">能源之星</a>
+            </li>
+            <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="~/media/Detail_Sub_Sub">檔案下載</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="~/media/download">桌布下載</a></li>
+                    <li><a class="dropdown-item" href="~/media/second">氣候變遷圖解</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-submenu">
+                <a class="dropdown-item " href="~/media/movie">相關影音</a>
+            </li>
+
+            <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="~/media/poster">相關海報</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="~/media/poster">相關海報</a></li>
+                    <li><a class="dropdown-item" href="~/media/poster2">低碳生活</a></li>
+                    <li><a class="dropdown-item" href="~/media/poster3">住商部門</a></li>
+                    <li><a class="dropdown-item" href="~/media/poster4">辦公相關</a></li>
+
+                </ul>
+            </li>
+            <li class="dropdown-submenu">
+                <a class="dropdown-item" href="~/media/cartoon">氣候變遷漫畫</a>
+            </li>
+
+        </ul>
+    </li>
+
+    <li class="nav-item dropdown">
+        <a class="nav-item nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+            會議活動
+        </a>
+        <div class="dropdown-menu mr-4">
+            <a class="dropdown-item" href="~/news/index/會議活動">會議活動</a>
+        </div>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-item nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+            相關連結
+        </a>
+        <ul class="dropdown-menu">
+
+            <li class="dropdown-submenu">
+                <a class="dropdown-item " href="~/link/index/國內連結">國內連結</a>
+            </li>
+            <li class="dropdown-submenu">
+                <a class="dropdown-item" href="~/link/index/國外連結">國外連結</a>
+
+            </li>
+
+
+        </ul>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-item nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+            線上服務
+        </a>
+        <div class="dropdown-menu mr-4">
+            <a class="dropdown-item" href="~/home/contact">聯絡我們</a>
+        </div>
+    </li>
+</ul>
+

@@ -1,0 +1,20 @@
+﻿@model string
+
+<div class="container">
+    <div class="row">
+        <div class="col col-md-12" >
+            <div class="bg-primary text-white text-center p-2"><h4>角色名稱設定</h4></div>
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <form asp-action="Create" method="post">
+                <div class="form-group">
+                    <label>角色名稱</label>
+                    <input name="name" class="form-control" />
+                </div>
+                <button type="submit" class="btn btn-primary">新增角色</button>
+                <a asp-action="Index" class="btn btn-secondary">取消</a>
+            </form>
+            </div>
+  
+    </div>
+
+</div>

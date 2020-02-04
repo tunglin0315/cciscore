@@ -1,0 +1,39 @@
+IIS ASP.NET Core 模組:
+https://docs.microsoft.com/zh-tw/aspnet/core/host-and-deploy/iis/index?view=aspnetcore-2.2#install-the-net-core-hosting-bundle
+
+使用 LibMan 讓 ASP.NET Core 取得用戶端程式庫:
+https://docs.microsoft.com/zh-tw/aspnet/core/client-side/libman/?view=aspnetcore-2.2
+
+使用檔案監看員開發 ASP.NET Core 應用程式:
+https://docs.microsoft.com/zh-tw/aspnet/core/tutorials/dotnet-watch?view=aspnetcore-2.2
+
+產生Identity資料
+1.開啟命令提示字元或PowerShell，進入專案目錄
+2.輸入dotnet ef migrations add Initial --context AppIdentityDbContext產生遷移文件
+3.輸入dotnet ef database update --context AppIdentityDbContext依遷移文件創建資料(執行一陣子後還要在按一次Enter)
+
+產生Info資料表
+1.開啟命令提示字元或PowerShell，進入專案目錄
+2.輸入dotnet ef migrations add Initial --context dbCCISCoreContext產生遷移文件
+
+刪除遷移文件
+dotnet ef migrations remove --context CCISCoreContext
+
+現有的資料庫來建立 EF 模型，注意:使用前專案需正常編譯
+https://docs.microsoft.com/zh-tw/ef/core/get-started/aspnetcore/existing-db?toc=/aspnet/core/toc.json&bc=/aspnet/core/breadcrumb/toc.json&view=aspnetcore-2.2
+1.[工具] –> [NuGet 套件管理員] –> [套件管理員主控台]
+2.執行下列命令，以便從現有的資料庫來建立模型：
+Scaffold-DbContext "Server=TUNGLIN0315\SQLEXPRESS01;Database=dbCCISCore;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models\EF -Context dbCCISCoreContext -Tables Infos,InfoTag,Tag,EnergyStar_Contact,EnergyStar_Corporation,EnergyStar_Criteria,EnergyStar_Product,EnergyStar_Product_Spec -force
+Scaffold-DbContext "Server=CHIENFR-PC\SQLEXPRESS;Database=CCISCore;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models\EF -Context dbCCISCoreContext -Tables Infos,InfoTag,Tag,EnergyStar_Contact,EnergyStar_Corporation,EnergyStar_Criteria,EnergyStar_Product,EnergyStar_Product_Spec -force
+Scaffold-DbContext "Server=192.168.10.112;Initial Catalog=dbCCISCore;User ID=Core_ccis;Password=Eri@12686505;Persist Security Info=False" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models\EF -Context dbCCISCoreContext -Tables  HomeActivity,InsideActivity,Infos,InfoTag,Tag,EnergyStar_Contact,EnergyStar_Corporation,EnergyStar_Criteria,EnergyStar_Product,EnergyStar_Product_Spec -force
+3.您可以將 -Tables 引數加入上述命令，以指定要為哪些資料表產生實體。 例如，-Tables Blog,Post。
+
+EFCorePowerTools:
+https://github.com/ErikEJ/EFCorePowerTools
+教學:
+http://marcus116.blogspot.com/2019/04/netcore-entity-framework-core-ef-core.html
+
+更新EF工具
+1.[工具] –> [NuGet 套件管理員] –> [套件管理員主控台]
+2.執行下列命令
+Install-Package Microsoft.EntityFrameworkCore.Tools -Version 2.1.8

@@ -1,0 +1,125 @@
+﻿@model IEnumerable<CCISWebCore.Models.EF.HomeActivity>
+
+<div class="container-fluid">
+    <h2 class="h2">會議活動管理介面清單</h2>
+    <div class="text-left pb-2">
+        <a asp-controller="HomeActivities"
+           asp-action="Create"
+           asp-route-id="0" class="btn btn-outline-info">新增會議活動</a>
+    </div>
+    <form method="post">
+        <table class="table table-striped" width="1000">
+            <thead>
+                <tr class="text-center">
+                    <th>序號</th>
+                    <th>Banner</th>
+                    <th>內容連結</th>
+                    <th>活動訊息</th>
+                    <th>排序</th>
+                    <th>狀態管理</th>
+                    <th>時效設定</th>
+                    <th>最後更新</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td> @item.Id </td>
+                        <td><img src="@Url.Content(item.ActivityBanner)" style="width:120px;" /></td>
+                        <td> @item.ActivityUrl</td>
+                        <td>
+                            活動日期: @item.ActivityStartDate ~
+                            @item.ActivityEndDate <br />
+                            活動狀態: @item.ActivityStatus<br />
+                            主辦單位:@item.HostUnit <br />
+                            @if (@item.AssistUnit != null)
+                            {
+                                <span>指導單位: @item.AssistUnit</span>
+                            }
+                        </td>
+                        <td>
+                            @*<select name="number"  asp-for="@item.ActivityOrder" class="form-control"
+                                asp-items="@(new SelectList(ViewBag.select,"Value", "Text"))"></select>*@
+                            @*<input asp-for="@item.ActivityOrder" class="form-control" />*@
+                            @*<select class=" form-control" name="selectedTags" asp-for="@item.ActivityOrder">
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                              </select>*@
+                                                  @*<input  asp-for="@item.Id"/>
+                              <input asp-for="@item.ActivityOrder" />*@
+                          
+                          @*<a id="btn1" class="btn btn-primary @(item.ActivityOrder==1 ? "disabled" : "")" asp-action="SaveSort1" asp-route-id="@item.Id">1</a>
+                            <a id="btn2" class="btn btn-primary @(item.ActivityOrder==2 ? "disabled" : "")" asp-action="SaveSort2" asp-route-id="@item.Id">2</a>
+                            <a id="btn3" class="btn btn-primary @(item.ActivityOrder==3 ? "disabled" : "")" asp-action="SaveSort3" asp-route-id="@item.Id">3</a>*@
+
+                            <a id="btn1" class="btn btn-primary @(item.ActivityOrder==1 ? "dis" : "")" asp-action="SaveSort1" asp-route-id="@item.Id">1</a>
+                            <a id="btn2" class="btn btn-primary @(item.ActivityOrder==2 ? "dis" : "")" asp-action="SaveSort2" asp-route-id="@item.Id">2</a>
+                            <a id="btn3" class="btn btn-primary @(item.ActivityOrder==3 ? "dis" : "")" asp-action="SaveSort3" asp-route-id="@item.Id">3</a>
+
+
+
+                        </td>
+                        <td>
+                            <a class="btn btn-success" asp-action="Edit" asp-route-id="@item.Id">編輯</a>
+                            <a class="btn btn-danger" asp-controller="HomeActivities" onclick="return confirm('確定刪除？')" asp-action="Delete" asp-route-id="@item.Id">刪除</a>
+                        </td>
+                        <td>
+                            <span>@item.BeginDate</span> ~<br />
+                            <span class="dDate">@item.OffDate</span>
+                        </td>
+                        <td>
+                            @item.LastModifyUser
+                            @item.LastModifyDate
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div class="row mt-2">
+            <div class="form-group">
+                @*<button class="btn btn-primary" asp-action="SaveSort" asp-route-id="Id" type="submit">1</button>
+                    <button class="btn btn-primary" asp-action="SaveSort" type="submit">更新</button>*@
+                @*<input type="submit" value="Save" class="btn btn-default" />*@
+                @*<button type="submit" class="btn btn-primary">更新</button>*@
+            </div>
+        </div>
+    </form>
+</div>
+<style>
+    .table tr td {
+        text-align: center;
+        vertical-align: middle
+    }
+
+    .container-fluid {
+        padding-top: 10px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 1000px;
+        /*自動斷行*/
+        word-wrap: break-word;
+        table-layout: fixed;
+    }
+    .dis {
+        background-color:#0969a1;
+    }
+</style>
+<script>
+    //判斷 時效設定的時間到期 改變顏色
+    window.onload = function () { displayred() };
+    function displayred() {
+  
+        var today = Date.parse(new Date()).valueOf();        
+        var Ddate = $(".dDate").each(function () {
+        Ddate = $(this).text().substr(0, 8);
+        Ddate = Date.parse(Ddate).valueOf();
+            if (today >= Ddate) {
+                $(this).parent().css("background-color", "lightcoral");
+            }  
+        });
+    }
+</script>

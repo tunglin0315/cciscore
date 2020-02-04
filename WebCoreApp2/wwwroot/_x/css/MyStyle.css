@@ -1,0 +1,21 @@
+﻿@charset "utf-8";
+
+li #txt_seach{
+    background-color: #fff;background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 20px !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555;
+    height: 25px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+    max-width: 120px;
+}
+
+.our_achievments_area .counter {
+    font: 700 40px "Roboto", sans-serif;
+    color: #f6b60b;
+    display: block;
+}

@@ -1,0 +1,67 @@
+﻿@*@{
+    string name = "產業溫室氣體盤查管理";
+    @await Html.PartialAsync("_Nav1", name);
+}
+
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-8 pt-3 px-4">
+
+            <h2 class="h2">產業溫室氣體盤查管理</h2>
+
+            使用fb分享 請取消註解
+             <a class="my-auto mr-1" href="javascript: void(window.open('https://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)),'fbwin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0' ));"><img src="~/_x/img/iconfb-.png" alt="臉書分享" title="臉書分享(另開視窗)" /></a>
+             <a class="my-auto mr-1" href="javascript: void(window.open('https://line.me/R/msg/text/?','linewin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'));"><img src="~/_x/img/iconline-.png" alt="Line分享" title="Line分享(另開視窗)" /></a>
+             <a class="my-auto notprint mr-1" href="#" onclick="window.print();"><img  src="~/_x/img/iconpr-.png" alt="列印" title="列印(另開視窗)" /></a>
+             <a class="my-auto mr-1" href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href)),'twitterwin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'));"><img  src="~/_x/img/icontt-.png" alt="推特分享" title="推特分享(另開視窗)" /></a>
+
+
+            
+
+            <div class="text-center">
+                <img class="mb-3 " style="width:100%; max-width:800px ; border-radius:8px;" src="~/_x/img/greenhouseGas.png" alt="產業溫室氣體盤查管理" title="產業溫室氣體盤查管理" />
+            </div>
+
+            <h5>我國溫室氣體認證與查驗管理機制</h5>
+            <h6>
+                （一）法源依據與管理架構
+            </h6>
+            <p>
+                因應「溫室氣體減量及管理法（以下簡稱溫管法）」於民國104年7月1日總統令公布施行，並持續推動溫室氣體認證機構及查驗機構管理作業，已於民國105年1月7日正式發布「溫室氣體認證機構及查驗機構管理辦法」（以下簡稱管理辦法），作以推動溫室氣體認證及查驗作業之法制依據，其主要規範均參酌過往管理程序及規範（「環境檢驗測定機構管理辦法（以下簡稱原管理辦法）」及「行政院環境保護署管理溫室氣體查驗機構作業原則（以下簡稱作業原則）」）辦理，明定溫室氣體認證業務委託條件、查驗機構許可證申請與審查程序、查驗機構執行溫室氣確證與查證工作應遵行事項、中央主管機關稽查作業方式、查驗機構違規處理方式及停止委託認證機構等規定
+            </p>
+            <h6>
+                （二）查驗機構相關規定
+            </h6>
+            <p>
+                自民國95年起，為推動溫室氣體認證及查驗作業，環保署依法委託認證機構執行查驗機構認證作業，取得認證且經環保署審查通過之查驗機構，環保署予以查驗機構許可證。因應民國105年管理辦法發布前已取得環保署核發之認證機構及查驗機構資格者，仍予以保留，並已於管理辦法施行日起六個月內完成換發。目前已公告委託1家認證機構及許可7家查驗機構，各合格機構名單及溫室氣體查驗項目資格，詳見國家溫室氣體登錄平台（網址<a href="http://ghgregistry.epa.gov.tw/Check/check_Item1.aspx?Item=5" title="另開新視窗"  target="_blank">http://ghgregistry.epa.gov.tw/Check/check_Item1.aspx?Item=5</a>)
+            </p>
+
+
+        </main>
+        <div  class="col-lg-2">    </div>
+    </div>
+</div>
+@section styles {
+    <style>
+        h5 {
+            font-weight: bold;
+        }
+        h6 {
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        p {
+            text-indent: 2em;
+            font-size: 19px;
+        }
+        /*.ccis_Detail img {
+            width: 70%;
+            max-width: 945px;
+        }*/
+    </style>
+}*@

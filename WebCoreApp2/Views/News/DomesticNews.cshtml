@@ -1,0 +1,87 @@
+﻿
+@*@{
+    ViewData["Title"] = "DomesticNews";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}*@
+
+
+@{
+    string name = "新聞活動>新聞中心>國內新聞";
+    @await Html.PartialAsync("_Nav1", name);
+}
+<h2>DomesticNews</h2>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @*@await Html.PartialAsync("_Menu")*@
+        }
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 ccis_Detail">
+            <h2 class="h2">溫室效應與全球暖化</h2>
+            <h5>溫室效應原理與全球暖化現象</h5>
+            <p>
+                溫室效應為地球大氣層中的一種物理特性。太陽光照射地球，部分輻射被大氣反射到外太空，部分輻射經過大氣由地表吸收及反射，就像溫室般使地表維持穩定溫度，稱之為溫室效應。
+            </p>
+            <p>
+                人類行為所排放的溫室氣體增加，增強了溫室效應，導致地表溫度上升，造成全球暖化現象發生。溫室效應發生原理說明如圖一。
+            </p>
+
+            <div class="text-center">
+                <img src="~/_x/img/know/k1.jpg" />
+                <p>圖一、溫室效應發生原理</p>
+            </div>
+            <h5>溫室氣體</h5>
+            <p>
+                大氣中某些氣體可讓短波輻射以可見光形式照射地表，並且吸收來自地表反射的長波輻射，這些可以保留能量的氣體，稱為溫室效應氣體。
+            </p>
+            <p>
+                我國於104年7月1日公布「溫室氣體減量及管理法」，公告臺灣所納管之主要溫室氣體包含二氧化碳(CO2)、甲烷（CH4)、氧化亞氮(N2O)、氫氟碳化物(HFCs)、全氟碳化物(PFCs)、六氟化硫（SF6)、三氟化氮(NF3)以及其他經中央主管機關公告的氣體。臺灣105年所納管之溫室氣體排放比例如圖二所示。
+            </p>
+            <div class="text-center">
+                <img src="~/_x/img/know/k2.jpg" />
+                <p>圖二、臺灣105年所納管之溫室氣體排放比例</p>
+            </div>
+        </main>
+    </div>
+</div>
+
+<ul class="unstyled DataList">
+    <li>
+        <a href="~/News/DomesticNews1">
+            ＞&nbsp;2019-01-11<span>氣候亂了！ 節氣「大寒」 原屬3、4月開的木棉花熱情盛開</span>
+        </a>
+    </li>
+    <hr>
+    <li>
+        <a href="~/News/DomesticNews1">
+            ＞&nbsp;2019-01-11<span>台灣碳稅及再生能源未來發展重點</span>
+        </a>
+    </li>
+    <hr>
+    <li>
+        <a href="~/News/DomesticNews2">
+            ＞&nbsp;2019-01-11<span>聯合國氣候變化綱要公約大會　蔡總統：氣候變遷台灣願幫忙</span>
+        </a>
+    </li>
+    <hr>
+    <li>
+        <a href="~/News/DomesticNews3">
+            ＞&nbsp;2019-01-11<span>史無前例！北台灣首次大規模珊瑚白化</span>
+        </a>
+    </li>
+</ul>
+
+
+
+
+@section styles {
+    <style>
+        h5 {
+            font-weight: bold;
+        }
+
+        .ccis_Detail img {
+            width: 70%;
+            max-width: 945px;
+        }
+    </style>
+}

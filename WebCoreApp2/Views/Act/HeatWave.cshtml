@@ -1,0 +1,109 @@
+﻿@{
+    ViewData["title"] = "熱浪來臨時";
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Detail_Sub">因應作為</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Detail_Sub_Sub">氣候變遷全民行動</a></li>
+        <li class="breadcrumb-item ">熱浪來臨時</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 mx-sm-auto col-lg-9 pt-3  ccis_Detail_hw">
+            @*<main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail_hw">*@
+                <div class=" pb-2 mb-3 border-bottom" id="content">
+                    <h2 class="h2">@ViewBag.Title</h2>
+                </div>
+                @Html.Raw(ViewBag.Html)
+                @*<div class="pb-2 mb-3 border-bottom" id="content">
+                    <h2 class="h2">熱浪來臨時</h2>
+                </div>
+                <h3>熱浪</h3>
+                <div>
+                    <ul class="listr">
+                        <li>高溫和熱浪有什麼不一樣</li>
+                        <li>
+                            <ul>
+                                <li><p>世界氣象組織（World Meteorological Organization，WMO<a href="/act/heatwave#infolink1" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>1</sup></a>）定義高溫是指35℃及以上的溫度，而熱浪標準為每日最高溫超過30年的氣候平均攝氏5度，且持續超過5日。根據此一定義，臺北站須連續超過5天出現攝氏39.3度高溫，才符合熱浪標準。我國目前無明確的熱浪定義，但統計每日最高溫攝氏35度以上的天數稱為高溫日數。</p></li>
+                            </ul>
+                        </li>
+                        <li>熱浪對人體健康的影響 </li>
+                        <li>
+                            <ul>
+                                <li><p>熱傷害是身體無法正常調節高溫，產生的一種急性疾病統稱。常見的熱傷害包括熱痙攣（Heat Cramp）、熱衰竭（Heat Exhaustion）及熱中暑（Heat Stroke 或 Sun Stroke）。依嚴重程度，熱中暑最為嚴重，熱衰竭次之，熱痙攣則為熱傷害之預警。</p></li>
+                            </ul>
+                        </li>
+                        <li>熱浪來了怎麼辦？（防熱傷害三要訣）</li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <strong>一、保持涼爽：</strong>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>（一） 穿著輕便、淺色、寬鬆、透氣的衣服。</li>
+                                        <li>（二） 不論時間長短，絕不可將幼童單獨留在密閉、停泊的汽車內。</li>
+                                        <li>（三） 儘可能待在室內涼爽、通風或有空調的地方；若家中沒有空調建議於高溫時至有空調設備的公共場所避暑。</li>
+                                        <li>（四） 室內加裝遮光窗簾，避免陽光的直接照射，並關掉非必要的燈和電器設備，以避免產生更多的熱量。</li>
+                                        <li>（五） 雇主應加強通風設施或採用空氣調節器，以隔離工作場所的高溫設施及提供散熱裝置，減少熱能散發到工作間。</li>
+
+                                    </ul>
+                                </li>
+                                <li><strong>二、補充水分：</strong></li>
+                                <li>
+                                    <ul>
+                                        <li>（一） 不論活動程度如何，都應該隨時補充水分，不可等到口渴才補。</li>
+                                        <li>（二） 補充水分，且養成每天至少 2,000 ㏄白開水的好習慣；但若醫囑限制少量者，應詢問醫師天氣酷熱時，應喝多少量為宜。</li>
+                                        <li>（三） 戶外工作者或運動者建議每小時補充 2 至 4 杯（1 杯為 240c.c.）白開水，並避免菸酒。</li>
+                                        <li>（四） 可多吃蔬果，因蔬果含有較多水分、豐富的維生素、礦物質及膳食纖維，可促進身體健康。</li>
+                                        <li>（五） 不可補充含酒精及大量糖分的飲料，以避免身體流失更多水分。</li>
+                                        <li>（六） 避免喝太過冰冷的水，以避免胃不舒服。</li>
+                                    </ul>
+                                </li>
+                                <li><strong>三、提高警覺：</strong></li>
+                                <li>
+                                    <ul>
+                                        <li>（一） 戶外工作者、運動員或密閉空間工作者，應隨時留意自己及身邊同事的身體狀況，適當休息並補充水分。</li>
+                                        <li>（二） 嬰幼童及長者應避免於上午 10 點至下午 2 點外出，如果必須外出，建議行走於陰涼處，並塗抹防曬霜、戴寬邊帽以及太陽眼鏡。</li>
+                                        <li>（三） 於室內擺放溫度計，隨時了解室內溫度，避免室內溫度過高造成身體不適，並隨時注意氣象局發布的天氣預報，選擇氣溫較低的日期安排戶外活動。</li>
+                                        <li>（四） 檢查居家及工作場所空調相關設備，是否正常運作。</li>
+                                        <li>（五） 為預防員工熱傷害，雇主應提供適宜的工作環境及相關防護措施及宣導預防熱傷害、調整作業時間、安排相關課程，使員工認識熱傷害的症狀，以強化預防熱傷害的行動。</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <ul>
+                    資料來源：
+                    <li>[1] <a id="infolink1" href="https://public.wmo.int/en" target="_blank" title="另開視窗(WMO_世界氣象組織)">WMO 世界氣象組織</a></li>
+                </ul>*@
+                <div class=" text-right my-3">
+                    @*判斷是否已經登入*@
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        //判斷登入角色,符合角色則顯示按鈕進入後台
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <a class="btn btn-danger text-center" href="~/info/Edit/@ViewBag.id">編輯</a>
+                        }
+                    }
+                </div>
+            </main>
+            <div class="col-lg-1"></div>
+    </div>
+</div>
+
+<script>
+
+    function img1() {
+        $("#img1").slideToggle();
+
+    };
+
+</script>

@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewData["Title"] = "DomesticNewsList1";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+@{
+    @await Html.PartialAsync("_Nav1", "新聞活動>新聞中心>國內新聞");
+}
+@*@{
+        string name = "氣候變遷知識>氣候變遷介紹>溫室效應與全球暖化";
+        @await Html.PartialAsync("_Nav1", name);
+    }*@
+
+@*<script>
+    var urlstr = window.location.href;
+    var hkey_root, hkey_path, hkey_key
+    hkey_root = "HKEY_CURRENT_USER"
+    hkey_path = "//Software//Microsoft//Internet Explorer//PageSetup//"
+    function pagesetup_null() {
+        try {
+            var RegWsh = new ActiveXObject("WScript.Shell")
+            hkey_key = "header"
+            RegWsh.RegWrite(hkey_root + hkey_path + hkey_key, "")
+            hkey_key = "footer"
+            RegWsh.RegWrite(hkey_root + hkey_path + hkey_key, "")
+        } catch (e) { }
+</script>*@
+
+<div class="container-fluid">
+    <div class="row" style="width:95%">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class=" col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 ">
+            @*<a title="另開新視窗"  target="_blank" href="http://facebook.com/share.php?u=" +urlstr><img style="min-width: 16px;" src="~/_x/img/iconfb-.png" /></a>
+            <a  title="另開新視窗"  target="_blank" href="http://line.me/R/msg/text/?"><img style="min-width: 16px;" src="~/_x/img/iconline-.png" /></a>
+            <a  href="#" onclick="pagesetup_null(); self.print();"><img style="min-width: 16px;" src="~/_x/img/iconpr-.png" /></a>
+            <a  title="另開新視窗"  target="_blank" href="http://www.twitter.com/home/?status=" +urlstr><img style="min-width: 16px;" src="~/_x/img/icontt-.png" /></a>*@
+
+
+            <h2 class="h2">氣候亂了！ 節氣「大寒」 原屬3、4月開的木棉花熱情盛開</h2>
+
+            <div class="row">
+                <div class="col-lg-4 pl-0 pr-0 ">
+
+                    <img src="~/_x/img/flower1.png" width="100%" height="100%" />
+                </div>
+                <div class="col-lg-4 pl-0 pr-0">
+
+                    <img src="~/_x/img/flower2.png" width="100%" height="100%" />
+
+                </div>
+                <div class="col-lg-4">
+
+                </div>
+                <p style="font-size:16px; color:#808080">國姓鄉136縣道的木棉花，在「大寒」這天開花。（吳宗鴻提供） （轉載自由時報）2019-01-20 22:25</p>
+            </div>
+
+
+
+            <p>記者陳鳳麗／南投報導〕今天是24節氣中的「大寒」，顧名思義就是一年中最冷的一天，但南投國姓鄉136縣道上的木棉花，原應在3、4月開花，這兩天卻盛開，花朵火紅艷麗，行經的民眾都嘖嘖稱奇。樹醫生蕭文偉說，時序亂了加上該處的木棉卷對環境氣候變化敏感，以為繁衍後代的時間到了，就拚命開花才能授粉傳宗接代。</p>
+            <p>今天的節氣「大寒」，但草屯鎮業餘攝影家吳宗鴻，卻在南投縣國姓鄉136縣道上，拍到3、4月的春季才會開花的木棉花盛開美景。吳宗鴻說，這棵木棉花今年提早約2個月開花，火紅的花朵讓人驚艷，卻也擔心天氣異常，對植物界有不良的影響。</p>
+            <p>樹醫生蕭文偉表示，這一年來氣候異常讓動物與植物都跟著混亂，像近日溪頭路上就發現蛇在爬行，表示蛇的冬眠也被打亂了生理時鐘。木棉開花是為了授粉繁衍下一代，因為最近天氣暖和，甚至有時中午有如初夏般溫暖，讓木棉花誤以為到了該繁衍下一代的溫暖時節，而大量釋放養分讓花開放，花開了才能授粉，才能傳宗接代。蕭文偉也說，有人會問為何有的地方木棉花並沒有開？其實這就是個體的差異，對氣候有反應而開花的，應該是對環境變化比較敏感，而該處的木棉花到了春天會不會再開一次，則還無法預測。            </p>
+            
+        </main>
+    </div>
+</div>
+@section styles {
+    <style>
+        h5 {
+            font-weight: bold;
+        }
+              
+        h2 > .row > .col-md-4 {
+            margin: 5px;
+            padding-right: 5px;
+        }
+    </style>
+}

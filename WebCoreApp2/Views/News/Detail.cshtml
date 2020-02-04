@@ -1,0 +1,95 @@
+﻿@{
+    @await Html.PartialAsync("_Nav1", "新聞中心-國內新聞-廢棄物掩埋場的循環商機—沼氣發電");
+}
+<script>
+    var urlstr = window.location.href;
+    var hkey_root, hkey_path, hkey_key
+    hkey_root = "HKEY_CURRENT_USER"
+    hkey_path = "//Software//Microsoft//Internet Explorer//PageSetup//"
+    function pagesetup_null() {
+        try {
+            var RegWsh = new ActiveXObject("WScript.Shell")
+            hkey_key = "header"
+            RegWsh.RegWrite(hkey_root + hkey_path + hkey_key, "")
+            hkey_key = "footer"
+            RegWsh.RegWrite(hkey_root + hkey_path + hkey_key, "")
+        } catch (e) { }
+</script>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 ccis_Detail">
+            <a  title="另開新視窗"  target="_blank" href="http://facebook.com/share.php?u="+urlstr><img style="min-width: 16px;" src="~/_x/img/iconfb-.png"/></a>
+            <a  title="另開新視窗"  target="_blank" href="http://line.me/R/msg/text/?"><img style="min-width: 16px;" src="~/_x/img/iconline-.png"/></a>
+            <a href="#" onclick="pagesetup_null(); self.print();"><img style="min-width: 16px;" src="~/_x/img/iconpr-.png"/></a>
+            <a  title="另開新視窗" target="_blank" href="http://www.twitter.com/home/?status="+urlstr><img style="min-width: 16px;" src="~/_x/img/icontt-.png"/></a>
+            <h2 class="h2">廢棄物掩埋場的循環商機—沼氣發電</h2>
+            <h4>在廢棄物的生命週期過程中，藏著沼氣循環商機</h4>
+            <h5>沼氣是什麼</h5>
+            <p>
+                沼氣是通過有機廢棄物的厭氧分解或發酵而產生，其主要成分包括甲烷（約占50％至80％）、二氧化碳（約占20％至50％）、硫化氫（約占0.1％至5％）與其他微量氣體，以及少量的其他氣體，如氫氣、一氧化碳、氧氣和氮氣。其中甲烷是提供熱能的要角。沼氣的熱值約為5,000至6,000 千卡/立方公尺，若經過純化將純度提高，熱值即與天然氣相當，可以取代天然氣。
+            </p>
+            <h5>
+                臺灣沼氣來源
+            </h5>
+            <p>
+                臺灣的沼氣來源除畜牧養豬廢水處理外，以家庭污水、城鎮垃圾（以垃圾掩埋場為主）及來自各製造業（如造紙、食品）的廢水（或有機污泥）為大宗，沼氣回收後，不但能產電自用節省電費支出、出售電力獲得報酬，更能減少溫室氣體的排放量。
+            </p> <p>
+                近年來，「循環經濟」（circular economy）獲得國際共識成為經濟轉型的新思維。政府導入臺灣產業已有的專長，將廢棄物再生為資源，創造新價值、建立友善環境的經濟模式，讓臺灣成為循環經濟的典範，其中以垃圾掩埋場封閉後進行沼氣發電尤為突出。
+            </p> <h5>
+                沼氣如何發電？
+            </h5><p>
+                沼氣產出後，接著就進入發電程序，首先會利用集氣袋收集儲存，經由純化前處理去除，將硫化氫濃度降至350ppm以下，即可保護後端設備不被侵蝕。最後導入沼氣引擎發電機產生電力，並藉由控制盤輸出電力供給使用。
+            </p>
+            <p>
+                垃圾掩埋場於封閉後，尚有其他用處。如西青埔垃圾衛生掩埋場自民國88年6月封場後，為有效解決垃圾場沼氣臭味等問題，以BOO 的方式，委由民間企業負責沼氣處理發電技術工程，以達廢棄物再利用及污染防治的目標，持續進行掩埋場沼氣收集處理，用於燃燒發電，減少溫室氣體之排放。
+            </p>
+            <div class="text-center"><img src="~/_x/img/detail05.jpg" /></div>
+            <h5>
+                沼氣發電成效顯著
+            </h5>
+            <p> 以台北山豬窟、台北福德坑、高雄西青埔三大垃圾掩埋場為例，共設立6部發電機組，總容量8.166MW，自89年6月至今三大垃圾掩埋共約減少污染防治經費支出新台幣593億元，已產生81445度綠色電力，相當於減少478萬噸二氧化碳或181623公噸甲烷排放，若以大安森林公園CO2的吸收量為一年389公噸計算，平均每年減碳量接近700座大安森林公園！</p>
+            <div class="text-center">
+                <img src="~/_x/img/detail06.jpg" />
+            </div>
+            <h5>
+                沼氣發電益處
+            </h5>
+            <p>
+                利用沼氣發電可解決垃圾掩埋場長久以來的甲烷污染問題，回收再利用甲烷改善空氣品質以及減少環境負荷。此外沼氣發電也利於掩埋場復育綠化植栽，擴大再生能源內需市場，帶動相關產業發展，創造就業機會。
+            </p>
+            <p>
+                同時我國利用沼氣每發一度電所減少排放約5.866Kg二氧化碳，有助於減少我國溫室氣體排放，彰顯我國因應全球氣候變遷，善盡世界公民之責任，提昇國際形象。
+            </p>
+            <div class="text-center">
+                <img src="~/_x/img/detail01.jpg" />
+                <p>山豬窟沼氣處理發電工作-2018掩埋場場區復育完成後現況</p>
+            </div>
+            <div class="text-center">
+                <img src="~/_x/img/detail02.jpg" />
+                <p>
+                    西青埔沼氣處理發電工作-2018沼氣處理發電設施現況-空拍照
+                </p>
+            </div>
+            <div class="text-center">
+                <img src="~/_x/img/detail03.jpg" />
+                <p>福德坑沼氣處理發電工作-2018掩埋場區現況</p>
+            </div>
+        </main>
+    </div>
+</div>
+@section styles {
+    <style>        
+        h5 {
+            font-weight: bold;
+        }
+
+        .ccis_Detail img {
+            min-width:545px;
+        }
+
+      
+    </style>
+}

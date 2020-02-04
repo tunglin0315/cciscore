@@ -1,0 +1,92 @@
+﻿
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style=" font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png"  alt=""  title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub">氣候變遷知識</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/EachCountry">各國氣候變遷調適</a></li>
+        <li class="breadcrumb-item ">澳洲</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2>
+                    @*@Html.Raw(@ViewBag.Title)*@
+                    澳洲氣候變遷調適策略
+                </h2>
+            </div>
+            @*@Html.Raw(@ViewBag.html)*@
+            <h4>澳洲氣候變遷調適背景</h4>
+            <p>
+                2015年12月2日，澳洲政府發表國家氣候韌性和調適策略。策略中說明澳洲如何管理多變的氣候風險，並確立有效實踐調適工作和韌性建設的原則，提出氣候變遷調適的未來願景，且指出政府在氣候變遷調適中扮演的角色和責任，需由氣候變遷專責委員會(由澳洲政府和所有地區政府首長組成)同意。澳洲的調適策略為太平洋地區提供實踐調適措施的實例。這些例子來自各級政府、企業、和非政府組織，這些例子顯示人類今日的選擇，有助於減緩面對未來氣候變遷的影響。
+            </p>
+            <h4>調適行動重點</h4>
+            <p>澳洲調適策略著重於加強關鍵部門的調適和韌性措施，包括：海岸、城市和建築環境、農業，林業和漁業、水資源、自然生態系統、健康和幸福、災害風險管理、韌性和安全兼具的區域等。除氣候變遷外，各項目都面對不同的挑戰，無論是結構、經濟、人口還是社會變化。IPCC在第五次評估報告發現，澳洲在氣候變遷對建設資產和人類活動構成風險的管理能力高，但代價高昂，而自然系統調適氣候變遷的速度與能力有限。</p>
+            <div class="text-center">
+                <img src="~/_x/img/know/australia01.png" alt="調適行動重點" title="調適行動重點"/>
+            </div>
+            <h4>減緩與調適氣候變遷策略</h4>
+            <h5>澳洲對於減緩氣候變遷的策略有以下幾個例子：</h5>
+            <p>(一)	提高能源效率。2011–2012年，89%的澳洲人採取行動減少個人用電。</p>
+            <p>(二)	增加可再生能源的利用。2014年，澳洲13.45%的電力來自可再生能源。</p>
+            <p>(三)	工業流程的改進。例如，維護和運轉經過改善後的鍋爐可在蒸汽、熱水和製熱系統中減少高達5%的能耗。</p>
+            <p>(四)	增加對永續運輸的接受度。2012年3月，16%的澳洲人乘坐大眾運輸工具上班或上學。</p>
+            <p>(五) 增加碳匯。碳匯是吸收比它釋放的更多碳的儲庫。森林、土壤、海洋和大氣都可作為碳匯。</p>
+            <h5>氣候變遷調適措施方面，有以下幾個例子：</h5>
+            <p>(一) 改變土地的使用：保護建築物和基礎設施免受危險的影響，並有改變景觀的功能。</p>
+            <p>(二) 升級或硬化建築和基礎設施的設計：CSIRO (註：澳洲國家科學中心)為所有新住房制定抗風設計標準，可將強風帶來的損壞風險降低 50-80%。</p>
+            <p>(三) 調整活動和生活方式：為防止氣候變遷對葡萄酒產生負面影響，一些酒廠減少用水，和傳統的收穫時間錯開，甚至改變種植地點。</p>
+            <p>(四) 緊急和業務連續性規劃：即使不考慮氣候變遷因素，預計到2050年，澳洲自然災害的總經濟成本也將達到每年2230億美元。</p>
+            <p>(五) 提高社區對氣候風險的認識：在社區培養居民調適氣候變遷的能力。</p>
+            <h5>可以同時達到減緩與調適功能的措施實例有：</h5>
+            <p>(一) 實施對環境負責的建築設計。</p>
+            <p>(二) 紅樹林重新造林、植樹、恢復集水區。</p>
+            <p>(三) 水資源保育。</p>
+            <p>(四) 城市綠化。</p>
+
+            <div class="text-center">
+                <img src="~/_x/img/know/australia02.png" alt="減緩與調適氣候變遷策略" title="減緩與調適氣候變遷策略" />
+            </div>
+        </main>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+@section styles {
+    <style>
+        /*h4 {
+            font-weight: bold;
+            color: #129696;
+        }
+        h4~p{
+            margin-left:45px;
+        }
+        h5 {
+            font-weight: bold;
+            margin-left:45px;
+        }
+
+        .ccis_Detail img {
+            width: 70%;
+            border-radius: 5px;
+            max-width: 945px;
+        }
+
+        .ulstr {
+            list-style-type: none;
+            font-size: 19px;
+        }
+
+     .ccis_Detail   table tr td ul {
+            margin-bottom: 0;
+        }*/
+
+
+        /*p {
+            padding-left: 3rem;
+        }*/
+    </style>
+}

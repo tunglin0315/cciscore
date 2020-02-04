@@ -1,0 +1,106 @@
+﻿@{
+       ViewData["title"] = "聯絡我們";
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/home/Contact">線上服務</a></li>
+        <li class="breadcrumb-item "><a>聯絡我們</a></li>
+
+    </ol>
+</nav>
+<div class="container-fluid contact pt-5">
+    <div class="row">
+        @*<div><a accesskey="C" href="#C" title="主要內容區" id="AC">:::</a></div>*@
+        <div class="Contact_well">
+
+            <div class="Contact_f1" id="content"><h2>聯絡我們<span>Contact Us</span></h2></div>
+            <ol id="contact_info" style="font-size:2.0vmin">
+                <li>
+                    若您對氣候變遷生活網有操作問題，請見以下聯絡方式：
+                    <ul style="padding-left: 0; list-style: none">
+                        <li>
+                            <div style="float: left">⓵系統操作問題信箱：</div>
+                            <div style="float: left">
+                                <a class="" href="mailto:tony19950617@eri.com.tw" title="客服人員Mail">tony19950617@eri.com.tw</a><br />
+                                <a class="" href="mailto:yhchen0627@eri.com.tw" title="客服人員Mail">yhchen0627@eri.com.tw</a>
+
+                            </div>
+                        </li>
+                        <li style="padding-left: 0; clear: both">
+                            <div style="float: left">⓶系統操作問題電話：</div>
+                            <div style="float: left">
+                                （02）6630-9988 轉 132 ，
+                                （02）6630-8000 轉 305
+                            </div>
+                        </li>
+                        <li style="padding-left: 0; clear: both">服務時間：週一至周五 09：00~18：00，假日時段請來信至系統操作問題信箱，謝謝</li>
+                    </ul>
+                </li>
+                <li style="margin-top: 15px;">如果有其他環保問題，可至<a title="另開新視窗(環保e言堂)" target="_blank" href="https://epamail.epa.gov.tw/Front/MailBoxHome">環保e言堂</a>發表，感謝您的寶貴建議</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+@section styles {
+    <style>
+
+              .contact {
+                  background-image: url(@Url.Content("~/_x/img/Contact_bg.gif"));
+                  background-position: center;
+                  background-size: auto 100%;
+                  background-repeat: repeat-x;
+              }
+
+              .Contact_well {
+                  margin: 0 auto;
+                  background-image: url(@Url.Content("~/_x/img/Contact_info_bg.png"));
+                  background-size: 100% auto;
+                  background-repeat: no-repeat;
+                  background-position: top;
+                  width: 900px;
+                  height: 500px;
+                  text-align: center;
+              }
+
+              .Contact_well ol {
+                      text-align: left;
+                      width: 600px;
+                      margin: 5% auto;
+                  }
+
+              .Contact_f1 {
+                  color: white;
+                  text-align: left;
+                  margin: 0.5% auto auto 9%;
+                  font-weight: bold;
+                  font-family: "Helvetica Neue",Helvetica, "LiHei Pro",Meiryo,"微軟正黑體","Microsoft JhengHei",sans-serif;
+                  font-size: 30px;
+              }
+
+            .Contact_f1 span {
+                      margin-left:0.2em;
+                      font-size: 20px;
+                  }
+
+            #Foot_AGif {
+                  display: none;
+              }
+
+            @@media (max-width: 700px) {
+                 .Contact_well ol {
+                  text-align: left;
+                   width: 600px;
+                   margin: 5% 10%;
+                  }
+                .Contact_f1 {
+                   font-size:4.0vmin;
+                  }
+                .Contact_f1> span{
+                    font-size:4.0vmin;
+                   }
+               }
+    </style>
+}
+

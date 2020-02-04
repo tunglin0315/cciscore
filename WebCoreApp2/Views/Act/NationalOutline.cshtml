@@ -1,0 +1,76 @@
+﻿<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png"  alt=""  title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Detail_Sub">因應作為</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Index/溫室氣體減緩策略">溫室氣體減緩策略</a></li>
+        <li class="breadcrumb-item ">國家因應氣候變遷行動綱領</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2> 國家因應氣候變遷行動綱領 </h2>
+            </div>
+            <h3 style="visibility:hidden"></h3>
+            <p>「國家因應氣候變遷行動綱領」是依溫管法第9條第1項訂定，做為宣示我國因應氣候變遷的政策方向，內容涵蓋我國推動溫室氣體減緩及氣候變遷調適政策的總方針，期能逐步健全我國面對氣候變遷調適能力，並致力達成我國溫室氣體長期減量目標，以確保國家永續發展。</p>
+            @*<p>
+                環保署依溫管法第9條第1項規定所擬訂的「國家因應氣候變遷行動綱領」，於106年2月23日奉行政院核定，明確擘劃我國推動溫室氣體減緩及氣候變遷調適政策總方針。
+            </p>*@
+            @*<p>
+                行動綱領參酌「巴黎協定」(Paris Agreement)及聯合國2030永續發展目標(Sustainable Development Goals, SDGs)，秉持減緩與調適兼籌並顧的精神，明列我國因應氣候變遷的十大基本原則，政策內涵包括溫室氣體減量六大部門、氣候變遷調適八大領域及政策配套，並啟動跨部門的因應行動，期能逐步健全我國面對氣候變遷調適能力，並致力達成我國溫室氣體長期減量目標，以確保國家永續發展。
+            </p>
+            <h4>基本原則</h4>
+            <p>
+                基本原則宣示我國因應氣候變遷政策方向，包括遵循巴黎協定、考量各種環境議題的共同效益、將調適及減緩策略納入環境影響評估考量、韌性發展等，並與國際接軌。
+            </p>
+            <h4>政策內涵</h4>
+            <p>
+                政策內涵包括氣候變遷調適八大領域、溫室氣體減緩六大部門，以及呼應各界意見強化公眾參與、綠色金融、碳定價及教育宣導等面向的政策配套。在調適策略涵蓋災害風險、維生基礎設施、水資源、國土安全、海洋資源、能源供給、農業生產及生物多樣性、醫療衛生及防疫系統等領域課題。
+            </p>
+            <p>
+                減緩議題上則包括能源、製造、運輸、住商、農業及環境等相關部門策略，期能逐步健全我國面對氣候變遷調適能力，並致力達成我國溫室氣體長期減量目標，以確保國家永續發展。後續仍將透過階段管制目標、推動方案、部門行動方案及地方執行方案等，以五年為一期進行滾動式檢討並推動落實。
+
+            </p>*@
+            @*<p>
+                    減緩議題上則包括能源、製造、運輸、住商、農業及環境等相關部門策略，期能逐步健全我國面對氣候變遷調適能力，並致力達成我國溫室氣體長期減量目標，以確保國家永續發展。
+                    後續仍將透過階段管制目標、相關推動方案、部門行動方案及地方執行方案等，以五年為一期進行滾動式檢討並推動落實。
+
+                </p>*@
+            <div class="text-center border-warning">
+                <img src="~/_x/img/Act/act01_2.jpg" alt="國家因應氣候變遷行動綱領" title="國家因應氣候變遷行動綱領" />
+            </div>
+
+            <p class="text-right">
+                <a href="https://ghgrule.epa.gov.tw/action/action_page/50" target="_blank" title="另開視窗">詳情請點我</a>
+            </p>
+
+        </main>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+@section styles {
+    <style>
+      
+          h3 {
+            font-weight: bold;
+            color: #129696
+        }
+
+        h3~p{
+            margin-left:45px;
+        }
+        /*p {
+            text-indent: 2em;
+            font-size: 19px;
+        }*/
+
+        .ccis_Detail img {
+             border-radius: 8px;
+            width: 70%;
+        }
+    </style>
+}

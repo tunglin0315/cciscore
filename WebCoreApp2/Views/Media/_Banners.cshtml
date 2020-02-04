@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Cartoon>
+@{
+    string active = "active";
+}
+@foreach (Cartoon b in Model)
+{
+    <div class="carousel-item @active" style="background-image: url(@Url.Content(b.ImgPath))">
+        <a href="@Url.Content(b.Href)" style="background-image: url(@Url.Content(b.ImgPath))" title="@b.Title" @(b.IsBlank ? "target=_blank" : "")>
+            <div class="container">
+                <div class="carousel-caption text-left">
+                    <h1>@b.H2</h1>
+                </div>
+            </div>
+        </a>
+    </div>
+    { active = ""; }
+}

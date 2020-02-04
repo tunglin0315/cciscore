@@ -1,0 +1,132 @@
+﻿
+@model CCISWebCore.Models.EF.HomeActivity
+
+    <div class="container-fluid">
+       <h2 class="h2">編輯會議活動</h2>
+         <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <form  method="post" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="Id" />
+                  
+                    <div class="form-group">
+                        <label class="control-label">Banner圖片檔案上傳</label>
+                                     
+                        <div>
+                            <input type="file" name="files" accept="image/gif,image/png,image/jpg,image/jpeg" />
+                        </div> 
+                        <label class="mt-2">目前檔案</label>
+                        @{                           
+                            var filename = System.IO.Path.GetFileName(Model.ActivityBanner);
+                        }
+                        <input asp-for="@filename" class="form-control" disabled="disabled"/>
+                        <span asp-validation-for="ActivityBanner" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">無障礙文字描述</label>
+                        <input asp-for="AccessibilityTips" class="form-control" />
+                        <span asp-validation-for="AccessibilityTips" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">內容連結</label>
+                        <input asp-for="ActivityUrl" class="form-control" />
+                        <span asp-validation-for="ActivityUrl" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">活動起始日期</label>
+                                    <input asp-for="ActivityStartDate" class="form-control" type="date" />
+                                    <span asp-validation-for="ActivityStartDate" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">活動結束日期</label>
+                                    <input asp-for="ActivityEndDate" class="form-control" type="date" />
+                                    <span asp-validation-for="ActivityEndDate" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">活動狀態</label>
+
+                                    <select asp-for="ActivityStatus" class="form-control">
+                                        <option value="活動報名中">活動報名中</option>
+                                        <option value="敬請期待">敬請期待</option>
+                                    </select>
+                                    <span asp-validation-for="ActivityStatus" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">主辦單位</label>
+                                    <input asp-for="HostUnit" class="form-control" />
+                                    <span asp-validation-for="HostUnit" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">指導單位</label>
+                                    <input asp-for="AssistUnit" class="form-control" />
+                                    <span asp-validation-for="AssistUnit" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label class="control-label">時效設定</label>
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <input asp-for="BeginDate" class="form-control" type="date"/>
+                            <span asp-validation-for="BeginDate" class="text-danger"></span>
+                        </div><span style="font-size:24px;">&#8764;</span>
+                        <div class="col-md-4">
+                            <input asp-for="OffDate" class="form-control" type="date"/>
+                            <span asp-validation-for="OffDate" class="text-danger"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="form-group">
+                            <button class="btn btn-primary" asp-action="Edit" asp-route-id="Id" type="submit">更新上傳</button>
+                           
+                            @*<input type="submit" value="Save" class="btn btn-default" />*@
+                            <a class="btn btn-danger" asp-action="Index">放棄編輯</a>
+
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+<style>
+
+    /*.pretty-select {*/
+        /*移除箭頭樣式*/
+        /*-moz-appearance: none;
+        -webkit-appearance: none;*/
+        /*改變右邊箭頭樣式*/
+        /*background: url("arrow.png") no-repeat right center transparent;
+        border: 0px;
+        width: 100%;
+        height: 34px;
+        padding-left: 2px;
+        padding-right: 40px;
+        background-color: #F6F7F7;
+        color: gray;
+    }*/
+
+        /*.pretty-select:focus {
+            box-shadow: 0 0 3px 2px #467BF4;
+        }*/
+
+    .control-label {
+        font-size: 18px;
+    }
+      .container-fluid {
+            padding-top: 10px;
+        }
+</style>

@@ -1,0 +1,146 @@
+﻿@model CCISWebCore.Models.EF.HomeActivity
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>HomeActivity</h4>
+    <hr />
+    <label asp-for="ActivityBanner"></label>
+    <input asp-for="ActivityBanner"/>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ActivityBanner)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ActivityBanner)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AccessibilityTips)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AccessibilityTips)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ActivityUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ActivityUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ActivityStartDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ActivityStartDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ActivityEndDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ActivityEndDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ActivityStatus)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ActivityStatus)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HostUnit)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HostUnit)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AssistUnit)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AssistUnit)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ActivityOrder)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ActivityOrder)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BeginDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BeginDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OffDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OffDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateUser)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreateUser)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreateDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastModifyUser)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastModifyUser)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastModifyDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastModifyDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstModifyUser)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FirstModifyUser)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstModifyDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FirstModifyDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SecondModifyUser)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SecondModifyUser)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SecondModifyDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SecondModifyDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ThirdModifyUser)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ThirdModifyUser)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ThirdModifyDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ThirdModifyDate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,117 @@
+﻿@model IEnumerable<Movie>
+@{
+
+    ViewData["title"] = "相關影音";
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/media/Detail_Sub">宣傳資源</a></li>
+        <li class="breadcrumb-item ">相關影音</li>
+
+
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 mx-sm-auto col-lg-9 pt-3  ccis_detail">
+            @*<main role="main" class="col-md-10 ml-sm-auto col-lg-10 pt-3 px-4 ccis_detail">*@
+                <div class=" pb-2 mb-3 border-bottom" id="content">
+                    <h2 class="h2">相關影音</h2>
+                </div>
+                <div class="row" style="background-image: url(@Url.Content("~/_x/img/meet_bg_s.png"))">
+                    @*<div class="col-lg-10 ">
+                        <div class="row">*@
+                            @{
+                                @foreach (Movie item in Model)
+                                {
+                                    <div class="col-lg-6 mb-5">
+                                        <div>
+                                            <a href="@item.Href" title="另開新視窗" target="_blank">
+                                                <img src="@Url.Content(item.ImgPath)" alt="@item.Alt" title="@item.Title" />
+                                                <p style="text-align:center">
+                                                    <strong>@item.H2</strong>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                }
+                            }
+                            @*<div class="col-lg-6 mb-5">
+                                <div>
+                                    <a href="https://www.youtube.com/watch?v=7c2LIsqbd-c" title="另開新視窗" target="_blank">
+                                        <img src="~/_x/img/media/m5.jpg" alt="臺灣氣候變遷科學報告，2017" title="臺灣氣候變遷科學報告，2017" />
+                                        <div class="text-center">
+                                            臺灣氣候變遷科學報告，2017
+
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-5">
+                                <div>
+                                    <a href="https://www.youtube.com/watch?v=-efjDBh_WdY" title="另開新視窗" target="_blank">
+                                        <img src="~/_x/img/media/m1.jpg" alt="氣候的變遷，永續的台灣" title="氣候的變遷，永續的台灣" />
+                                        <div class="text-center">
+                                            氣候的變遷，永續的台灣
+
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-5">
+                                <div>
+                                    <a href="https://www.youtube.com/watch?v=wI4l0ZGKPq4" title="另開新視窗" target="_blank">
+                                        <img src="~/_x/img/media/m2.jpg" alt="保護下一代，少用塑膠袋" title="保護下一代，少用塑膠袋" />
+                                        <div class="text-center">
+                                            保護下一代，少用塑膠袋
+
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-5">
+                                <div>
+                                    <a href="https://www.youtube.com/watch?v=HrO9PbINixA" title="另開新視窗" target="_blank">
+                                        <img src="~/_x/img/media/m3.jpg" alt="低碳社區初體驗－新竹縣新埔鎮照門里" title="低碳社區初體驗－新竹縣新埔鎮照門里" />
+                                        <div class="text-center">
+                                            低碳社區初體驗－新竹縣新埔鎮照門里
+
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-5">
+                                <div>
+                                    <a href="https://www.youtube.com/watch?v=NXt3AdSe7yM" title="另開新視窗" target="_blank">
+                                        <img src="~/_x/img/media/m4.jpg" alt="抗空污英雄篇" title="抗空污英雄篇" />
+                                        <div class="text-center">
+                                            抗空污英雄篇
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>*@
+                        </div>
+                    @*</div>
+                </div>*@
+            </main>
+        <div class="col-lg-1"></div>
+    </div>
+</div>
+@section styles {
+    <style>
+        .ccis_detail img {
+            width: 100% !important;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 19px;
+            font-family: 'Microsoft JhengHei';
+            color: cadetblue;
+        }
+    </style>
+}

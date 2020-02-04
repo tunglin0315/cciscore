@@ -1,0 +1,40 @@
+﻿
+@{
+
+    ViewData["title"] = "因應作為";
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item ">因應作為</li>
+
+
+    </ol>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-8 col-lg-8 pt-2" id="content">
+           <h2 class="h2 p-md-4" style="border-bottom-style:dashed">因應作為</h2>
+            <div class=" list-group list-group-flush py-4" style="width:100%">
+               <h3><a href="~/act/index/溫室氣體減緩策略" class="list-group-item item_odd">溫室氣體減緩策略</a></h3> 
+               <h3><a href="~/act/index/氣候變遷調適策略" class="list-group-item item_dou">氣候變遷調適策略</a></h3> 
+               <h3><a href="~/act/index/溫室氣體盤查申報" class="list-group-item item_odd">溫室氣體盤查申報</a></h3> 
+               <h3><a href="~/act/Detail_Sub_Sub" class="list-group-item item_dou">氣候變遷全民行動</a></h3> 
+                <div class="text-center mt-4">
+                    <a href="javascript:history.back();" class="btn btn-outline-info">&equiv; 回上頁</a>
+                </div>
+
+            </div>
+
+        </main>
+
+        <div class="col-lg-2">
+
+        </div>
+
+    </div>
+</div>

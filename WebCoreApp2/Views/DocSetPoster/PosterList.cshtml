@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Poster>
+
+<div class="container-fluid mt-2">
+    <div class="bg-primary text-white">
+        <h4>Poster列表</h4>
+    </div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>圖片</th>
+                <th>標題/超連結</th>
+                <th>替代文字</th>
+                <th>低碳生活</th>
+                <th>住商部門</th>
+                <th>辦公相關</th>
+                <th>排序</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Poster b in Model)
+            {
+                @await Html.PartialAsync("_PosterView", b)
+            }
+        </tbody>
+    </table>
+    <a asp-action="Save" class="btn btn-primary">新增</a>
+</div>

@@ -1,0 +1,121 @@
+﻿
+@{
+    ViewData["Title"] = "網站導覽";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding: 0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item ">網站導覽</li>
+    </ol>
+</nav>
+@*<div><a accesskey="C" href="#C" title="主要內容區" id="AC" name="C">:::</a></div>*@
+<div class="pl-2 m-2" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;font-size:19px ;color: #29a6e0;" >
+    <p><strong>本網站的快速鍵﹝Accesskey﹞設定如下：</strong></p>
+    <ul style="text-align:left;">
+        <li> Alt+U：右上方功能區塊，包括回首頁、網站導覽、網站搜尋、字體選擇等。</li>
+        <li> Alt+M：中央內容區塊，為本頁主要內容區。</li>
+        <li> Alt+S：網站搜尋。</li>
+        <li> Alt+Z：下方功能區塊。</li>
+        <li> 如果您的瀏覽器是Firefox，快速鍵的使用方法是 Shift+Alt+(快速鍵字母)，例如 Shift+Alt+C會跳至網頁中央區塊，以此類推。</li>
+    </ul>
+     
+</div>
+<div id="WRAPPER">
+    <div class="webmap" id="content">
+        目前位置<br>
+        <a href="~/Guide/Guide">網站導覽</a>
+    </div>
+    <div class="color1title"><h2><a href="~/know/Detail_Sub">氣候變遷知識</a></h2></div>
+    <div class="color1txt">
+        <h3><a href="~/Know/Detail_Sub_Sub">氣候變遷介紹</a></h3>
+        <div class="guideTXT">溫室效應與全球暖化<br /><span>&emsp;（原理、溫室氣體）</span></div>
+        <div class="guideTXT">氣候變遷衝擊<br /><span>&emsp;（天氣與氣候、定義、影響</span>）</div>
+        <div class="guideTXT">氣候變遷減緩<br /><span>&emsp;（定義、企業及個人作為</span>）</div>
+        <div class="guideTXT">氣候變遷調適<br /><span>&emsp;（定義、重要性及臺灣作為）</span></div>
+        <h3><a href="~/Know/Detail_Sub_Sub2">氣候公約介紹</a></h3>
+        <div class="guideTXT">聯合國氣候變化綱要公約<br /><span>&emsp;（背景、目標、基本原則、國家分類</span>）</div>
+        <div class="guideTXT">京都議定書<span><br />&emsp;（背景、減量機制、後續推動）</span></div>
+        <div class="guideTXT">巴黎協定<span><br />&emsp;（背景、重要內容、產業影響等</span>）</div>
+
+    </div>
+    <div class="color2title"><h2><a href="~/ghg/index/溫室氣體排放清冊">溫室氣體排放</a></h2></div>
+    <div class="color2txt">
+        <h3><a href="~/ghg/index/溫室氣體排放清冊">溫室氣體排放清冊</a></h3>
+        <div class="guideTXT">2014~2018年清冊</div>
+        @*<div class="guideTXT">溫室氣體圖說</div>*@
+    </div>
+
+    <div class="color3title"><h2><a href="~/act/Detail_Sub">因應作為</a></h2></div>
+    <div class="color3txt">
+        <h3><a href="~/act/index/溫室氣體減緩策略">溫室氣體減緩策略<br>(溫室氣體減量與管理法)</a></h3>
+        @*<div class="guideTXT">調適領域與工作架構</div>
+            <div class="guideTXT">推動機制與行動方案</div>
+            <div class="guideTXT">總體調適計畫</div>
+            <div class="guideTXT">國家氣候變遷調適行動方案</div>*@
+        <h3><a href="~/act/index/氣候變遷調適策略">氣候變遷調適策略<br>(107-111年度)</a></h3>
+        <div class="guideTXT">氣候變遷調適策略</div>
+        @*<div class="guideTXT">調適領域與工作架構</div>
+        <div class="guideTXT">推動機制與行動方案</div>
+        <div class="guideTXT">總體調適計畫</div>*@
+        <div class="guideTXT">國家氣候變遷調適行動方案</div>
+        <h3><a href="~/act/index/溫室氣體盤查申報">溫室氣體盤查申報</a></h3>
+        <div class="guideTXT">溫室氣體盤查申報</div>
+        <div class="guideTXT">溫室氣體查驗與盤查</div>
+        @*<div class="guideTXT">排放量申報暨盤查管理</div>*@
+        <div class="guideTXT">抵換專案</div>
+        @*<div class="guideTXT">能源之星</div>*@
+        <h3><a href="~/act/Detail_Sub_Sub">氣候變遷全民行動</a></h3>
+        <div class="guideTXT">減碳十大撇步</div>
+        <div class="guideTXT">低碳永續家園</div>
+       @* <div class="guideTXT">熱浪來臨時</div>*@
+    </div>
+
+    <div class="color4title"><h2><a href="~/media/Detail_Sub">宣傳資源</a></h2></div>
+    <div class="color4txt">
+        <h3><a href="~/energystar/index">能源之星</a></h3>
+        <h3><a href="~/media/movie">相關影音</a></h3>
+        <div class="guideTXT">國內外氣候變遷影音連結</div>
+        <h3><a href="~/media/carbontool">碳足跡計算器</a></h3>
+        <div class="guideTXT">從食、衣、住、行中試算碳足跡</div>
+        <h3><a href="~/media/Detail_Sub_Sub">檔案下載</a></h3>
+        <div class="guideTXT">冰冰黑寶雙熊貼圖、桌布、氣候變遷圖解及其他</div>
+        <h3><a href="~/media/poster">相關海報</a></h3>
+        <div class="guideTXT">氣候變遷、節能減碳相關海報<br /><span>（分為低碳生活、住商部門、辦公相關）</span></div>
+        <h3><a href="~/media/cartoon">氣候變遷漫畫</a></h3>
+        <div class="guideTXT">冰冰黑寶漫畫介紹氣候變遷<br />@*<span>（依由來、暖化、節能、海岸、健康等</span>）*@</div>
+    </div>
+
+    <div class="color5title"><h2><a href="~/news/index/會議活動">會議活動</a></h2></div>
+
+    <div class="color5txt">
+        <h3><a href="~/news/index/會議活動">會議活動</a></h3>
+        <div class="guideTXT">包含政策宣導、環保署舉辦及協辦會議</div>
+    </div>
+    <div class="color6title"><h2><a href="~/link/Detail_Sub">相關連結</a></h2></div>
+
+    <div class="color6txt">
+        <h3><a href="~/link/index/國內連結">國內連結</a></h3>
+        <div class="guideTXT">本署9個氣候變遷相關網站及7個部會18個網站</div>
+        <h3><a href="~/link/index/國外連結">國外連結</a></h3>
+        <div class="guideTXT">
+            國外氣候變遷相關網站：<br>
+            日本A-PLAT、 美國NASA、IPCC、歐盟氣候調適平臺等
+        </div>
+    </div>
+    <div class="color7title"><h2><a href="~/home/contact">線上服務</a></h2></div>
+
+    <div class="color7txt">
+        <h3><a href="~/home/contact/">聯絡我們</a></h3>
+        <div class="guideTXT">客服信箱及環保署「環保e言堂」</div>
+    </div>
+    <div class="colorindex"><a href="~/home/index">首頁</a></div>
+
+</div>
+
+@section styles {
+    <link href="~/_x/css/layout.css" rel="stylesheet" type="text/css" />
+
+}
+
+

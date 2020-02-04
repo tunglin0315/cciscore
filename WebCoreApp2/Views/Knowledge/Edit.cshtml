@@ -1,0 +1,88 @@
+﻿@*@model CCISWebCore.Models.EF.Knowledged*@
+@model CCISWebCore.Models.ViewModels.KnowledgeViewModel
+@{
+    ViewData["Title"] = "編輯";
+}
+<h2 class="text-center">@ViewData["Title"]</h2>
+<hr />
+<div class="container-fluid">
+
+    <form asp-action="Edit">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group">
+                    <label asp-for="CostYear" class="control-label"></label>
+                    <input asp-for="CostYear" class="form-control" />
+                    <span asp-validation-for="CostYear" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PlanName" class="control-label"></label>
+                    <input asp-for="PlanName" class="form-control" />
+                    <span asp-validation-for="PlanName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="NumberLaw" class="control-label"></label>
+                    <input asp-for="NumberLaw" class="form-control" />
+                    <span asp-validation-for="NumberLaw" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DefiProjectClass" class="control-label"></label>
+                    <input asp-for="DefiProjectClass" class="form-control" />
+                    <span asp-validation-for="DefiProjectClass" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ExecutiveUnit" class="control-label"></label>
+                    <input asp-for="ExecutiveUnit" class="form-control" />
+                    <span asp-validation-for="ExecutiveUnit" class="text-danger"></span>
+                </div>
+               
+                <div class="form-group">
+                    <label asp-for="InfoLink" class="control-label"></label>
+                    <input asp-for="InfoLink" class="form-control" />
+                    <span asp-validation-for="InfoLink" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="PlanHost" class="control-label"></label>
+                    <input asp-for="PlanHost" class="form-control" />
+                    <span asp-validation-for="PlanHost" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ProjectClass" class="control-label"></label>
+                    <input asp-for="ProjectClass" class="form-control" />
+                    <span asp-validation-for="ProjectClass" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="KeywordTw" class="control-label"></label>
+                    <input asp-for="KeywordTw" class="form-control" />
+                    <span asp-validation-for="KeywordTw" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="SummaryTw" class="control-label"></label>
+                    <input asp-for="SummaryTw" class="form-control" />
+                    <span asp-validation-for="SummaryTw" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="KeywordEng" class="control-label"></label>
+                    <input asp-for="KeywordEng" class="form-control" />
+                    <span asp-validation-for="KeywordEng" class="text-danger"></span>
+                </div>
+         
+         
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    <div>
+        <div class="form-group text-center">
+            <input type="submit" value="@ViewData["Title"]" class="btn btn-primary" />
+            <a asp-action="Index" class="btn btn-danger">取消</a>
+        </div>
+    </div>
+    </form>
+ 
+
+</div>

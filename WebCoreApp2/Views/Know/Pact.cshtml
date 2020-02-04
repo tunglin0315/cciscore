@@ -1,0 +1,75 @@
+﻿
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub">氣候變遷知識</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub_Sub2">氣候公約介紹</a></li>
+        <li class="breadcrumb-item"> @ViewBag.Title</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 mx-sm-auto col-lg-9 pt-3  ccis_Detail">
+
+            <div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2 class="h2">@ViewBag.Title</h2>
+            </div>
+            @Html.Raw(@ViewBag.Html)
+
+            @*<div class=" pb-2 mb-3 border-bottom" id="content">
+            <h2>聯合國氣候變化綱要公約（United Nations Framework Convention on Climate Change,UNFCCC）</h2>
+        </div>
+        <a accesskey="C" href="#C" title="主要內容區" id="AC">:::</a>
+        <h3>背景：</h3>
+        <p>
+            1992 年 6 月，聯合國環境及發展委員會（UNCED）在巴西里約熱內盧召開地球高峰會議，目的在於調整生產與消費方式，並修正各國政策及加強國際間的約束及規範。會議希望能確保地球環境不再遭受進一步的破壞，且仍可提供後代子孫延續享有足夠的自然資源與生存環境。會中有 150餘國領袖簽署通過「聯合國氣候變化綱要公約」（United Nations Framework Convention on Climate Change，UNFCCC<a href="/know/pact#infolink1" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>1</sup></a>），對「人為溫室氣體」（Anthropogenic Greenhouse Gases）排放做出全球性管制目標協議，對溫室效應所形成的全球氣候暖化問題加以規範，並於1994年3月21日正式生效。
+        </p>
+
+        <h3>目標：</h3>
+        <p>
+            此公約之目標係為將大氣中溫室氣體的濃度穩定在防止氣候系統受到危險的人為干擾水準之上，同時兼顧糧食生產與經濟發展。在氣候公約中依「責任共同承擔但程度不同」及「公平原則」，將成員國區分為「附件一成員」、「非附件一成員」、「附件二成員」，承擔不同責任，透過執行公約內容，所有簽署國即可共同管制全球二氧化碳的排放量，也就是減少石化燃料的使用，並降低溫室效應。 一般認為「氣候變化綱要公約」是目前國際環保事務中，少數會對各國經濟發展造成重大衝擊的全球性公約之一。
+        </p>
+
+        <h3>基本原則：</h3>
+        <p>
+            各締約方凝聚共識防止氣候變遷，減少溫室氣體排放，為人類和後代子孫的利益保護氣候系統；在採取相關行動時，應依據公約基本原則實現公約之目標，包括各成員承擔之不同減量責任，同時應符合公平原則，另應實施有效及符合最低成本之防制措施並兼顧經濟發展需求。
+        </p>
+
+        <h3>什麼是附件一、附件二、非附件一締約方？</h3>
+        <p>
+            UNFCCC根據不同的承諾，將締約方分為附件一、附件二以及非附件一總共三組成員。
+        </p>
+        <ul>
+            <li>附件一締約方：包括1992年成為經濟合作與發展組織（Organisation for Economic Co-operation and Development, OECD）成員的工業化國家，以及經濟轉型的締約方，包括俄羅斯聯邦，波羅的海國家和一些中歐及東歐國家。（如美國、法國等<a href="/know/pact#infolink2" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>2</sup></a>）</li>
+            <li>附件二締約方：由附件一的OECD成員組成 （經濟轉型締約方除外）。附件二國家需要提供經濟資源，以便讓發展中國家能夠依據公約執行溫室氣體減量活動，並幫助他們調適氣候變遷的不利影響。此外，附件二國家必須採取一切可行的方式，向經濟轉型期的締約方和發展中國家轉讓或發展環境友善技術。</li>
+            <li>非附件一締約方：主要是發展中國家。公約認為一些發展中國家特別容易遭受氣候變遷的不利影響，包括低窪沿海地區和易受沙漠化、乾旱影響的國家。其他國家（如嚴重依賴化石燃料生產的國家）則更容易受到氣候變遷的潛在經濟影響。（如中國、新加坡等<a href="/know/pact#infolink2" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>3</sup></a>） </li>
+        </ul>
+        <p class="text-right">更多資訊<a href="/know/pact#infolink3" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>4</sup></a></p>
+
+        <ul>
+            資料來源：
+            <li>[1]     <a id="infolink1" href="http://unfccc.int/resource/climateaction2020/index.html" target="_blank" title="另開視窗(UNFCCC)">UNFCCC</a></li>
+            <li>[2] [3] <a id="infolink2" href="https://unfccc.int/process/parties-non-party-stakeholders/parties-convention-and-observer-states?field_national_communications_target_id%5b515%5d=515" target="_blank" title="另開視窗(UFNCC_國家信息通報目標)">UNFCC國家信息通報目標</a></li>
+            <li>[4]     <a id="infolink3" href="https://unfccc.int/parties-observers" target="_blank" title="另開視窗(UNFCC_締約方和觀察員)">UNFCC締約方和觀察員</a></li>
+        </ul>*@
+
+            <div class=" text-right my-3">
+                @*判斷是否已經登入*@
+                @if (User.Identity.IsAuthenticated)
+                {
+                    //判斷登入角色,符合角色則顯示按鈕進入後台
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a class="btn btn-danger text-center" href="~/info/Edit/@ViewBag.id">編輯</a>
+                    }
+                }
+            </div>
+
+        </main>
+        <div class="col-lg-1">  </div>
+    </div>
+</div>
+

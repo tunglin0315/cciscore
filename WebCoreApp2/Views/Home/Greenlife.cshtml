@@ -1,0 +1,58 @@
+﻿@*@{
+    string name = "綠色生活資訊";
+    @await Html.PartialAsync("_Nav1", name);
+}
+
+
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-8 pt-3 px-4">
+
+            <h2 class="h2">綠色生活資訊</h2>
+
+            使用fb分享 請取消註解
+
+             <a class="my-auto mr-1" href="javascript: void(window.open('https://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)),'fbwin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0' ));"><img src="~/_x/img/iconfb-.png" alt="臉書分享" title="臉書分享(另開視窗)" /></a>
+             <a class="my-auto mr-1" href="javascript: void(window.open('https://line.me/R/msg/text/?','linewin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'));"><img src="~/_x/img/iconline-.png" alt="Line分享" title="Line分享(另開視窗)" /></a>
+             <a class="my-auto notprint mr-1" href="#" onclick="window.print();"><img  src="~/_x/img/iconpr-.png" alt="列印" title="列印(另開視窗)" /></a>
+             <a class="my-auto mr-1" href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href)),'twitterwin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'));"><img  src="~/_x/img/icontt-.png" alt="推特分享" title="推特分享(另開視窗)" /></a>
+
+
+            
+
+            <div class="text-center">
+                <img class="mb-3 " style="width:100%; max-width:800px ; border-radius:8px;" src="~/_x/img/綠色採購-01.jpg" alt="綠色採購" title="綠色採購" />
+            </div>
+            <p>
+                行政院自民國81年正式公告實施環保標章制度，並開始綠色採購推廣。87年綠色採購納入法規，成為<span style="color:red">世界首個將綠色採購納入法令的國家</span>。初期，行政院環境保護署建置「環保標章資訊站」，提供國人環保標章計畫執行現狀、推廣環保標章計畫與理念、線上相關業務等服務；91年配合「機關綠色採購推動方案」，進行網站改版，提供更詳細的環保產品資訊，改善使用介面。
+
+                同時，開設機關綠色採購專區，讓機關、企業採購人員與消費者均可利用此網站取得有關環保產品的相關說明與採購管道，方便民眾及企業團體購買，並鼓勵綠色產品的生產及使用；隔年整合網站資訊，提升網頁內容整體的一致性，新增使用者專區的功能性及與環保產品線上採購網的連結，進行全面性的整合並建置「綠色生活資訊網」。接著逐年維護既有系統並新增相關功能，進行資料加值，期能讓一般民眾、製造廠商、銷售商到政府機關與管理層面，確實透過此網站，獲得明確的知識及資訊。從資訊架構建設，綠色消費與推廣主要為強化管考功能，並推動環保標章與綠色採購資訊數位化。
+
+            </p>
+
+
+        </main>
+        <div class="col-lg-2">   </div>
+    </div>
+</div>
+@section styles {
+    <style>
+        h5 {
+            font-weight: bold;
+        }
+
+
+        p {
+            text-indent: 2em;
+            font-size: 19px;
+        }
+        /*.ccis_Detail img {
+            width: 70%;
+            max-width: 945px;
+        }*/
+    </style>
+}*@

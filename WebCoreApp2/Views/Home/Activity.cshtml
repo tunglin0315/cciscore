@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["title"] = "地球日系列活動";
+}
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_ActivityMenu")
+        }
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-8 pt-3 px-4">
+
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom" id="content">
+                <h2 class="h2">地球日系列活動</h2>
+            </div>
+            @*<h2 class="h2">地球日系列活動</h2>*@
+
+            @*  使用fb分享 請取消註解
+
+                <a class="my-auto mr-1" href="javascript: void(window.open('https://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)),'fbwin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0' ));"><img src="~/_x/img/iconfb-.png" alt="臉書分享" title="臉書分享(另開視窗)" /></a>
+                <a class="my-auto mr-1" href="javascript: void(window.open('https://line.me/R/msg/text/?','linewin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'));"><img src="~/_x/img/iconline-.png" alt="Line分享" title="Line分享(另開視窗)" /></a>
+                <a class="my-auto notprint mr-1" href="#" onclick="window.print();"><img  src="~/_x/img/iconpr-.png" alt="列印" title="列印(另開視窗)" /></a>
+                <a class="my-auto mr-1" href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href)),'twitterwin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'));"><img  src="~/_x/img/icontt-.png" alt="推特分享" title="推特分享(另開視窗)" /></a>
+
+
+            *@
+
+            <div class="text-center">
+                <img class="mb-3 " style="width:100%; max-width:800px ; border-radius:8px;" src="~/_x/img/附圖四地球日banner.jpg" alt="世界地球日系列活動" title="世界地球日系列活動" id="content"/>
+            </div>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">活動名稱</th>
+                        <th scope="col">活動日期</th>
+                        <th scope="col">活動詳情</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                        <td> <h3>【地球日】城市養蜂初體驗</h3></td>
+                        <td>108/04/28</td>
+                        <td><a href="https://e-info.neticrm.tw/civicrm/event/info?reset=1&id=972" title="另開新視窗([地球日]城市養蜂初體驗)" target="_blank">詳情請點我</a></td>
+                    </tr>
+                    <tr>
+
+                        <td><h3>【地球日】一枝草的阿木傳情</h3></td>
+                        <td>108/05/12</td>
+                        <td><a href="https://e-info.neticrm.tw/civicrm/event/info?reset=1&id=963" title="另開新視窗(地球日】一枝草的阿木傳情)" target="_blank">詳情請點我</a></td>
+                    </tr>
+                    <tr>
+
+                        <td><h3>【地球日】與野共生：森林夜探體驗去</h3></td>
+                        <td>108/05/25</td>
+                        <td><a href="https://e-info.neticrm.tw/civicrm/event/info?reset=1&id=955" title="另開新視窗(地球日】與野共生：森林夜探體驗去)" target="_blank">詳情請點我</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+        <div class="col-lg-2">   </div>
+    </div>
+</div>
+@section styles {
+    <style>
+        thead tr {
+            font-family: 'Microsoft JhengHei UI';
+            font-size: 24px;
+        }
+
+        tbody tr {
+            font-family: "Segoe UI";
+            font-size: 19px;
+        }
+
+        h3 {
+            font-weight: bold;
+        }
+    </style>
+}

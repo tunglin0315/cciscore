@@ -1,0 +1,49 @@
+﻿@model InfoListViewModel
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <table class="table table-striped">
+                <tr>
+                    <th>標題</th>
+                    <th>刊登日期</th>
+                    <th>狀態管理</th>
+                </tr>
+                @foreach (var p in Model.Infos)
+                {
+                    <tr>
+                        <td>@p.Title</td>
+                        <td>@p.PublishDate</td>
+                        <td>
+                            <a class="btn btn-sm btn-primary"
+                               asp-controller="Info"
+                               asp-action="Edit"
+                               asp-route-id="@p.Id">編輯</a>
+
+                            <a class="btn btn-sm btn-danger"
+                               onclick="return confirm('確定刪除?')"
+                               asp-controller="Info"
+                               asp-action="Delete"
+                               asp-route-id="@p.Id">刪除</a>
+                        </td>
+
+                    </tr>
+                }
+            </table>
+
+            <div page-model="@Model.PagingInfo" page-action="List" page-classes-enabled="true"
+                 page-class="btn" page-class-normal="btn-secondary"
+                 page-class-selected="btn-primary" class="btn-group pull-right m-1">
+            </div>
+            <div class="text-md-right">
+                <a asp-controller="Info"
+                   asp-action="Edit"
+                   asp-route-id="0" class="btn btn-primary">新增</a>
+            </div>
+
+
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+

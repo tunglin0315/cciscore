@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["title"] = "抵換專案";
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Index/溫室氣體減緩策略">因應作為</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Index/溫室氣體盤查申報">溫室氣體盤查申報</a></li>
+        <li class="breadcrumb-item ">抵換專案</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+
+        <main role="main" class="col-md-10 mx-sm-auto col-lg-9 pt-3  ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2 class="h2">@ViewBag.Title</h2>
+            </div>
+            @Html.Raw(ViewBag.Html)
+            @*<div class="pb-2 mb-3 border-bottom" id="content">
+                <h2>抵換專案</h2>
+            </div>
+            <h3>溫室氣體減量及管理法</h3>
+            <p>
+                「溫室氣體減量及管理法」（以下簡稱溫管法）於民國104年7月1日公布施行，溫管法第三條第十五項明確定抵換專案「溫室氣體排放額度抵換專案（以下簡稱抵換專案）：指為取得抵換用途之排放額度，依中央主管機關認可之減量方法提出計畫書，其計畫書經中央主管機關核准及查驗機構確證，且所有設備、材料、項目及行動均直接與減少排放量或增加碳匯量有關的專案。」；此外，環保署依據溫管法第二十二條第三項規定，於民國104年12月31日訂定發布「溫室氣體抵換專案管理辦法」（以下簡稱抵換辦法），以作為推動抵換專案之法源依據。
+            </p>
+            <p>
+                鑑於國內溫室氣體排放源規模及抵換專案運作現況，多已朝向小規模減量專案為主，因此參考聯合國清潔發展機制（CDM）作法於107年12月27日修正發布抵換辦法，新增微型規模抵換專案類別（再生能源總裝置容量小於5,000瓩、節電量小於2,000萬度/年或溫室氣體排放量總減量小於2萬公噸CO2e/年），申請者僅需論證減量非屬法規應遵循事項即可提出，簡化申請作業程序，以鼓勵中小企業等小型排放源，並擴及運輸及住商部門皆可參與，促進各類型排放源減量技術發展。
+            </p>
+            <h4>抵換專案類型：</h4>
+            <p>
+                抵換專案依照申請者資格分為計畫型及方案型，計畫型抵換專案申請資格為專案實際執行者或投資者，而方案型抵換專案申請資格為整合管理專案及分配減量額度之單一權責機關（構）。
+            </p>
+
+            <h4>抵換專案實務作法：</h4>
+            <p>
+                執行抵換專案排放源後所產生的溫室氣體排放量（專案情境），與在照常營運的狀態所產生之溫室氣體排放量（基線情境）相比造成了溫室氣體減量，而此減量績效可向環保署申請認可取得減量額度。欲申請抵換專案減量額度之申請者，應依環保署認可之減量方法提出專案計畫書與查驗機構確證後再向環保署申請註冊，經註冊通過且執行專案後之減量實績經查驗機構查證及環保署審查通過後，可取得減量額度。
+            </p>
+
+            <div class="text-center my-2">
+                <img src="~/_x/img/act/抵換專案演變歷程-01.png" alt="抵換專案演變歷程" title="溫管法第三條第十五項明確定抵換專案「溫室氣體排放額度抵換專案指為取得抵換用途之排放額度，依中央主管機關認可之減量方法提出計畫書，其計畫書經中央主管機關核准及查驗機構確證，且所有設備、材料、項目及行動均直接與減少排放量或增加碳匯量有關的專案。」" />
+            </div>
+            <div class="text-center my-1">
+                <button class="btn btn-info m-2" onclick="img1()" title="圖片詳細說明">圖片詳細說明</button>
+                <div id="img1" style="display:none">
+                    溫管法第三條第十五項明確定抵換專案「溫室氣體排放額度抵換專案指為取得抵換用途之排放額度，依中央主管機關認可之減量方法提出計畫書，其計畫書經中央主管機關核准及查驗機構確證，且所有設備、材料、項目及行動均直接與減少排放量或增加碳匯量有關的專案。」
+                </div>
+            </div>*@
+            <div class=" text-right my-3">
+                @*判斷是否已經登入*@
+                @if (User.Identity.IsAuthenticated)
+                {
+                    //判斷登入角色,符合角色則顯示按鈕進入後台
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a class="btn btn-danger text-center" href="~/info/Edit/@ViewBag.id">編輯</a>
+                    }
+                }
+            </div>
+        </main>
+        <div class="col-lg-1"> </div>
+    </div>
+</div>
+<script>
+    function img1() {
+        $("#img1").slideToggle();
+
+    };
+</script>

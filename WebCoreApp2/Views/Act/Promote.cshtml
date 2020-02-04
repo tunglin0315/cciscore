@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["title"] = "推動機制與行動方案";
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Detail_Sub">因應作為</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Index/溫室氣體減緩策略">氣候變遷調適策略</a></li>
+        <li class="breadcrumb-item ">推動機制與行動方案</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+
+            <div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2 class="h2">@ViewBag.Title</h2>
+            </div>
+            @Html.Raw(ViewBag.Html)
+
+            @*<div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2>推動機制與行動方案</h2>
+            </div>
+            <h3 style="visibility:hidden"></h3>
+            <p>
+                在國家氣候變遷調適政策綱領的架構之下，各部會及所屬機關須進行調適行動方案與計畫的規劃、執行及控制，以具體落實政策綱領，使各部會能夠在共同的調適概念與原則下，逐步推動調適工作。
+            </p>
+            <div class="text-center">
+                <img src="~/_x/img/act/act03_1.jpg" alt="調適推動機制與行動方案之落實" title="在國家氣候變遷調適政策綱領的架構之下，設立推動機制，制定架構性氣候變遷法律並將政府組織強化再造。各部會及所屬機關進行調適行動方案與計畫的規劃、執行及控制，以具體落實政策綱領，使各部會能夠在共同的調適概念與原則下，逐步推動調適工作。" />
+            </div>
+            <div class="text-center my-1">
+                <button class="btn btn-info m-2" onclick="img1()" title="圖片詳細說明">圖片詳細說明</button>
+                <div id="img1">
+                    在國家氣候變遷調適政策綱領的架構之下，設立推動機制，制定架構性氣候變遷法律並將政府組織強化再造。各部會及所屬機關進行調適行動方案與計畫的規劃、執行及控制，以具體落實政策綱領，使各部會能夠在共同的調適概念與原則下，逐步推動調適工作。
+                </div>
+            </div>
+            <h3>配合措施</h3>
+            <p>
+                氣候變遷影響的層面廣泛，為妥善因應氣候變遷的衝擊，除必須落實各領域的調適策略外，還需要相關共同的配合措施，如研究發展、教育宣導與全民參與等皆為不可或缺的重要工作。
+            </p>
+            <div class="text-center">
+                <img src="~/_x/img/act/act03_2.jpg" alt="調適配合措施之落實" title="氣候變遷影響的層面廣泛，為妥善因應氣候變遷的衝擊，除必須落實各領域的調適策略外，還需要相關共同的配合措施，如研究發展、教育宣導與全民參與等皆為不可或缺的重要工作。" />
+            </div>
+            <div class="text-center my-1">
+                <button class="btn btn-info m-2" onclick="img2()" title="圖片詳細說明">圖片詳細說明</button>
+                <div id="img2">
+                    氣候變遷影響的層面廣泛，為妥善因應氣候變遷的衝擊，除必須落實各領域的調適策略外，還需要相關共同的配合措施，如研究發展、教育宣導與全民參與等皆為不可或缺的重要工作。
+                </div>
+            </div>*@
+            <div class=" text-right my-3">
+                @*判斷是否已經登入*@
+                @if (User.Identity.IsAuthenticated)
+                {
+                    //判斷登入角色,符合角色則顯示按鈕進入後台
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a class="btn btn-danger text-center" href="~/info/Edit/@ViewBag.id">編輯</a>
+                    }
+                }
+            </div>
+        </main>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+}
+<script>
+    function img1() {
+        $("#img1").slideToggle();
+
+    };
+    function img2() {
+        $("#img2").slideToggle();
+
+    };
+</script>

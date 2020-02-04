@@ -1,0 +1,215 @@
+﻿@*@{
+        string name = "氣候變遷知識>氣候變遷介紹>溫室效應與全球暖化";
+        @await Html.PartialAsync("_Nav1", name);
+    }*@
+@*@model CCISWebCore.Models.EF.Infos*@
+@*@model IEnumerable<CCISWebCore.Models.EF.Infos>
+*@
+
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style=" font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png"  alt=""  title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub">氣候變遷知識</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/EachCountry">各國氣候變遷調適</a></li>
+        <li class="breadcrumb-item ">英國</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom">
+                <h2 class="h2">
+                    @*@Html.Raw(@ViewBag.Title)*@
+                    英國氣候變遷調適策略
+                </h2>
+            </div>
+            @*@Html.Raw(@ViewBag.html)*@
+            <h4>英國氣候變遷調適背景</h4>
+            <p>
+                英國於2008年制訂「氣候變遷法」明定2050年減少溫室氣體排放量減量80%，並維持可靠而足夠的能源供應，同時設立<a href="https://www.theccc.org.uk/about/committee-on-climate-change/" target="_blank" title="另開視窗">氣候變遷委員會</a>（Committee on Climate Change，CCC）負責規劃英國整體氣候策略並提出建議及報告，以應對氣候變遷。
+            </p>
+            <p>
+                此外，「氣候變遷法」要求政府評估氣候變遷對英國造成的風險和機會，並為此做好準備。隸屬於氣候變遷委員會的<a href="https://www.theccc.org.uk/about/asc-members/" target="_blank" title="另開視窗">調適委員會</a> (Adaptation Sub-Committee,ASC)因應而生，並針對氣候變遷風險提供建議，評估解決這些風險的進展情況。ASC每兩年向議會報告最新情況。2017年發佈的英國風險評估強調「英國已經強烈感受到氣候變遷的影響」，並提出六個最具重要性風險：洪水、高溫、乾旱、自然資本風險、洪水與病蟲害。
+            </p>
+            <h4>氣候變遷會如何影響英國？</h4>
+            <p>
+                2050年因過熱死亡的人數將從現在每年2,000人，提升到5,000人，增幅達到250％。如果2050年均溫提升2度，將有260萬英國人處於洪水的風險！2007年英國大範圍的洪水影響55,000棟房屋，造成13人死亡，經濟損失高達32億英鎊（約1,200億新臺幣）！
+            </p>
+            <div class="text-center">
+                <img src="~/_x/img/know/English02.png" alt="高溫" title="高溫" />
+            </div>
+            <div class="text-center">
+                <img src="~/_x/img/know/English01.png" alt="洪水" title="洪水" />
+            </div>
+            <div class="mt-3"></div>
+            <h4>調適行動政策</h4>
+            <h5>一、英國氣候變遷風險評估</h5>
+            <p>
+                <a target="_blank" title="另開視窗" href="https://www.theccc.org.uk/tackling-climate-change/preparing-for-climate-change/uk-climate-change-risk-assessment-2017/">英國氣候變遷風險評估</a>
+                （Climate Change Risk Assessment ，CCRA）是英國每五年對氣候變遷與其風險和可能性進行評估的計畫，總目標為評估氣候議題採取進一步行動的緊迫性，以解決當前和未來的風險、掌握氣候變遷對英國產生的風險與機會。調適委員會ASC於2016年發布最新報告，參與本次評估學者和專家評估近60個風險和機會，並總結英國在六個關鍵領域面臨的風險：
+            </p>
+            
+                <ol>
+                    <li>洪水和沿海地區變化對社區、企業和基礎設施造成的風險。</li>
+                    <li>高溫對健康、民眾福祉和生產力造成的風險。</li>
+                    <li>公共供水、農業、發電和工業等用途用水資源短缺造成的風險。</li>
+                    <li>自然資本面對的風險（包括陸地、沿海、海洋、淡水生態系統和土壤和生物多樣性）。</li>
+                    <li>本國及國際糧食生產和貿易因氣候變遷造成的風險。</li>
+                    <li>新出現的病蟲害、外來物種入侵對人、植物和動物造成的風險。</li>
+                </ol>
+            
+
+            <p>這六個風險最具重要性的原因是其目前及未來的風險規模、極需提出額外、整合的作為。</p>
+            <h5>二、國家調適計畫</h5>
+            <p>
+                <a target="_blank" title="另開視窗" href="https://www.gov.uk/government/publications/2010-to-2015-government-policy-climate-change-adaptation/2010-to-2015-government-policy-climate-change-adaptation#appendix-3-national-adaptation-programme">國家適應計畫</a>
+                （National Adaptation Programme, NAP）是英國政府評估面臨主要風險和機會的策略，每五年進行一次評估。第一個國家適應計畫於2013年7月出版。該計畫著重於：提高對氣候變遷適應需求的認識、提高當前極端氣候的抵禦能力、及時採取長期因應措施、並解決重大證據缺口。調適委員會已向議會報告<a href="https://www.theccc.org.uk/wp-content/uploads/2015/06/6.736_CCC_ASC_Adaptation-Progress-Report_2015_FINAL_WEB_070715_RFS.pdf">2015</a>年和<a href="https://www.theccc.org.uk/publications/" target="_blank" title="另開視窗">2017</a>年實施該計畫的進展情況。
+            </p>
+            <h5>三、英國因應氣候變遷風險的調適重點</h5>
+            <p>
+                大氣溫度越高可容納更多水分，從而導致強度較高的降雨和頻率更高的洪水，較高的溫度也會影響公共衛生、基礎設施、商業、農業、林業以及自然環境。乾旱若伴隨較高溫度，會導致更嚴重和長期的乾旱；海平面上升（到2100年預計約上升50〜100公分）加劇洪水風險，並加速海岸線侵蝕。在評估風險高低及採取額外行動的急迫性後，報告特別提出以下重點：
+            </p>
+            <p>(一)海外氣候變遷對英國造成的風險：</p>
+            <p>全球其他地區的全球氣候和極端天氣事件頻繁增加，通過全球貿易、國際供應鏈、人口及資本流動而影響英國。同時影響全球共享的自然資源，並改變國家之間的相對優勢，影響全球力量的平衡。</p>
+            <p>(二)個人、社區、企業、基礎設施及供應商、各國政府採取有效行動能力的交叉性風險：</p>
+            <p>一般研究可能低估風險和機會的實際規模，因為各類問題往往是單獨考慮，但實際卻是聯合採取行動。應對風險的行動往往需要有效協調各主管機關，相關的組織量能、專業知識、技術、以及決策者理解程度和其風險接受度。</p>
+            <p>(三)氣候變遷脆弱性變化造成的影響：</p>
+            <p>英國人口規模和結構動力學變化將影響未來所受衝擊的規模。規劃及設計新建築物的位置及建材，既可以減少脆弱性，亦有助降低風險。</p>
+            <p>(四)英國各地已採取或預計採取的調適措施：</p>
+            <p>無論是人為計畫的一部分、或自然機制，調適行動（如增加海堤高度及永續用水）將減少氣候變遷的影響。</p>
+
+            <h5>四、氣候變遷風險可能帶給英國的機會</h5>
+            <p>本報告亦指出氣候變遷為英國帶來的機會，總結如下：</p>
+            <p>(一)暖冬能減少家庭取暖和其他建築的成本</p>
+            <p>暖冬雖能減少家庭取暖成本，有助於減輕燃料貧困，並減少寒冷冬季的死亡人數。但是，寒冷的天氣仍是將是重要死亡原因，需要採取更多行動來解決住房隔熱性能不良的問題。</p>
+            <p>(二)英國農業和林業可能因天氣溫暖和生長季節變長而提高產量</p>
+            <p>一般研究可能低估風險和機會的實際規模，因為各類問題往往是單獨考慮，但實際卻是聯合採取行動。應對風險的行動往往需要有效協調各主管機關，相關的組織量能、專業知識、技術、以及決策者理解程度和其風險接受度。</p>
+            <p>(三)英國企業可能從新增的調適商品和服務需求而出現經濟發展機會</p>
+            <p>英國在建築營建、金融投資、企業風險管理、及水和環境保護具良好專業知識。英國的旅遊和戶外活動也可能成長。預期企業將應對市場信號，並在這些領域開發新的產品和服務。</p>
+
+            <h4>調適項目策略</h4>
+            <table class="table table-striped" style="font-size:19px;">
+                <thead>
+                    <tr>
+                        <th class="text-center">項 目</th>
+                        <th class="text-center">策 略 重 點</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="align-middle text-center">能源</td>
+                        <td>
+                            <ul>
+                                <li>繼續簽署合約，增加英國可再生能源的使用比例</li>
+                                <li>增加生質燃料在運輸中的使用</li>
+                                <li>將商業和產業能源效率提高到 20%</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">自然環境</td>
+                        <td>
+                            <ul>
+                                <li>增加植樹，包括在農場植樹</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">交通運輸</td>
+                        <td>
+                            <ul>
+                                <li>到2040年，逐步淘汰傳統汽車，選用超低碳排汽車</li>
+                                <li>善貨運產業的物流和生態驅動</li>
+
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">都市設計</td>
+                        <td>
+                            <ul>
+                                <li>到2030年，英國沒有食物垃圾需掩埋</li>
+                                <li>顯著改善新建築的能效標準</li>
+                                <li>在新建物安裝低碳供暖系統（如熱泵）</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">洪水</td>
+                        <td>
+                            <ul>
+                                <li>將在六年內投資26億英鎊來改善防洪，以更好地保護30多萬戶家庭。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">因應高溫</td>
+                        <td>
+                            <ul>
+                                <li>調整衛生系統以保護人民免受氣候變遷影響，例如確保國家衛生服務信託基金的所有臨床區域都有適當的熱監測。</li>
+
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">自然成本風險</td>
+                        <td>
+                            <ul>
+                                <li>將開發並開始實施自然恢復網絡，將棲息地恢復和創建聯繫起來以改善通道、防洪和水質。  </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h5>資料來源</h5>
+            <p>[網站連結]<a href="http://www.legislation.gov.uk/ukpga/2008/27/contents" target="_blank" title="另開視窗">英國氣候變遷法</a></p>
+            <p>[網站連結]<a href="https://www.theccc.org.uk/" target="_blank" title="另開視窗">英國氣候變遷委員會</a></p>
+            <p>[網站連結]<a href="https://www.gov.uk/government/organisations/environment-agency" target="_blank" title="另開視窗">英國Environment Agency</a></p>
+            <p class="text-right">更多資料請<a href="https://www.theccc.org.uk/" target="_blank" title="另開視窗">點我</a></p>
+        </main>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+@section styles {
+    <style>
+        h4 {
+            font-weight: bold;
+            color: #129696
+        }
+
+            h4 ~ p {
+                margin-left: 45px;
+            }
+
+        h5 {
+            font-weight: bold;
+            margin-left: 45px;
+        }
+        h5~ol{
+            margin-left:45px;
+            font-size:19px;
+        }
+
+        .ccis_Detail img {
+            width: 70%;
+            /*border-radius: 5px;*/
+            max-width: 945px;
+        }
+
+        .ulstr {
+            list-style-type: none;
+            font-size: 19px;
+        }
+
+        table tr td ul {
+            margin-bottom: 0;
+        }
+
+        /*p {
+            padding-left: 3rem;
+        }*/
+    </style>
+}

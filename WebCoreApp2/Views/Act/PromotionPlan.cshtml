@@ -1,0 +1,68 @@
+﻿<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png"  alt=""  title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Detail_Sub">因應作為</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Index/溫室氣體減緩策略">溫室氣體減緩策略</a></li>
+        <li class="breadcrumb-item ">溫室氣體減量推動方案</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2>溫室氣體減量推動方案</h2>
+            </div>
+            <h3 style="visibility:hidden"></h3>
+            <p>
+                環保署依溫管法第9條第1項規定擬訂的「溫室氣體減量推動方案」（以下簡稱推動方案），於107年3月22日奉行政院核定。推動方案內容包括階段管制目標、推動期程、推動策略、預期效益及管考機制等項目；能源、製造、運輸、住商、農業及環境等六大部門別減量策略，明確劃分中央各部會在溫室氣體減量及能力建構推動事項上的權責分工，也包括總量管制、綠色稅費制度、綠色金融與綠能產業、衝擊評析與科技研發、資訊擴散與獎勵補助、氣候人才培育與認知提升、法規檢視修訂、健全減緩財務機制等跨部會的八大政策配套，並訂定檢視各部門執行成效的評量指標，期能整合跨部會量能共同推動減碳工作，以每五年滾動檢討強化來逐期達成減碳目標。（推動方案架構圖如下所示）
+            </p>
+            <p>
+                推動方案後續將透過六大部門別「溫室氣體排放管制行動方案」(以下簡稱行動方案)及地方政府「溫室氣體管制執行方案」(以下簡稱執行方案)具體推動落實，相關部會亦將定期追蹤檢討各部門別階段管制目標執行狀況，由環保署每年彙整陳報行政院。以下針對推動方案所包括的階段管制目標、六大部門推動策略及八大政策配套說明。
+            </p>
+            <h3>階段管制目標</h3>
+            <p>
+                推動方案內容涵蓋行政院核定的第一期溫室氣體階段管制目標，包括國家及部門別的109年溫室氣體排放量、105至109年間溫室氣體排放管制總當量及電力排放係數階段目標（公斤CO<sub>2</sub>e/度）。國家目標係以總溫室氣體排放量扣除碳匯量後的淨排放量呈現，其中總溫室氣體係指7種溫室氣體，包括二氧化碳（CO<sub>2</sub>）、甲烷（CH<sub>4</sub>）、氧化亞氮（N<sub>2</sub>O）、六氟化硫（SF<sub>6</sub>）、氫氟碳化物（HFCs）、全氟碳化物（PFCs）、三氟化氮（NF<sub>3</sub>）等；後續將依國家溫室氣體排放清冊統計結果，檢視階段管制目標最終達成情形。
+            </p>
+            <h4>六大部門推動策略</h4>
+            <p>
+                推動方案依循「國家因應氣候變遷行動綱領」，展開六大部門推動策略並訂定部門別評量指標，以利評估及檢視執行情形。
+            </p>
+            <h3>八大政策配套</h3>
+            <p>
+                溫室氣體減量需搭配完善的法規制度、經濟誘因及教育宣導等政策配套推動，其中首重法規檢討及制度障礙排除，期藉由訂定或訂修相關管制與獎勵法規及機制，並盤點相關基金來源、用途與金額，創造溫室氣體減量之誘因及環境，確保減量工作可具體落實。
+            </p>
+            <div class="text-center">
+                <img src="~/_x/img/Act/act01_3.jpg" alt="推動方案" title="推動方案" />
+            </div>
+            <p class="text-right"><a href="https://ghgrule.epa.gov.tw/action/action_page/51" target="_blank" title="新開視窗">詳請請點我</a></p>
+
+        </main>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+@section styles {
+    <style>
+      h3 {
+            font-weight: bold;
+            color: #129696
+        }
+
+        h3~p{
+            margin-left:45px;
+        }
+
+        p {
+            text-indent: 2em;
+            font-size: 19px;
+        }
+
+        .ccis_Detail img {
+            /*border-radius: 2em / 5em;*/
+            border-radius: 8px;
+            width: 70%;
+        }
+    </style>
+}

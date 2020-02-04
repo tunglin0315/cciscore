@@ -1,0 +1,149 @@
+﻿<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png"  alt="首頁圖示"  title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub">氣候變遷知識</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub_Sub">氣候變遷介紹</a></li>
+        <li class="breadcrumb-item">我們可以做什麼</li>
+        @*<li class="breadcrumb-item"> @ViewBag.Title</li>*@
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom">
+                <h2 class="h2">我們可以做什麼</h2>
+                @*<h2 class="h2">@ViewBag.Title</h2>*@
+            </div>
+            <p>一般民眾可以簡單地從生活中減少溫室氣體排放，一起減緩氣候變遷的影響，比如購買當地食材、將廢棄物資源化、節約用水、使用再生能源、減少使用一次性包裝及保護自然生態等。</p>
+
+            <div class="text-center">
+                <img src="~/_x/img/know/k3_1.jpg" />
+                <p>圖一、生活中之氣候變遷減緩作為</p>
+            </div>
+            <h4>為什麼要減少排放溫室氣體?</h4>
+            <p>到了2100年，在IPCC所設定暖化程度中等的中等排放情境RCP4.5情境下，大氣中二氧化碳的濃度達到538 ppm，全球均溫將上升1.8度，全球海平面將可能上升0.47公尺！</p>
+            <p>如果我們不減少溫室氣體排放，未來全球平均溫度將會更高，造成冰川融解加速、海平面上升，威脅沿海地區等等！<a href="/know/Detail2">更多衝擊請點我</a></p>
+            <h4>報告中常看到的RCP是什麼呢？</h4>
+            <p>在 IPCC 第五次評估報告中，使用代表濃度途徑（Representative Concentration Pathways, RCPs）呈現未來不同暖化程度的氣候情境 (途徑所指的是濃度的變化歷程)，來重新定義四組未來變遷的情境，並以1750年至2100年輻射強迫力之差異量當作指標性的數值來區分。</p>
+            <p>被命名為RCP2.6的情境意味著每平方公尺的輻射強迫力在2100年增加了2.6瓦，而RCP4.5、RCP6.0與RCP8.5則代表每平方公尺的輻射強迫力分別增加了4.5、6.0與8.5瓦。</p>
+            <p>這些模擬被用來研究碳循環造成的回饋以及大氣化學所導致的不確定性。在這四種情境中，RCP2.6是個暖化減緩的情境(輻射強迫力在2100年呈減少趨勢)；RCP4.5與RCP6.0是屬於穩定的情境(輻射強迫力的變化在2100年呈較為穩定狀態)；RCP8.5則是個溫室氣體高度排放的情境(輻射強迫力在2100年呈持續增加趨勢)。</p>
+            <p>到了2100年，在RCP2.6情境中，二氧化碳的濃度會達到421 ppm；RCP4.5情境會達到538 ppm；RCP6.0情境會達到670 ppm；而RCP8.5情境則會達到936 ppm。</p>
+            <p>若把所有溫室氣體的總體效應以相當的二氧化碳濃度來看：在RCP2.6情境中所有溫室氣體造成的總體效應相當二氧化碳濃度490 ppm；在RCP4.5情境中達到650 ppm；在RCP6.0情境中達到850 ppm；在RCP8.5情境中則達到1370 ppm，全球均溫也將上升3.7度！</p>
+            <div class="text-center">
+                <img src="~/_x/img/know/Detail3_1.png" alt="全球溫度改變量"title="全球溫度改變量" />
+            </div>
+            <p>
+                <span>資料來源：<a target="_blank" title="另開視窗" href="http://www.pik-potsdam.de/~mmalte/pubs/09_GHG_Concentrations&Extension_1Sep2010.pdf">The RCP greenhouse gas concentrations and their extensions from 1765 to 2300</a><br /></span>
+                <span style="padding-left:133px;"><a target="_blank" title="另開視窗" href="https://link.springer.com/article/10.1007/s10584-011-0148-z">The representative concentration pathways: an overview</a></span>
+            </p>
+            <h4>我們可以做什麼?</h4>
+            <div style="font-size:19px;">我們每個人都可以從食、衣、住、行、育、樂等生活面減少溫室氣體排放！</div>
+            <div class="pl-3">
+                <h5>食：</h5>
+                <p>
+                    「食在地、食當季！」吃在地生產的食物，能有效減少運送食物所耗費的能源及運輸所產生的溫室氣體，同時也避免過度包裝、冷藏的能源。
+                    「少吃肉，可以減少排放溫室氣體」，以飼養的牛隻為例，會排放氮氧化物、甲烷等溫室氣體，若以牛肉為主，則間接製造的溫室氣體量將大於食素者，故素食主義可有效改善二氧化碳的排放量。
+                </p>
+                <h5>衣：</h5>
+                <p>
+                    「回收、回收、再回收！」每一個回收的動作，對於減少溫室氣體排放以及降低環境衝擊的影響，都超過我們的想像。
+                    新衣物的製成代表能源和資源的消耗，大部份是由石油化學纖維做成，原料生產過程耗能又污染，回收衣服不但可以減少對於石化原料的消費，還能再製人造纖維，可節省七六％能源與降低七一％的溫室氣體排放量。
+                </p>
+                <h5>住：</h5>
+                <p>
+                    「親近自然，少開冷氣。」住宅消耗的能源，是溫室氣體排放中不可忽視的環節。避免陽光直射，在窗戶上增設窗簾或是用隔熱紙。多利用自然風降低室內溫度。如果必須開冷氣，則要確保緊閉門窗，減少冷氣外漏，調高冷氣的溫度。根據空調舒適度研究分析，國人最佳空調設定為26-28℃，冷氣溫度每調高1℃，就能節省6％用電。
+                </p>
+                <p>
+                    「選節能標章家電 省電省錢愛地球！」日常生活中使用電器用品，常會消耗能源並排放二氧化碳。若使用具節能標章或環保標章之產品、調高冷氣溫度設定、隨手關閉電燈、拔插頭減少待機、多利用天然採光及通風等，將能有效減少個人碳排放量。
+                </p>
+                <h5>行：</h5>
+                <p>
+                    「搭公車，少開車」交通運輸佔地球溫室氣體排放一四％，最有效的減量方式，就是多騎腳踏車、利用大眾運輸系統、搭公車及捷運。騎乘自行車，不但能夠運動健身，亦能夠節能減碳；大眾運輸系統每人碳排放量遠低於駕駛小客車。
+                </p>
+
+                <h5>育：</h5>
+                <p>
+                    【低碳永續社區】參與並推動社區節能減碳活動，將節能減碳的觀念透過教育宣導深植每個人心中，改善溫室氣體之排放。如果每人都種一棵樹，一年約能吸收兩噸的二氧化碳；透過跳蚤市場舊物品的交換買賣，珍惜物資，減少浪費資源及產出垃圾廢棄物。
+                </p>
+                <h5>樂：</h5>
+                <p>
+                    出遊建議選擇大眾運輸的在地休閒活動，減少燃料消耗，若出國旅行，多選擇直飛的班機以降低二氧化碳排放量。
+                    此外，地球好公民們一起來計算自己的二氧化碳排放量吧~從衣食住行的計算中還可以進一步了解自己的二氧化碳排放狀況喔！
+                </p>
+            </div>
+
+            <div class=" text-right my-3">
+                @*判斷是否已經登入*@
+                @if (User.Identity.IsAuthenticated)
+                {
+                    //判斷登入角色,符合角色則顯示按鈕進入後台
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a class="btn btn-danger text-center" href="~/info/Edit/@ViewBag.id">編輯</a>
+                    }
+
+                }
+            </div>
+        </main>
+        <div class="col-lg-2">    </div>
+    </div>
+
+</div>
+@section styles {
+    <style>
+        h5 {
+            font-weight: bold;
+        }
+
+        h4 {
+            font-weight: bold;
+            color: #129696;
+        }
+
+        .ccis_Detail img {
+            width: 70%;
+            max-width: 945px;
+            border-radius: 5px;
+        }
+
+        .card-body {
+            border: dashed;
+            border-color: cadetblue;
+        }
+
+        .card img {
+            max-width: 105px;
+        }
+
+        .card .btn {
+            width: 100%;
+            font-size: 32px;
+            background: -webkit-linear-gradient(2deg,#1573a9,#6fcdf1);
+            color: aliceblue;
+        }
+
+        p {
+            padding-left: 3rem;
+            font-size:19px;
+        }
+
+        .ulstr {
+            list-style: none;
+            font-size: 19px;
+        }
+        /*.card .btn-primary button {
+            width: 100%;
+            font-size: 28px;
+        }*/
+        /*ul {
+            list-style-type: none;
+        }
+
+        .listr {
+            font-size: 19px;
+        }*/
+    </style>
+}

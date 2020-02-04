@@ -1,0 +1,95 @@
+﻿<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub">氣候變遷知識</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub_Sub">氣候變遷介紹</a></li>
+        <li class="breadcrumb-item"> @ViewBag.Title</li>
+
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 mx-sm-auto col-lg-9 pt-3  ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2 class="h2">@ViewBag.Title</h2>
+            </div>
+            @Html.Raw(ViewBag.Html)
+
+            @*<div class=" pb-2 mb-3 border-bottom" id="content">
+            <h2>氣候變遷調適</h2>
+        </div>
+        <h3>什麼是氣候變遷調適？</h3>
+        <p>
+            我國「溫室氣體減量及管理法<a href="/know/detail4#infolink1" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>1</sup></a>」指出「氣候變遷調適」為人類系統，對實際或預期氣候變遷衝擊與其影響之調整，以緩和氣候變遷所造成之傷害和利用其有利之情勢。調適包括預防性及反應性調適、私人和公共調適、自主性與規劃性調適等
+        </p>
+        <p>
+            「調適（Adaptation）」指調整適應，為因應實際或預期的氣候衝擊與其影響，而在自然或人類系統所做的調整，以減輕危害或發展有利的機會。調適的目的為降低人類與自然系統在氣候變遷影響與下的風險，使人類與自然系統於極端天氣事件與暖化效應下的負面衝擊降低到最小，且配合氣候變遷的正面效應獲益能夠最大。
+        </p>
+        <p>
+            減緩策略著重於削減各種造成氣候變遷的因素，調適策略注重妥善處理氣候變遷造成的衝擊，兩者互相影響。例如：新建或加高堤防、撤離易受災害影響區域、以抗旱品種作物取代傳統作物等。
+        </p>
+        <h4>氣候變遷調適為何重要?</h4>
+        <p>
+            自工業化時代以來，人類活動引起全球溫室氣體排放增加，若溫室氣體增加速度不變，甚至加快，可能會造成更為嚴重損害。
+        </p>
+        <p>
+            即使目前大氣中溫室氣體不再增加，仍會對未來的氣候造成影響，例如:溫度上升、雨量集中且猛烈等。若不控制溫室氣體排放，調適成本也會大幅增加，比如全球溫度上升2°C的調適工作比上升4°C更容易，花費也更少。同時，英國氣候變遷調適報告說明<a href="/know/detail4#infolink2" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>2</sup></a>，在海平面上升一公尺情況下，目前Thames Barrier能保護倫敦和泰晤士河口，但如果超過一公尺可能需額外耗資數十億英鎊建立一個新的屏障。
+        </p>
+        <p>
+            如果全球未大規模減少排放溫室氣體，本世紀末或下一個世紀海平面可能會上升超過一公尺，因此氣候變遷調適就特別重要。調適不僅僅是建設相關的防災措施，亦須兼顧永續發展（如綠屋頂、屋頂農場、雨撲滿等）。
+        </p>
+        <p>
+            世界經濟論壇（ World Economic Forum，WEF）認為<a href="/know/detail4#infolink3" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>3</sup></a>氣候損失是全球公共財（Global Public Goods）的市場失靈問題，調適可以減少氣候變遷「減緩（Mitigation）」工作。
+        </p>
+        <h3>氣候變遷調適在臺灣</h3>
+        <p>
+            由於臺灣四面環海且氣候條件屬災害發生頻繁的海島，氣候變遷會直接衝擊全臺之水文、農業、公共衛生及生態環境等，具體執行成果請參閱氣候變遷調適資訊與成果網<a href="/know/detail4#infolink4" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>4</sup></a>
+        </p>
+
+           <div class="text-center mb-3">
+            <img src="~/_x/img/know/k4.jpg" alt="氣候變遷調適六大步驟" title="氣候變遷調適六大步驟包括界定問題與設定目標、評估與分析現況風險、評估與分析未來風險、界定與評估調適選項、規劃與執行調適路徑及監測與修正調適路徑。" />
+            <p>圖一、氣候變遷調適六大步驟</p>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-info" onclick="img1()" title="圖片詳細說明">圖片詳細說明</button>
+            <div id="img1">
+                氣候變遷調適六大步驟包括界定問題與設定目標、評估與分析現況風險、評估與分析未來風險、界定與評估調適選項、規劃與執行調適路徑及監測與修正調適路徑。
+            </div>
+        </div>
+
+
+        <ul>
+            資料來源：
+            <li>[1] <a id="infolink1" href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=O0020098" target="_blank" title="另開視窗(全國法規資料庫-溫室氣體減量及管理法)">全國法規資料庫-溫室氣體減量及管理法</a></li>
+            <li>[2] <a id="infolink2" href="https://www.london.gov.uk/sites/default/files/adapting_to_climate_change.pdf " target="_blank" title="另開視窗(英國氣候變遷調適報告說明_PDF檔案)">英國氣候變遷調適報告說明</a></li>
+            <li>[3] <a id="infolink3" href="https://www.weforum.org/projects/climate-change-solutions" target="_blank" title="另開視窗(世界經濟論壇_WEF)">世界經濟論壇 WEF</a></li>
+            <li>[4] <a id="infolink4" href="https://adapt.epa.gov.tw/" target="_blank" title="另開視窗(行政環保署氣候變遷調適資訊與成果網)">行政環保署氣候變遷調適資訊與成果網</a></li>
+        </ul>*@
+
+            <div class=" text-right my-3">
+                @*判斷是否已經登入*@
+                @if (User.Identity.IsAuthenticated)
+                {
+                    //判斷登入角色,符合角色則顯示按鈕進入後台
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a class="btn btn-danger text-center" href="~/info/Edit/@ViewBag.id">編輯</a>
+                    }
+
+                }
+            </div>
+
+        </main>
+        <div class="col-lg-1">    </div>
+    </div>
+</div>
+
+<script>
+    function img1() {
+        $("#img1").slideToggle();
+
+    };
+</script>

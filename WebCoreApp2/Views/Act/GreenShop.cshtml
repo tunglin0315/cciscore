@@ -1,0 +1,500 @@
+﻿<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png"  alt=""  title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Detail_Sub">因應作為</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Detail_Sub_Sub">氣候變遷全民行動</a></li>
+        <li class="breadcrumb-item ">綠色採購</li>
+
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class=" mr-auto col-lg-9 col-xl-9 pt-3 ">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+                <div class="col-8" id="content">
+                    <h2 class="h2">綠色採購</h2>
+                </div>
+                <div class="col-4" id="display_desktop_select">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            請選擇
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right rounded">
+                            <a class="dropdown-item" href="~/act/Ten">減碳十大撇步</a>
+                            <a class="dropdown-item" href="~/act/Hotel">環保旅店</a>
+                            <a class="dropdown-item" href="~/act/GreenShop">綠色採購</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+
+            @*desktop display*@
+            <div class="container-fluid" id="display_desktop">
+
+                <div class="row">
+                    <div class="col-xl-4  px-0 mx-0 ">
+                        <div id="Greenshop5">
+                                <button class="btn Greenshop_tit"><strong>1.什麼是綠色消費？</strong></button>
+                            <div class="infoarea" style="display:none">
+                                維持基本生活並追求生活品質，同時降低天然資源與毒性物質使用及污染物排放。<br />
+                                目的：不影響後代子孫權益的消費模式，涵蓋食衣住行娛樂等各層面。
+                           </div>
+                       
+                        </div>
+
+                 
+
+                    </div>
+                    <div class="col-xl-4 px-0 mx-0">
+                        <div id="Greenshop6">
+                            <button class="btn Greenshop_tit"><strong>2.綠色採購？</strong></button>
+                            <div class="infoarea" style="display:none">
+                                <strong>
+                                    採購回收材料製造之物品
+                                </strong><br />
+                                1.考量環境面之採購行為
+                                產品對環境及人類健康傷害性最小<br />
+                                2.考量產品對生態環境衝擊
+                                產品或其原料之製造、使用過程及廢棄物處理，對環境傷害較少、污染程度較低。
+
+                            </div>
+       
+                        </div>
+
+                    </div>
+                    <div class="col-xl-4 px-0 mx-0">
+                        <div id="Greenshop7">
+                           <button class="btn Greenshop_tit"><strong>3.綠色產品？</strong></button>
+                            <div class="infoarea" style="display:none">
+                                <strong>指標:低污染、可回收、省資源</strong>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+
+            
+                <div class="row Greenshopg2">
+
+                    <div class="col-xl-6  " style="padding:0px;">
+                        <div id="Greenshop3">
+                            <button class="btn Greenshop_tit"><strong>4.綠色消費的效益？</strong></button>
+                            <div class="infoarea" style="display:none">
+                                <strong>指標:降低輸入、減少輸出、資源回收</strong><br />
+                                改變消費模式，而非降低消費量，藉由資源回收減少自然資源的無限開採與過度使用，提升資源的永續利用及減少有害物質的使用與污染物的產生與排放，降低環境污染程度。
+                            </div>
+                       
+                        </div>
+                    </div>
+                    <div class="col-xl-6 " style="padding:0px;">
+                        <div id="Greenshop4">
+                            <button class="btn Greenshop_tit"><strong>5.採購原則？</strong></button>
+                            <div class="infoarea" style="display:none;">
+                                採購前：考慮產品是否需要？<br />
+                                採購時：考量產品生命週期對環境的各種衝擊，選擇用心照顧環境的供應商
+                                檢視日常生活所需各項消費物品，優先採購環保標章產品、第二類環境保護產品或省水、省能、綠建材等第三類環境保護產品。
+
+                            </div>
+                        
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row Greenshopg3">
+
+                    <div class="col-xl-6  " style="padding:0px;">
+                        <div id="Greenshop1">
+                            <button class="btn Greenshop_tit"><strong>6.什麼是環保標章？</strong></button>
+                            <div class="infoarea" style="display:none;">
+                                <a href="https://greenliving.epa.gov.tw/Public/GreenMark/International" title="另開新視窗" target="_blank">環保標章</a>
+                                是一種商標，頒發給經過嚴格審查，在各類產品項目中，環保表現最優良的前20～30％的產品
+                            </div>
+                        </div>
+                   </div>
+                    <div class="col-xl-6 " style="padding:0px;">
+                        <div id="Greenshop2">
+                            <button class="btn Greenshop_tit"><strong>7.想知道更多？</strong></button>
+                            <div class="infoarea" style="display:none;">
+                                如果想知道更多關於綠色採購的知識和訊息，歡迎拜訪 ：
+                                <a href="https://greenliving.epa.gov.tw/public" title="另開新視窗" target="_blank">
+                                    環境保護署綠色生活資訊網
+                                </a>
+
+                            </div>
+                      
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            @*moble display*@
+            <div class="container-fluid" id="display_moble">
+
+                <div>
+
+                    <div class="col-xl-6  mb-3">
+                        <div id="Greenshop1">
+                          <button class="btn Greenshop_tit"><strong>1.什麼是綠色消費？</strong></button>
+                            <div class="infoarea" style="display:none">
+                                維持基本生活並追求生活品質，同時降低天然資源與毒性物質使用及污染物排放。<br />
+                                目的：不影響後代子孫權益的消費模式，涵蓋食衣住行娛樂等各層面。
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 mb-3">
+                        <div id="Greenshop2">
+                            <button class="btn Greenshop_tit"><strong>2.綠色採購？</strong></button>
+                            <div class="infoarea" style="display:none">
+                                <strong>
+                                    採購回收材料製造之物品
+                                </strong><br />
+                                1.考量環境面之採購行為
+                                產品對環境及人類健康傷害性最小<br />
+                                2.考量產品對生態環境衝擊
+                                產品或其原料之製造、使用過程及廢棄物處理，對環境傷害較少、污染程度較低。
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div>
+
+                    <div class="col-xl-6 mb-3">
+                        <div id="Greenshop3">
+                          <button class="btn Greenshop_tit"><strong>3.綠色產品？</strong></button>
+                            <div class="infoarea" style="display:none">
+                                <strong>指標:低污染、可回收、省資源</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 mb-3">
+                        <div id="Greenshop4">
+                          <button class="btn Greenshop_tit"><strong>4.綠色消費的效益？</strong></button>
+                            <div class="infoarea" style="display:none; overflow:auto;">
+                                <strong>指標:降低輸入、減少輸出、資源回收</strong><br />
+                                改變消費模式，而非降低消費量，藉由資源回收減少自然資源的無限開採與過度使用，提升資源的永續利用及減少有害物質的使用與污染物的產生與排放，降低環境污染程度。
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="col-xl-4  mb-3">
+
+                        <div id="Greenshop5">
+                           <button class="btn Greenshop_tit"><strong>5.採購原則？</strong></button>
+                            <div class="infoarea" style="display:none;">
+                                採購前：考慮產品是否需要？<br />
+                                採購時：考量產品生命週期對環境的各種衝擊，選擇用心照顧環境的供應商
+                                檢視日常生活所需各項消費物品，優先採購環保標章產品、第二類環境保護產品或省水、省能、綠建材等第三類環境保護產品。
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-4 mb-3">
+                        <div id="Greenshop6">
+                           <button class="btn Greenshop_tit"><strong>6.什麼是環保標章？</strong></button>
+                            <div class="infoarea" style="display:none;">
+                                <a href="https://greenliving.epa.gov.tw/Public/GreenMark/International"title="另開新視窗" target="_blank">環保標章</a>
+                                是一種商標，頒發給經過嚴格審查，在各類產品項目中，環保表現最優良的前20～30％的產品
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-4">
+                        <div id="Greenshop7">
+                           <button class="btn Greenshop_tit"><strong>7.想知道更多？</strong></button>
+                            <div class="infoarea" style="display:none;">
+                                如果想知道更多關於綠色採購的知識和訊息，歡迎拜訪 ：
+                                <a href="https://greenliving.epa.gov.tw/public" title="另開新視窗" target="_blank">
+                                    環境保護署綠色生活資訊網
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+    </div>
+</div>
+
+@section styles {
+    <style>
+
+
+         /*desktop*/
+        @@media only screen and (min-width: 1200px) {
+
+            #display_moble,#display_desktop_select{
+                display:none;
+            }
+            .Greenshopg1 div, .Greenshopg2 div {
+                /*background-color: aqua;*/
+            }
+
+
+
+            #Greenshop1, #Greenshop2, #Greenshop3, #Greenshop4 {
+                height: 229px;
+                min-width: 683px;
+                /*background-position-x: -1px;*/
+            }
+
+
+            #Greenshop5, #Greenshop6, #Greenshop7 {
+                height: 229px;
+                min-width: 455px;
+            }
+
+
+            #Greenshop1 {
+                background-image: url('../_x/img/GreenShop/green_6.jpg');
+                background-size: 100% 100%;
+            }
+
+            #Greenshop2 {
+                background-image: url('../_x/img/GreenShop/green_7.jpg');
+                background-size: 100% 100%;
+            }
+
+            #Greenshop3 {
+                background-image: url('../_x/img/GreenShop/green_4.jpg');
+                background-size: 100% 100%;
+            }
+
+            #Greenshop4 {
+                background-image: url('../_x/img/GreenShop/green_5.jpg');
+                background-size: 100% 100%;
+            }
+
+            #Greenshop5 {
+                background-image: url('../_x/img/GreenShop/green_1.jpg');
+                background-size: 100% 100%;
+            }
+
+            #Greenshop6 {
+                background-image: url('../_x/img/GreenShop/green_2.jpg');
+                background-size: 100% 100%;
+            }
+
+            #Greenshop7 {
+                background-image: url('../_x/img/GreenShop/green_3.jpg');
+                background-size: 100% 100%;
+            }
+
+
+
+         
+            .btn-secondary, .Greenshop_tit {
+                margin-top: 2px;
+                margin-left: 2px;
+                font-size: 20px;
+                font-family: 'Microsoft JhengHei UI';
+                color: #fff;
+                background-color: #2a947e;
+                border-color: #2a947e;
+            }
+
+                .Greenshop_tit:hover {
+                    cursor: pointer;
+                }
+
+            .infoarea {
+                margin: 10px;
+                padding: 20px;
+                background-color: rgba(255, 255, 255, 0.9);
+                /*margin: 3px;
+                width: 183px;
+                padding: 5px;*/
+                border-radius: 15px;
+                /*background-color: rgba(255, 255, 255, 0.9);*/
+            }
+
+
+
+        }
+
+   
+         /*moble*/
+        @@media only screen and (max-width: 1199px) {
+
+            #display_desktop{
+               display:none;
+            }
+            .btn-secondary, .Greenshop_tit {
+                margin-top: 2px;
+                margin-left: 2px;
+                font-size: 20px;
+                font-family: 'Microsoft JhengHei UI';
+                color: #fff;
+                background-color: #2a947e;
+                border-color: #2a947e;
+            }
+
+            .Greenshopg1 div, .Greenshopg2 div {
+                /*background-color: aqua;*/
+            }
+
+            /*#Greenshop1, #Greenshop2, #Greenshop3, #Greenshop4 {
+                height: 229px;
+                min-width: 683px;
+                width:100%;
+           
+            }
+
+
+            #Greenshop5, #Greenshop6, #Greenshop7 {
+                height: 229px;
+                min-width: 455px;
+                width: 100%;
+            }*/
+
+
+            #Greenshop1 {
+                background-image: url('../_x/img/GreenShop/greenphone-01.jpg');
+                /*min-height: 180px;*/
+                /*height: 0px;
+                width: 100%;
+                padding-bottom: 50.32%;
+                background-size: auto 100%;*/
+
+                min-height: 180px;
+                width: 100%;
+                height: 0;
+                padding-bottom: 50.4%;
+                background-size: 100% 100%;
+            }
+
+            #Greenshop2 {
+                background-image: url('../_x/img/GreenShop/greenphone-02.jpg');
+                /*height: 0px;
+                width: 100%;
+                padding-bottom: 50.32%;
+                background-size: auto 100%;*/
+                min-height: 180px;
+                width: 100%;
+                height: 0;
+                padding-bottom: 50.4%;
+                background-size: 100% 100%;
+            }
+
+            #Greenshop3 {
+                background-image: url('../_x/img/GreenShop/greenphone-03.jpg');
+                /*height: 0px;
+                width: 100%;
+                padding-bottom: 50.32%;
+                background-size: auto 100%;*/
+                min-height: 180px;
+                width: 100%;
+                height: 0;
+                padding-bottom: 50.4%;
+                background-size: 100% 100%;
+            }
+
+            #Greenshop4 {
+                background-image: url('../_x/img/GreenShop/greenphone-04.jpg');
+                /*height: 0px;
+                width: 100%;
+                padding-bottom: 50.32%;
+                background-size: auto 100%;*/
+                min-height: 180px;
+                width: 100%;
+                height: 0;
+                padding-bottom: 50.4%;
+                background-size: 100% 100%;
+            }
+
+            #Greenshop5 {
+                background-image: url('../_x/img/GreenShop/greenphone-05.jpg');
+                /*height: 0px;
+                width: 100%;
+                padding-bottom: 33.52%;
+                background-size: auto 100%;*/
+                min-height: 180px;
+                width: 100%;
+                height: 0;
+                padding-bottom: 50.4%;
+                background-size: 100% 100%;
+            }
+
+            #Greenshop6 {
+                background-image: url('../_x/img/GreenShop/greenphone-06.jpg');
+                /*height: 0px;
+                width: 100%;
+                padding-bottom: 33.52%;
+                background-size: auto 100%;*/
+                min-height: 180px;
+                width: 100%;
+                height: 0;
+                padding-bottom: 50.4%;
+                background-size: 100% 100%;
+            }
+
+            #Greenshop7 {
+                background-image: url('../_x/img/GreenShop/greenphone-07.jpg');
+                /*height: 0px;
+                width: 100%;
+                padding-bottom: 33.52%;
+                background-size: auto 100%;*/
+                min-height: 180px;
+                width: 100%;
+                height: 0;
+                padding-bottom: 50.4%;
+                background-size: 100% 100%;
+                
+            }
+            .btn, .Greenshop_tit {
+                margin-top: 2px;
+                margin-left: 2px;
+                font-size: 20px;
+                font-family: 'Microsoft JhengHei UI';
+                color: #fff;
+                background-color: #2a947e;
+                border-color: #2a947e;
+            }
+
+
+
+            .Greenshop_tit:hover {
+                cursor: pointer;
+            }
+
+            .infoarea {
+                /*margin: 1px;
+                padding: 2px;
+                background-color: rgba(255, 255, 255, 0.9);
+                font-size: 14px;*/
+                margin: 3px;
+                width: 380px;
+                padding: 3px;
+                border-radius: 15px;
+                background-color: rgba(255, 255, 255, 0.9);
+            }
+        
+        }
+
+    </style>
+}
+
+@section scripts {
+    <script type="text/javascript">
+        $(function () {
+            $(".Greenshop_tit").click(function () {
+                var _e = $(this).next();
+                $(_e).toggle("slow");
+            });
+        });
+    </script>
+}

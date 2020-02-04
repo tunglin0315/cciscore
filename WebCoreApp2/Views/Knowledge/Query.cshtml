@@ -1,0 +1,202 @@
+﻿@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@using X.PagedList.Mvc.Common;
+
+@model IPagedList<CCISWebCore.Models.ViewModels.KnowledgeViewModel>
+
+<link href="/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    string _keyword = ViewBag.keyword;
+    string year = ViewBag.year;
+    string law = ViewBag.law;
+}
+<div class="container-fluid" id="content">
+
+    <h2>溫管法委辦計畫知識管理系統</h2>
+   
+    <form asp-action="Query" method="get">
+        <div class="row">
+            <div class="col-md-1 form-group text-center">
+                <label>執行年度</label>
+                    @*將後端往前丟的 ViewBag.CostYear 繫節到 DropDownList中 (名稱要一致) 產生下拉選單*@
+                <div> @Html.DropDownList("CostYear", null, "請選擇", htmlAttributes: new { @class = "form-control-sm" })</div>
+
+            </div>
+            <div class="col-md-1 form-group text-center">
+                <label>溫管法條</label>
+
+                <div> @Html.DropDownList("NumberLaw", null, "請選擇", htmlAttributes: new { @class = "form-control-sm" })</div>
+            </div>
+            <div class="col-md-2 form-group text-center">
+                <label>關鍵字查詢</label>
+
+                @*<div> @Html.DropDownList("NumberLaw", null, "請選擇", htmlAttributes: new { @class = "form-control-sm" })</div>*@
+                <div><input type="text" id="KeyWord" name="KeyWord" class="form-control-sm" value="@_keyword" /></div>
+            </div>
+            <div class="col-md-1 form-group  text-center">
+                <button type="submit" class="btn-lg btn-success">查詢</button>
+            </div>
+
+        </div>
+    </form>
+
+    <div class="row">
+        <table class="table table-striped">
+            <thead>
+                <tr class="text-center">
+                    <th style="width:6%">
+                        @Html.DisplayNameFor(model => model.First().CostYear)
+                    </th>
+                    <th style="width:12%">
+                        @Html.DisplayNameFor(model => model.First().PlanName)
+                    </th>
+                    <th style="width:5%;">
+                        @Html.DisplayNameFor(model => model.First().NumberLaw)
+                    </th>
+                    <th style="width:9%;">
+                        @Html.DisplayNameFor(model => model.First().DefiProjectClass)
+                    </th>
+                    <th style="width:10%;">
+                        @Html.DisplayNameFor(model => model.First().ExecutiveUnit)
+                    </th>
+                    <th style="width:8%;">
+                        @Html.DisplayNameFor(model => model.First().PlanHost)
+                    </th>
+                    <th style="width:7%;">
+                        @Html.DisplayNameFor(model => model.First().ProjectClass)
+                    </th>
+                    <th style="width:12%;">
+                        @Html.DisplayNameFor(model => model.First().KeywordTw)
+                    </th>
+                    <th style="width:8%;">
+                        @Html.DisplayNameFor(model => model.First().SummaryTw)
+                    </th>
+                    <th style="width:6%;">
+                        @Html.DisplayNameFor(model => model.First().KeywordEng)
+                    </th>
+                    <th style="width:12%;">
+                        @Html.DisplayNameFor(model => model.First().InfoLink)
+                    </th>
+                    @if (User.IsInRole("Reader") && User.IsInRole("Admin"))
+                    {
+                        <th style="width:10%">
+                            管理
+                        </th>
+                    }
+                </tr>
+            </thead>
+            <tbody id="fileListTable">
+                @foreach (var item in Model)
+                {
+                    <tr class="text-center">
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CostYear)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PlanName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NumberLaw)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DefiProjectClass)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ExecutiveUnit)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PlanHost)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProjectClass)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.KeywordTw)
+                        </td>
+                        <td>
+                            @*@Html.DisplayFor(modelItem => item.SummaryTw)*@
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#know_@Html.DisplayTextFor(modelitem=>item.Id)">
+                                詳細內文
+                            </button>
+                            <div class="modal" id="know_@Html.DisplayTextFor(modelitem=>item.Id)">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">中文摘要</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            @Html.DisplayFor(modelItem => item.SummaryTw)
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            @*<div >@Html.DisplayFor(modelItem => item.SummaryTw)</div>*@
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.KeywordEng)
+                        </td>
+                        <td>
+                            <a href="@Html.DisplayFor(modelItem => item.InfoLink)" target="_blank" title="另開視窗">@Html.DisplayFor(modelItem => item.InfoLink)</a>
+                        </td>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            if (User.IsInRole("Reader") && User.IsInRole("Admin"))
+                            {
+
+                                <td>
+                                    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">編輯</a>
+                                    @*<a asp-action="Details" asp-route-id="@item.Id">Details</a> |*@
+                                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id" new{ onclick="return confirm('確認刪除嗎?')"}>刪除</a>
+                                </td>
+                            }
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        @*@Html.PagedListPager((IPagedList)this.Model, page => Url.Action("Index"
+            , new { page}), new PagedListRenderOptions
+            {
+                LiElementClasses = new string[] { "page-item" },
+                PageClasses = new string[] { "page-link" }
+            })*@
+
+        @Html.PagedListPager((IPagedList)this.Model, page => Url.Action("Query"
+             , new { page, Costyear = year, Numberlaw = law, KeywordTw = _keyword, KeywordEng = _keyword }), new PagedListRenderOptions
+             {
+                 LiElementClasses = new string[] { "page-item" },
+                 PageClasses = new string[] { "page-link" }
+             }
+             )
+
+    </div>
+</div>
+
+<script>
+    //$("button").click(function () {
+    //    $("#ll").dialog();
+
+
+
+    //})
+        //$("#ll").click(function () {
+        //    $(this).hide("slow");
+        //})
+
+
+
+</script>

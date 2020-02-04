@@ -1,0 +1,275 @@
+﻿<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding: 0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png"  alt="首頁圖示"  title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub">氣候變遷知識</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub_Sub">氣候變遷介紹</a></li>
+        @*<li class="breadcrumb-item"> @ViewBag.Title</li>*@
+        <li class="breadcrumb-item">企業可以做什麼</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom">
+                @*<h2 class="h2">@ViewBag.Title</h2>*@
+                <h2 class="h2">企業可以做什麼</h2>
+            </div>
+            @*@Html.Raw(@ViewBag.Html)*@
+
+            <h4 class="my-3">企業可以做什麼？</h4>
+            <div class="accordion mb-3 " id="accordionExample">
+                <div class="row">
+                    <div class="col-lg-6">
+                        @*<div class="card">
+                                <button class="btn text-left" id="heading5" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                    <img src="~/_x/img/know/adaptationBTN05.png" />&ensp;碳中和
+                                </button>
+                                <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <h5>碳中和</h5>
+                                        <p>
+                                            企業事前做好碳管理計畫，節能減碳，再以取得外部減量額度的方式來抵換剩餘排放量，使得排放到大氣中的溫室氣體沒有淨增加。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>*@
+                        <div class="card">
+                            <button class="btn text-left" id="heading7" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                                <img src="~/_x/img/know/adaptationBTN07.png" />&ensp;抵換專案
+                            </button>
+                            <div id="collapse7" class="collapse " aria-labelledby="heading7" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <h5>抵換專案</h5>
+                                    <p class="btn_p">
+                                        抵換專案是企業依聯合國清潔發展機制（The Clean Development Mechanism，
+                                        <a href="https://unfccc.int/process-and-meetings/the-kyoto-protocol/mechanisms-under-the-kyoto-protocol/the-clean-development-mechanism"
+                                           target="_blank" title="另開視窗">CDM</a>）及環保署認可之減量方法，進行溫室氣體減量之專案，申請者須依環保署格式提出專案計畫書，經審議、確證、註冊等程序後，依計畫書執行減量活動，其執行減量成效經查驗機構查證與環保署審查通過後，可得環保署核發減量額度。
+                                        核發之減量額度，可作為環評減量承諾或自願減量之抵換之用，具鼓勵企業自願性減量之效。
+
+                                    </p>
+                                    <p class="btn_p">
+                                        同時為鼓勵運輸及住商部門皆可參與，環保署已增列微型規模抵換專案類別（再生能源總裝置容量小於5,000瓩、節電量小於2,000萬度/年或溫室氣體排放量總減量小於2萬公噸CO<sub>2</sub>e/年），申請者僅需論證減量非屬法規應遵循事項即可提出，透過簡化申請作業程序，鼓勵更多企業參與減量工作，以促進各類型減量技術發展。
+                                        更多請<a href="~/act/Exchange" title="另開新視窗" target="_blank">點我</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <button class="btn text-left" id="heading4" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                <img src="~/_x/img/know/adaptationBTN04.png" />&ensp;植樹造林
+                            </button>
+                            <div id="collapse4" class="collapse " aria-labelledby="heading4" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <h5>植樹造林</h5>
+                                    <p>
+                                        植樹造林及維持森林面積已成為減緩氣候變遷重要方式之一。
+                                        植樹造林除了可以吸收二氧化碳外，還能淨化空氣、改善生態環境、提供休閒空間等功能，兼具環境保護及提升生活品質之效果。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    @*<div class="card">
+                            <button class="btn  text-left" id="heading6" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                                <img src="~/_x/img/know/adaptationBTN06.png" />&ensp;碳捕捉和封存
+                            </button>
+                            <div id="collapse6" class="collapse " aria-labelledby="heading6" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <h5><a href="http://www.nepii.tw/KM/CCS/index.html" title="另開新視窗" target="_blank">碳捕捉和封存</a></h5>
+                                    <p>碳捕捉與封存技術主要是將工業產品製造過程或是化石燃料轉化為能源的過程中排放之二氧化碳分離收集起來，加以儲存於地質構造、透過生物吸收（如藻類）或是進行再利用，以避免排放到大氣中、達到CO<sub>2</sub>減量的一種技術（行政院環保署，2015）</p>
+                                </div>
+                            </div>
+                        </div>*@
+                    @*</div>*@
+                </div>
+            </div>
+            <h4>什麼是碳中和？</h4>
+            <p>碳中和（carbon neutral）是通過計算二氧化碳的排放總量，通過推動使用再生能源減少排放和植樹造林等方式，吸收這些二氧化碳排放量，來實現排放到大氣的淨二氧化碳量為零，或藉由碳交換方式使淨排放量為零。</p>
+            <p><a data-toggle="collapse" role="button" href="#carbon" title="點我看詳細">碳中和是碳足跡（carbon footprint）與碳抵換（carbon offset）衍生出來的概念</a>。它是人類對全球暖化及氣候變遷現象反思後的自律，最初由環保人士宣導，並逐漸獲得越來越多民眾的支持，並且成為受到各國政府所重視的實際綠化積極行動。</p>
+
+
+
+
+            <div class="collapse mb-3" id="carbon">
+                <div class="card card-body" style="border:3px solid #116363">
+                    <h4>碳中和</h4>
+                    <p class="pl-5" style="font-size:19px;text-indent:2em;">
+                        碳足跡是由人類活動直接或間接產生的溫室氣體量，通常使用二氧化碳當量（CO2e, carbon dioxide equivalent）作為單位，並以一年為時間單位計算。其他溫室氣體如甲烷和臭氧等，也都被包含在碳足跡計算中。碳抵換（carbon offset）是指公司或組織因為向大氣排放二氧化碳或其他溫室氣體而做出的補償行動。這些行動若能從大氣中清除溫室氣體或阻止釋放一定量的溫室氣體時，就是碳抵換。當進行碳抵換後，淨溫室氣體排放量為零，就可以達到碳中和。
+                    </p>
+
+                </div>
+            </div>
+
+            <h4>如何評估是否達到碳中和？</h4>
+            <p>
+                評估方式通常會請第二方或第三方驗證機構，遵循認證機制進行評估，被評估方通常會在通過驗證後，得到相關標章。目前每個國家對碳中和的定義與規定不盡相同，國際間幾個較常用的驗證機制包括：英國的<a href="https://www.carbonfootprint.com/qasqualityassuranceschemecarbonoffsetting.html" target="_blank" title="另開視窗">QAS</a>
+                和<a href="https://www.bsigroup.com/en-GB/PAS-2060-Carbon-Neutrality/" target="_blank" title="另開視窗">PAS2060</a>、加拿大的<a href="http://www.carbonzero.ca/" target="_blank" title="另開視窗">Carbonzero</a>等。以英國<a href="https://www.naturalcapitalpartners.com/" target="_blank" title="另開視窗">Natural Capital Partners</a>發展出的<a href="https://www.carbonneutral.com/why" target="_blank" title="另開視窗">CarbonNeutral</a>認證為例，它的驗證機制
+            </p>
+
+            <ul class="ulstr">
+                <li><h5>有幾個評估原則：</h5></li>
+                <li>
+                    <ol>
+                        <li>透明度：在商業保密範圍內，揭露溫室氣體減量與計算使用的資料、方法和假設  </li>
+                        <li>準確性：確保用於溫室氣體減量和計算的資料、方法和假設均準確且與時間相關，並確保這些措施是真實可信的</li>
+                        <li>保守估計：在估算時要採取保守態度，以確保它們不低估溫室氣體的影響，也不高估減排量</li>
+                        <li>持續改進：努力改進溫室氣體核算和減排</li>
+                        <li>廣泛的脈絡：基於對所有影響的理解，確保執行CarbonNeutral的計畫和相關聲明能對主題或組織，就環境、社會和經濟層面的影響做出更廣泛且適當的回應。</li>
+                    </ol>
+                </li>
+            </ul>
+
+            <ul class="ulstr">
+                <li><h5>要取得CarbonNeutral認證需要五個步驟：</h5></li>
+                <li>
+                    <ol>
+                        <li>定義目標：清楚具體描述目標</li>
+                        <li>測量碳排量：提供完整且準確的溫室氣體排放量</li>
+                        <li>設定目標：實現淨零碳排放的時間</li>
+                        <li>減少碳排：藉由結合內部減排和環境方法來實現目標</li>
+                        <li>資訊傳播：就取得CarbonNeutral認證的過程，提供準確透明的資訊</li>
+                    </ol>
+                </li>
+            </ul>
+            <h4>國外實施碳中和案例</h4>
+            <div style="font-size:19px">以下列出兩個取得CarbonNeutral認證的案例：</div>
+            <h5><a href="https://www.vmware.com/tw.html" target="_blank" title="另開視窗">VMware</a>（戴爾科技旗下的軟體公司，提供雲端運算和硬體虛擬化的軟體和服務）</h5>
+            <ul class="ulstr" style="line-height:50px;">
+                <li><strong>1.定義目標</strong>：2018年，VMware在全球的營運取得了CarbonNeurtral認證。2017年，VMware的數據中心取得了CarbonNeutral認證，開始了碳中和之旅。隨後，該公司於2018年取得CarbonNeutral認證公司，並增加了其他設施和商務旅行。比原定的2020年目標提前了兩年達成。</li>
+
+                <li> <strong>2.測量碳排量</strong>：一家專門從事技術的第三方廠商，及VMware總部的本地公司，進行了溫室氣體排放評估。評估結論是，大部分排放來自技術硬體的加熱、冷卻、及工作人員出差的電力。</li>
+
+                <li> <strong>3.設定目標</strong>：VMware設定了到2020年取得CarbonNeutral認證公司的目標。</li>
+
+                <li><strong>4.減少碳排</strong>：VMware在2018年，因為節能、產品創新、可再生能源生成和採購、及外部減排計畫等措施，提前兩年成為CarbonNeutral認證公司。通過各種節能規劃，並鼓勵將設備從待機改為關機等策略，實現了內部減排。VMware正在努力使公司100％使用可再生能源。VMware的碳中和目標則是藉由資助瓜地馬拉和印度，在當地建立低碳永續發展的減排計畫而實現。對於瓜地馬拉的農村社區來說，濾水器提供了清潔飲用水，無需將水煮沸，減少了燃燒木材造成碳排。在印度，太陽能熱水器取代了燃燒化石燃料的熱水設施，提供了更清潔可靠的來源。</li>
+
+                <li><strong>5.資訊傳播</strong>：取得CarbonNeutral公司認證是VMware 2020 的五個關鍵目標之一。VMware願景是成為能正面影響全世界的力量。VMware通過各種管道傳遞其承諾和成就，如：部落格、全球客戶會議、員工午餐報告和網路研討會。此外，工作人員訪問了瓜地馬拉的減排計畫，也見證VMware在濾水器的資助，造就了減排和改善水基礎設施的巨大影響。</li>
+            </ul>
+
+
+            @*<p>1.	定義目標：2018年，VMware在全球的營運取得了CarbonNeurtral認證。2017年，VMware的數據中心取得了CarbonNeutral認證，開始了碳中和之旅。隨後，該公司於2018年取得CarbonNeutral認證公司，並增加了其他設施和商務旅行。比原定的2020年目標提前了兩年達成。</p>
+                <p>2.	測量碳排量：一家專門從事技術的第三方廠商，及VMware總部的本地公司，進行了溫室氣體排放評估。評估結論是，大部分排放來自技術硬體的加熱、冷卻、及工作人員出差的電力。</p>
+                <p>3.	設定目標：VMware設定了到2020年取得CarbonNeutral認證公司的目標。</p>
+                <p>4.	減少碳排：VMware在2018年，因為節能、產品創新、可再生能源生成和採購、及外部減排計畫等措施，提前兩年成為CarbonNeutral認證公司。通過各種節能規劃，並鼓勵將設備從待機改為關機等策略，實現了內部減排。VMware正在努力使公司100％使用可再生能源。VMware的碳中和目標則是藉由資助瓜地馬拉和印度，在當地建立低碳永續發展的減排計畫而實現。對於瓜地馬拉的農村社區來說，濾水器提供了清潔飲用水，無需將水煮沸，減少了燃燒木材造成碳排。在印度，太陽能熱水器取代了燃燒化石燃料的熱水設施，提供了更清潔可靠的來源。</p>
+                <p>5.	資訊傳播：取得CarbonNeutral公司認證是VMware 2020 的五個關鍵目標之一。VMware願景是成為能正面影響全世界的力量。VMware通過各種管道傳遞其承諾和成就，如：部落格、全球客戶會議、員工午餐報告和網路研討會。此外，工作人員訪問了瓜地馬拉的減排計畫，也見證VMware在濾水器的資助，造就了減排和改善水基礎設施的巨大影響。</p>*@
+            <h5>Sky Group（歐洲最大的媒體公司與付費電視廣播公司）</h5>
+            <ul class="ulstr" style="line-height:50px;">
+                <li><strong>1.定義目標</strong>：當Sky首次取得CarbonNeutral認證時，Sky的主要業務還以英國為主。從那時起，隨著業務擴大，它繼續使其營運達到CarbonNeutral標準，包括Sky Deutschland和Sky Italia的業務。</li>
+                <li><strong>2.測量碳排量</strong>：第三方廠商代表Sky進行溫室氣體排放評估，結果將公佈在其影響報告中。公司大部分排放來自電力和車輛燃料。</li>
+                <li><strong>3.設定目標</strong>：當Sky在2006年首次達到CarbonNeutral標準時，它居於獨特且領先業界的地位。從那時起，它一直保持碳中和，同時不斷擴展集團目標以減少碳足跡。</li>
+                <li><strong>4.減少碳排</strong>：Sky整合了節能措施、產品創新、可再生能源生成和採購、及外部減排計畫等措施，取得CarbonNeutral認證。</li>
+                <li>
+                    <ul>
+                        <li>Sky減少能耗、商旅、廢棄物和用水、提高公司車隊的燃油效率、並更新基礎設施，以提高能源效率，使其碳強度（單位收入碳排放量）降低了55%。</li>
+                        <li>2016年，使用風電熱電聯合生產、與Natural Capital Partners合作、藉由再生能源原產地保證（<a href="https://www.ofgem.gov.uk/environmental-programmes/rego/about-rego-scheme" target="_blank" title="另開視窗">REGO</a>s）採購可再生能源等策略，實現了100%使用可再生能源的目標。</li>
+                        <li>Sky與供應商及客戶合作，減少上下游的碳排放量。目前Sky前50大供應商中，有78%的廠商已將氣候變遷措施納入公司營運策略考量。為協助 Sky的客戶減少碳排放，Sky生產了世界上第一個具有自動待機模式的機上盒。</li>
+                    </ul>
+                </li>
+                <li><strong>5.資訊傳播</strong>：CarbonNeutral認證讓Sky在環境議題居於領先地位，這項認證在一系列活動中宣傳，為Sky建立良好聲譽。</li>
+                <li>
+                    <ul>
+                        <li>2006年：Sky獲得CarbonNeutral認證的消息，在<a href="https://www.skygroup.sky/corporate/bigger-picture" target="_blank" title="另開視窗">Bigger Picture</a>活動和Sky的車隊均有宣傳。</li>
+                        <li>2009年：舉辦<a href="https://www.wwf.org.uk/updates/sky-rainforest-rescue-report-2015" target="_blank" title="另開視窗">Sky Rainforest Rescue</a>活動，成功拯救了10億棵樹，並透過<a href="http://www.bbc.co.uk/sn/tvradio/programmes/amazon/deforestation.shtml" target="_blank" title="另開視窗">Battle for the Amazon</a>等節目，引起超過700萬觀眾關注這個議題。Sky與Natural Capital Partners合作，藉由執行林業計畫實現減排目標，計畫包括位於巴西的Acre和印尼的 Rimba Raya。</li>
+                        <li>2017年：舉辦<a href="https://skyoceanrescue.com/" target="_blank" title="另開視窗">Sky Ocean Rescue</a>和各活動倡導塑膠廢棄物減量。Sky與Natural Capital Partners合作，在印尼Rimba Raya進行新計畫，防止8,000 公斤塑膠廢棄物進入印尼的Seruyan河。計畫提供沿河的14個主要村莊都配備有5個鉛廢棄物收集器；同時連結主要運輸站，將塑膠運送到回收設施。</li>
+                    </ul>
+                </li>
+            </ul>
+
+            @*<p>1.	定義目標：當Sky首次取得CarbonNeutral認證時，Sky的主要業務還以英國為主。從那時起，隨著業務擴大，它繼續使其營運達到CarbonNeutral標準，包括Sky Deutschland和Sky Italia的業務。</p>
+                <p>2.	測量碳排量：第三方廠商代表Sky進行溫室氣體排放評估，結果將公佈在其影響報告中。公司大部分排放來自電力和車輛燃料。</p>
+                <p>3.	設定目標：當Sky在2006年首次達到CarbonNeutral標準時，它居於獨特且領先業界的地位。從那時起，它一直保持碳中和，同時不斷擴展集團目標以減少碳足跡。</p>
+                <p>4.	減少碳排：Sky整合了節能措施、產品創新、可再生能源生成和採購、及外部減排計畫等措施，取得CarbonNeutral認證。</p>
+                <p>5.	資訊傳播：CarbonNeutral認證讓Sky在環境議題居於領先地位，這項認證在一系列活動中宣傳，為Sky建立良好聲譽。</p>*@
+
+            <h4>什麼是碳捕捉和封存？</h4>
+            <p>碳捕捉與封存(Carbon Capture and Storage, CCS)，涵蓋二氧化碳(Carbon)捕捉(Capture)、運輸及封存(Storage)三大流程，旨在將大型煤和天然氣發電廠、鋼鐵廠、化工廠等工業場所排放的二氧化碳分離並捕獲起來，甚至直接從空氣中捕捉。並傳送到適合的地質深處封存、以利生物吸收或再利用，以避免排放到大氣中造成溫室效應的一種技術，約可使發電廠減少85%-90%碳排放。</p>
+            <p>自 1990 年代以來，推動 CCS 大型專案(Large-Scale Integrated Projects, LSIP)已成為各國政府進行低碳能源轉型的主要策略之一，國際能源署(International Energy Agency, IEA)能源科技展望報告指出 CCS 為未來關鍵的減碳技術，要達到巴黎協目標，CCS將占總體減量14%。</p>
+            <p>依據全球捕捉與封存研究所(The Global CCS Institute, GCCSI)出版的The Global Status of CCS 2018指出，全球至 2018年共有 18個大型 CCS大型專案已經營運，另外5個正在建設中，總二氧化碳捕捉量接近4,000 萬噸/年。</p>
+
+            <h4>為什麼需要碳捕捉和封存？</h4>
+            <h5>一、如果沒有CCS，巴黎協定目標將無法達到。</h5>
+            <p>為達到巴黎升溫幅度低於2˚C目標，到2040年需要運營2,500個CCS設施（以每年捕獲量為150萬噸二氧化碳計算）。國際能源署（IEA）的調查結果表明，到2060年巴黎氣候目標達到2˚C，14％累計排放量的減少將來自CCS。</p>
+            <h5>二、CCS是唯一能使主要工業深度脫碳的清潔技術</h5>
+            <p>國際氣候變化專家如政府間氣候變化專門委員會（IPCC）和國際能源署IEA證實，CCS是唯一能夠使大型工業部門深度脫碳的清潔技術，特別在大型鋼鐵、水泥和石化產業。</p>
+            <h5>三、CCS創造就業機會</h5>
+            <p>CCS創造包括工程、財務、法律和環境角色等工作機會，為國家創造新的經濟機會。此外，以二氧化碳作為主要原料製造的包括尿素（氮肥）、滅火器和碳酸飲料等，皆可增加再利用途徑同時降低捕獲成本，在未來極具潛力成為一新興之產業。</p>
+            <p>更多需要CCS的關鍵因素請<a href="https://www.globalccsinstitute.com/about/our-key-messages/" target="_blank" title="另開視窗">點我</a></p>
+            <div class=" text-right my-3">
+                @*判斷是否已經登入*@
+                @if (User.Identity.IsAuthenticated)
+                {
+                    //判斷登入角色,符合角色則顯示按鈕進入後台
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a class="btn btn-danger text-center" href="~/info/Edit/@ViewBag.id">編輯</a>
+                    }
+
+                }
+            </div>
+        </main>
+        <div class="col-lg-2">    </div>
+    </div>
+
+
+</div>
+@section styles {
+    <style>
+        h5 {
+            font-weight: bold;
+        }
+
+        h4 {
+            font-weight: bold;
+            color: #129696;
+        }
+
+        .ccis_Detail img {
+            width: 70%;
+            max-width: 945px;
+            border-radius: 5px;
+        }
+
+        .card-body {
+            border: dashed;
+            border-color: cadetblue;
+        }
+
+        .card img {
+            max-width: 105px;
+        }
+
+        .card .btn {
+            width: 100%;
+            font-size: 32px;
+            background: -webkit-linear-gradient(2deg,#1573a9,#6fcdf1);
+            color: aliceblue;
+        }
+
+        .ulstr {
+            font-size: 19px;
+            list-style: none;
+        }
+
+        p {
+            padding-left: 3rem;
+        }
+        .btn_p{
+        text-indent: 2em;
+        }
+        /*.card .btn-primary button {
+            width: 100%;
+            font-size: 28px;
+        }*/
+        /*ul {
+            list-style-type: none;
+        }
+
+        .listr {
+            font-size: 19px;
+        }*/
+    </style>
+}

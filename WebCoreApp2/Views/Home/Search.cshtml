@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewData["Title"] = "站內搜尋";
+}
+
+    <nav class="d-none d-lg-block pl-3">
+        <ol class="breadcrumb" style="font-size:19px; padding: 0rem; margin-bottom: 0rem; background-color:transparent;">
+            <li class="breadcrumb-item "><a href="~/home/index"><img src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+            <li class="breadcrumb-item ">站內搜尋</li>
+        </ol>
+    </nav>
+<div class="text-center" id="content">
+    <gcse:search></gcse:search>
+</div>
+
+<style type="text/css">
+    .gsc-search-button {
+        background-color: #1a4195;
+        border-radius: 5px;
+    }
+
+    input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+        background-color: #1a4195 !important;
+        background-image: url("http://www.google.com/uds/css/v2/search_box_icon.png") !important;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        height: 16px !important;
+        border-color: #1a4195 !important;
+        filter: none;
+    }
+
+    .gsc-input-box {
+        height: 40px !important;
+    }
+
+    .gsc-adBlock {
+        display: none !important;
+    }
+
+    .gcsc-branding {
+        display: none !important;
+    }
+</style>
+
+
+
+@*測試機*@
+@*<script>
+        (function () {
+            var cx = '005467454510684767665:rtqjtk8smqw';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>*@
+
+
+@*正式機*@
+@*<script>
+          (function () {
+              var cx = '005467454510684767665:0g3pqosnh8q';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+          })();
+    </script>*@

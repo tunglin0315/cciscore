@@ -1,0 +1,79 @@
+﻿@{
+    ViewData["title"] = "調適領域與工作架構";
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Detail_Sub">因應作為</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Index/溫室氣體減緩策略">氣候變遷調適策略</a></li>
+        <li class="breadcrumb-item ">調適領域與工作架構</li>
+
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2 class="h2">@ViewBag.Title</h2>
+            </div>
+            @Html.Raw(ViewBag.Html)
+
+            @*<div class="pb-2 mb-3 border-bottom" id="content">
+                <h2>調適領域與工作架構</h2>
+            </div>
+            <h3 style="visibility:hidden"></h3>
+            <p>
+                氣候變遷的衝擊影響層面廣泛，需跨部會規劃、合作及因應，國發會於99年1月29日成立「規劃推動氣候變遷調適政策綱領及行動計畫」專案小組，作為氣候變遷調適監督及推動實施的重要平台，專案小組下設8個調適領域工作分組（如下圖一所示），規劃與推動調適相關整合工作。
+            </p>
+            <div class="text-center">
+                <img src="~/_x/img/act/act02_1.jpg" alt="我國調適工作架構" title="我國調適領域經行政院與國家發展委員會之規劃推動氣候變遷調適政策綱領及行動計畫專案小組下，通過諮詢顧問團隊、專家學者、產業界及NGO建議，設立8個調適領域工作小組，包括災害、維生基礎設施、水資源、土地使用、海岸、能源供給及產業、農業生產及生物多樣性及健康。" />
+                <p>圖一、我國調適工作架構</p>
+            </div>
+            <div class="text-center my-1">
+                <button class="btn btn-info m-2" onclick="img1()" title="圖片詳細說明">圖片詳細說明</button>
+                <div id="img1">
+                    我國調適領域經行政院與國家發展委員會之規劃推動氣候變遷調適政策綱領及行動計畫專案小組下，通過諮詢顧問團隊、專家學者、產業界及NGO建議，設立8個調適領域工作小組，包括災害、維生基礎設施、水資源、土地使用、海岸、能源供給及產業、農業生產及生物多樣性及健康。
+                </div>
+            </div>
+            <p>
+                101年行政院核定國發會研擬之「國家氣候變遷調適政策綱領<a href="/act/architecture#infolink1" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>1</sup></a>」，內容揭櫫我國總體調適策略，作為跨領域的共同策略，亦是各調適領域之優先策略，臚列如下：
+            </p>
+            <ol>
+                <li>落實國土規劃與管理</li>
+                <li>加強防災避災的自然、社會、經濟體系之能力</li>
+                <li>推動流域綜合治理</li>
+                <li>優先處理氣候變遷的高風險地區</li>
+                <li>提升都會地區的調適防護能力</li>
+            </ol>
+            <ul>
+                資料來源：
+                <li>[1] <a id="infolink1" href="https://www.epa.gov.tw/ghgact/F08D196239A1021D/b5525761-cd9f-4987-8307-153cbe63424a" target="_blank" title="另開視窗(國家氣候變遷調適政策綱領)">國家氣候變遷調適政策綱領</a></li>
+            </ul>*@
+
+            <div class=" text-right my-3">
+                @*判斷是否已經登入*@
+                @if (User.Identity.IsAuthenticated)
+                {
+                    //判斷登入角色,符合角色則顯示按鈕進入後台
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a class="btn btn-danger text-center" href="~/info/Edit/@ViewBag.id">編輯</a>
+                    }
+
+                }
+            </div>
+        </main>
+        <div class="col-lg-2">    </div>
+    </div>
+</div>
+
+<script>
+
+    function img1() {
+        $("#img1").slideToggle();
+
+    };
+</script>

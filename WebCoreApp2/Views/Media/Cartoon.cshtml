@@ -1,0 +1,160 @@
+﻿@model IEnumerable<Cartoon>
+@{
+    int no = Convert.ToInt16(ViewData["CartoonNo"]) - 1;
+    Cartoon cartoon = Model.ElementAt(no);
+     ViewData["title"] = @Model.ElementAt(no).Title;
+}
+
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item">
+            <a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="~/media/Detail_Sub">宣傳資源</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="~/media/Cartoon">氣候變遷漫畫</a>
+        </li>
+        @{
+            if (no >= 1)
+            {
+                <li class="breadcrumb-item">@Model.ElementAt(no).Title</li>
+            }
+
+        }
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_CartoonMenu")
+        }
+        <main role="main" class="col-md-10 mx-sm-auto col-lg-9 pt-3  ccis_detail">
+         @*   <main role="main" class="col-md-10 ml-sm-auto col-lg-10 pt-3 px-4 ccis_detail">*@
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+                    <div class="col-8" id="content">
+                        @{
+                            if (no >= 1)
+                            {
+
+                                <h2 class="h2" style="display:inline">
+                                    氣候變遷漫畫
+                                    @*<span style="color:darkgray">&#9658;@Model.ElementAt(no).Title</span>*@
+                                </h2>
+                                <h3 style="display:inline;color:darkgray">&#9658;@Model.ElementAt(no).Title</h3>
+                            }
+                            else
+                            {
+
+                                <h2 class="h2">氣候變遷漫畫</h2>
+                            }
+                        }
+
+                    </div>
+                    <div class="col-4">
+
+                        <div class="btn-group" id="display_topdesk_select">
+                            <button type="button" class="btn btn-cartoon btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                請選擇
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right rounded">
+                                @{
+
+                                    for (int i = 0; i < Model.Count(); i++)
+
+                                    {
+                                        if (@Model.ElementAt(i).Title != "氣候變遷漫畫")
+                                        {
+                                            <a class="dropdown-item" asp-route-id="@(i+1)">@Model.ElementAt(i).Title</a>
+                                        }
+                                    }
+                                }
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+
+                    @{
+                        <img src="@Url.Content(@cartoon.ImgPath)" style="border-radius:10px;width:100%;" alt="@cartoon.Alt" title="@cartoon.Title" />
+                    }
+                </div>
+                @*測試片段*@
+
+                <div class="row my-1">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-4 ">
+                        <button id="btnAccess" class="btn-lg btn-outline-dark ">展 開 說 明</button>
+                    </div>
+                    <div class="col-md-5"></div>
+                </div>
+
+                <div id="divAccess" class="row col-md-8 p-2">
+                    @Html.Raw(Model.ElementAt(no).Accessibility)
+                </div>
+
+                @*測試片段*@
+
+
+            </main>
+        <div class="col-lg-1"></div>
+    </div>
+</div>
+@section scripts{
+    <script>
+        var i = 0;
+        $('#btnAccess').on('click', function () {
+            i++;
+            if (i % 2) {
+                $('#btnAccess').html('關 閉 說 明');
+            } else {
+                $('#btnAccess').html('展 開 說 明');
+            }
+            $('#divAccess').toggle('slow');
+        });
+
+    </script>
+    
+}
+@section styles {
+    <style>
+        .mediainfo img {
+            width: 100% !important;
+            margin-bottom: 5px;
+        }
+
+        .btn-cartoon {
+            margin-top: 3px;
+            margin-left: 3px;
+            font-size: 20px;
+            font-family: 'Microsoft JhengHei UI';
+            color: #fff;
+            background-color: #2a947e;
+            border-color: #2a947e;
+        }
+
+        @@media only screen and (min-width: 767px) {
+            #list-tab-moble {
+                display: none;
+            }
+        }
+
+
+        @@media only screen and (min-width: 766px) {
+            #display_topdesk_select {
+                display: none;
+            }
+        }
+
+        .ccis_detail #divAccess {
+            border: 1px solid gray;
+            overflow: hidden;
+            display: none;
+            border-radius: 5px;
+        }
+    </style>
+}
+

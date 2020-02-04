@@ -1,0 +1,453 @@
+﻿@{
+
+    ViewData["title"] = "減碳十大撇步";
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Detail_Sub">因應作為</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Detail_Sub_Sub">氣候變遷全民行動</a></li>
+        <li class="breadcrumb-item ">減碳十大撇步</li>
+
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class=" mr-auto col-lg-9 col-xl-9 pt-3 ">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom ccis_Detail">
+                <div class="col-8" id="content">
+                    <h2>減碳十大撇步</h2>
+                </div>
+                @*<div class="col-4" id="display_desktop_select">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                請選擇
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right rounded">
+                                <a class="dropdown-item" href="~/act/Ten">減碳十大撇步</a>
+                                <a class="dropdown-item" href="~/act/Diet">低碳飲食</a>
+                                <a class="dropdown-item" href="~/act/Hotel">環保旅店</a>
+                                <a class="dropdown-item" href="~/act/GreenShop">綠色採購</a>
+                            </div>
+                        </div>
+
+                    </div>*@
+            </div>
+
+            @*desktop display*@
+            @*<a accesskey="C" href="#C" title="主要內容區" id="AC">:::</a>*@
+        <div class="container-fluid" id="display_desktop">
+
+            <div class="row">
+                <div class="col-lg-6  px-0 mx-0 ">
+                    <div id="Ten1">
+                        <div class="col-md-4">
+                            <button class="btn Ten_tit"><strong>1.冷氣控溫不外洩</strong></button>
+                            <div class="infoarea" style="display:none">
+                                少開冷氣，多開窗；非特定場合不穿西裝領帶；冷氣控溫26-28℃且不外洩。
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn Ten_tit"><strong>2.隨手關燈拔插頭</strong></button>
+                            <div class="infoarea" style="display:none">
+                                隨手關燈關機、拔插頭；檢討採光需求，提升照明績效，減少多餘燈管數。
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn Ten_tit"><strong> 3.節能省水更省錢</strong></button>
+                            <div class="infoarea" style="display:none">
+                                將傳統鎢絲燈泡逐步改為省電燈具，以淋浴代替泡澡，省電、省水又省錢。
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-0 mx-0">
+                    <div id="Ten2">
+                        <div class="col-6">
+                            <button class="btn Ten_tit"><strong> 4.多吃蔬食少吃肉</strong></button>
+                            <div class="infoarea" style="display:none">
+                                愛用當地食材；每週一天或一日一餐蔬食；吃多少點多少，減少碳排量。
+                                低碳飲食<a href="/act/ten#infolink1" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>1</sup></a>。
+
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn Ten_tit"><strong>5.自備杯筷帕與袋</strong></button>
+                            <div class="infoarea" style="display:none">
+                                自備隨身杯、環保筷、手帕及購物袋；少喝瓶裝水；少用一次即丟商品。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row Teng2">
+                <div class="col-lg-6 px-0 mx-0">
+                    <div id="Ten3">
+
+                        <div class="col-6">
+                            <button class="btn Ten_tit"><strong>6.惜用資源顧地球</strong></button>
+                            <div class="infoarea" style="display:none">
+                                雙面用紙；選用再生紙、省水龍頭及馬桶；不用過度包裝商品；回收資源。
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn Ten_tit"><strong>7.綠色採購看標章</strong></button>
+                            <div class="infoarea" style="display:none">
+                                選購環保標章、節能標章、省水標章及EER值高的商品，節能減碳又環保。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6  px-0 mx-0">
+                    <div id="Ten4">
+                        <div class="col-4">
+                            <button class="btn Ten_tit"><strong>8.大家作伙搭公車</strong></button>
+                            <div class="infoarea" style="display:none">
+                                多搭乘公共運輸工具；減少一人開車騎機車次數；每週至少一天不開車。
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <button class="btn Ten_tit"><strong>9.選車用車助減碳</strong></button>
+                            <div class="infoarea" style="display:none">
+                                選用油氣雙燃料、油電混合或電動車輛與動力機具，養成停車就熄火習慣。
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <button class="btn Ten_tit"><strong>10.鐵馬步行兼保健</strong></button>
+                            <div class="infoarea" style="display:none">
+                                多走樓梯，少坐電梯，上班外出常騎鐵馬，多走路，增加運動健身的時間。
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3">
+                <ul style="list-style-type:none">
+                    資料來源：
+                    <li>[1] <a id="infolink1" href="~/act/diet" target="_blank" title="另開視窗(低碳飲食)">低碳飲食</a></li>
+                </ul>
+            </div>
+        </div>
+
+            @*moble display*@
+            <div class="container-fluid" id="display_moble">
+                <div class="col-xl-6  mb-3">
+                    <div id="Ten1">
+                        <button class="btn Ten_tit"><strong>1.冷氣控溫不外洩</strong></button>
+                        <div class="infoarea" style="display:none">
+                            少開冷氣，多開窗；非特定場合不穿西裝領帶；冷氣控溫26-28℃且不外洩。
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 mb-3">
+                    <div id="Ten2">
+                        <button class="btn Ten_tit"><strong>2.隨手關燈拔插頭</strong></button>
+                        <div class="infoarea" style="display:none">
+                            隨手關燈關機、拔插頭；檢討採光需求，提升照明績效，減少多餘燈管數。
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 mb-3">
+                    <div id="Ten3">
+                        <button class="btn Ten_tit"><strong>3.節能省水更省錢</strong></button>
+                        <div class="infoarea" style="display:none">
+                            將傳統鎢絲燈泡逐步改為省電燈具，以淋浴代替泡澡，省電、省水又省錢。
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 mb-3">
+                    <div id="Ten4">
+                        <button class="btn Ten_tit"><strong>4.多吃蔬食少吃肉</strong></button>
+                        <div class="infoarea" style="display:none">
+                            愛用當地食材；每週一天或一日一餐蔬食；吃多少點多少，減少碳排量。
+                            低碳飲食<a href="/act/ten#infolink1" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>1</sup></a>。
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4  mb-3">
+                    <div id="Ten5">
+                        <button class="btn Ten_tit"><strong>5.自備杯筷帕與袋</strong></button>
+                        <div class="infoarea" style="display:none">
+                            自備隨身杯、環保筷、手帕及購物袋；少喝瓶裝水；少用一次即丟商品。
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 mb-3">
+                    <div id="Ten6">
+                        <button class="btn Ten_tit"><strong>6.惜用資源顧地球</strong></button>
+                        <div class="infoarea" style="display:none">
+                            雙面用紙；選用再生紙、省水龍頭及馬桶；不用過度包裝商品；回收資源。
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 mb-3">
+                    <div id="Ten7">
+                        <button class="btn Ten_tit"><strong>7.綠色採購看標章</strong></button>
+                        <div class="infoarea" style="display:none">
+                            選購環保標章、節能標章、省水標章及EER值高的商品，節能減碳又環保。
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 mb-3">
+                    <div id="Ten8">
+                        <button class="btn Ten_tit"><strong>8.每週一天不開車</strong></button>
+                        <div class="infoarea" style="display:none">
+                            多搭乘公共運輸工具；減少一人開車騎機車次數；每週至少一天不開車。
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 mb-3">
+                    <div id="Ten9">
+                        <button class="btn Ten_tit"><strong>9.選車用車助減碳</strong></button>
+                        <div class="infoarea" style="display:none">
+                            選用油氣雙燃料、油電混合或電動車輛與動力機具，養成停車就熄火習慣。
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 mb-3">
+                    <div id="Ten10">
+                        <button class="btn Ten_tit"><strong>10.鐵馬步行兼保健</strong></button>
+                        <div class="infoarea" style="display:none">
+                            多走樓梯，少坐電梯，上班外出常騎鐵馬，多走路，增加運動健身的時間。
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <ul style="list-style-type:none">
+                        資料來源：
+                        <li>[1] <a id="infolink1" href="~/act/diet" target="_blank" title="另開視窗(低碳飲食)">低碳飲食</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+@section styles {
+    <style>
+
+
+        /*desktop*/
+        @@media only screen and (min-width: 1200px) {
+
+            #display_moble, #display_desktop_select {
+                display: none;
+            }
+
+            .Teng1 div, .Teng2 div {
+                /*background-color: aqua;*/
+            }
+
+            .btn-secondary, .Ten_tit {
+                margin-top: 2px;
+                margin-left: 2px;
+                font-size: 20px;
+                font-family: 'Microsoft JhengHei UI';
+                color: #fff;
+                background-color: #2a947e;
+                border-color: #2a947e;
+            }
+
+
+            #Ten1, #Ten2, #Ten3, #Ten4 {
+                /*height:0px;
+                min-width: 698px;
+                width:100%;
+                background-position-x: 11px;*/
+                display: flex;
+            }
+            /*#Ten5, #Ten6, #Ten7 {
+                height: 229px;
+                min-width: 455px;
+            }*/
+            #Ten1 {
+                background-image: url('../_x/img/Ten/desktop/TEN_01.jpg');
+                width: 100%;
+                height: 0;
+                padding-bottom: 49.28%;
+                background-size: cover;
+            }
+
+            #Ten2 {
+                background-image: url('../_x/img/Ten/desktop/TEN_02.jpg');
+                width: 100%;
+                height: 0;
+                padding-bottom: 49.28%;
+                background-size: cover;
+            }
+
+            #Ten3 {
+                background-image: url('../_x/img/Ten/desktop/TEN_03.jpg');
+                width: 100%;
+                height: 0;
+                padding-bottom: 49.28%;
+                background-size: cover;
+            }
+
+            #Ten4 {
+                background-image: url('../_x/img/Ten/desktop/TEN_04.jpg');
+                width: 100%;
+                height: 0;
+                padding-bottom: 49.28%;
+                background-size: cover;
+            }
+
+
+
+            .Ten_tit:hover {
+                cursor: pointer;
+            }
+
+            .infoarea {
+                margin: 3px;
+                width: 183px;
+                padding: 5px;
+                border-radius: 15px;
+                background-color: rgba(255, 255, 255, 0.9);
+            }
+        }
+
+
+        /*moble*/
+        @@media only screen and (max-width: 1199px) {
+
+            #display_desktop {
+                display: none;
+            }
+
+            .btn-secondary, .Ten_tit {
+                margin-top: 3px;
+                margin-left: 3px;
+                font-size: 20px;
+                font-family: 'Microsoft JhengHei UI';
+                color: #fff;
+                background-color: #2a947e;
+                border-color: #2a947e;
+            }
+
+            .Teng1 div, .Teng2 div {
+                /*background-color: aqua;*/
+            }
+
+            #Ten1 {
+                background-image: url('../_x/img/Ten/phone/TENphone-01.jpg');
+                width: 100%;
+                height: 0;
+                padding-bottom: 50.4%;
+                background-size: cover;
+            }
+
+            #Ten2 {
+                background-image: url('../_x/img/Ten/phone/TENphone-02.jpg');
+                width: 100%;
+                height: 0;
+                padding-bottom: 50.4%;
+                background-size: cover;
+            }
+
+            #Ten3 {
+                background-image: url('../_x/img/Ten/phone/TENphone-03.jpg');
+                width: 100%;
+                height: 0;
+                padding-bottom: 50.4%;
+                background-size: cover;
+            }
+
+            #Ten4 {
+                background-image: url('../_x/img/Ten/phone/TENphone-04.jpg');
+                width: 100%;
+                height: 0;
+                padding-bottom: 50.4%;
+                background-size: cover;
+            }
+
+            #Ten5 {
+                background-image: url('../_x/img/Ten/phone/TENphone-05.jpg');
+                width: 100%;
+                height: 0;
+                padding-bottom: 50.4%;
+                background-size: cover;
+            }
+
+            #Ten6 {
+                background-image: url('../_x/img/Ten/phone/TENphone-06.jpg');
+                width: 100%;
+                height: 0;
+                padding-bottom: 50.4%;
+                background-size: cover;
+            }
+
+            #Ten7 {
+                background-image: url('../_x/img/Ten/phone/TENphone-07.jpg');
+                width: 100%;
+                height: 0;
+                padding-bottom: 50.4%;
+                background-size: cover;
+            }
+
+            #Ten8 {
+                background-image: url('../_x/img/Ten/phone/TENphone-08.jpg');
+                width: 100%;
+                height: 0;
+                padding-bottom: 50.4%;
+                background-size: cover;
+            }
+
+            #Ten9 {
+                background-image: url('../_x/img/Ten/phone/TENphone-10.jpg');
+                width: 100%;
+                height: 0;
+                padding-bottom: 50.4%;
+                background-size: cover;
+            }
+
+            #Ten10 {
+                background-image: url('../_x/img/Ten/phone/TENphone-09.jpg');
+                min-height: 180px;
+                width: 100%;
+                height: 0;
+                padding-bottom: 50.4%;
+                background-size: cover;
+            }
+
+            .Ten_tit:hover {
+                cursor: pointer;
+            }
+
+            .infoarea {
+                margin: 3px;
+                width: 280px;
+                padding: 2px;
+                background-color: rgba(255, 255, 255, 0.9);
+                font-size: 14px;
+                border-radius: 10px;
+            }
+        }
+    </style>
+}
+
+@section scripts {
+    <script type="text/javascript">
+        $(function () {
+            $(".Ten_tit").click(function () {
+                var _e = $(this).next();
+                $(_e).toggle("slow");
+            });
+        });
+
+        $(document).ready(function () {
+            $('#selector').change(function () {
+
+                alert($('#selector').val());
+            });
+        });
+
+
+    </script>
+}

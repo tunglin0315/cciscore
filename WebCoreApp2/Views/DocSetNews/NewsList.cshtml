@@ -1,0 +1,28 @@
+﻿@model IEnumerable<News>
+
+<div class="container-fluid mt-2">
+    <div class="bg-primary text-white">
+        <h4>會議活動列表</h4>
+    </div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>圖片</th>
+                <th>標題/超連結</th>
+                <th>活動日期</th>
+                <th>活動狀態</th>
+                <th>主辦單位</th>
+                <th>指導單位</th>
+                <th>排序</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (News b in Model)
+            {
+                @await Html.PartialAsync("_NewsView", b)
+            }
+        </tbody>
+    </table>
+    <a asp-action="Save" class="btn btn-primary">新增</a>
+</div>

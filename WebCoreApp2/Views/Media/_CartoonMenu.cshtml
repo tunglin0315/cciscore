@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Cartoon>
+<link href="~/_x/css/menu.css" rel="stylesheet">
+<nav class="col-md-2">
+    <div class="text-center">
+        <button class="navbar-toggler d-md-none" style="width:100%" type="button" data-toggle="collapse" data-target="#leftmenu" aria-controls="mediamenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only-focusable " style="color:aliceblue"><i style="font-size:20px;">&equiv;</i>&emsp; 宣傳資源子選單</span>
+        </button>
+    </div>
+    <ul class="collapse list-group d-md-block" id="leftmenu">
+        <li class="list-group-item ccis_li_root ">
+            <a href="~/media/carbonTool">碳足跡計算器</a>
+        </li>
+        <li class="list-group-item ccis_li_root ">
+            <a href="~/media/downLoad">檔案下載</a>
+        </li>
+        <li class="list-group-item ccis_li_ch">
+            <ul>
+                <li>
+                    <a href="~/media/downLoad">桌布下載</a>
+                </li>
+                <li>
+                    <a href="~/media/second">秒懂圖</a>
+                </li>
+            </ul>
+        </li>
+        <li class="list-group-item ccis_li_root ">
+            <a href="~/media/movie">相關影音</a>
+        </li>
+        <li class="list-group-item ccis_li_root">
+            <a href="~/media/poster">相關海報</a>
+        </li>
+        <li class="list-group-item ccis_li_ch">
+            <ul>
+                <li>
+                    <a href="~/media/poster2">低碳生活</a>
+                </li>
+                <li>
+                    <a href="~/media/poster3">住商部門</a>
+                </li>
+                <li>
+                    <a href="~/media/poster4">辦公相關</a>
+                </li>
+            </ul>
+        </li>
+        <li class="list-group-item ccis_li_root ">
+            <a href="~/media/cartoon">氣候變遷漫畫</a>
+        </li>
+        <li class="list-group-item ccis_li_ch">
+            <ul>
+                @{
+                    for (int i = 0; i < Model.Count(); i++)
+                    {
+                       if(@Model.ElementAt(i).Title!="氣候變遷漫畫"){
+                    <li>
+                        <a asp-route-id="@(i+1)">@Model.ElementAt(i).Title</a>
+                    </li>
+                        }
+                    }
+                }
+            </ul>
+        </li>
+    </ul>
+</nav>

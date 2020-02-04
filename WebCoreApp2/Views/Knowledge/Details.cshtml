@@ -1,0 +1,84 @@
+﻿@model CCISWebCore.Models.EF.Knowledged
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Knowledge</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CostYear)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CostYear)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PlanName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PlanName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NumberLaw)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumberLaw)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DefiProjectClass)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DefiProjectClass)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ExecutiveUnit)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ExecutiveUnit)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PlanHost)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PlanHost)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectClass)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProjectClass)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.KeywordTw)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.KeywordTw)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SummaryTw)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SummaryTw)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.KeywordEng)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.KeywordEng)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.InfoLink)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.InfoLink)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,34 @@
+﻿@{
+    string name = "電費單說明";
+    @await Html.PartialAsync("_Nav1", name);
+}
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu", name)
+        }
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-10 pt-3 px-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom" id="content">
+                <h2 class="h2">@name</h2>
+            </div>
+            <div class="row exp">
+                <div class="col-lg-6 ">
+                    <img src="~/_x/img/ele1.JPG" alt="電費說明" title="電費說明" />
+                </div>
+                <div class="col-lg-6 ">
+                    <img src="~/_x/img/ele2.JPG" alt="水費說明" title="水費說明" />
+                </div>
+                <div class="col-lg-6 ">
+                    <img src="~/_x/img/ele3.JPG" alt="瓦斯費說明" title="瓦斯費說明" />
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+@section styles {
+    <style>
+        .exp img {
+            width:100%;display:block;            
+        }
+    </style>
+}

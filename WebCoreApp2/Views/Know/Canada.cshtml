@@ -1,0 +1,171 @@
+﻿
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style=" font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png"  alt=""  title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub">氣候變遷知識</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/EachCountry">各國氣候變遷調適</a></li>
+        <li class="breadcrumb-item ">加拿大</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2>
+                    @*@Html.Raw(@ViewBag.Title)*@
+                    加拿大氣候變遷調適策略
+                </h2>
+            </div>
+            @*@Html.Raw(@ViewBag.html)*@
+            <h4>加拿大氣候變遷調適策略背景</h4>
+            <p>
+                加拿大幅員廣大且地方自治成熟。因應氣候變遷方面，雖有聯邦政府制定的法案作為準則，但氣候變遷調適政策因區域差異而各有發展。為整合交流各地的資訊與作法，加拿大在2012年成立了「<a href="https://www.nrcan.gc.ca/climate-change/impacts-adaptations/adapting-our-changing-climate/10027" target="_blank" title="另開視窗">氣候變遷調適平台</a>（Climate Change Adaptation Platform）」，參與成員為聯邦、省、地區政府、業界、社區、學界、原住民、專業人士及非營利組織等代表，就氣候變遷調適優先事項進行資訊分享合作。
+            </p>
+            <h4>氣候變遷對加拿大造成了什麼影響？</h4>
+            <p>
+                氣候變遷對加拿大的影響日益嚴重，最嚴重的報告：
+            </p>
+            <div>
+                <ul >
+                    <li><a href="#frost"data-toggle="collapse" role="button" title="點我看詳細">永凍土（permafrost）</a>融化，對北部地區基礎設施造成影響。</li>
+                    <li id="frost" class="collapse ulstr" style="border-color:#116363; color:coral">當凍土層（frost soil） 處於水的冰點以下超過兩年的狀況</li>
+                    <li>氣溫上升和長期乾旱，使森林更容易受到火災和蟲害影響。</li>
+                    <li>內陸更乾燥、積雪減少、冰川縮小，導致農業、水電設施、航運、市政供水等水資源短缺。</li>
+                    <li>熱浪和霧霾事件發生頻率增加，導致發病率和死亡率升高。</li>
+                    <li>極端天氣事件及自然災害的嚴重性和頻率增加，影響經濟活動、基礎設施、和居民健康。如風暴的數量和強度增加與海平面上升，導致沿岸侵蝕和基礎設施受損，增加了沿海風暴潮的風險。</li>
+                    <li>脆弱物種的棲息地遭破壞，影響當地經濟和社區傳統生活方式。</li>
+                </ul>
+            </div>
+            <h4>氣候變遷調適平台工作小組與策略重點</h4>
+            <table class="table table-striped" >
+                <thead>
+                    <tr>
+                        <th class="text-center">工 作 小 組</th>
+                        <th class="text-center">策 略 重 點</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="align-middle text-center">水與氣候資訊</td>
+                        <td>
+                            <ul>
+                                <li>繪製全國氣候和水服務地圖，評估水和氣候資訊。</li>
+                                <li>調查並建立策略和工具，改善使用者對現有水和氣候資訊的獲取方式。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">農  業</td>
+                        <td>
+                            <ul>
+                                <li>農業相關的共同問題和潛在解決方案。 </li>
+                                <li>使用網絡、共享資訊、加強聯繫等方式，加強與潛在的農業調適合作方案。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">生物多樣性調適</td>
+                        <td>
+                            <ul>
+                                <li>負責評估加拿大氣候變遷生物多樣性的問題，列出可能的調適行動及優先事項。</li>
+                                <li>將生物多樣性保護活動納入調適行動。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">海岸管理</td>
+                        <td>
+                            <ul>
+                                <li>評估氣候變遷對海岸生態系統（和生態系統服務）的影響，以及生態系統在海岸的長期韌性方面發揮的作用。</li>
+                                <li>掌握氣候變遷對海岸地區經濟、人類活動和文化資產的影響。</li>
+                                <li>收集知識、增進居民認知並與利害關係人就氣候變遷對海岸的影響和調適議題進行互動。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">經  濟</td>
+                        <td>
+                            <ul>
+                                <li>評估氣候變遷造成經濟影響的區域和部門，使民眾了解潛在調適措施的相對成本效益。</li>
+                                <li>宣導有利於提高區域、部門或組織的經濟韌性的投資。</li>
+                                <li>與金融部門合作，轉讓調適相關的經濟和金融知識、技術、建設能力。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">能  源</td>
+                        <td>
+                            <ul>
+                                <li>增加再生能源和低碳排的發電量。</li>
+                                <li>連接潔淨能源與需要潔淨電源的區域。</li>
+                                <li>電力系統現代化。</li>
+                                <li>減輕原住民及偏遠社區對柴油的依賴。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">林  業</td>
+                        <td>
+                            <ul>
+                                <li>加強林地與農地的碳匯</li>
+                                <li>使用生物能與生質物生成的燃料</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">科學評估</td>
+                        <td>
+                            <ul>
+                                <li>提供各區域和部門不同觀點。</li>
+                                <li>促進決策者、科學家、產業部門之間的交流，以制定策略，並分享科學評估成果。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+@section styles {
+    <style>
+        /*h4 {
+            font-weight: bold;
+            color: #129696
+        }
+        h4~p{
+            margin-left:45px;
+        }*/
+        /*h5 {
+            font-weight: bold;
+        }*/
+
+        /*.ccis_Detail img {
+            width: 70%;
+         
+            max-width: 945px;
+        }
+
+        .ulstr {
+            list-style-type: none;
+            font-size: 19px;
+        }
+
+            .ulstr_square {
+            list-style-type:square;
+            font-size: 19px;
+            margin-left:45px;
+        }
+        table tr td ul {
+            margin-bottom: 0;
+        }*/
+
+        /*p {
+            padding-left: 3rem;
+        }*/
+    </style>
+}

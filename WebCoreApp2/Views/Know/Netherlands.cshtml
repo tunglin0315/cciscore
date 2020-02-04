@@ -1,0 +1,238 @@
+﻿
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style=" font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png"  alt="首頁圖示"  title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub">氣候變遷知識</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/EachCountry">各國氣候變遷調適</a></li>
+        <li class="breadcrumb-item ">荷蘭</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom">
+                <h2 class="h2">
+                    @*@Html.Raw(@ViewBag.Title)*@
+                    荷蘭氣候變遷調適策略
+                </h2>
+            </div>
+            @*@Html.Raw(@ViewBag.html)*@
+            <h4>荷蘭氣候變遷調適背景</h4>
+            <p>
+                荷蘭氣候變遷調適包括兩部分：國家氣候調適策略（National Climate Adaptation Strategy, NAS）和三角洲計畫（the Delta Program）。NAS是政府的總體調適策略，涵蓋氣候變遷可能的影響。三角洲計畫是政府層級單位密切合作制定的一項計畫，目的解決大部分氣候變遷對荷蘭造成的影響，如：海平面上升、長期強降雨、短期強降雨（暴雨）、乾旱和炎熱。
+            </p>
+            <p>
+                荷蘭的第一國家氣候調適策略NAS於2007年制定；第二國家氣候調適策略於2016年由部長理事會通過。調適策略NAS制定諮詢了各省、區水務局和市政當局、研究機構、私人企業和社會組織，並共同解決氣候調適問題（如圖一所示）。
+            </p>
+
+            <div class="text-center">
+                <img style="width:40%" src="~/_x/img/know/Netherlands3.jpg" alt="共同解決氣候調適問題" title="共同解決氣候調適問題" />
+                <p>圖一、共同解決氣候調適問題</p>
+            </div>
+
+            <p>
+                三角洲計畫建立在「洪水安全和淡水供應的三角洲法案」之法律框架之上，於2010年啟動，2012年1月1日生效。由基礎設施部和水管理部負責，設有專員執行三角洲計畫，每年公布最新版三角洲計畫，作為基礎設施部和水管理部年度預算，送交眾議院。三角洲計畫設立了三個主題（洪水風險管理、淡水供應、和空間調適）和八個區域。荷蘭所有政府層級均承諾將都直接參與並密切合作，包括國家政府、省、區水務局和市政當局。企業、安全區域（Security Region，警察、消防隊、醫療援助和地方政府聯手，有效地應對在重大事故或災難發生時，當地能力不足的情況）、研究機構、非政府組織也參與其中，並提供建議。
+
+
+            </p>
+            <div class="text-center">
+                <img src="~/_x/img/know/Netherlands4.jpg" alt="荷蘭十年來氣候變遷調適政策" title="荷蘭十年來氣候變遷調適政策" />
+                <p>圖二、荷蘭十年來氣候變遷調適政策</p>
+            </div>
+
+            <h4>調適行動政策</h4>
+            @*<p>
+                2018年荷蘭部長理事會通過了「國家調適策略2018–2019實施計畫」，重點是提高公民對氣候變遷的意識，確立了六個優先事項：熱壓力Heat stress、基礎設施Infrastructure、農業Agriculture、自然Nature、建築環境Built environment、合作制定省級和區域策略和願景Collaborating on provincial and regional strategies and visions，具體規劃進度如圖三所示。
+            </p>*@
+
+            <p>
+                2018年荷蘭部長理事會通過了「國家調適策略2018–2019實施計畫」，重點是提高公民對氣候變遷的意識，確立了六個優先事項：熱壓力Heat stress、基礎設施Infrastructure、農業Agriculture、自然Nature、建築環境Built environment、合作制定省級和區域策略和願景Collaborating on provincial and regional strategies and visions。
+            </p>
+
+            @*<div class="text-center">
+            <img src="~/_x/img/know/Netherlands1.png" alt="空間調適三角洲規劃進度設定" title="空間調適三角洲規劃進度設定" />
+        </div>
+        <p class="text-center">圖三、空間調適三角洲規劃進度</p>*@
+            <p>
+                空間調適三角洲規劃包含使荷蘭具有抵抗氣候（climate proof）和水韌性的措施。主要有七個野心：找出弱點、進行風險對話和策略制定、制定實施議程、利用聯繫機會、鼓勵和促進、調節和嵌入、因應災難。
+            </p>
+            @*<div class="text-center">
+            <img src="~/_x/img/know/Netherlands2.png" alt="空間調適三角洲規劃的七個野心" title="空間調適三角洲規劃的七個野心" />
+        </div>
+        <p class="text-center">圖四、空間調適三角洲規劃的七個野心</p>*@
+            <h5>一、策略實施方法</h5>
+            <p>國家氣候調適策略NAS 2018–2019的執行計畫為領導性策略，未具體說明應採取之行動，也無規定預算分配，因此每年更新的三角洲計畫包含三個行動規劃（洪水風險管理、淡水供應、空間調適），並規定措施執行對象及預算分配。</p>
+            <h5>二、監測、報告、評估</h5>
+            <p>三角洲計畫監測、報告、評估三角洲決策和三個最適策略和行動。「三角洲法案」（2012年）於2016年進行了獨立評估，預計將於2020年公佈對五項三角洲決策和最適策略（2014年）的評估。</p>
+            <h5>三、時程表和計劃審查/修訂</h5>
+            <p>2016年國家氣候調適策略（NAS）沒有具體提及何時審查或更新。在NAS2018–2019實施計畫中提到，將在2019年底對NAS的執行情況進行評估、審查，評估是否需要調整其行動和野心，並就可能的後續執行方案作出決定。</p>
+            <p>
+                三角洲計畫每年都會被審核、修訂、更新並<a href="https://english.deltacommissaris.nl/documents/publications/2018/09/18/dp2019-en-printversie" target="_blank" title="另開視窗">發布</a>
+                最新版本。最近一次發佈在2018年9月，其中包含五項三角洲決策：洪水風險管理、淡水策略、空間適應、IJsselmeer region及Rhine-Maas delta水資源管理，下次公布時間預計在2021年中。
+            </p>
+
+            <h4>荷蘭氣候變遷造成的影響</h4>
+            <table class="table table-striped" style="font-size:19px;">
+                <thead>
+                    <tr>
+                        <th class="text-center">項 目</th>
+                        <th class="text-center">氣 候 造 成 的 影 響</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="align-middle text-center">水及空間管理</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    累積效應：
+                                </li>
+                                <li style="list-style-type:none;">
+                                    <ol>
+                                        <li>一個部門或地點中斷或故障，導致其他地方進一步故障或中斷。                               </li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">自然環境</td>
+                        <td>
+                            <ul>
+                                <li>動植物構成的變化：</li>
+                                <li style="list-style-type:none;">
+                                    <ol>
+                                        <li>本地物種將消失，而新物種將自我建立</li>
+                                        <li>一些新物種可能對經濟活動、人類健康或生物多樣性構成威脅 </li>
+                                        <li>海平面上升將使河口（三角洲）區域的現有性質承受壓力；棲息地將被侵蝕或完全消失</li>
+                                        @*<li><img  style="width:40%" src="~/_x/img/know/Netherlands5.jpg"/></li>*@
+                                    </ol>
+                                </li>
+                            </ul>
+                        </td>
+                        @*<td>
+                        <img style="width:100%" src="~/_x/img/know/Netherlands5.jpg" />
+                    </td>*@
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">農業、園藝、漁業</td>
+                        <td>
+                            <ul>
+                                <li>極端天氣對作物或生產資源造成更頻繁損害：</li>
+                                <li style="list-style-type:none;">
+                                    <ol>
+                                        <li>雨水、風暴、冰凍或土壤飽和，造成作物產量和品質下降</li>
+                                        <li>冰凍、風暴或雷擊損壞玻璃屋和建築物等生產資源</li>
+                                        <li>長期乾旱和缺乏適當灌溉，作物產量和品質下降</li>
+                                        <li>天氣條件越極端，預測和採取預防措施就越困難</li>
+                                        @* <li><img  style="width:40%" src="~/_x/img/know/Netherlands5.jpg"/></li>*@
+                                    </ol>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">健康與衛生</td>
+                        <td>
+                            <ul>
+                                <li> 極端天氣造成熱壓力問題增加： </li>
+                                <li style="list-style-type:none">
+                                    <ol>
+                                        <li>發病率和死亡率增加，住院人數增加，生產力下降 </li>
+                                        <li>皮膚癌發病率增加</li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    過敏和傳染病的發病機率增加，增加健康負擔、生產力下降和成本上升：
+                                </li>
+                                <li style="list-style-type:none">
+                                    <ol>
+                                        <li>過敏（如花粉熱和其他呼吸系統疾病）的患病率可能增加</li>
+                                        <li>水上娛樂活動的增加和水質惡化，可能增加水源性病原體的接觸機會</li>
+                                        <li>病媒傳播傳染病可能增加</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">基礎建設(空中、道路、鐵路、水路)</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    極端天氣造成重要和易受攻擊的機能更頻繁失效：
+                                </li>
+                                <li style="list-style-type:none">
+                                    <ol>
+                                        <li>運輸：主要基礎設施 </li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">能源、資訊與通訊</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    極端天氣造成重要和易受攻擊的機能更頻繁失效：
+                                </li>
+                                <li style="list-style-type:none">
+                                    <ol>
+                                        <li>能源、電信、資訊技術和供水系統    </li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+@section styles {
+    <style>
+        h4 {
+            font-weight: bold;
+            color: #129696;
+        }
+
+            h4 ~ p {
+                margin-left: 45px;
+            }
+
+        h5 {
+            font-weight: bold;
+            margin-left: 45px;
+        }
+
+        .ccis_Detail img {
+            width: 70%;
+            border-radius: 5px;
+            max-width: 945px;
+        }
+
+
+
+        .ulstr {
+            list-style-type: none;
+            font-size: 19px;
+        }
+
+        img + p {
+            font-size: 19px;
+        }
+
+        table tr td ul {
+            margin-bottom: 0;
+        }
+        /*p {
+            padding-left: 3rem;
+        }*/
+    </style>
+}

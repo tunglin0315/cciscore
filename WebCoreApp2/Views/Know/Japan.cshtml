@@ -1,0 +1,197 @@
+﻿
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style=" font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png"  alt="首頁圖示"  title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub">氣候變遷知識</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/EachCountry">各國氣候變遷調適</a></li>
+        <li class="breadcrumb-item ">日本</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row" id="flow">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom">
+                <h2 class="h2">
+                    @*@Html.Raw(@ViewBag.Title)*@
+                    日本氣候變遷調適策略
+                </h2>
+            </div>
+            @*@Html.Raw(@ViewBag.html)*@
+            <h4>日本氣候變遷調適背景</h4>
+            <p>
+                日本於2016年啟動氣候變遷的調適資訊平台（<a href="http://www.adaptation-platform.nies.go.jp/" target="_blank" title="另開視窗">A-PLAT</a>），由國家環境研究所營運，收集各種氣候變遷影響資訊，以易於理解的方式提供資訊，促進國家、地方政府、私營企業和公民對氣候變遷的瞭解。
+            </p>
+            <p>截至2017年，日本的二氧化碳排放量仍位居世界第五，約佔全球排放量的3％。在其他國家二氧化碳排放量的增加的情況下，雖然日本的排放量逐年減少，但與其他190個國家相比，日本仍是主要的碳排放國，儘管與二氧化碳排放量世界第一和第二名的中國、美國相比，日本的排放量很小。</p>
+            <p>
+                20世紀末到21世紀初，日本二氧化碳排放趨勢一直在上下波動，尚未完全轉變為下降趨勢。2008–2012年是<a href="https://www.mofa.gov.tw/igo/cp.aspx?n=CC8DB086CB67B600" target="_blank" title="另開視窗">京都議定書</a>的第一個承諾期，日本承諾「與1990年相比減少6％」的目標已經實現。日本在2010年舉行的<a href="https://unfccc.int/" target="_blank" title="另開視窗">UNFCCC</a>締約方大會（<a href="https://unfccc.int/process-and-meetings/conferences/past-conferences/cancun-climate-change-conference-november-2010/cop-16" target="_blank" title="另開視窗">COP16</a>）通過的<a href="https://unfccc.int/process/conferences/pastconferences/cancun-climate-change-conference-november-2010/statements-and-resources/Agreements" target="_blank" title="另開視窗">坎昆協議</a>
+                中自願承諾「2020年減少3.8％或更多的碳排量」，及<a href="https://www.mofa.gov.tw/igo/cp.aspx?n=5BCEFD9636EDFFE4" target="_blank" title="另開視窗">巴黎協定</a>承諾「於2030年減少<a href="http://www.stanleyfoundation.org/climatechange/Kameyama-RecentDevClimateChangePolicy-Japan.pdf" target="_blank" title="另開視窗">2013年26％的二氧化碳排放量</a>」，然而，國際上普遍認為日本2020和2030年要減少的碳排量目標不夠嚴格，應將其視為達標的最低水平。
+            </p>
+            <h4>日本因應氣候變遷所制定的政策</h4>
+            <p>
+                日本提供COP16設立的<a href="https://unfccc.int/process/bodies/funds-and-financial-entities/green-climate-fund" target="_blank" title="另開視窗">綠色氣候基金</a>15億美元，以資助開發中國家採取氣候變遷調適措施。除了促進經濟援助之外，日本還提供先進環境技術、經驗和專業知識，藉由領導創新技術和促進全球低碳技術，為全球溫室氣體減量做貢獻。日本在2013年11月發表了<a target="_blank" title="另開視窗" href="https://www.mofa.go.jp/files/000019537.pdf"> Action for Cool Earth（ACE）</a>，介紹日本為幫助開發中國家減低碳排量的各種努力，其中包括<a data-toggle="collapse" href="#jcm" role="button" title="點我看詳細">聯合信貸機制</a>（Joint Crediting Mechanism, JCM）。
+            </p>
+
+            <div class="collapse mb-3" id="jcm">
+                <div class="card card-body" style="border:3px solid #116363">
+                    <h4>聯合信貸機制（Joint Crediting Mechanism, JCM）</h4>
+                    <p class="pl-5" style="font-size:19px;text-indent:2em;">
+                        日本為將其先進的低碳技術推廣到開發中國家，成立了<a href="https://www.mofa.go.jp/ic/ch/page1we_000105.html" target="_blank" title="另開視窗">聯合信貸機制</a>（JCM）。日本以信貸方式輸出低碳技術，幫助開發中國家減碳，日本獲得的資金則用於開發更先進的減碳技術。此機制有助於發展減碳技術，同時也促進了全球溫室氣體的減排。截至2015年2月日本政府已和蒙古、孟加拉、
+                        衣索比亞、肯亞、馬爾地夫、越南、遼國、印尼、哥斯大黎加、帛琉、柬埔寨和墨西哥等12個國家簽署了JCM的雙邊文件。2014年10月，印尼和日本聯合委員會登記了<a href="https://www.ebara.co.jp/en/" target="_blank" title="另開視窗">Ebara</a>製冷設備和系統公司提出的第一個JCM專案「<a href="https://www.ebara.co.jp/en/about/corporate/news_media/news/details/1197043_2936.html" target="_blank" title="另開視窗">
+                            紡織廠空調和工藝冷卻的節能技術
+                        </a>」。
+                    </p>
+
+                </div>
+            </div>
+            <div class="text-center">
+                <img src="~/_x/img/know/japan01.jpg" alt="邁向100%自然能源" title="邁向100%自然能源" />
+            </div>
+            <h4>調適行動策略</h4>
+            <p>
+                為了盡量減低或避免氣候變遷造成的損害，並能迅速從這些影響中恢復，建立安全、可靠和永續特質的社會，日本的國家調適計畫確立以下基本策略。
+            </p>
+            <p>
+                一、為因應當前和未來氣候變遷影響，政府藉由執行政策與措施，將不確定性列入考量、開發並推廣技術、製造協同效應及共同利益，建立國家的韌性。政府部門及機構實施的相關政策包括：
+            </p>
+            <ul class="ulstr">
+                <li>
+                    <ul class="ulstr">
+                        <li>
+                            <ul class="ulstr">
+                                <li>（一） 培養韌性並提高調適能力</li>
+                                <li>（二） 因應不確定性的氣候風險</li>
+                                <li>（三） 促進調適措施</li>
+                                <li>（四） 研究、開發和推廣調適技術</li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+            <p>二、不斷觀察、監測、預測、評估、並促進增加科學研究。</p>
+            <p>三、協助民眾獲得正確且易於理解的氣候風險資訊。</p>
+            <p>四、與地方政府合作進行氣候變遷影響評估，制定調適計畫並增進各地區對氣候變遷的認識，促進區域調適工作。</p>
+            <p>五、促進與開發中國家的國際合作，促進他們對調適的貢獻。協助開發中國家制定調適計畫（包括減少災害風險領域）並執行相關措施。這樣的合作關係同時能增進日本人力資源發展和科學技術的應用。</p>
+            <div class="text-center">
+                <img src="~/_x/img/know/japan02.jpg" alt="因應氣候變遷的兩項基本措施" title="因應氣候變遷的兩項基本措施" />
+            </div>
+            <h4>調適策略項目</h4>
+            <table class="table table-striped" style="font-size:19px;">
+                <thead>
+                    <tr>
+                        <th class="text-center">項 目</th>
+                        <th class="text-center">策 略 重 點</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="align-middle text-center">農、林、漁業</td>
+                        <td>
+                            <ul>
+                                <li>稻米：開發和播種耐高溫品種。</li>
+                                <li>果樹：引進優質品種，並開發栽培管理技術。</li>
+                                <li>植物病蟲害：執行有害生物預報計畫，並通報損害狀況。</li>
+                                <li>山區災害：加強森林保護設施和森林管理。準確識別山區災害高風險區域。修建防侵蝕設施，控制土石流和泥沙徑流。</li>
+                                <li>海洋漁業：提高漁場預測精度並提供即時監測資訊。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">水環境及水資源</td>
+                        <td>
+                            <ul>
+                                <li>山區災害：促進森林保護設施和森林管理。準確識別山區災害高風險區域。修建防侵蝕設施，控制土石流和泥沙徑流。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">自然生態系統</td>
+                        <td>
+                            <ul>
+                                <li>實施瀕危物種優先監測和生態系統的脆弱性評估</li>
+                                <li>建立生態網絡物種轉移並促進生物多樣性</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">自然災害與沿海地區</td>
+                        <td>
+                            <ul>
+                                <li>水災：加強堤防、防洪結構和污水處理等設施，並進行維護和升級。</li>
+                                <li>改進設施的運營、設計、維護和保養程序來降低風險；促進城市和地方發展，減低災害風險；加強疏散、緊急行動和商業活動連續性的準備。</li>
+                                <li>風暴潮、高浪：在港口實施適調適措施，以防止風暴潮對防波堤、港口功能、水邊區域、陸側區域和橋樑下間隙造成影響。在沿海地區，促進災害風險評估和調適措施，以因應超過銀行保護標準的災害風險和自然災害。</li>
+                                <li>沈積物相關的災害：劃定泥沙災害區，公佈基線調查結果，並儘早向居民通報沉積物災害風險。制定防災行動計畫，加強預警和疏散系統。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">人類健康</td>
+                        <td>
+                            <ul>
+                                <li>及時提供氣象資訊和預警，提高熱急症防治意識。加強熱急症相關因應措施，包括通報、教育、醫療保健，並宣導關於勞工、農、林、漁業與日常生活的注意事項。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">工業與經濟活動</td>
+                        <td>
+                            <ul>
+                                <li>自然災害數量不斷增加，保險和再保險費用增加，改善保險公司和日本綜合保險協會風險管理。</li>
+                                <li>氣溫升高和海平面上升導致沙灘侵蝕，預計積雪覆蓋深度減少，地方政府應根據當地特點和便利措施，加強冬季和沿海旅遊的調適規劃。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">公民生活與城市生活</td>
+                        <td>
+                            <ul>
+                                <li>城市基礎建設與關鍵服務：促進物流系統、港口、鐵路、機場、道路、供水基礎設施、廢水處理設施和交通安全設施的調適措施。建構相關機制，以防止地下車站被淹沒；為港口制定業務連續性計畫，並改進廢水處理設施，以增強抵禦自然災害的韌性。</li>
+                                <li>熱島效應：城市熱島效應和氣候變遷將進一步升高城市的氣溫。藉由綠化和利用地表水資源、減少人為排熱，改善地表綠覆蓋和城市設計。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+@section styles {
+    <style>
+        h4 {
+            font-weight: bold;
+            color: #129696
+        }
+        h4~p{
+            margin-left:45px;
+        }
+        /*h5 {
+            font-weight: bold;
+        }*/
+
+        .ccis_Detail img {
+            width: 70%;
+            border-radius: 5px;
+            max-width: 945px;
+        }
+
+        .ulstr {
+            list-style-type: none;
+            font-size: 19px;
+        }
+
+        table tr td ul {
+            margin-bottom: 0;
+        }
+
+        /*p {
+            padding-left: 3rem;
+        }*/
+    </style>
+
+}
+
+

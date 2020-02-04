@@ -1,0 +1,393 @@
+﻿<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139245946-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-139245946-1');
+    </script>
+    <!--google  站內搜尋-->
+    <script>
+        (function () {
+            var cx = '005467454510684767665:0g3pqosnh8q';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/x-icon" href="~/_x/img/favicon.ico">
+
+    <title> 氣候變遷生活網 @ViewData["title"]</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="~/_x/jquery-countdown-master/css/media.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template -->
+    <link href="~/_x/css/carousel.css" rel="stylesheet">
+    <link href="~/_x/css/theme.css" rel="stylesheet">
+
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    @*<script src="~/lib/twitter-bootstrap/js/bootstrap.min.js"></script>*@
+    <script src="~/lib/twitter-bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/holder/holder.min.js"></script>
+
+    @*<link href="~/_x/css/style.css" rel="stylesheet">*@
+    @RenderSection("styles", required: false)
+
+    <style>
+       .carousel-control-next:focus{
+         border:dashed 2px #f6b60b;
+        }
+        .carousel-control-prev:focus{
+          border:dashed 2px #f6b60b;
+        }
+         .btn:focus{
+        border:dashed 2px #f6b60b;
+    }
+        #Searchtxt:focus{
+          outline:dashed 2px #f6b60b;
+        }
+        a:focus {
+        outline:2px dashed #f89a57;
+    }
+
+        @@media (min-width: 1200px){
+            #navbarCollapse {
+                display: none !important;
+            }
+
+            #CCISheader{
+                background-image:url('@Url.Content("~/_x/img/logo_bg1.png")');
+                background-position: 451px bottom;
+                background-size: 100% 122px;
+                background-repeat: no-repeat;
+                height: 126px;
+            }
+        }
+
+             @@media (max-width: 1283px){
+                .navbar-expand-xl .navbar-nav .nav-link {
+                 padding-right:0;
+                 padding-left:0;
+                }
+        }
+
+        #CCISheader {
+
+            padding: 0;
+            border-bottom: 4px solid #9dc527;
+            /*background-color:aqua;
+            height:200px;*/
+            background-color:#fff  !important;;
+        }
+
+        #navbarCollapse{
+              background-color: white;
+              border-bottom: 4px solid #9dc527;
+        padding-bottom: 5px;
+        }
+
+        .nav-item a {
+            color:gray;
+        }
+
+        .navbar-text a, .navbar-text svg {
+            color: #6ac610;
+        }
+
+        /*.logo_img {
+            position:absolute;
+            left:0;
+            top:0;
+        }*/
+
+        .input-validation-error { border-color: red; background-color: #fee ; }
+
+
+
+       .gsc-adBlock {
+        display: none !important;
+       }
+
+           .dropdown-submenu {
+        position: relative;
+    }
+
+        .dropdown-submenu a::after {
+            transform: rotate(-90deg);
+            position: absolute;
+            right: 6px;
+            top: .8em;
+        }
+
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-left: .1rem;
+            margin-right: .1rem;
+        }
+         .sidecolor {
+            background-color: lightblue;
+            border-radius:5px;
+            border: 1px lightblue ;
+            overflow: hidden;
+        }
+          #myBtn:focus {
+            border:dashed 4px #f6b60b;
+        }
+        h1:focus{
+       outline: -webkit-focus-ring-color auto 1px;
+        }
+
+
+    </style>
+    <noscript>
+        <style type="text/css">
+            .inner {
+                display: none;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body>
+
+
+    <a href="#content" title="跳到主要內容" tabindex="1" class="sr-only sr-only-focusable">跳到主要內容</a>
+    <nav id="CCISheader" class="navbar navbar-expand-xl">
+        @*桌機版*@
+        <h1 class="mb-0 d-none d-xl-block">
+            <a href="/" title="氣候變遷生活網：回首頁" style="display:block;">
+                <img alt="氣候變遷生活網logo：回首頁" src="~/_x/img/logo1.png"><strong style="display: none;">氣候變遷生活網</strong>
+            </a>
+        </h1>
+        @*<h1 id="h1title" class="mb-0 d-none d-xl-block"><a href="~/home/index" title="氣候變遷生活網"><img id="titleimg" class="d-none d-xl-block" src="~/_x/img/logo1.png" alt="氣候變遷生活網logo" /><strong style="display:none;">氣候變遷生活網logo</strong></a></h1>*@
+        <div class="d-none d-xl-block ml-auto">
+
+            <div class="d-none d-xl-block d-xl-flex flex-xl-row flex-xl-wrap justify-content-xl-end mr-xl-3">
+                <a accesskey="U" href="#U" title="上方導覽連結區" id="AU" class="pt-3 mx-2">:::</a>
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <form class="form-inline" asp-controller="usersignin" asp-action="Logout" method="post" id="logoutForm">
+                        <div class="input-group input-group-sm mb-3  my-2 my-sm-0 text-white">
+
+                            <a class="text-white my-auto mr-2" href="~/admin/index">Hi @UserManager.GetUserName(User)!</a>
+                            <span class="my-auto">｜</span>
+                            <button type="submit" class="btn text-white btn-link">登 出</button>
+                        </div>
+                    </form>
+                }
+                //else
+                @*{
+                        <a href="~/usersignin/TobeSignIn" title="網站登入" class="text-white my-auto mr-2">
+                            登入
+                        </a>
+                    }*@
+                <a class="my-auto mr-1" style="color:aliceblue; font-family:'Microsoft JhengHei UI';" href="https://www.epa.gov.tw/" title="另開新視窗(環保署網站)" target="_blank">環保署網站</a>
+                <a class="my-auto mr-1 inner" href="javascript: void(window.open('https://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)),'fbwin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0' ));"><img class="d-none d-xl-block" src="~/_x/img/iconfb.png" alt="臉書分享" title="臉書分享(另開視窗)" /></a>
+                <a class="my-auto mr-1 inner" href="javascript: void(window.open('https://line.me/R/msg/text/?','linewin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'));"><img class="d-none d-xl-block" src="~/_x/img/iconline.png" alt="Line分享" title="Line分享(另開視窗)" /></a>
+                <a class="my-auto notprint mr-1 inner" href="#" onclick="window.print();"><img class="d-none d-xl-block" src="~/_x/img/iconpr.png" alt="列印" title="列印(另開視窗)" /></a>
+                <a class="my-auto mr-1 inner" href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href)),'twitterwin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'));"><img class="d-none d-xl-block" src="~/_x/img/icontt.png" alt="推特分享" title="推特分享(另開視窗)" /></a>
+                <a class="my-auto mr-1 inner" href="~/Guide/Guide" title="網站導覽"><img src="~/_x/img/gui.png" alt="網站導覽" title="網站導覽" /> </a>
+                  <div class="form-inline inner">
+                    <div class="input-group input-group-sm mb-3  my-2 my-sm-0">
+                        <label for="Searchtxt" style="display:none">網站搜尋</label>
+                        <input accesskey="S" name="S" id="Searchtxt" onkeypress="ToSearch_btn();" type="text" class="form-control" placeholder="關鍵字搜尋" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <a class="btn btn-info" onclick="ToSearch();" style="color:aliceblue">搜尋</a>
+                        </div>
+                    </div>
+                </div>
+                <noscript style="background-color:#ffb; border:dashed 1px #db0; padding:0.5em">
+                    您的瀏覽器不支援 JavaScript，若網頁功能無法正常使用請開啟JavaScript
+                </noscript>
+            </div>
+            <div class=" d-xl-flex flex-xl-row flex-xl-wrap mt-4 mr-5 justify-content-xl-end">
+                <partial name="_TopMenu1" />
+            </div>
+        </div>
+        @*手機版*@
+        <div class="d-xl-none"><a href="~/home/index"><img class="navbar-brand mr-md-3" alt="此為氣候變遷資訊生活網logo" style="padding: 0px; margin-right: 0px" src="~/_x/img/logo320x80.png"></a></div>
+        <button class="navbar-toggler px-2" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <!--<span class="navbar-toggler-icon"></span>-->
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="d-xl-none collapse navbar-collapse mt15 p-3" id="navbarCollapse">
+            <partial name="_TopMenu1" />
+            <span class="navbar-text mr-sm-3">
+                <a class="my-auto mr-1" style="font-family:'Microsoft JhengHei UI';" href="https://www.epa.gov.tw/" title="另開新視窗(環保署網站)" target="_blank">環保署網站</a>
+                <a class="my-auto mr-1" href="javascript: void(window.open('https://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)),'fbwin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0' ));"><img src="~/_x/img/iconfb.png" alt="臉書分享" title="臉書分享(另開視窗)" /></a>
+                <a class="my-auto mr-1" href="javascript: void(window.open('https://line.me/R/msg/text/?','linewin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'));"><img src="~/_x/img/iconline.png" alt="Line分享" title="Line分享(另開視窗)" /></a>
+                <a class="my-auto notprint mr-1" href="#" onclick="pagesetup_null(); self.print();"><img src="~/_x/img/iconpr.png" alt="列印" title="列印(另開視窗)" /></a>
+                <a class="my-auto mr-1" href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href)),'twitterwin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'));"><img src="~/_x/img/icontt.png" alt="推特分享" title="推特分享(另開視窗)" /></a>
+                <a href="~/Guide/Guide" title="網站導覽"><img src="~/_x/img/gui.png" alt="網站導覽" /></a>
+                @*<a href="#" title="英文版">
+                        EN
+                    </a>
+                    <a href="#" title="兒童版" class="ml-sm-2">
+                        <svg height="22" viewBox="0 0 16 16" version="1.1" width="22" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z"></path>
+                        </svg>
+                    </a>*@
+            </span>
+            <div class="form-inline mt-2 mt-md-0">
+                <div class="input-group input-group-sm mb-3  my-2 my-sm-0">
+                    <label for="Searchtxt_moble" style="display:none">網站搜尋</label>
+                    <input id="Searchtxt_moble" onkeypress="ToSearch_btn();" type="text" class="form-control" placeholder="關鍵字搜尋" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <a class="btn btn-info" onclick="ToSearch();">搜尋</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main role="main">
+        @if (TempData["message"] != null)
+        {
+            <div class="alert alert-success">@TempData["message"]</div>
+        }
+        <a accesskey="M" href="#M" title="主要內容區" id="AMM" name="M" style="position: absolute">:::</a>
+        @RenderBody()
+        <img id="Foot_AGif" src="~/10768/images/header.gif" alt="" width="100%" />
+        <!-- FOOTER -->
+        <footer style=" background-color:black">
+            <section class="copyright">
+                <div class="container">
+                    <div class="row pt-5 pb-5">
+                        <div class="col-sm-4">
+                            <div class="CContent">
+                                <a accesskey="Z" href="#Z" title="下方內容區" id="AZ">:::</a>
+                                <h3 class="font-alt" style="display:inline-block">版權所有</h3>
+                                <address>
+                                    <strong>行政院環境保護署</strong>
+                                    <br>
+                                    10042臺北市中正區中華路一段83號<br>
+                                    聯絡電話：(02)2311-7722<br>
+                                    <a href="https://www.epa.gov.tw/Page/41156C14CC997554" target="_blank" title="隱私權保護政策 另開新視窗">隱私權保護政策</a>｜<a href="https://www.epa.gov.tw/Page/93E745565929795D" target="_blank" title="網站安全政策 另開新視窗">網站安全政策</a>
+                                    <br><a href="https://www.epa.gov.tw/Page/981903047CA6500B" target="_blank" title="資訊安全管理規範 檔案下載(另開新視窗) 檔案類型：PDF">資訊安全規範</a>｜<a href="https://www.epa.gov.tw/Page/A33D3A6556ABFCD2" target="_blank" title="網站資料開放宣告 另開新視窗">網站資料開放宣告</a>
+                                    <br><a href="https://epamail.epa.gov.tw/front/mailboxhome" target="_blank" title="意見信箱 另開新視窗">意見信箱</a>
+                                </address>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="CContent">
+                                <h3 class="font-alt">網站維護</h3>
+                                <address>
+                                    <strong>環資國際有限公司</strong><br>
+                                    108台北市萬華區中華路一段90號7樓<br>
+                                    聯絡電話：(02)6630-9988<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(02)6630-8000#237
+                                    <div class="mt5">
+                                        <a href="~/home/Contact/" id="ctl00_A1" title="聯絡我們">聯絡我們</a>
+                                    </div>
+                                </address>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="CContent">
+                                <h3 class="font-alt">關於本站</h3>
+                                <div>
+                                    <address>
+                                        @*<strong>總瀏覽人數：</strong><span id="total"></span><br />
+                                            <strong>今日瀏覽：</strong><span id="today"></span><br />*@
+                                        <strong>網頁更新日期：</strong>@DateTime.Now.AddDays(-1).ToShortDateString()
+                                    </address>
+                                    <a href="https://www.handicap-free.nat.gov.tw/Applications/Detail?category=20191029124849" title="無障礙網站">
+                                        <img src="~/_x/img/a.png" border="0" width="88" height="31" alt="通過A檢測等級無障礙網頁檢測" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </main>
+
+    <button onclick="topFunction()" id="myBtn" title="回到頂部">回到頂部</button>
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+
+        }
+         // Top 鍵 回畫面最上方
+        function topFunction() {
+            $('html,body').animate({ scrollTop: 0 });
+            //document.body.scrollTop = 0;
+            //document.documentElement.scrollTop = 0;
+        }
+
+        // 站內搜尋
+        function ToSearch_btn() {
+            $(document).keypress(function (e) {
+                var KeyCode = (e.keyCode ? e.keyCode : e.which);
+                if (KeyCode == 13)
+                {
+                 document.location.href = '@Url.Content("~/home/Search?q=")' + $('#Searchtxt').val();
+                }
+            })
+        }
+
+        function ToSearch()
+        {
+            document.location.href = '@Url.Content("~/home/Search?q=")' + $('#Searchtxt').val();
+        }
+
+        //_topMenu選單 效果
+           $('.dropdown-menu a.dropdown-toggle').click(function (e) {
+               if (!$(this).next().hasClass('show')) {
+                   $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+            }
+            var $subMenu = $(this).next(".dropdown-menu");
+            $subMenu.toggleClass('show');
+
+            $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+                $('.dropdown-submenu .show').removeClass("show");
+            });
+              return false;
+            });
+
+        //左側選單 浮動效果
+       $(function () {
+           $(window).scroll(function () {
+               if ($(this).scrollTop() > 95) {          /* 要滑動到選單的距離 */
+                   $('#leftmenu').addClass('navFixed');   /* 幫選單加上固定效果 */
+               } else {
+                  $('#leftmenu').removeClass('navFixed'); /* 移除選單固定效果 */
+               }
+          });
+
+       });
+        //左側選單 選定頁面後 顯示對比色
+        $(function () {
+            var CurrentPageName = window.location.pathname.toLowerCase();
+           $('#leftmenu ul li a[href="' + CurrentPageName + '"]').parent().addClass('sidecolor')
+        });
+
+
+    </script>
+
+</body>
+</html>

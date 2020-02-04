@@ -1,0 +1,187 @@
+﻿
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style=" font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png"  alt=""  title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub">氣候變遷知識</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/EachCountry">各國氣候變遷調適</a></li>
+        <li class="breadcrumb-item ">美國</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+            <div class="pb-2 mb-3 border-bottom" id="content">
+                <h2 >
+                    @*@Html.Raw(@ViewBag.Title)*@
+                    美國氣候變遷調適策略
+                </h2>
+            </div>
+            @*@Html.Raw(@ViewBag.html)*@
+            <h4>美國氣候變遷調適背景</h4>
+            <p>
+                美國在2017年退出巴黎協定，但美國幅員廣大，各州行政獨立，分別實施因地制宜的調適策略，在美國退出巴黎協定之前，聯邦政府機構透過以下方式促進氣候調適：
+            </p>
+            <div >
+                <ul >
+                    <li>促進公共資源管理與維護聯邦設施的服務和營運。</li>
+                    <li>提供與支持調適行動對應的資訊與財政。</li>
+                    <li>宣傳模範作法，並建立資訊交流中心分享數據、資源與經驗。</li>
+                    <li>預測並處理跨地緣影響，協助因應災害的監管框架。</li>
+                    <li>增強公眾意識。</li>
+                </ul>
+            </div>
+            <p>此外，聯邦政府也建立了相關氣候變遷調適倡議及策略，例如：</p>
+            <div>
+                <ul >
+                    <li>2013年6月Obama總統因應氣候變遷的影響發佈<a href="https://obamawhitehouse.archives.gov/sites/default/files/image/president27sclimateactionplan.pdf" target="_blank" title="另開視窗">氣候行動計畫</a>，內容包括建設更安全的社區及基礎設施、保護經濟與自然資源及利用科學管理氣候風險。</li>
+                    <li>建立<a href="https://obamawhitehouse.archives.gov/the-press-office/2013/11/01/executive-order-preparing-united-states-impacts-climate-change" target="_blank" title="另開視窗">跨部門</a>氣候變遷調適工作小組，並制定國家調適指導原則。</li>
+                    <li>制定跨區域的國家調適策略，重點整合聯邦、州、地方、部落的調適：(1) <a href="https://www.epa.gov/sites/production/files/2016-12/documents/2011_national_action_plan_1.pdf" target="_blank" title="另開視窗">國家行動計畫</a>：管理淡水資源使用的優先順序。(2)國家魚類、野生動植物氣候調適策略。(3) <a href="https://obamawhitehouse.archives.gov/administration/eop/oceans/policy" target="_blank" title="另開視窗">國家海洋政策執行計畫</a>。</li>
+                    <li>建立十年「<a href="https://downloads.globalchange.gov/strategic-plan/2012/usgcrp-strategic-plan-2012.pdf" target="_blank" title="另開視窗">國家全球變遷研究計畫</a>（2012-2021）」，涵蓋氣候調適相關方法，如：改進基礎科學、評估方法、公眾教育等。</li>
+                </ul>
+            </div>
+            <h4>州政府氣候變遷調適策略</h4>
+            <p>州政府可以製定對應的政策和計畫，以鼓勵或阻止其他層級（郡或地區）的適應規劃。除調適計畫外，許多州還制定了長期氣候變遷的具體計畫。例如，至少有16州為氣候的長期變化制定了生物多樣性保護計畫。如：</p>
+            <div>
+                <ul >
+                    <li><a href="https://www.ucchm.org/droughtresponse" target="_blank" title="另開視窗">加州</a>建立標準，規定節約能源與節約水資源的效率、推動調適和減緩措施，並要求人均用水量減少20%。</li>
+                    <li>蒙大拿州建立維護全州範圍的<a href="https://climate.umt.edu" target="_blank" title="另開視窗">氣候變遷網站</a>，幫助利害關係人取得相關且即時的氣候資訊、工具、資源等。</li>
+                </ul>
+            </div>
+            <h4>部落政府氣候變遷調適策略</h4>
+            <p>部落政府對評估和準備氣候變遷特別積極。例如：</p>
+            <div >
+                <ul >
+                    <li>阿拉斯加的<a href="https://socialchangenyu.files.wordpress.com/2012/08/climate-induced-migration-bronen-35-2.pdf" target="_blank" title="另開視窗">Newtok</a>村委會，氣候變遷引起海岸侵蝕，破壞基礎設施，造成村民處於不安全環境，所以重新規劃土地，以安置居民。</li>
+                    <li>美國東北部的<a href="http://www.hetf.org/projects"target="_blank" title="另開視窗">Haudenosaunee</a>聯盟通過種子銀行保護本土食物基地，以減低氣候影響。</li>
+                </ul>
+            </div>
+            <h4>地方與區域政府氣候變遷調適策略</h4>
+            <p>地方政府著重土地利用規劃、保護基礎設施、設計基礎設施、營造設計及緊急因應措施等。除地方政府外，區域機構和區域政府也在攜手合作，成為重要的氣候變遷調適行動者：</p>
+            <div >
+                <ul >
+                    <li><a href="http://www.chicagoclimateaction.org/filebin/pdf/finalreport/CCAPREPORTFINALv2.pdf" target="_blank" title="另開視窗">芝加哥</a>自2008年以來，增加芝加哥市55英畝的可滲透表面，完成超過400萬平方英尺的綠屋頂。</li>
+                    <li>鳳凰城、波士頓、費城、紐約市均將氣候變遷影響納入公共衛生規劃與<a href="https://www.ourenergypolicy.org/wp-content/uploads/2014/03/document_cw_01.pdf" target="_blank" title="另開視窗">實施行動</a>中，建立更多社區冷卻中心、制定鄰里守望計畫以及減緩都市熱島效應。</li>
+                    <li>費城水務部開發<a href="https://e360.yale.edu/features/with-a-green-makeover-philadelphia-tackles-its-stormwater-problem" target="_blank" title="另開視窗">綠色雨水基礎設施</a>計畫，目的是將三分之一城市不透水土地覆蓋面積轉變為「綠色土地」，即綠色街道、綠色開放空間、綠色住宅等，保護城市中的河道。</li>
+                </ul>
+            </div>
+            <h4>私人企業調適實例：可口可樂公司</h4>
+            <p><a href="https://www.coca-colacompany.com/stories/position-statement-on-climate-protection" target="_blank" title="另開視窗">可口可樂公司</a>將氣候變遷視為影響地球可用水的三大威脅之一（另兩個威脅是全球發展與都市化及人口成長）。水不僅是可口可樂公司出品所有飲料不可或缺的成分，也是該公司栽種農業原料的生長要素。2004年，可口可樂公司是首批將全球水資源壓力揭露為「風險因素」的公司之一。為因應這項挑戰，可口可樂開始對全球公司進行定性定量風險評估，以瞭解公司在用水上面臨的潛在風險。因為這項評估，可口可樂建立一個完整的水資源管理平臺，並成為因應水資源挑戰的商業案例。它制定具體目標要求提高用水效率、處理和回收製造過程中使用的水，並參與當地水資源管理補充用水，使公司能夠從健康流域和周邊社區長期獲得水資源。</p>
+            <p>自2005年後，可口可樂系統在86個國家，執行320個計畫。社區計畫範圍包括流域保護、擴大社區飲用水和衛生設施的取得、用於生產用水的水，如農業用水效率、教育和意識計畫。</p>
+            <h4>調適策略舉例</h4>
+            <table class="table table-striped" >
+                <thead>
+                    <tr>
+                        <th class="text-center">項 目</th>
+                        <th class="text-center">策 略 重 點</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="align-middle text-center">農業與糧食供應</td>
+                        <td>
+                            <ul>
+                                <li>開發更適應氣候變遷的作物品種（如耐高溫、耐乾旱、耐洪水）。</li>
+                                <li>提供穀倉更多遮蔭和空氣流動，保護牲畜免受夏季高溫的影響。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">海岸</td>
+                        <td>
+                            <ul>
+                                <li>保留濕地和開放空間</li>
+                                <li>改善低窪地區的疏散規劃。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">生態系統</td>
+                        <td>
+                            <ul>
+                                <li>擴大保護野生動物棲息地。</li>
+                                <li>降低生態系統容易受到氣候變遷影響的因素：污染、棲息地喪失、壓力因素等。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">能源</td>
+                        <td>
+                            <ul>
+                                <li>提高能源效率以抵消消耗能源的增加。</li>
+                                <li>加強能源生產設施，以抵禦洪水、風、閃電和其他與風暴可能造成的災害。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">人類健康</td>
+                        <td>
+                            <ul>
+                                <li>建立預警系統和緊急通報計畫。</li>
+                                <li>幫助人民避免隨著氣候變遷增強疾病，例如病媒蚊疾病。</li>
+                                <li>種植樹木，擴大城市綠地，減少都市熱島效應。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">水資源</td>
+                        <td>
+                            <ul>
+                                <li>提高用水效率，增加蓄水能力。</li>
+                                <li>保護和恢復溪流和河岸，提供野生動物棲息地並保護水資源。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+@section styles {
+    <style>
+        /*h4 {
+            font-weight: bold;
+            color: #129696
+        }
+
+        h4~p{
+            margin-left:45px;
+        }
+        h5 {
+            font-weight: bold;
+        }
+
+        .ccis_Detail img {
+            width: 70%;
+            max-width: 945px;
+        }*/
+ /*.ccis_Detail p+div ul {
+     
+            font-size: 19px;
+            margin-left:90px;
+ }*/
+        /*.ulstr {
+            list-style-type: none;
+            font-size: 19px;
+        }
+
+        .ulstr_square {
+            list-style-type: square;
+            font-size: 19px;
+            margin-left:45px;
+        }*/
+
+        /*table tr td ul {
+            margin-bottom: 0;
+        }*/
+       
+
+        /*p {
+            padding-left: 3rem;
+        }*/
+    </style>
+}

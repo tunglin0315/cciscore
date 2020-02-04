@@ -1,0 +1,23 @@
+﻿@model Cartoon
+    <tr>
+        <td>
+            <input type="hidden" name="Guid" value="@Model.Guid" />
+            <img src="@Url.Content(Model.ImgPath)" height="100" />
+        </td>
+        <td>
+            <div>@Model.Title</div>
+        </td>
+        <td>
+            <div>@Model.Alt</div>
+        </td>
+        <td>
+            @Model.Sort
+        </td>
+        <td>
+            @Model.Accessibility
+        </td>
+        <td>
+            <a asp-action="Save" asp-route-id="@Model.Guid" class="btn btn-danger">編輯</a>
+            <a asp-action="Delete" asp-route-id="@Model.Guid" class="btn btn-danger" onclick="return confirm('確定刪除?')">刪除</a>
+        </td>
+    </tr>

@@ -1,0 +1,11 @@
+D:\Ccis_Git\Ccis\Project.Common\bin\Release\netcoreapp2.1\Project.Common.deps.json
+D:\Ccis_Git\Ccis\Project.Common\bin\Release\netcoreapp2.1\Project.Common.dll
+D:\Ccis_Git\Ccis\Project.Common\bin\Release\netcoreapp2.1\Project.Common.pdb
+D:\Ccis_Git\Ccis\Project.Common\bin\Release\netcoreapp2.1\Microsoft.AspNetCore.Http.Features.dll
+D:\Ccis_Git\Ccis\Project.Common\bin\Release\netcoreapp2.1\Microsoft.AspNetCore.Http.Features.xml
+D:\Ccis_Git\Ccis\Project.Common\obj\Release\netcoreapp2.1\Project.Common.csprojAssemblyReference.cache
+D:\Ccis_Git\Ccis\Project.Common\obj\Release\netcoreapp2.1\Project.Common.AssemblyInfoInputs.cache
+D:\Ccis_Git\Ccis\Project.Common\obj\Release\netcoreapp2.1\Project.Common.AssemblyInfo.cs
+D:\Ccis_Git\Ccis\Project.Common\obj\Release\netcoreapp2.1\Project.Common.csproj.CopyComplete
+D:\Ccis_Git\Ccis\Project.Common\obj\Release\netcoreapp2.1\Project.Common.dll
+D:\Ccis_Git\Ccis\Project.Common\obj\Release\netcoreapp2.1\Project.Common.pdb

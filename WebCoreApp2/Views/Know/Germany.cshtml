@@ -1,0 +1,223 @@
+﻿
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style=" font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png"  alt="首頁圖示"  title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub">氣候變遷知識</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/EachCountry">各國氣候變遷調適</a></li>
+        <li class="breadcrumb-item ">德國</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom">
+                <h2 class="h2">
+                    @*@Html.Raw(@ViewBag.Title)*@
+                    德國氣候變遷調適策略
+                </h2>
+            </div>
+            @*@Html.Raw(@ViewBag.html)*@
+            <h4>德國氣候變遷調適背景</h4>
+            <p>
+                德國的調適策略目的在減少德國對氣候變遷影響的脆弱性，並維持或加強自然、社會和經濟系統的調適能力。在德國，氣候變遷調適是一項永久性任務，建構在議定政治體制和方法框架下。這項任務建立科學研究計劃、參與和諮詢進程、並建立即時更新報告系統。在國家層面，幾乎所有聯邦都參加由德國聯邦環境、自然保護和核安全部領導的「氣候變遷調適工作小組（IWG Adaptation）」。
+            </p>
+            <h4>KLiVO—氣候準備入口網站</h4>
+            <p>
+                2018年9月，德國啟動氣候準備入口網站Deutsches Klimavorsorgeportal (KLiVO) 。KLiVO是一個政府資訊平台，引導使用者獲得經過驗證的氣候資訊。使用者根據調適週期、行業、地區、氣候危害等項目過濾，找到符合個人需求的資訊。
+            </p>
+            <h4>調適行動計畫</h4>
+            <p>
+                2015年，德國聯邦政府通過DAS的第一份進度報告，概述自2008年調適行動法和調適行動計畫（APA）後的調適行動計畫。德國調適策略的行動計劃及進度報告每五年更新一次，並由內閣通過。報告包含更新的行動計劃，進一步製定和實施德國調適策略的具體步驟，並統整監測報告、脆弱性評估、適應行動計劃、適應策略評估的調查結果，共同構成規劃氣候變遷調適進程的報告系統。
+            </p>
+            <h5>一、	實施措施</h5>
+            <p>APAs具體規定各個聯邦目前和未來的氣候變遷調適措施。各項措施是基於KWVA（脆弱分析）的科學發現和結果而設定。APAs藉由具體措施描述德國調適策略的執行情況，並展示德國與其他國家氣候變遷調適進展的聯繫。</p>
+            <h5>二、	監測、報告和評估</h5>
+            <p>監測報告概述觀察到的氣候變遷影響，和德國已採用的調適措施，簡要概述由觀測資料發現的氣候變化。監測報告每四年更新一次。氣候影響和KWVA確定哪些行動領域、哪些氣候影響及哪些區域受到氣候變遷影響，以及哪些區域特別需要採取預防措施。2015年首次執行KWVA，計畫每六年更新一次。每四年對策略進程和調適策略執行情況進行評估。策略的評估根據內部調適工作小組採用之方法進行。</p>
+            <h4>調適策略</h4>
+            <table class="table table-striped" style="font-size:19px;">
+                <thead>
+                    <tr>
+                        <th class="text-center">項 目</th>
+                        <th class="text-center">策 略 重 點</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="align-middle text-center">衛生與健康</td>
+                        <td>
+                            <ul>
+                                <li>防治病媒傳染疾病</li>
+                                <li>留心因氣候變化引發之哮喘、過敏、曬傷及皮膚癌</li>
+                                <li>關注極端天氣事件對健康的影響</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">建築營造業</td>
+                        <td>
+                            <ul>
+                                <li>降雨：地下水位波動與異常降雪會對建物造成影響</li>
+                                <li>高溫：建商需要考量日益升高的氣溫而採取更多冷卻、遮陽與隔熱措施</li>
+                                <li>極端天氣可能為建築物帶來超載的雨水，或因土石流、颱風等天然災害而受損</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">水資源、水管理、沿海與海洋保護</td>
+                        <td>
+                            <ul>
+                                <li>洪水：因冬季氣溫升高，雪在總降水量比例下降，降水減少以雪的形式儲存，增加了洪水發生的可能性。洪水問題在徑流較不順暢的城市更為嚴重。洪水的發生也會造成水污染，損害健康</li>
+                                <li>缺水：確保夏季月份降雨量明顯減少地區的供水，安裝長距離輸水管道。也可使用泵浦以獲得更深的地下水源</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">土壤</td>
+                        <td>
+                            <ul>
+                                <li>加強植樹、森林復育與保育，並達到永續發展目標</li>
+                                <li>保護泥炭地、永久草地，並減少土地開發生物多樣性</li>
+                                <li>保護和促進生態系統功能以支持自然的動態調適潛力</li>
+                                <li>在相互連接的棲息地建構走廊區域。使用樹籬和墊腳石棲息地結構，引導動物通過走廊和綠色橋樑</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    @*<tr>
+                        <td class="align-middle text-center">生物多樣性</td>
+                        <td>
+                            <ul>
+                                <li>保護和促進生態系統功能以支持自然的動態調適潛力</li>
+                                <li>在相互連接的棲息地建構走廊區域。使用樹籬和墊腳石棲息地結構，引導動物通過走廊和綠色橋樑</li>
+                            </ul>
+                        </td>
+                    </tr>*@
+                    <tr>
+                        <td class="align-middle text-center">農業</td>
+                        <td>
+                            <ul>
+                                <li>改善天氣預報和預警系統，使農民能為天氣變化和極端天氣事件做好準備，並採取保護措施</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">林業</td>
+                        <td>
+                            <ul>
+                                <li>實施調適措施支持夏季水資源不足的森林生態系統，緩解日益缺水和地下水位下降問題</li>
+                                <li>利用影像測量或衛星系統監測防範森林火災</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">漁業</td>
+                        <td>
+                            <ul>
+                                <li>使用不同技術，以更永續方式組織漁業部門</li>
+                                <li>減少捕撈海洋哺乳動物</li>
+                                <li>即時監測捕撈漁獲量以建立保護區和封閉時期</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">能源部門</td>
+                        <td>
+                            <ul>
+                                <li>注重可再生能源，尤其是風能和太陽能供應</li>
+                                <li>火力發電廠配備創新的冷卻裝置</li>
+                                <li>加強電力傳輸和網絡安全</li>
+                                <li>在建築設計和城市規劃過程中就考慮節能措施</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">財經與保險部門</td>
+                        <td>
+                            <ul>
+                                <li>保險業：積極管理不斷增加的氣候相關不確定因素</li>
+                                <li>針對脆弱地區洪水預防措施給予保費折扣，可激勵相關單位採取調適措施</li>
+                                <li>保險公司可通過與其他參與者合作來提高調適能力</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">工業與商業</td>
+                        <td>
+                            <ul>
+                                <li>為調適氣候變遷的產品和技術開闢新市場機會和出口潛力，並使其逐漸成為關鍵競爭因素</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">交通運輸</td>
+                        <td>
+                            <ul>
+                                <li>防止大雨造成的災害，調整排水系統規劃</li>
+                                <li>在建築標準中規劃風暴調適措施</li>
+                                <li>因應海平面上升而重新安置路線並規劃替代路線</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">空間、區域和城市發展規劃</td>
+                        <td>
+                            <ul>
+                                <li>具體查明個別地區的脆弱性，將調適措施設計於空間結構中</li>
+                                <li>提高利害關係人和公民的認識和採取行動的意願</li>
+                                <li>發展計畫應支援建築、運輸或生物多樣性等其他領域之氣候變遷適應</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">民事保護</td>
+                        <td>
+                            <ul>
+                                <li>聯邦和地區當局制定部署策略和技術設備，適應中長期氣候變遷影響</li>
+                                <li>進一步發展的民事保護，了解暴風雨和強降雨等極端天氣事件頻率與未來趨勢</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </main>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+@section styles {
+    <style>
+        h4 {
+            font-weight: bold;
+            color: #129696;
+        }
+
+            h4 ~ p {
+                margin-left: 45px;
+            }
+
+        h5 {
+            font-weight: bold;
+            margin-left: 45px;
+        }
+
+        .ccis_Detail img {
+            width: 70%;
+            /*border-radius: 5px;*/
+            max-width: 945px;
+        }
+
+        .ulstr {
+            list-style-type: none;
+            font-size: 19px;
+        }
+
+        table tr td ul {
+            margin-bottom: 0;
+        }
+        /*p {
+            padding-left: 3rem;
+        }*/
+    </style>
+}

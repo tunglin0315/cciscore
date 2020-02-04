@@ -1,0 +1,131 @@
+﻿@{
+    ViewData["title"] = "低碳飲食";
+}
+<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Detail_Sub">因應作為</a></li>
+        <li class="breadcrumb-item "><a href="~/act/Detail_Sub_Sub">氣候變遷全民行動</a></li>
+        <li class="breadcrumb-item ">低碳飲食</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 mx-sm-auto col-lg-9 pt-3  ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom" id="content">
+                <h2 class="h2">@ViewBag.Title</h2>
+            </div>
+            @Html.Raw(ViewBag.Html)
+            @*<div class="pb-2 mb-3 border-bottom" id="content">
+                <h2>低碳飲食</h2>
+            </div>
+            <h3>國際上的趨勢</h3>
+            <p>
+                根據政府間氣候變遷專家小組（IPCC）於2014年所發表的第5版評估報告（AR5），指出約24%的溫室氣體來自農業、森林及其他土利使用（AFOLU），顯示食物系統對於全球暖化有相當大的影響。
+            </p>
+            <p>
+                美國環境工作小組（EWG）於2011年出版了一份研究報告（Meat Eater’s Guide to Climate Change and Health<a href="/act/diet#infolink1" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>1</sup></a>），評估常見食物的生命週期，並參考各國相關研究，提供20種食物的碳排放數值，結果顯示肉食的排碳量遠高於素食（如圖一）。
+            </p>
+            <div class="text-center">
+                <img src="~/_x/img/act/常見食物的碳排放數值.png" alt="常見食物的碳排放數值" title="常見食物的碳排放數值" />
+                <p>圖一、常見食物的碳排放數值</p>
+            </div>
+            <div class="text-center my-1">
+                <button class="btn btn-info m-2" onclick="img1()" title="圖片詳細說明">圖片詳細說明</button>
+                <div id="img1" style="display:none">
+                    常見食物的碳排放數值，如每公斤羊肉相當於排放39.2公斤二氧化碳，每公斤牛肉相當於排放27公斤二氧化碳等等。
+                </div>
+            </div>
+            <h3>如果大家多吃蔬食少吃肉…</h3>
+            <p>
+                生產肉類的過程中，從飼養、屠宰冷凍、運送到賣場包存，相對於蔬食會產生較高的二氧化碳排放（如圖二）。據統計我國每人每年平均消費約78公斤肉類（如圖三）。依EWG 2011碳排放數值計算，1人1餐不吃肉約可減少排放760公克二氧化碳。
+            </p>
+            <div class="text-center">
+                <img class="mb-1" src="~/_x/img/act/生產肉類碳排放.png" alt="生產肉類的碳排放歷程" title="生產肉類的碳排放歷程" />
+                <p>圖二、生產肉類的碳排放歷程</p>
+            </div>
+            <div class="text-center my-1">
+                <button class="btn btn-info m-2" onclick="img2()" title="圖片詳細說明">圖片詳細說明</button>
+                <div id="img2" style="display:none">
+                    以牛肉生產過程為例，從牧場飼養、屠宰包裝冷凍、運送到賣場包存，相對於蔬食會產生較高的二氧化碳排放。
+                </div>
+            </div>
+            <div class="text-center">
+                <img src="~/_x/img/act/平均糧食供給.png" alt="我國每人每年平均糧食供給情形" title="我國每人每年平均糧食供給情形" />
+                <p>圖三、我國每人每年平均糧食供給情形</p>
+                <div class="text-right">資料來源：糧食供需年報統計數據（106年）</div>
+            </div>
+            <div class="text-center my-1">
+                <button class="btn btn-info m-2" onclick="img3()" title="圖片詳細說明">圖片詳細說明</button>
+                <div id="img3" style="display:none">
+                    我國106年度每人每年平均供給129.6公斤果品類，113公斤蔬菜類、87.9公斤穀類，77.7公斤肉類。
+                </div>
+            </div>
+            <h3>低碳飲食選擇基本原則</h3>
+            <p>
+                環保署於2011年特別根據國人的飲食習慣、主要食材及烹調方式，彙整編撰我國國民低碳飲食選擇參考手冊，具體落實全民減碳行動。主張在兼顧營養價值及環境生態的條件下，建立一種低碳飲食的生活態度。根據食物生產過程的排放，我們可以參考下列低碳飲食大原則（如圖四）以減少溫室氣體排放。
+            </p>
+            <ol>
+                <li>食材食當季，選在地</li>
+                <li>購買適當分量，避免浪費</li>
+                <li>小火烹調，節省能源</li>
+                <li>選購精簡包裝，減少產生垃圾</li>
+                <li>出門購物減少開車及乘坐電梯</li>
+            </ol>
+            <div class="text-center">
+                <img src="~/_x/img/act/低碳飲食原則.png" alt="低碳飲食原則" title="低碳飲食原則" />
+                <p>圖四、低碳飲食原則</p>
+            </div>
+            <div class="text-center my-1">
+                <button class="btn btn-info m-2" onclick="img4()" title="圖片詳細說明">圖片詳細說明</button>
+                <div id="img4" style="display:none">
+                    低碳飲食原則包括食材食當季，選在地、購買適當分量避免浪費、選購精簡包裝，減少產生垃圾，購物時減少開車及電梯。
+                </div>
+            </div>
+            <p>
+                想要瞭解更多有關於低碳飲食食材的選擇，可以參閱由行政院環保署所出版的「國民低碳飲食選擇參考手冊<a href="/act/diet#infolink2" alt="點擊移至詳細連結點" title="點擊移至詳細連結點"><sup>2</sup></a>」。
+            </p>
+            <ul>
+                資料來源：
+                <li>[1] <a id="infolink1" href="https://www.ewg.org/meateatersguide/a-meat-eaters-guide-to-climate-change-health-what-you-eat-matters/climate-and-environmental-impacts/" target="_blank" title="另開視窗(Meat Eater’s Guide to Climate Change and Health)">Meat Eater’s Guide to Climate Change and Health</a></li>
+                <li>[2] <a id="infolink2" href="http://www.chiayi.gov.tw/2011web/uploads/1050811_%E5%9C%8B%E6%B0%91%E4%BD%8E%E7%A2%B3%E9%A3%B2%E9%A3%9F%E9%81%B8%E6%93%87%E5%8F%83%E8%80%83%E6%89%8B%E5%86%8A_160811150411.pdf" target="_blank" title="另開視窗(行政環保署_國民低碳飲食選擇參考手冊PDF檔案)">行政環保署_國民低碳飲食選擇參考手冊</a></li>
+            </ul>*@
+            <div class=" text-right my-3">
+                @*判斷是否已經登入*@
+                @if (User.Identity.IsAuthenticated)
+                {
+                    //判斷登入角色,符合角色則顯示按鈕進入後台
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a class="btn btn-danger text-center" href="~/info/Edit/@ViewBag.id">編輯</a>
+                    }
+                }
+            </div>
+        </main>
+        <div class="col-lg-1">    </div>
+    </div>
+</div>
+
+<script>
+
+    function img1() {
+        $("#img1").slideToggle();
+
+    };
+    function img2() {
+        $("#img2").slideToggle();
+
+    };
+    function img3() {
+        $("#img3").slideToggle();
+
+    };
+    function img4() {
+        $("#img4").slideToggle();
+
+    };
+
+</script>

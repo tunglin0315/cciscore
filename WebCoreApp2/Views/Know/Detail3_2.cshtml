@@ -1,0 +1,133 @@
+﻿<nav class="d-none d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png"  alt="首頁圖示"  title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub">氣候變遷知識</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub_Sub">氣候變遷介紹</a></li>
+        @*<li class="breadcrumb-item"> @ViewBag.Title</li>*@
+        <li class="breadcrumb-item">社區可以做什麼</li>
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        @{
+            @await Html.PartialAsync("_Menu")
+        }
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-8 pt-3 px-4 ccis_Detail">
+            <div class=" pb-2 mb-3 border-bottom">
+                <h2 class="h2">社區可以做什麼</h2>
+                @* <h2 class="h2">@ViewBag.Title</h2>*@
+            </div>
+            @*   @Html.Raw(@ViewBag.Html)*@
+
+            <h4>社區能做什麼？</h4>
+            <p>「社區」是民眾生活的日常所在，社區參與的結果反映了地方的認知，參與的過程與行動也決定了社區及地方發展。社區可以通過綠化改善環境衛生並維持生態系統的平衡與效益，如種植防護林、路旁樹木、農作物及住宅區和公園內的植物等，主要有屋頂綠化( Roof greening )、室內綠化( House greening )、綠牆( Green wall )及綠籬( Green hedge )的設置並全面落實綠生活( Green living )，只需跟著做就能降低居家溫度，節省夏季空調電費100元以上，打造節能減碳的宜居家園。</p>
+            <p>我國環保署持續補助地方政府，推動<a href="https://lcss.epa.gov.tw/LcssViewPage/Responsive/default.aspx?actmain=a" target="_blank" title="另開視窗">低碳永續家園</a>建構工作， 至今已有3,983個村里響應參與， 其中807個村里積極實踐6大運作機能的低碳行動及調適措施， 取得環保署銅、銀級認證肯定。銅、銀級村里中已有半數( 413處 )在公共區域採取推動綠屋頂、牆面植生或綠籬等區域降溫措施，透過綠色植物提供遮陽效果、植物層結合空氣產生風障隔熱效果、水分蒸散產生的降溫效果及帶動空氣循環驅逐熱浪，可使牆面降溫5℃~8℃、室內降溫3℃~5℃，節省夏季空調用電10%~25%。</p>
+            <p>以臺南市文元國小打造91平方公尺綠屋頂為例，實際監測有綠屋頂的天花板，與沒有綠屋頂相比較， 溫差達6℃。再以銀級村里為例，107年節電量是全國平均的4倍，顯見建築綠化成效卓著。為此，環保署已規劃於109年擴大施行，編列約7,000萬元經費補助地方政府推動， 強化社區家園對高溫的調適能力。</p>
+            <h4>臺灣為什麼需要綠屋頂？</h4>
+            <p>臺灣位於熱帶、亞熱帶，在平均氣溫較高的情況下，2018年人口密度更達到名列前茅的654.42人/km²， 更有７０％以上的人口居住在水泥建築的城市之中， 所以「都市熱島效應」對於我們的「生活舒適度」產生非常重大的影響，嚴重程度遠大於緯度較高的國家。</p>
+            <p>根據「臺灣氣候變遷科學報告2017」指出，全球地表溫度在1880~2012年增加了0.85度，而臺灣全年氣溫在過去一百多年（1900-2012年）就上升約1.3度，比全球平均值高，每十年上升速度仍比周圍國家（日本、韓國等）高。同時都市化築成的水泥城市加劇了城市的熱島效應，讓城市在夏天更加熾熱，城市的溫度過高，迫使民眾使用空調，增加夏天尖峰用電需求量。而又因高人口密度及人均綠地不足，所以向屋頂借空間來設置綠地其實是一個減緩熱島效應的好措施。此外，Dan Li等人 (2014)<a href="https://pdfs.semanticscholar.org/bd63/17a670df011521322a003363c8a1c3d9af0e.pdf" target="_blank" title="另開視窗">研究</a>發現，若綠屋頂達全市屋頂的30%，約可降低表面熱島效應約攝氐1度。</p>
+            <h4>綠屋頂有幾種？</h4>
+            <p>常見的綠屋頂有花園型的厚層綠屋頂、粗放型的薄層綠屋頂以及混合型綠屋頂花園型、厚層(Intensive)綠屋頂</p>
+
+            <p>花園型、厚層綠屋頂可以滿足觀賞、娛樂、休閒等需求設立景觀設施,如草皮、花架亭廊、鋪面走道、休憩設施。因能承載重量大、植物種類豐富，故種植介質厚度在30公分或以上，其承載重約300~600kg/㎡或以上，因此維護管理費用較高。</p>
+            <p>
+                粗放型、薄層(Extensive)綠屋頂
+                粗放型、薄層屋頂綠化一般只提供觀賞效果，極少設計可進入，所以其植物生長介質厚度在10 ~20公分，以低矮灌木、草花和抗旱性強的植物、草皮為主，其承載重約100~300 kg/㎡。因承重小五中較少，故維護費用等成本較低
+            </p>
+            <p>
+                混合型(semi-intensive) 綠屋頂
+                混合型屋頂綠化採用精緻型與粗放型工法在同一屋頂上，因屋頂的使用目地不同而設置，變化性較高，可有效增加綠覆面積及降低維護管理費用。
+            </p>
+
+            <h4>綠屋頂十大效益：</h4>
+            <ul class="ulstr">
+                <li><p> 1.增加都市的綠化率、美化環境增加建築價值</p></li>
+                <li><p> 2.都市降溫、減少光污染及熱島效應</p></li>
+                <li><p> 3.屋頂保溫隔熱、節能減碳</p></li>
+                <li><p> 4.保護建築結構、延長使用壽命</p></li>
+                <li><p> 5.固定二氧化碳、達成減碳目標</p></li>
+                <li><p> 6.吸附空氣污染物、隔濾懸浮微粒(滯塵) 、淨化空氣</p></li>
+                <li><p> 7.調節、減少雨水系統負載、淨化用水</p></li>
+                <li><p> 8.減少、隔絕噪音並防範火災</p></li>
+                <li><p> 9.創造鳥類及小動物生物棲息環境與生物多樣性</p></li>
+                <li><p> 10.提供休憩、療癒、教育與園藝生產空間</p></li>
+            </ul>
+            <h4>綠建築在臺灣：</h4>
+            <h5 class="pl-3"> 北投圖書館Beitou Library</h5>
+            <p>臺北市立圖書館北投分館是臺灣首座綠建築圖書館，座落於林木茂密、生態環境豐富的北投公園內，室內書香，戶外鳥語，相映成趣，閱讀成了一件愜意、享受的活動。</p>
+            <p>屋頂為輕質生態屋頂，設有太陽能光電板發電，可發電16千瓦電力，並採大量陽台深遮陽及垂直木格柵，降低熱輻射進入室內，降低耗能達到節能效果。綠化屋頂及斜坡草坡設計可涵養水分自然排水至雨水回收槽，再利用回收水澆灌植栽及沖水馬桶，達到綠化與減少水資源浪費。
+               <a href="https://www.travel.taipei/zh-tw/attraction/details/212" target="_blank" title="另開視窗">更多請點我</a>、<a href="https://tpml.gov.taipei/News_Content.aspx?n=4F66F55F388033A7&s=8D29886CA91B88A4&sms=CFFFC938B352678A" target="_blank" title="另開視窗">影片介紹</a></p>
+            <div class="text-center">
+                <img src="~/_x/img/know/bt_libary.png" alt="北投圖書館" title="北投圖書館" />
+            </div>
+            <div class=" text-right my-3">
+                @*判斷是否已經登入*@
+                @if (User.Identity.IsAuthenticated)
+                {
+                    //判斷登入角色,符合角色則顯示按鈕進入後台
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a class="btn btn-danger text-center" href="~/info/Edit/@ViewBag.id">編輯</a>
+                    }
+
+                }
+            </div>
+        </main>
+        <div class="col-lg-2">    </div>
+    </div>
+
+
+</div>
+@section styles {
+    <style>
+        h5 {
+            font-weight: bold;
+        }
+
+        h4 {
+            font-weight: bold;
+            color: #129696;
+        }
+
+        .ccis_Detail img {
+            width: 70%;
+            max-width: 945px;
+            border-radius: 5px;
+        }
+
+        .card-body {
+            border: dashed;
+            border-color: cadetblue;
+        }
+
+        .card img {
+            max-width: 105px;
+        }
+
+        .card .btn {
+            width: 100%;
+            font-size: 32px;
+            background: -webkit-linear-gradient(2deg,#1573a9,#6fcdf1);
+            color: aliceblue;
+        }
+
+        p {
+            padding-left: 3rem;
+        }
+        .ulstr{
+            font-size:19px;
+            list-style:none;
+        }
+        /*.card .btn-primary button {
+            width: 100%;
+            font-size: 28px;
+        }*/
+        /*ul {
+            list-style-type: none;
+        }
+
+        .listr {
+            font-size: 19px;
+        }*/
+    </style>
+}

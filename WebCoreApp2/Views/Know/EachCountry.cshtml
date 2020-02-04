@@ -1,0 +1,122 @@
+﻿<nav class="d-solid d-lg-block pl-3">
+    <ol class="breadcrumb" style="font-size:19px; padding:0rem; margin-bottom: 0rem; background-color:transparent;">
+        <li class="breadcrumb-item "><a href="~/home/index"><img class="pb-1" src="~/_x/img/index_house.png" alt="" title="首頁" />首頁</a></li>
+        <li class="breadcrumb-item "><a href="~/Know/Detail_Sub">氣候變遷知識</a></li>
+        <li class="breadcrumb-item">各國氣候變遷調適</li>
+
+    </ol>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+
+        @await Html.PartialAsync("_Menu")
+
+        <main role="main" class="col-md-8 col-lg-8 pt-2 ccis_Detail">
+
+            <h2 class="h2">各國氣候變遷調適</h2>
+            @*<div>
+                <img src="~/_x/img/know/EachCountry190724.jpg" style="width:100% ;height:auto" usemap="#mymap" />
+                <map name="mymap" id="mymap">
+                    <area class="area_style" target="_blank" tabindex="2" shape="circle" coords="541,243,34" alt="冰島" title="冰島" href="~/know/Iceland" />
+                    <area class="area_style" target="_blank" tabindex="4" shape="circle" coords="603,280,34" alt="歐盟" title="歐盟" href="~/know/EuropeanUnion" />
+                    <area class="area_style" target="_blank" tabindex="5" shape="circle" coords="977,298,34" alt="南韓" title="南韓" href="~/know/Korea" />
+                    <area class="area_style" target="_blank" tabindex="6" shape="circle" coords="1051,322,34" alt="日本" title="日本" href="~/know/Japan" />
+                    <area class="area_style" target="_blank" tabindex="7" shape="circle" coords="939,455,34" alt="新加坡" title="新加坡" href="~/Know/Singapore" />
+                    <area class="area_style" target="_blank" tabindex="8" shape="circle" coords="1029,546,34" alt="澳洲" title="澳洲" href="~/know/Australia" />
+                    <area class="area_style" target="_blank" tabindex="1" shape="circle" coords="294,225,34" alt="加拿大" title="加拿大" href="~/know/Canada" />
+                    <area class="area_style" target="_blank" tabindex="3" shape="circle" coords="248,301,34" alt="美國" title="美國" href="~/know/America" />*@
+
+            @*
+                <area class="area_style" target="_blank" shape="circle" coords="261,193,19" alt="加拿大" title="加拿大" href="https://www.canada.ca/en/environment-climate-change/services/canadian-environmental-protection-act-registry.html" />
+                <area class="area_style" target="_blank" shape="circle" coords="265,285,27" alt="美國" title="美國" href="https://www.epa.gov/" />
+                <area class="area_style" target="_blank" shape="circle" coords="603,241,28" alt="歐盟" title="英國" href="~/Know/EuropeanUnion" />
+                <area class="area_style" target="_blank" shape="circle" coords="1075,481,20" alt="澳洲" title="澳洲" href="https://www.nicnas.gov.au/" />*@
+            @*</map>
+
+                </div>*@
+        <svg id="EachCountryMap" viewBox="0 0 1220 761" >
+            <g>
+                <image style="overflow:visible;" width="1220" height="761" xlink:href="@Url.Content("~/_x/img/know/EachCountry190724.jpg") "></image>
+            </g>
+
+            <g>
+                <a xlink:href="@Url.Content("~/know/Canada")" xlink:title="加拿大">
+                    <circle cx="294" cy="225" r="34"></circle>
+                </a>
+            </g>
+            <g>
+                <a xlink:href="@Url.Content("~/know/Iceland")" xlink:title="冰島">
+                    <circle cx="541" cy="242" r="34"></circle>
+                </a>
+            </g>
+            <g>
+                <a xlink:href="@Url.Content("~/know/America")" xlink:title="美國">
+                    <circle cx="248" cy="301" r="34"></circle>
+                </a>
+            </g>
+            <g>
+                <a xlink:href="@Url.Content("~/know/EuropeanUnion")" xlink:title="歐盟">
+                    <circle cx="603" cy="280" r="34"></circle>
+                </a>
+            </g>
+            <g>
+                <a xlink:href="@Url.Content("~/know/Korea")" xlink:title="南韓">
+                    <circle cx="977" cy="298" r="34"></circle>
+                </a>
+            </g>
+            <g>
+                <a xlink:href="@Url.Content("~/know/Japan")" xlink:title="日本">
+                    <circle cx="1049" cy="321" r="34"></circle>
+                </a>
+            </g>
+            <g>
+                <a xlink:href="@Url.Content("~/know/Singapore")" xlink:title="新加坡">
+                    <circle cx="939" cy="455" r="34"></circle>
+                </a>
+            </g>
+            <g>
+                <a xlink:href="@Url.Content("~/know/Australia")" xlink:title="澳洲">
+                    <circle cx="1029" cy="546" r="34"></circle>
+                </a>
+            </g>
+
+
+
+        </svg>
+        </main>
+        <div class="col-lg-2">
+        </div>
+    </div>
+</div>
+<style>
+
+   
+    .area_style {
+        outline-color: #116d45;
+    }
+
+    #EachCountryMap circle {
+        fill: #1ea5b0;
+    }
+
+    #EachCountryMap a {
+        cursor: pointer;
+        color: #337ab7;
+        opacity: 0;
+    }
+
+        #EachCountryMap a:hover, #EachCountryMap a:focus {
+            opacity: 0.5;
+        }
+</style>
+@*@section scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.js"></script>
+    <script>
+
+        $(document).ready(function (e) {
+            $('img[usemap]').rwdImageMaps();
+        });
+
+    </script>
+}*@

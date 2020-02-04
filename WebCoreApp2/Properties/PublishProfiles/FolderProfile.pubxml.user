@@ -1,0 +1,2145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此檔案由您的 Web 專案發佈/封裝處理序使用。您可以藉由編輯此 MSBuild 檔案，
+自訂此處理序的行為。若要深入了解，請前往 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\CCIS_iis</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.json">
+      <publishTime>04/17/2019 11:29:13</publishTime>
+    </File>
+    <File Include="BouncyCastle.Crypto.dll">
+      <publishTime>04/10/2018 13:45:44</publishTime>
+    </File>
+    <File Include="CCISWebCore.deps.json">
+      <publishTime>05/15/2019 16:18:29</publishTime>
+    </File>
+    <File Include="CCISWebCore.dll">
+      <publishTime>05/14/2019 10:05:37</publishTime>
+    </File>
+    <File Include="CCISWebCore.pdb">
+      <publishTime>05/14/2019 10:05:37</publishTime>
+    </File>
+    <File Include="CCISWebCore.runtimeconfig.json">
+      <publishTime>05/15/2019 16:18:29</publishTime>
+    </File>
+    <File Include="CCISWebCore.Views.dll">
+      <publishTime>05/15/2019 16:18:23</publishTime>
+    </File>
+    <File Include="CCISWebCore.Views.pdb">
+      <publishTime>05/15/2019 16:18:23</publishTime>
+    </File>
+    <File Include="dotnet-aspnet-codegenerator-design.dll">
+      <publishTime>06/07/2018 00:27:02</publishTime>
+    </File>
+    <File Include="libman.json">
+      <publishTime>05/15/2019 16:17:10</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.CSharp.Workspaces.dll">
+      <publishTime>02/11/2019 11:01:55</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Workspaces.dll">
+      <publishTime>02/11/2019 11:01:56</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll">
+      <publishTime>06/07/2018 00:27:00</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Core.dll">
+      <publishTime>06/07/2018 00:26:58</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.dll">
+      <publishTime>06/07/2018 00:26:54</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll">
+      <publishTime>06/07/2018 00:26:56</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll">
+      <publishTime>06/07/2018 00:27:02</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll">
+      <publishTime>06/07/2018 00:27:02</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll">
+      <publishTime>06/07/2018 00:26:58</publishTime>
+    </File>
+    <File Include="NuGet.Frameworks.dll">
+      <publishTime>02/11/2019 11:01:54</publishTime>
+    </File>
+    <File Include="Project.Common.dll">
+      <publishTime>05/10/2019 10:49:46</publishTime>
+    </File>
+    <File Include="Project.Common.pdb">
+      <publishTime>05/10/2019 10:49:46</publishTime>
+    </File>
+    <File Include="System.Composition.AttributedModel.dll">
+      <publishTime>02/11/2019 11:01:58</publishTime>
+    </File>
+    <File Include="System.Composition.Convention.dll">
+      <publishTime>02/11/2019 11:01:58</publishTime>
+    </File>
+    <File Include="System.Composition.Hosting.dll">
+      <publishTime>02/11/2019 11:01:58</publishTime>
+    </File>
+    <File Include="System.Composition.Runtime.dll">
+      <publishTime>02/11/2019 11:01:58</publishTime>
+    </File>
+    <File Include="System.Composition.TypedParts.dll">
+      <publishTime>02/11/2019 11:01:58</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>05/15/2019 16:18:29</publishTime>
+    </File>
+    <File Include="wwwroot/10768/header.html">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/10768/images/header.gif">
+      <publishTime>11/05/2019 16:22:50</publishTime>
+    </File>
+    <File Include="wwwroot/carousel.html">
+      <publishTime>02/20/2019 11:08:43</publishTime>
+    </File>
+    <File Include="wwwroot/carousel2.html">
+      <publishTime>02/20/2019 11:08:58</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/16504599030_21b66c1cd7_o.jpg">
+      <publishTime>06/06/2019 10:35:30</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/165045o.jpg">
+      <publishTime>06/17/2019 11:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/205127fqbi6q0nipzb6q0p.jpg">
+      <publishTime>06/06/2019 10:34:48</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/2d1e2177-86c0-4b06-98f0-8d16edbb3df5.png">
+      <publishTime>07/10/2019 15:50:29</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/3f127d2f-96e2-4de3-9337-176e729b8818.jpg">
+      <publishTime>07/09/2019 17:25:14</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/4.互動專區_2.png">
+      <publishTime>06/05/2019 16:30:22</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/5.相關連結_2.png">
+      <publishTime>06/05/2019 15:11:28</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/6.關於_2.png">
+      <publishTime>06/06/2019 10:31:24</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/93625934-fd22-44da-b71d-57412df5ad67.png">
+      <publishTime>07/10/2019 16:12:50</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/act02.jpg">
+      <publishTime>06/06/2019 10:14:10</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/ae011ed1-8e58-4b44-b3b4-3d006a5a930d.png">
+      <publishTime>07/10/2019 16:15:07</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/animated_favicon1.gif">
+      <publishTime>06/05/2019 14:37:58</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/banner0321c.jpg">
+      <publishTime>06/06/2019 09:35:56</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/banner_bg5.jpg">
+      <publishTime>06/06/2019 09:50:19</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/bf547cc9-89b9-4a8a-8119-043159d85481.png">
+      <publishTime>07/10/2019 15:49:53</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/bicycle1.jpg">
+      <publishTime>06/12/2019 16:07:35</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/c4.png">
+      <publishTime>06/05/2019 16:34:14</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/eyeglasses.png">
+      <publishTime>06/17/2019 09:49:58</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/favicon_030740.zip">
+      <publishTime>06/06/2019 10:32:57</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/fb48182a-60e4-45f5-acab-13355c7ca41c.png">
+      <publishTime>07/10/2019 15:51:21</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/flower.jpg">
+      <publishTime>06/06/2019 11:13:21</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/newsbanner0223b.jpg">
+      <publishTime>06/06/2019 09:36:46</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/people.jpeg">
+      <publishTime>06/17/2019 15:01:29</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/people1.jpg">
+      <publishTime>06/06/2019 11:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/svn.png">
+      <publishTime>06/19/2019 17:09:37</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/Untitled-1.py">
+      <publishTime>06/06/2019 10:57:49</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/下載.jpeg">
+      <publishTime>06/17/2019 11:41:00</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/參加評等好處多多-01.jpg">
+      <publishTime>06/05/2019 15:03:11</publishTime>
+    </File>
+    <File Include="wwwroot/FileUploads/被害人機車上的鑰匙.jpg">
+      <publishTime>06/19/2019 11:22:44</publishTime>
+    </File>
+    <File Include="wwwroot/lib/font-awesome/css/font-awesome.min.css">
+      <publishTime>05/15/2019 16:16:35</publishTime>
+    </File>
+    <File Include="wwwroot/lib/holder/holder.min.js">
+      <publishTime>04/17/2019 14:49:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-datetimepicker/jquery.datetimepicker.full.min.js">
+      <publishTime>04/17/2019 14:49:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery.countdown/jquery.countdown.min.js">
+      <publishTime>04/17/2019 14:49:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/jquery.min.js">
+      <publishTime>09/12/2019 09:02:32</publishTime>
+    </File>
+    <File Include="wwwroot/lib/popper/popper.min.js">
+      <publishTime>04/17/2019 14:49:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/twitter-bootstrap/css/bootstrap.css">
+      <publishTime>04/17/2019 14:49:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/twitter-bootstrap/css/bootstrap.min.css">
+      <publishTime>04/17/2019 14:49:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/twitter-bootstrap/js/bootstrap.bundle.min.js">
+      <publishTime>04/17/2019 14:49:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/twitter-bootstrap/js/bootstrap.min.js">
+      <publishTime>04/17/2019 14:49:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/waypoints/jquery.waypoints.min.js">
+      <publishTime>04/17/2019 14:49:12</publishTime>
+    </File>
+    <File Include="wwwroot/OtherFile/1.住宅部門溫室氣體排放計量手冊.pdf">
+      <publishTime>04/17/2019 11:29:09</publishTime>
+    </File>
+    <File Include="wwwroot/OtherFile/10.校園節能123減碳大家一起來.jpg">
+      <publishTime>04/17/2019 11:29:08</publishTime>
+    </File>
+    <File Include="wwwroot/OtherFile/11.愛地球關我們的事%28北極熊搬家篇%29.jpg">
+      <publishTime>04/17/2019 11:29:09</publishTime>
+    </File>
+    <File Include="wwwroot/OtherFile/12.尖峰時刻 聰明用電.pdf">
+      <publishTime>04/17/2019 11:29:09</publishTime>
+    </File>
+    <File Include="wwwroot/OtherFile/13.生活節能減碳小撇步%28隨手關燈%29.pdf">
+      <publishTime>04/17/2019 11:29:08</publishTime>
+    </File>
+    <File Include="wwwroot/OtherFile/14.節電汰舊換新.jpg">
+      <publishTime>04/17/2019 11:29:09</publishTime>
+    </File>
+    <File Include="wwwroot/OtherFile/15.讓室內維持永遠的春天.pdf">
+      <publishTime>04/17/2019 11:29:09</publishTime>
+    </File>
+    <File Include="wwwroot/OtherFile/16.共同來節水 轉動水資源.jpg">
+      <publishTime>04/17/2019 11:29:08</publishTime>
+    </File>
+    <File Include="wwwroot/OtherFile/2.節電新生活運動.jpg">
+      <publishTime>04/17/2019 11:29:09</publishTime>
+    </File>
+    <File Include="wwwroot/OtherFile/3.家庭節約能源寶典.pdf">
+      <publishTime>04/17/2019 11:29:09</publishTime>
+    </File>
+    <File Include="wwwroot/OtherFile/4.節能減碳生活小撇步.pdf">
+      <publishTime>04/17/2019 11:29:09</publishTime>
+    </File>
+    <File Include="wwwroot/OtherFile/5.家庭節約能源手冊.pdf">
+      <publishTime>04/17/2019 11:29:09</publishTime>
+    </File>
+    <File Include="wwwroot/OtherFile/6.從1開始 全民節電行動.JPG">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/OtherFile/7.低碳生活資訊手冊.pdf">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/OtherFile/8.學校照明節能改善參考手冊.pdf">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/OtherFile/9.6R綠生活.jpg">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/OtherFile/健康領域行動方案.pdf">
+      <publishTime>04/18/2019 14:46:14</publishTime>
+    </File>
+    <File Include="wwwroot/OtherFile/溫室氣體排放係數管理表6.0.3版.xls">
+      <publishTime>01/17/2018 09:37:30</publishTime>
+    </File>
+    <File Include="wwwroot/Robots.txt">
+      <publishTime>06/11/2019 13:43:10</publishTime>
+    </File>
+    <File Include="wwwroot/SiteMap.xml">
+      <publishTime>07/24/2019 15:34:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/css/carousel.css">
+      <publishTime>09/03/2019 09:58:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/css/cs.styles.css">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/css/font-awesome.css">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/css/fonts/fontawesome-webfont.eot">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/css/fonts/fontawesome-webfont.svg">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/css/fonts/fontawesome-webfont.ttf">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/css/fonts/fontawesome-webfont.woff">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/css/fonts/fontawesome-webfont.woff2">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/css/fonts/FontAwesome.otf">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/css/htmlContent.css">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/css/layout.css">
+      <publishTime>11/05/2019 16:46:50</publishTime>
+    </File>
+    <File Include="wwwroot/_x/css/menu.css">
+      <publishTime>09/25/2019 17:14:52</publishTime>
+    </File>
+    <File Include="wwwroot/_x/css/MyStyle.css">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/css/page.css">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/css/style.css">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/css/theme.css">
+      <publishTime>10/24/2019 10:49:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/1.會議活動_2.png">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/108年2月份重大施政績效-01.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/108年3月份重大施政績效-01.jpg">
+      <publishTime>04/17/2019 11:11:06</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/2.相關知識與資源_2.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/3.成果展現_2.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/4.互動專區_2.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/5.相關連結_2.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/6.關於_2.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/a.png">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/10805Performance.png">
+      <publishTime>06/14/2019 14:49:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/act01_0.jpg">
+      <publishTime>07/02/2019 11:34:39</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/act01_2.jpg">
+      <publishTime>07/02/2019 11:34:40</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/act01_3.jpg">
+      <publishTime>07/02/2019 11:34:41</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/act01_4.jpg">
+      <publishTime>07/02/2019 11:34:42</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/act01_5.jpg">
+      <publishTime>07/02/2019 11:34:43</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/act02.jpg">
+      <publishTime>06/13/2019 09:27:08</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/act02_1.jpg">
+      <publishTime>06/20/2019 09:22:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/act03_1.jpg">
+      <publishTime>04/29/2019 17:11:17</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/act03_2.jpg">
+      <publishTime>04/29/2019 17:11:42</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/act03_3.jpg">
+      <publishTime>04/29/2019 17:11:58</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/act2.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/act2_s.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/ch_1.png">
+      <publishTime>08/20/2019 15:28:47</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/Eission.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/greenhouseGas.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/hc_1.png">
+      <publishTime>08/20/2019 15:19:40</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/hc_2.png">
+      <publishTime>08/20/2019 15:21:54</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/hl_1.png">
+      <publishTime>08/20/2019 14:35:25</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/jl_1.png">
+      <publishTime>08/20/2019 15:24:19</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/jl_2.png">
+      <publishTime>08/20/2019 15:26:23</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/kl_1.png">
+      <publishTime>08/20/2019 15:00:53</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/km_1.png">
+      <publishTime>08/20/2019 14:40:50</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/ks_1.png">
+      <publishTime>08/20/2019 14:58:29</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/lj_1.png">
+      <publishTime>08/20/2019 15:02:58</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/ch_1.png">
+      <publishTime>09/03/2019 15:53:08</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/hc_1.png">
+      <publishTime>09/03/2019 15:53:08</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/hc_2.png">
+      <publishTime>09/03/2019 15:53:07</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/hl_1.png">
+      <publishTime>09/03/2019 15:53:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/jl_1.png">
+      <publishTime>09/03/2019 15:53:09</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/jl_2.png">
+      <publishTime>09/03/2019 15:53:09</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/kl_1.png">
+      <publishTime>09/03/2019 15:53:06</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/km_1.png">
+      <publishTime>09/03/2019 15:53:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/ks_1.png">
+      <publishTime>09/03/2019 15:53:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/lj_1.png">
+      <publishTime>09/03/2019 15:53:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/ml_1.png">
+      <publishTime>09/03/2019 15:53:08</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/ntp_1.png">
+      <publishTime>09/03/2019 15:53:07</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/nt_1.png">
+      <publishTime>09/03/2019 15:53:08</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/ph_1.png">
+      <publishTime>09/03/2019 15:53:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/pt_1.png">
+      <publishTime>09/03/2019 15:53:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/taiwan22.png">
+      <publishTime>09/03/2019 15:53:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/tc_1.png">
+      <publishTime>09/03/2019 15:53:08</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/Thumbs.db">
+      <publishTime>09/03/2019 15:11:26</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/tn_1.png">
+      <publishTime>09/03/2019 15:53:09</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/tp_1.png">
+      <publishTime>09/03/2019 15:53:07</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/tt_1.png">
+      <publishTime>09/03/2019 15:53:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/ty_1.png">
+      <publishTime>09/03/2019 15:53:07</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/yli_1.png">
+      <publishTime>09/03/2019 15:53:09</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/map/yl_1.png">
+      <publishTime>09/03/2019 15:53:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/ml_1.png">
+      <publishTime>08/20/2019 14:53:15</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/ntp_1.png">
+      <publishTime>08/20/2019 15:17:03</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/nt_1.png">
+      <publishTime>08/20/2019 14:45:27</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/ph_1.png">
+      <publishTime>08/20/2019 15:51:04</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/pt_1.png">
+      <publishTime>08/20/2019 14:50:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/taiwan_2.png">
+      <publishTime>08/20/2019 16:06:42</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/tc_1.png">
+      <publishTime>08/20/2019 15:31:06</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/tn_1.png">
+      <publishTime>08/20/2019 15:48:47</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/tp_1.png">
+      <publishTime>08/20/2019 15:33:23</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/tt_1.png">
+      <publishTime>08/20/2019 15:46:45</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/ty_1.png">
+      <publishTime>08/20/2019 14:56:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/whitebook.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/yli_1.png">
+      <publishTime>08/20/2019 15:14:46</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/yl_1.png">
+      <publishTime>08/20/2019 14:16:09</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/低碳飲食原則.png">
+      <publishTime>05/30/2019 09:36:21</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/分層推動溫減管理-01.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/常見食物的碳排放數值.png">
+      <publishTime>04/24/2019 17:00:16</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/平均糧食供給.png">
+      <publishTime>05/30/2019 09:35:30</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/抵換專案演變歷程-01.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/教育宣導與獎勵-01.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/生產肉類碳排放.png">
+      <publishTime>05/30/2019 09:34:50</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Act/階段性減量管制-01.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/act02.jpg">
+      <publishTime>06/13/2019 09:27:08</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/act02_1.jpg">
+      <publishTime>06/20/2019 09:22:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/act03_1.jpg">
+      <publishTime>04/29/2019 17:11:17</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/act03_2.jpg">
+      <publishTime>04/29/2019 17:11:42</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/act03_3.jpg">
+      <publishTime>04/29/2019 17:11:58</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/act2.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/act2_s.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/animated_favicon1.gif">
+      <publishTime>04/22/2019 03:07:40</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/banner.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/banner0321a.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/banner0321b.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/banner0321c.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/banner0625.jpg">
+      <publishTime>07/02/2019 11:30:09</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/banner20190716.jpg">
+      <publishTime>07/17/2019 11:35:06</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/banner20190903.jpg">
+      <publishTime>09/03/2019 13:26:37</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/banner223.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/banner_bg1.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/banner_bg2.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/banner_bg3.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/banner_bg4.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/banner_bg5.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/banner_bg6.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/banner_dragon.jpg">
+      <publishTime>05/27/2019 10:20:41</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/board0.png">
+      <publishTime>05/06/2019 16:36:49</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/bottom/b1.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/bottom/b2.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/bottom/b3.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/bottom/b4.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/bottom/b5.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/bottom/b6.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/byc.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/byc_bg.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/c1.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/c2.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/c3.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/c4.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/c5.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/c5_1.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/c6.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbonboxClothing.png">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbonboxClothing_s.png">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbonboxFood.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbonboxFood_s.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbonboxHousing.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbonboxHousing_s.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbonboxTransportation.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbonboxTransportation_s.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbonBTNagain.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbonBTNagaina.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbonBTNback.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbonBTNbacka.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbonBTNnext.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbonBTNnexta.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbonBTNstart.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbonBTNstarta.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbontoolbar01.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbontoolbar02.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbontoolbar03.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbontoolbar04.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbontoolbar05.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbontoolbar06.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbontoolindex.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbontoolindex.jpg">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbontoolindex_pad.png">
+      <publishTime>06/10/2019 10:28:53</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbontoolindex_phone.png">
+      <publishTime>06/10/2019 10:30:06</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbontoolresult.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbontoolresult01.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carbontoolresult01_s.gif">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/Carbontool_demo.JPG">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/carboon_tree.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/carbontool/tree.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/ccis_link_bg.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/change.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Contact_bg.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/contact_info_bg.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/cop2.JPG">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/COP24_closing_momnet_HP.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/count.jpg">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Desktop/1.多吃蔬食_1440_900.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Desktop/1.多吃蔬食_s.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Desktop/2.自備杯筷_1440_900.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Desktop/2.自備杯筷_s.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Desktop/3.冷氣_1440_900.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Desktop/3.冷氣_s.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Desktop/4.節能_1440_900.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Desktop/4.節能_s.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Desktop/5.惜用_1440_900.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Desktop/5.惜用_s.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Desktop/6.每周_1440_900.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Desktop/6.每周_s.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Desktop/7.綠色_1440_900.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Desktop/7.綠色_s.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Desktop/8.隨手關燈_1440_900.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Desktop/8.隨手關燈_s.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Desktop/9.鐵馬步行_1440_900.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Desktop/9.鐵馬步行_s.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Desktop/Thumbs.db">
+      <publishTime>02/18/2019 11:07:53</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Desktop/WebCoreApp - 捷徑.lnk">
+      <publishTime>02/19/2019 17:21:14</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/detail01.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/detail02.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/detail03.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/detail05.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/detail06.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/digits.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/d_bg1.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Eission.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/ele1.JPG">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/ele2.JPG">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/ele3.JPG">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/EnergyStar.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/favicon.ico">
+      <publishTime>04/22/2019 03:07:40</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/flower1.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/flower2.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/ghg/ghg_bg.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/ghg/ghg_bg5.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/ghg/ghg_bg6.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/ghg/g_gase.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/ghg/g_gases.pdf">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/ghg/g_gases1.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/ghg/g_gases1.pdf">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/greenhouseGas.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/greenphone-01.jpg">
+      <publishTime>05/03/2019 08:51:04</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/greenphone-02.jpg">
+      <publishTime>05/03/2019 08:51:04</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/greenphone-03.jpg">
+      <publishTime>05/03/2019 08:51:04</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/greenphone-04.jpg">
+      <publishTime>05/03/2019 08:51:05</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/greenphone-05.jpg">
+      <publishTime>05/03/2019 08:51:05</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/greenphone-06.jpg">
+      <publishTime>05/03/2019 08:51:05</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/greenphone-07.jpg">
+      <publishTime>05/03/2019 08:51:05</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/green_1.jpg">
+      <publishTime>04/30/2019 15:12:55</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/green_2.jpg">
+      <publishTime>04/30/2019 15:12:55</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/green_3.jpg">
+      <publishTime>04/30/2019 15:12:56</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/green_4.jpg">
+      <publishTime>04/30/2019 15:12:56</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/green_5.jpg">
+      <publishTime>04/30/2019 15:12:56</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/green_6.jpg">
+      <publishTime>04/30/2019 15:12:56</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/green_7.jpg">
+      <publishTime>04/30/2019 15:12:56</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/phone/greenphone-01.jpg">
+      <publishTime>05/03/2019 08:51:04</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/phone/greenphone-02.jpg">
+      <publishTime>05/03/2019 08:51:04</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/phone/greenphone-03.jpg">
+      <publishTime>05/03/2019 08:51:04</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/phone/greenphone-04.jpg">
+      <publishTime>05/03/2019 08:51:05</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/phone/greenphone-05.jpg">
+      <publishTime>05/03/2019 08:51:05</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/phone/greenphone-06.jpg">
+      <publishTime>05/03/2019 08:51:05</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/phone/greenphone-07.jpg">
+      <publishTime>05/03/2019 08:51:05</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/phone/Thumbs.db">
+      <publishTime>05/03/2019 08:51:54</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/titleg01.png">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/titleg02.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/titleg03.png">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/titleg04.png">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/titleg05.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/titleg06.png">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/titleg07.png">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/web/green_1.jpg">
+      <publishTime>04/30/2019 15:12:55</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/web/green_2.jpg">
+      <publishTime>04/30/2019 15:12:55</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/web/green_3.jpg">
+      <publishTime>04/30/2019 15:12:56</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/web/green_4.jpg">
+      <publishTime>04/30/2019 15:12:56</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/web/green_5.jpg">
+      <publishTime>04/30/2019 15:12:56</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/web/green_6.jpg">
+      <publishTime>04/30/2019 15:12:56</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/web/green_7.jpg">
+      <publishTime>04/30/2019 15:12:56</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/web/Thumbs.db">
+      <publishTime>05/03/2019 08:49:47</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/GreenShop/綠色採購.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/gui.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Guide/bg_D.png">
+      <publishTime>07/26/2019 13:44:22</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Guide/bg_P.png">
+      <publishTime>07/26/2019 14:56:57</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Guide/Guide.png">
+      <publishTime>02/20/2019 17:39:27</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Guide/Guide_s.png">
+      <publishTime>02/20/2019 17:03:16</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Guide/picon.jpg">
+      <publishTime>02/21/2019 14:22:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/hotel/c6.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/hotel/hotelBG.PNG">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/hotel/hotelBG1.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/hotel/hotelBG2.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/hotel/hotelBG3.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/hotel/hotelBG4.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/hotel/hotelBG5.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/hotel/title01.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/hotel/title02.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/hotel/title03.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/hotel/title04.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/hotel/title05.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/hotel/環保旅店-01.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/i1.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/i2.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/i3.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/i4.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/i5.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/iconfb-.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/iconfb.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/iconline-.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/iconline.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/iconpr-.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/iconpr.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/icontt-.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/icontt.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/image_lazy.jpg">
+      <publishTime>11/01/2018 10:30:33</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/index_house.png">
+      <publishTime>05/30/2019 11:31:23</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/infotitleBG.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/is.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/adaptationBTN01.png">
+      <publishTime>02/27/2019 17:30:06</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/adaptationBTN01a.png">
+      <publishTime>02/27/2019 17:34:22</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/adaptationBTN02.png">
+      <publishTime>02/27/2019 17:30:24</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/adaptationBTN02a.png">
+      <publishTime>02/27/2019 17:34:14</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/adaptationBTN03.png">
+      <publishTime>02/27/2019 17:30:36</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/adaptationBTN03a.png">
+      <publishTime>02/27/2019 17:34:34</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/adaptationBTN04.png">
+      <publishTime>02/27/2019 17:30:52</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/adaptationBTN04a.png">
+      <publishTime>02/27/2019 17:34:45</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/adaptationBTN05.png">
+      <publishTime>02/27/2019 17:31:04</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/adaptationBTN05a.png">
+      <publishTime>02/27/2019 17:34:58</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/adaptationBTN06.png">
+      <publishTime>02/27/2019 17:31:20</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/adaptationBTN06a.png">
+      <publishTime>04/16/2019 10:56:36</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/adaptationBTN07.png">
+      <publishTime>04/16/2019 10:57:24</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/adaptationBTN07a.png">
+      <publishTime>04/16/2019 10:57:06</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/australia01.png">
+      <publishTime>08/14/2019 10:32:13</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/australia02.png">
+      <publishTime>08/01/2019 11:44:20</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/bg-01.png">
+      <publishTime>05/08/2019 09:44:15</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/bg-02.png">
+      <publishTime>05/09/2019 15:19:19</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/bg-03.png">
+      <publishTime>05/16/2019 10:14:09</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/bg.jpg">
+      <publishTime>02/27/2019 17:28:26</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/bt_libary.png">
+      <publishTime>08/01/2019 13:52:37</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_01.jpg">
+      <publishTime>05/06/2019 08:40:06</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_01.png">
+      <publishTime>05/08/2019 09:45:56</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_011.jpg">
+      <publishTime>05/22/2019 14:55:17</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_011.png">
+      <publishTime>05/17/2019 14:11:05</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_02.jpg">
+      <publishTime>05/06/2019 08:40:07</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_02.png">
+      <publishTime>05/08/2019 09:45:56</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_022.jpg">
+      <publishTime>05/22/2019 14:55:32</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_022.png">
+      <publishTime>05/17/2019 14:05:42</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_03.jpg">
+      <publishTime>05/06/2019 08:40:07</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_03.png">
+      <publishTime>05/08/2019 09:45:56</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_033.jpg">
+      <publishTime>05/22/2019 14:55:43</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_033.png">
+      <publishTime>05/17/2019 14:10:17</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_04.jpg">
+      <publishTime>05/06/2019 08:40:07</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_04.png">
+      <publishTime>05/08/2019 09:45:56</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_044.jpg">
+      <publishTime>05/22/2019 14:54:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_044.png">
+      <publishTime>05/17/2019 14:09:55</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_05.jpg">
+      <publishTime>05/06/2019 08:40:07</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_05.png">
+      <publishTime>05/08/2019 09:45:56</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_055.jpg">
+      <publishTime>05/22/2019 14:56:38</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_055.png">
+      <publishTime>05/17/2019 14:09:28</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_06.jpg">
+      <publishTime>05/06/2019 08:40:07</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_06.png">
+      <publishTime>05/08/2019 09:45:57</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_07.jpg">
+      <publishTime>05/06/2019 08:40:07</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_07.png">
+      <publishTime>05/08/2019 09:45:57</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_08.jpg">
+      <publishTime>05/06/2019 08:40:07</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_08.png">
+      <publishTime>05/08/2019 09:45:57</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_088.jpg">
+      <publishTime>05/22/2019 14:57:29</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_088.png">
+      <publishTime>05/17/2019 14:06:03</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_09.jpg">
+      <publishTime>05/06/2019 08:40:07</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_09.png">
+      <publishTime>05/08/2019 09:45:57</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_099.jpg">
+      <publishTime>05/22/2019 14:58:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_099.png">
+      <publishTime>05/17/2019 14:10:35</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_10.jpg">
+      <publishTime>05/06/2019 08:40:07</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_10.png">
+      <publishTime>05/08/2019 09:45:58</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_11.jpg">
+      <publishTime>05/06/2019 08:40:07</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_11.png">
+      <publishTime>05/08/2019 09:45:58</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_12.jpg">
+      <publishTime>05/06/2019 08:40:07</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_12.png">
+      <publishTime>05/08/2019 09:45:58</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_122.jpg">
+      <publishTime>05/22/2019 14:59:02</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_122.png">
+      <publishTime>05/17/2019 14:06:34</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_13.jpg">
+      <publishTime>05/06/2019 08:40:08</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_13.png">
+      <publishTime>05/08/2019 09:45:58</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_133.jpg">
+      <publishTime>05/22/2019 14:59:40</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_133.png">
+      <publishTime>05/17/2019 14:06:49</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_14.jpg">
+      <publishTime>05/06/2019 08:40:08</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_14.png">
+      <publishTime>05/08/2019 09:45:58</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_144.jpg">
+      <publishTime>05/22/2019 15:00:27</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_144.png">
+      <publishTime>05/17/2019 14:07:37</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_15.jpg">
+      <publishTime>05/06/2019 08:40:08</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_15.png">
+      <publishTime>05/08/2019 09:45:58</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_155.jpg">
+      <publishTime>05/22/2019 15:01:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_155.png">
+      <publishTime>05/17/2019 14:08:14</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_16.jpg">
+      <publishTime>05/06/2019 08:40:08</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_16.png">
+      <publishTime>05/08/2019 09:45:59</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_166.jpg">
+      <publishTime>05/22/2019 15:07:37</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/clock_166.png">
+      <publishTime>05/17/2019 14:08:46</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/DenMark.png">
+      <publishTime>08/16/2019 13:48:50</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/Detail3_1.png">
+      <publishTime>08/01/2019 11:19:15</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/EachCountry190724.jpg">
+      <publishTime>08/14/2019 11:11:00</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/EachCountry190724_1.jpg">
+      <publishTime>07/24/2019 17:20:19</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/england.png">
+      <publishTime>07/25/2019 11:31:52</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/English01.png">
+      <publishTime>07/18/2019 10:29:25</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/English02.png">
+      <publishTime>07/18/2019 10:29:25</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/EU.png">
+      <publishTime>08/20/2019 11:27:41</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/France.png">
+      <publishTime>07/25/2019 13:42:13</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/Germany.png">
+      <publishTime>07/25/2019 11:45:43</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/Iceland.png">
+      <publishTime>08/30/2019 15:31:53</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/japan01.jpg">
+      <publishTime>08/01/2019 11:44:20</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/japan02.jpg">
+      <publishTime>08/01/2019 11:44:20</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/k1.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/k2.jpg">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/k3.jpg">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/k3_1.jpg">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/k4.jpg">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/k5.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/k6.jpg">
+      <publishTime>04/18/2019 13:48:55</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/korea01.jpg">
+      <publishTime>08/22/2019 15:15:15</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/Korea01.png">
+      <publishTime>07/18/2019 18:25:44</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/korea02.jpg">
+      <publishTime>08/22/2019 15:15:16</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/Korea02.png">
+      <publishTime>07/18/2019 18:26:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/korea03.jpg">
+      <publishTime>08/01/2019 11:44:20</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/Korea03.png">
+      <publishTime>07/18/2019 18:26:37</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/Korea04.png">
+      <publishTime>07/18/2019 18:27:09</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/Kyoto.jpg">
+      <publishTime>04/23/2019 14:47:46</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/Netherlands.png">
+      <publishTime>07/25/2019 13:34:41</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/Netherlands1.png">
+      <publishTime>07/26/2019 11:07:58</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/Netherlands2.png">
+      <publishTime>07/26/2019 11:08:46</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/Netherlands3.jpg">
+      <publishTime>08/07/2019 17:29:23</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/Netherlands4.jpg">
+      <publishTime>08/07/2019 17:29:22</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/Netherlands5.jpg">
+      <publishTime>08/07/2019 17:29:23</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/Singapore01.jpg">
+      <publishTime>07/18/2019 17:20:58</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/Singapore02.jpg">
+      <publishTime>07/18/2019 17:20:59</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/Singapore03.jpg">
+      <publishTime>07/18/2019 17:20:59</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/Singapore04.jpg">
+      <publishTime>07/18/2019 17:20:59</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/Singapore05.jpg">
+      <publishTime>07/18/2019 17:20:59</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/Singapore06.jpg">
+      <publishTime>07/18/2019 17:20:59</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/weather0626.jpg">
+      <publishTime>07/11/2019 16:25:33</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/weather0626_1.jpg">
+      <publishTime>07/02/2019 11:31:22</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/巴黎協定.png">
+      <publishTime>07/24/2019 17:01:23</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/荷蘭-02.jpg">
+      <publishTime>08/08/2019 15:08:59</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/荷蘭-03.jpg">
+      <publishTime>08/08/2019 15:08:59</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/荷蘭-04.jpg">
+      <publishTime>08/08/2019 15:08:59</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/know/荷蘭-06.jpg">
+      <publishTime>08/07/2019 17:29:23</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/links/i1.jpg">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/links/i2.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/links/i3.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/links/i4.jpg">
+      <publishTime>04/29/2019 10:41:57</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/links/li.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/links/ri.gif">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/logo.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/logo1.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/logo320x80.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/logo_a.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/logo_bg1.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/logo_bg_all.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/logo_newtaipei.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/m1.jpg">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/m2.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/alpha.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/changhua_a.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/chiayic_a.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/chiayi_a.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/hsinchuc_a.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/hsinchu_a.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/hualien_a.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/island_a.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/kaohsiung_a.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/keelung_a.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/miaoli_a.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/nantou_a.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/newtaipei_a.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/pingtung_a.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/s/changhua_b.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/s/chiayic_b.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/s/chiayi_b.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/s/hsinchuc_b.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/s/hsinchu_b.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/s/hualien_b.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/s/island_b.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/s/kaohsiung_b.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/s/keelung-b.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/s/keelung_b.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/s/miaoli_b.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/s/nantou_b.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/s/newtaipei-b.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/s/newtaipei_b.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/s/pingtung_b.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/s/taichung_b.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/s/tainan_b.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/s/taipei_b.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/s/taitung_b.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/s/taoyuan_b.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/s/yilan_b.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/s/yunlin_b.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/taichung_a.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/tainan_a.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/taipei_a.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/taitung_a.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/taoyuan_a.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/yilan_a.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/map/yunlin_a.png">
+      <publishTime>03/25/2019 09:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/Cartoon.jpg">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/Cartoon01.jpg">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/Cartoon02.png">
+      <publishTime>04/18/2019 14:58:33</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/Cartoon03.png">
+      <publishTime>04/18/2019 14:58:33</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/Cartoon04.png">
+      <publishTime>04/29/2019 10:08:47</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/Cartoon05.jpg">
+      <publishTime>05/29/2019 17:12:45</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/Cartoon06.jpg">
+      <publishTime>05/29/2019 17:12:42</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/Cartoon07.jpg">
+      <publishTime>07/05/2019 09:11:17</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/Cartoon08.png">
+      <publishTime>09/03/2019 13:26:41</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/CartoonHomepage.png">
+      <publishTime>04/29/2019 10:09:26</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/m1.jpg">
+      <publishTime>04/18/2019 11:46:07</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/m2.jpg">
+      <publishTime>04/18/2019 11:46:40</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/m3.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/m4.jpg">
+      <publishTime>04/18/2019 11:47:19</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/m5.jpg">
+      <publishTime>04/18/2019 11:39:29</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/Second01.jpg">
+      <publishTime>10/29/2018 14:35:43</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/Second02.jpg">
+      <publishTime>10/29/2018 14:36:15</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/Second03.jpg">
+      <publishTime>10/29/2018 14:37:08</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/Second04.jpg">
+      <publishTime>06/26/2019 17:30:03</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/健康調適-01.jpg">
+      <publishTime>07/05/2019 16:25:08</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/時過境遷-01.jpg">
+      <publishTime>07/05/2019 16:25:08</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/海岸調適-01.jpg">
+      <publishTime>07/05/2019 16:25:08</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/減碳雙熊的由來-01.jpg">
+      <publishTime>07/05/2019 16:25:08</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/節能減碳家電篇.png">
+      <publishTime>07/05/2019 16:25:08</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/美麗寶島的變化_工作區域2.png">
+      <publishTime>07/05/2019 16:25:08</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/media/面對全球暖化.png">
+      <publishTime>07/05/2019 16:25:08</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/meet1.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/meet11.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/meet2.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/meet22.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/meet3.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/meet33.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/meet44.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/meet55.png">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/meet66.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/meet77.png">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/meet_bg.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/meet_bg_s.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/meet_info1_bg.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/meet_info2_bg.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/meet_info3_bg.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/menu2bg1.gif">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/menu2bg2.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/mid-autumn-festival.jpg">
+      <publishTime>09/03/2019 16:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/mothersday.jpg">
+      <publishTime>05/03/2019 09:55:41</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/moviebg.jpg">
+      <publishTime>05/06/2019 16:11:34</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/movietitle.png">
+      <publishTime>05/06/2019 16:39:16</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/movietitle1.png">
+      <publishTime>05/09/2019 10:56:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/movietitle2.png">
+      <publishTime>05/09/2019 10:57:16</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/movietitle3.png">
+      <publishTime>10/29/2019 09:35:18</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/m_bg1.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/m_bg2.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/m_bg3.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/m_info1.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/nationalnew.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/newsbanner0223a.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/newsbanner0223b.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/news_o1.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/news_o2.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/news_o3.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/p1.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/p2.jpg">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/p3.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/p4.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p1.jpg">
+      <publishTime>02/11/2019 10:39:20</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p101.png">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p102.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p103.png">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p104.png">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p105.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p106.png">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p107.png">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p108.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p109.png">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p110.png">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p111.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p112.png">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p113.png">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p114.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p115.png">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p116.png">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p2.jpg">
+      <publishTime>02/11/2019 10:39:20</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p3.jpg">
+      <publishTime>02/11/2019 10:39:20</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p4.jpg">
+      <publishTime>02/11/2019 10:39:20</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p5.jpg">
+      <publishTime>02/11/2019 10:39:20</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p6.png">
+      <publishTime>02/20/2019 09:36:51</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p7.png">
+      <publishTime>02/20/2019 09:37:36</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/poster/p8.png">
+      <publishTime>02/20/2019 09:37:55</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/sh.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/spinner8%402x.gif">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Sreach.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/stop.png">
+      <publishTime>05/13/2019 13:28:48</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Ten/desktop/TEN_01.jpg">
+      <publishTime>04/25/2019 10:08:15</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Ten/desktop/TEN_02.jpg">
+      <publishTime>04/25/2019 10:08:15</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Ten/desktop/TEN_03.jpg">
+      <publishTime>04/25/2019 10:08:15</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Ten/desktop/TEN_04.jpg">
+      <publishTime>04/25/2019 10:08:15</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Ten/phone/TENphone-01.jpg">
+      <publishTime>04/24/2019 15:19:39</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Ten/phone/TENphone-02.jpg">
+      <publishTime>04/24/2019 15:19:39</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Ten/phone/TENphone-03.jpg">
+      <publishTime>04/24/2019 15:19:39</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Ten/phone/TENphone-04.jpg">
+      <publishTime>04/24/2019 15:19:39</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Ten/phone/TENphone-05.jpg">
+      <publishTime>04/24/2019 15:19:40</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Ten/phone/TENphone-06.jpg">
+      <publishTime>04/24/2019 15:19:40</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Ten/phone/TENphone-07.jpg">
+      <publishTime>04/24/2019 15:19:40</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Ten/phone/TENphone-08.jpg">
+      <publishTime>04/24/2019 15:19:40</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Ten/phone/TENphone-09.jpg">
+      <publishTime>04/24/2019 15:19:41</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Ten/phone/TENphone-10.jpg">
+      <publishTime>04/24/2019 15:19:41</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/Ten/phone/Thumbs.db">
+      <publishTime>04/24/2019 15:29:41</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/titlebg.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/t_new2.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/t_new3.png">
+      <publishTime>02/22/2019 15:29:45</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/t_new4.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/whitebook.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/x.png">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/低碳永續家園行政運作機制圖.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/低碳飲食原則.png">
+      <publishTime>05/30/2019 09:36:21</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/分層推動溫減管理-01.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/參加評等好處多多-01.jpg">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/如何參加評等.jpg">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/常見食物的碳排放數值.png">
+      <publishTime>04/24/2019 17:00:16</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/平均糧食供給.png">
+      <publishTime>05/30/2019 09:35:30</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/抵換專案演變歷程-01.png">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/教育宣導與獎勵-01.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/新聞1.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/新聞2.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/新聞3.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/新聞4.jpg">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/新聞5.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/生產肉類碳排放.png">
+      <publishTime>05/30/2019 09:34:50</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/綠色採購-01.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/能源之星-01.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/誰可以參加評等.jpg">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/附圖一環境季banner.jpg">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/附圖二環境季banner.png">
+      <publishTime>04/17/2019 11:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/附圖四地球日banner.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/img/階段性減量管制-01.jpg">
+      <publishTime>04/17/2019 11:29:11</publishTime>
+    </File>
+    <File Include="wwwroot/_x/jquery-countdown-master/css/media.css">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/jquery-countdown-master/img/bg-tile.png">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/jquery-countdown-master/img/digits-min.png">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/jquery-countdown-master/img/digits.png">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/jquery-countdown-master/img/digits.psd">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/jquery-countdown-master/img/time-placeholder.png">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/jquery-countdown-master/js/jquery.countdown.js">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/jquery-countdown-master/js/jquery.countdown.min.js">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/Js/jquery.counterup-2.1.0.min.js">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/_x/Js/unslider.min.js">
+      <publishTime>04/17/2019 11:29:12</publishTime>
+    </File>
+    <File Include="ZKWeb.System.Drawing.dll">
+      <publishTime>12/08/2017 16:36:04</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
